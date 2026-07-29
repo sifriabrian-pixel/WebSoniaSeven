@@ -41,11 +41,11 @@ export default async function HomePage() {
           priority
           className="object-cover"
         />
-        <div className="absolute inset-0 bg-navy-dark/50" />
+        <div className="absolute inset-0 z-[1] bg-gradient-to-b from-[#1C2841]/60 via-[#1C2841]/30 to-[#1C2841]/70" />
 
         <div className="relative z-10 mx-auto flex max-w-3xl flex-col items-center px-6 text-center text-cream">
           <div className="font-serif text-2xl tracking-[0.35em]">SEVEN</div>
-          <div className="mb-6 text-xs tracking-[0.5em] text-gold">
+          <div className="mb-6 text-xs tracking-[0.5em] text-gold [text-shadow:0_1px_3px_rgba(0,0,0,0.4)]">
             SONIA GARCIA
           </div>
           <h1 className="font-serif text-3xl leading-tight md:text-5xl">
