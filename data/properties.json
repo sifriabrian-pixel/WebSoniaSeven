@@ -72,7 +72,7 @@
     "currency": "USD",
     "location": {
       "city": "Fernando de la Mora",
-      "neighborhood": "Central",
+      "neighborhood": "Fernando de la Mora",
       "address": "Aprox. Cañada del Carmen c/ Pedro Guetto"
     },
     "specs": {
@@ -103,7 +103,7 @@
     "currency": "USD",
     "location": {
       "city": "San Lorenzo",
-      "neighborhood": "Central",
+      "neighborhood": "San Lorenzo",
       "address": "Aprox. Av. Teniente Rodi y G. Zubizarreta"
     },
     "specs": {
@@ -165,7 +165,7 @@
     "currency": "USD",
     "location": {
       "city": "Luque",
-      "neighborhood": "Central",
+      "neighborhood": "Luque",
       "address": "Aprox. Virgen del Rosario esq. Chovoreca"
     },
     "specs": {
@@ -227,7 +227,7 @@
     "currency": "USD",
     "location": {
       "city": "Mariano Roque Alonso",
-      "neighborhood": "Central",
+      "neighborhood": "Mariano Roque Alonso",
       "address": "Aprox. Ruta Transchaco km 15"
     },
     "specs": {

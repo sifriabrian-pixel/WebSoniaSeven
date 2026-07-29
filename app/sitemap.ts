@@ -1,9 +1,10 @@
 import type { MetadataRoute } from "next";
-import { getAllProperties } from "@/lib/data";
+import { getAllProperties, getZones } from "@/lib/data";
 import { SITE_URL } from "@/lib/seo";
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const properties = await getAllProperties();
+  const zones = await getZones();
 
   const staticRoutes: MetadataRoute.Sitemap = [
     { url: SITE_URL, changeFrequency: "weekly", priority: 1 },
@@ -22,5 +23,11 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     priority: 0.8,
   }));
 
-  return [...staticRoutes, ...propertyRoutes];
+  const zoneRoutes: MetadataRoute.Sitemap = zones.map((z) => ({
+    url: `${SITE_URL}/propiedades/zona/${z.slug}`,
+    changeFrequency: "weekly",
+    priority: 0.7,
+  }));
+
+  return [...staticRoutes, ...propertyRoutes, ...zoneRoutes];
 }

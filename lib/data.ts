@@ -1,5 +1,6 @@
 import propertiesData from "@/data/properties.json";
 import type { Property, PropertyFilters, SortOption } from "@/lib/types";
+import { slugify } from "@/lib/slug";
 
 /**
  * Capa de acceso a datos. Hoy lee del JSON estático; el día que se migre
@@ -83,6 +84,43 @@ export async function getFilteredProperties(
 export async function getNeighborhoods(): Promise<string[]> {
   const active = properties.filter((p) => p.status !== "vendida");
   return Array.from(new Set(active.map((p) => p.location.neighborhood)));
+}
+
+export interface Zone {
+  name: string;
+  slug: string;
+  city: string;
+}
+
+/** Zonas (barrios) con propiedades activas, para las landing pages /propiedades/zona/[zona]. */
+export async function getZones(): Promise<Zone[]> {
+  const active = properties.filter((p) => p.status !== "vendida");
+  const byNeighborhood = new Map<string, Zone>();
+
+  for (const p of active) {
+    const slug = slugify(p.location.neighborhood);
+    if (!byNeighborhood.has(slug)) {
+      byNeighborhood.set(slug, {
+        name: p.location.neighborhood,
+        slug,
+        city: p.location.city,
+      });
+    }
+  }
+
+  return Array.from(byNeighborhood.values());
+}
+
+export async function getZoneBySlug(slug: string): Promise<Zone | undefined> {
+  const zones = await getZones();
+  return zones.find((z) => z.slug === slug);
+}
+
+export async function getPropertiesByZoneSlug(
+  slug: string
+): Promise<Property[]> {
+  const active = properties.filter((p) => p.status !== "vendida");
+  return active.filter((p) => slugify(p.location.neighborhood) === slug);
 }
 
 export function formatPrice(price: number, currency: string): string {

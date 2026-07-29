@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { getFeaturedProperties } from "@/lib/data";
+import { getFeaturedProperties, getZones } from "@/lib/data";
 import PropertyCard from "@/components/PropertyCard";
 import SectionDivider from "@/components/SectionDivider";
 import { WhatsAppInline } from "@/components/WhatsAppButton";
@@ -44,6 +44,7 @@ const TESTIMONIALS = [
 
 export default async function HomePage() {
   const featured = await getFeaturedProperties();
+  const zones = await getZones();
 
   return (
     <main>
@@ -88,11 +89,11 @@ export default async function HomePage() {
               defaultValue=""
             >
               <option value="">Zona</option>
-              <option value="Mcal. López">Mcal. López</option>
-              <option value="Herrera">Herrera</option>
-              <option value="Las Mercedes">Las Mercedes</option>
-              <option value="Villa Morra">Villa Morra</option>
-              <option value="Central">Central</option>
+              {zones.map((zone) => (
+                <option key={zone.slug} value={zone.name}>
+                  {zone.name}
+                </option>
+              ))}
             </select>
             <select
               name="maxPrice"

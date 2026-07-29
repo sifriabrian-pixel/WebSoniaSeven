@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { getFilteredProperties, getNeighborhoods } from "@/lib/data";
+import { getFilteredProperties, getNeighborhoods, getZones } from "@/lib/data";
 import PropertyCard from "@/components/PropertyCard";
 import FilterSidebar from "@/components/FilterSidebar";
 import SortSelect from "@/components/SortSelect";
@@ -50,6 +50,7 @@ interface PageProps {
 
 export default async function PropertiesPage({ searchParams }: PageProps) {
   const neighborhoods = await getNeighborhoods();
+  const zones = await getZones();
 
   const sort = (searchParams.sort as SortOption) ?? "recent";
 
@@ -77,6 +78,21 @@ export default async function PropertiesPage({ searchParams }: PageProps) {
           ? "propiedad encontrada"
           : "propiedades encontradas"}
       </p>
+
+      {zones.length > 0 && (
+        <div className="mt-4 flex flex-wrap gap-2">
+          <span className="text-xs text-text/50">Explorá por zona:</span>
+          {zones.map((zone) => (
+            <Link
+              key={zone.slug}
+              href={`/propiedades/zona/${zone.slug}`}
+              className="text-xs text-navy underline hover:text-gold"
+            >
+              {zone.name}
+            </Link>
+          ))}
+        </div>
+      )}
 
       <div className="mt-10 flex flex-col gap-8 md:flex-row">
         <FilterSidebar neighborhoods={neighborhoods} />
