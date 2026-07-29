@@ -4,6 +4,7 @@ import { getFeaturedProperties, getZones } from "@/lib/data";
 import PropertyCard from "@/components/PropertyCard";
 import SectionDivider from "@/components/SectionDivider";
 import { WhatsAppInline } from "@/components/WhatsAppButton";
+import NewsletterForm from "@/components/NewsletterForm";
 
 const VALUES = [
   {
@@ -226,6 +227,20 @@ export default async function HomePage() {
               </div>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* Captura de leads */}
+      <section className="bg-white px-6 py-16 text-center">
+        <h2 className="font-serif text-2xl text-navy">
+          Recibí notificaciones de nuevas propiedades
+        </h2>
+        <p className="mx-auto mt-2 max-w-md text-sm text-text/60">
+          Dejanos tu email o WhatsApp y te avisamos apenas ingresa algo nuevo
+          que coincida con lo que buscás.
+        </p>
+        <div className="mx-auto mt-6 max-w-md">
+          <NewsletterForm />
         </div>
       </section>
 

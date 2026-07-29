@@ -1,10 +1,11 @@
 import Link from "next/link";
 import SectionDivider from "@/components/SectionDivider";
+import NewsletterForm from "@/components/NewsletterForm";
 
 export default function Footer() {
   return (
     <footer className="bg-navy-dark px-6 py-14 text-cream">
-      <div className="mx-auto grid max-w-7xl gap-10 md:grid-cols-3">
+      <div className="mx-auto grid max-w-7xl gap-10 md:grid-cols-4">
         <div>
           <div className="font-serif text-xl tracking-[0.3em]">SEVEN</div>
           <div className="text-[10px] tracking-[0.4em] text-gold">
@@ -57,6 +58,16 @@ export default function Footer() {
             <li>sonia.garcia@c21.com.py</li>
             <li>+595 971 561916</li>
           </ul>
+        </div>
+
+        <div>
+          <h4 className="mb-4 text-sm tracking-[0.2em] text-gold">
+            NOVEDADES
+          </h4>
+          <p className="mb-3 text-sm text-cream/70">
+            Enterate primero de nuevas propiedades.
+          </p>
+          <NewsletterForm variant="dark" compact />
         </div>
       </div>
 
