@@ -4,6 +4,8 @@ import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
+import JsonLd from "@/components/JsonLd";
+import { agentJsonLd, SITE_URL } from "@/lib/seo";
 
 const playfair = Playfair_Display({
   subsets: ["latin"],
@@ -18,6 +20,7 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL(SITE_URL),
   title: {
     default: "Seven | Sonia García — Asesoramiento Inmobiliario",
     template: "%s | Seven by Sonia García",
@@ -36,6 +39,7 @@ export default function RootLayout({
       <body
         className={`${playfair.variable} ${poppins.variable} font-sans antialiased bg-cream text-text`}
       >
+        <JsonLd data={agentJsonLd()} />
         <Navbar />
         {children}
         <Footer />

@@ -11,6 +11,8 @@ import Gallery from "@/components/Gallery";
 import PropertyCard from "@/components/PropertyCard";
 import SectionDivider from "@/components/SectionDivider";
 import { WhatsAppInline } from "@/components/WhatsAppButton";
+import JsonLd from "@/components/JsonLd";
+import { propertyJsonLd } from "@/lib/seo";
 
 interface PageProps {
   params: { slug: string };
@@ -52,6 +54,7 @@ export default async function PropertyDetailPage({ params }: PageProps) {
 
   return (
     <main className="pb-24 pt-24">
+      <JsonLd data={propertyJsonLd(property)} />
       <div className="mx-auto max-w-7xl px-6">
         <Gallery images={property.images} alt={property.title} />
       </div>
