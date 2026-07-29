@@ -1,6 +1,6 @@
 export type OperationType = "venta" | "alquiler";
 export type PropertyType = "casa" | "departamento" | "terreno" | "comercial";
-export type PropertyStatus = "disponible" | "exclusiva" | "reservada";
+export type PropertyStatus = "nueva" | "disponible" | "reservada" | "vendida";
 
 export interface PropertyLocation {
   city: string;

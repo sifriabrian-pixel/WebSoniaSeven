@@ -3,13 +3,18 @@ import Link from "next/link";
 import type { Property } from "@/lib/types";
 import { formatPrice } from "@/lib/data";
 
-const statusLabels: Record<Property["status"], string> = {
-  disponible: "Nueva",
-  exclusiva: "Exclusiva",
-  reservada: "Reservada",
+const statusBadges: Partial<
+  Record<Property["status"], { label: string; className: string }>
+> = {
+  nueva: { label: "Nueva", className: "bg-gold text-navy" },
+  reservada: { label: "Reservada", className: "bg-gray-500 text-white" },
+  vendida: { label: "Vendida", className: "bg-gray-800 text-white" },
 };
 
 export default function PropertyCard({ property }: { property: Property }) {
+  const badge = statusBadges[property.status];
+  const isSold = property.status === "vendida";
+
   return (
     <Link
       href={`/propiedades/${property.slug}`}
@@ -23,9 +28,13 @@ export default function PropertyCard({ property }: { property: Property }) {
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
           className="object-cover transition-transform duration-500 group-hover:scale-105"
         />
-        <span className="absolute left-3 top-3 bg-navy px-3 py-1 text-xs tracking-wide text-cream">
-          {statusLabels[property.status]}
-        </span>
+        {badge && (
+          <span
+            className={`absolute left-3 top-3 px-3 py-1 text-xs tracking-wide ${badge.className}`}
+          >
+            {badge.label}
+          </span>
+        )}
       </div>
 
       <div className="p-5">
@@ -34,7 +43,9 @@ export default function PropertyCard({ property }: { property: Property }) {
           {property.location.neighborhood}, {property.location.city}
         </p>
 
-        <p className="mt-3 font-serif text-xl text-gold">
+        <p
+          className={`mt-3 font-serif text-xl ${isSold ? "text-text/40 line-through" : "text-gold"}`}
+        >
           {formatPrice(property.price, property.currency)}
           {property.operation === "alquiler" && (
             <span className="text-sm text-text/50"> /mes</span>

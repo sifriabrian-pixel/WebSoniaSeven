@@ -47,6 +47,7 @@ export default async function PropertyDetailPage({ params }: PageProps) {
   if (!property) notFound();
 
   const similar = await getSimilarProperties(property);
+  const isSold = property.status === "vendida";
   const whatsappMessage = `Hola Sonia, me interesa la propiedad "${property.title}" (ref. ${property.id}). ¿Podemos coordinar una visita?`;
 
   return (
@@ -58,9 +59,21 @@ export default async function PropertyDetailPage({ params }: PageProps) {
       <div className="mx-auto mt-10 max-w-7xl px-6">
         <div className="grid grid-cols-1 gap-12 lg:grid-cols-3">
           <div className="lg:col-span-2">
-            <span className="text-xs tracking-wide text-gold">
-              {property.operation === "venta" ? "EN VENTA" : "EN ALQUILER"}
-            </span>
+            <div className="flex items-center gap-3">
+              <span className="text-xs tracking-wide text-gold">
+                {property.operation === "venta" ? "EN VENTA" : "EN ALQUILER"}
+              </span>
+              {isSold && (
+                <span className="bg-gray-800 px-3 py-1 text-xs tracking-wide text-white">
+                  Vendida
+                </span>
+              )}
+              {property.status === "reservada" && (
+                <span className="bg-gray-500 px-3 py-1 text-xs tracking-wide text-white">
+                  Reservada
+                </span>
+              )}
+            </div>
             <h1 className="mt-2 font-serif text-3xl text-navy">
               {property.title}
             </h1>
@@ -68,7 +81,9 @@ export default async function PropertyDetailPage({ params }: PageProps) {
               {property.location.neighborhood}, {property.location.city} —{" "}
               {property.location.address}
             </p>
-            <p className="mt-4 font-serif text-3xl text-gold">
+            <p
+              className={`mt-4 font-serif text-3xl ${isSold ? "text-text/40 line-through" : "text-gold"}`}
+            >
               {formatPrice(property.price, property.currency)}
               {property.operation === "alquiler" && (
                 <span className="text-base text-text/50"> /mes</span>
@@ -131,12 +146,22 @@ export default async function PropertyDetailPage({ params }: PageProps) {
           {/* Sidebar de contacto */}
           <aside>
             <div className="sticky top-28 bg-navy p-6 text-cream">
-              <p className="font-serif text-lg">¿Te interesa esta propiedad?</p>
+              <p className="font-serif text-lg">
+                {isSold
+                  ? "Esta propiedad ya fue vendida"
+                  : "¿Te interesa esta propiedad?"}
+              </p>
               <p className="mt-2 text-sm text-cream/70">
-                Coordiná una visita directamente con Sonia por WhatsApp.
+                {isSold
+                  ? "Consultá a Sonia por propiedades similares disponibles."
+                  : "Coordiná una visita directamente con Sonia por WhatsApp."}
               </p>
               <WhatsAppInline
-                message={whatsappMessage}
+                message={
+                  isSold
+                    ? `Hola Sonia, vi que la propiedad "${property.title}" ya fue vendida. ¿Tenés algo similar disponible?`
+                    : whatsappMessage
+                }
                 className="mt-6 block bg-gold px-6 py-3 text-center text-sm tracking-wide text-navy transition-colors hover:bg-cream"
               >
                 CONSULTAR POR WHATSAPP

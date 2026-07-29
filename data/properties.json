@@ -29,7 +29,7 @@
     ],
     "coordinates": { "lat": -25.2965, "lng": -57.5738 },
     "featured": true,
-    "status": "disponible"
+    "status": "nueva"
   },
   {
     "id": "sg-002",
@@ -122,7 +122,7 @@
     ],
     "coordinates": { "lat": -25.34, "lng": -57.508 },
     "featured": true,
-    "status": "disponible"
+    "status": "nueva"
   },
   {
     "id": "sg-005",
@@ -153,7 +153,7 @@
     ],
     "coordinates": { "lat": -25.2965, "lng": -57.5877 },
     "featured": false,
-    "status": "disponible"
+    "status": "reservada"
   },
   {
     "id": "sg-006",
@@ -215,7 +215,7 @@
     ],
     "coordinates": { "lat": -25.3007, "lng": -57.5789 },
     "featured": false,
-    "status": "disponible"
+    "status": "nueva"
   },
   {
     "id": "sg-008",
@@ -246,6 +246,6 @@
     ],
     "coordinates": { "lat": -25.1998, "lng": -57.5307 },
     "featured": false,
-    "status": "disponible"
+    "status": "vendida"
   }
 ]

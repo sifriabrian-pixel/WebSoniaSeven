@@ -13,8 +13,13 @@ export async function getAllProperties(): Promise<Property[]> {
   return properties;
 }
 
+/** Propiedades que se muestran en listados públicos: excluye las vendidas. */
+export async function getActiveProperties(): Promise<Property[]> {
+  return properties.filter((p) => p.status !== "vendida");
+}
+
 export async function getFeaturedProperties(): Promise<Property[]> {
-  return properties.filter((p) => p.featured);
+  return properties.filter((p) => p.featured && p.status !== "vendida");
 }
 
 export async function getPropertyBySlug(
@@ -31,6 +36,7 @@ export async function getSimilarProperties(
     .filter(
       (p) =>
         p.id !== property.id &&
+        p.status !== "vendida" &&
         (p.type === property.type ||
           p.location.neighborhood === property.location.neighborhood)
     )
@@ -41,7 +47,7 @@ export async function getFilteredProperties(
   filters: PropertyFilters,
   sort: SortOption = "recent"
 ): Promise<Property[]> {
-  let result = [...properties];
+  let result = properties.filter((p) => p.status !== "vendida");
 
   if (filters.type) {
     result = result.filter((p) => p.type === filters.type);
@@ -75,7 +81,8 @@ export async function getFilteredProperties(
 }
 
 export async function getNeighborhoods(): Promise<string[]> {
-  return Array.from(new Set(properties.map((p) => p.location.neighborhood)));
+  const active = properties.filter((p) => p.status !== "vendida");
+  return Array.from(new Set(active.map((p) => p.location.neighborhood)));
 }
 
 export function formatPrice(price: number, currency: string): string {
