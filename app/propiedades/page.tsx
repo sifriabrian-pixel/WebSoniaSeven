@@ -9,7 +9,7 @@ import type { OperationType, PropertyType, SortOption } from "@/lib/types";
 export const metadata: Metadata = {
   title: "Propiedades",
   description:
-    "Explorá nuestra selección de propiedades premium en venta y alquiler.",
+    "Propiedades seleccionadas en venta y alquiler en Asunción y Central, Paraguay.",
 };
 
 interface PageProps {

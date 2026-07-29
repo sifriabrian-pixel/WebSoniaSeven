@@ -20,7 +20,7 @@ const VALUES = [
   },
   {
     title: "Resultados comprobados",
-    text: "Años de trayectoria y operaciones exitosas en el segmento premium.",
+    text: "Trayectoria y operaciones exitosas en cada tipo de propiedad.",
   },
 ];
 
@@ -51,7 +51,7 @@ export default async function HomePage() {
       <section className="relative flex h-screen min-h-[640px] items-center justify-center overflow-hidden">
         <Image
           src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?q=80&w=2000&auto=format&fit=crop"
-          alt="Propiedad premium"
+          alt="Propiedad en Asunción"
           fill
           priority
           className="object-cover"
@@ -64,7 +64,7 @@ export default async function HomePage() {
             SONIA GARCIA
           </div>
           <h1 className="font-serif text-3xl leading-tight md:text-5xl">
-            Propiedades excepcionales para clientes excepcionales
+            Asesoramiento inmobiliario integral en Asunción y Central
           </h1>
 
           <form

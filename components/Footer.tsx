@@ -12,8 +12,8 @@ export default function Footer() {
           </div>
           <SectionDivider center={false} />
           <p className="max-w-xs text-sm text-cream/70">
-            Real estate de lujo en Asunción y Central, Paraguay. Propiedades
-            excepcionales para clientes excepcionales.
+            Asesoramiento inmobiliario integral en Asunción y Central,
+            Paraguay. Te acompañamos en cada etapa de tu operación.
           </p>
         </div>
 

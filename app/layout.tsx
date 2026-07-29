@@ -19,11 +19,11 @@ const poppins = Poppins({
 
 export const metadata: Metadata = {
   title: {
-    default: "Seven | Sonia García — Real Estate de Lujo",
+    default: "Seven | Sonia García — Asesoramiento Inmobiliario",
     template: "%s | Seven by Sonia García",
   },
   description:
-    "Propiedades excepcionales para clientes excepcionales. Sonia García, asesora inmobiliaria de CENTURY 21 Seven en Asunción, Paraguay.",
+    "Asesoramiento inmobiliario integral en Asunción y Central, Paraguay. Sonia García, asesora de CENTURY 21 Seven, te acompaña en la compra, venta o inversión de tu propiedad.",
 };
 
 export default function RootLayout({
