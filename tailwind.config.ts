@@ -9,8 +9,17 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        navy: {
+          DEFAULT: "var(--color-navy)",
+          dark: "var(--color-navy-dark)",
+        },
+        cream: "var(--color-cream)",
+        gold: "var(--color-gold)",
+        text: "var(--color-text)",
+      },
+      fontFamily: {
+        serif: ["var(--font-playfair)", "serif"],
+        sans: ["var(--font-poppins)", "sans-serif"],
       },
     },
   },

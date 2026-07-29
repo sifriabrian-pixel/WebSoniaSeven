@@ -3,25 +3,31 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --color-navy: #1c2841;
+  --color-navy-dark: #12192b;
+  --color-cream: #f5f2eb;
+  --color-gold: #b9955a;
+  --color-white: #ffffff;
+  --color-text: #1c1c1c;
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  color: var(--color-text);
+  background: var(--color-cream);
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
+  }
+
+  .brand-tracking {
+    letter-spacing: 0.35em;
+  }
+
+  .gold-line {
+    width: 60px;
+    height: 1px;
+    background-color: var(--color-gold);
   }
 }

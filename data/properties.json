@@ -1,0 +1,253 @@
+[
+  {
+    "id": "sg-001",
+    "slug": "casa-moderna-fisherton",
+    "title": "Casa moderna en Fisherton",
+    "operation": "venta",
+    "type": "casa",
+    "price": 320000,
+    "currency": "USD",
+    "location": {
+      "city": "Rosario",
+      "neighborhood": "Fisherton",
+      "address": "Aprox. Av. Ovidio Lagos al 5000"
+    },
+    "specs": {
+      "bedrooms": 4,
+      "bathrooms": 3,
+      "totalArea": 450,
+      "coveredArea": 280,
+      "garages": 2,
+      "yearBuilt": 2019
+    },
+    "description": "Impecable casa de diseño contemporáneo ubicada en uno de los sectores más exclusivos de Fisherton. Amplios espacios de living-comedor integrados con la cocina, grandes ventanales que conectan el interior con el parque y la pileta. Suite principal con vestidor y baño en suite. Terminaciones de primera calidad en todos los ambientes.",
+    "features": ["Pileta", "Quincho", "Seguridad 24hs", "Parque", "Cocina integrada", "Suite principal"],
+    "images": [
+      "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?q=80&w=1600&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=1600&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1600&auto=format&fit=crop"
+    ],
+    "coordinates": { "lat": -32.9, "lng": -60.7 },
+    "featured": true,
+    "status": "disponible"
+  },
+  {
+    "id": "sg-002",
+    "slug": "departamento-premium-puerto-norte",
+    "title": "Departamento premium en Puerto Norte",
+    "operation": "venta",
+    "type": "departamento",
+    "price": 210000,
+    "currency": "USD",
+    "location": {
+      "city": "Rosario",
+      "neighborhood": "Puerto Norte",
+      "address": "Aprox. Bv. Oroño al 1200"
+    },
+    "specs": {
+      "bedrooms": 3,
+      "bathrooms": 2,
+      "totalArea": 130,
+      "coveredArea": 115,
+      "garages": 1,
+      "yearBuilt": 2021
+    },
+    "description": "Departamento de categoría con vista al río, en uno de los desarrollos más buscados de Puerto Norte. Amenities de primer nivel: piscina, sum, gimnasio y seguridad las 24hs. Living comedor con balcón terraza, cocina con isla y dos suites con vestidor.",
+    "features": ["Vista al río", "Amenities", "Balcón terraza", "Cochera cubierta", "Baulera"],
+    "images": [
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?q=80&w=1600&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?q=80&w=1600&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?q=80&w=1600&auto=format&fit=crop"
+    ],
+    "coordinates": { "lat": -32.93, "lng": -60.65 },
+    "featured": true,
+    "status": "disponible"
+  },
+  {
+    "id": "sg-003",
+    "slug": "terreno-exclusivo-funes",
+    "title": "Terreno exclusivo en Funes",
+    "operation": "venta",
+    "type": "terreno",
+    "price": 95000,
+    "currency": "USD",
+    "location": {
+      "city": "Funes",
+      "neighborhood": "Barrio Cerrado Funes Hills",
+      "address": "Aprox. Ruta 9 km 8"
+    },
+    "specs": {
+      "bedrooms": 0,
+      "bathrooms": 0,
+      "totalArea": 800,
+      "coveredArea": 0,
+      "garages": 0,
+      "yearBuilt": 0
+    },
+    "description": "Lote premium dentro de barrio cerrado con excelente forestación, seguridad perimetral y todos los servicios. Ideal para construir la casa de tus sueños en un entorno tranquilo y exclusivo a minutos de Rosario.",
+    "features": ["Barrio cerrado", "Servicios completos", "Seguridad perimetral", "Forestación"],
+    "images": [
+      "https://images.unsplash.com/photo-1500382017468-9049fed747ef?q=80&w=1600&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1500076656116-558758c991c1?q=80&w=1600&auto=format&fit=crop"
+    ],
+    "coordinates": { "lat": -32.92, "lng": -60.81 },
+    "featured": false,
+    "status": "disponible"
+  },
+  {
+    "id": "sg-004",
+    "slug": "penthouse-vista-rio",
+    "title": "Penthouse con vista panorámica al río",
+    "operation": "venta",
+    "type": "departamento",
+    "price": 550000,
+    "currency": "USD",
+    "location": {
+      "city": "Rosario",
+      "neighborhood": "Puerto Norte",
+      "address": "Aprox. Av. de la Costa al 800"
+    },
+    "specs": {
+      "bedrooms": 4,
+      "bathrooms": 4,
+      "totalArea": 280,
+      "coveredArea": 220,
+      "garages": 3,
+      "yearBuilt": 2022
+    },
+    "description": "Exclusivo penthouse dúplex con terraza privada, pileta propia y vista 360° al río Paraná. Diseño de autor, materiales importados y automatización domótica en todos los ambientes. Una propiedad única para quienes buscan lo mejor.",
+    "features": ["Pileta privada", "Terraza propia", "Domótica", "Vista panorámica", "3 cocheras"],
+    "images": [
+      "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=1600&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1613977257363-707ba9348227?q=80&w=1600&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?q=80&w=1600&auto=format&fit=crop"
+    ],
+    "coordinates": { "lat": -32.93, "lng": -60.64 },
+    "featured": true,
+    "status": "exclusiva"
+  },
+  {
+    "id": "sg-005",
+    "slug": "local-comercial-centro",
+    "title": "Local comercial en pleno centro",
+    "operation": "alquiler",
+    "type": "comercial",
+    "price": 1800,
+    "currency": "USD",
+    "location": {
+      "city": "Rosario",
+      "neighborhood": "Centro",
+      "address": "Aprox. Córdoba al 900"
+    },
+    "specs": {
+      "bedrooms": 0,
+      "bathrooms": 1,
+      "totalArea": 180,
+      "coveredArea": 180,
+      "garages": 0,
+      "yearBuilt": 2005
+    },
+    "description": "Local a la calle en una de las arterias comerciales más transitadas del centro rosarino. Amplia vidriera, excelente visibilidad y gran afluencia de público. Ideal para marcas o franquicias.",
+    "features": ["Vidriera amplia", "Alta afluencia", "Depósito", "Baño"],
+    "images": [
+      "https://images.unsplash.com/photo-1441986300917-64674bd600d8?q=80&w=1600&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=1600&auto=format&fit=crop"
+    ],
+    "coordinates": { "lat": -32.94, "lng": -60.64 },
+    "featured": false,
+    "status": "disponible"
+  },
+  {
+    "id": "sg-006",
+    "slug": "casa-quinta-roldan",
+    "title": "Casa quinta con parque en Roldán",
+    "operation": "venta",
+    "type": "casa",
+    "price": 275000,
+    "currency": "USD",
+    "location": {
+      "city": "Roldán",
+      "neighborhood": "Zona Quintas",
+      "address": "Aprox. Camino a Ibarlucea"
+    },
+    "specs": {
+      "bedrooms": 5,
+      "bathrooms": 4,
+      "totalArea": 3500,
+      "coveredArea": 320,
+      "garages": 4,
+      "yearBuilt": 2015
+    },
+    "description": "Espectacular casa quinta con amplio parque forestado, pileta, quincho y cancha de tenis. Ideal para quienes buscan tranquilidad sin resignar cercanía a la ciudad. Excelente para reuniones familiares y de negocios.",
+    "features": ["Parque 3500m²", "Cancha de tenis", "Quincho", "Pileta", "Pozo de agua"],
+    "images": [
+      "https://images.unsplash.com/photo-1600585154526-990dced4db0d?q=80&w=1600&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1580587771525-78b9dba3b914?q=80&w=1600&auto=format&fit=crop"
+    ],
+    "coordinates": { "lat": -32.88, "lng": -60.9 },
+    "featured": true,
+    "status": "disponible"
+  },
+  {
+    "id": "sg-007",
+    "slug": "departamento-alquiler-pichincha",
+    "title": "Departamento en alquiler en Pichincha",
+    "operation": "alquiler",
+    "type": "departamento",
+    "price": 850,
+    "currency": "USD",
+    "location": {
+      "city": "Rosario",
+      "neighborhood": "Pichincha",
+      "address": "Aprox. San Juan al 2200"
+    },
+    "specs": {
+      "bedrooms": 2,
+      "bathrooms": 2,
+      "totalArea": 75,
+      "coveredArea": 70,
+      "garages": 1,
+      "yearBuilt": 2020
+    },
+    "description": "Moderno departamento a estrenar en el corazón de Pichincha, zona gastronómica y cultural en pleno crecimiento. Excelente iluminación natural, cocina equipada y balcón. Edificio con amenities.",
+    "features": ["A estrenar", "Amenities", "Balcón", "Zona gastronómica"],
+    "images": [
+      "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?q=80&w=1600&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1493809842364-78817add7ffb?q=80&w=1600&auto=format&fit=crop"
+    ],
+    "coordinates": { "lat": -32.94, "lng": -60.66 },
+    "featured": false,
+    "status": "disponible"
+  },
+  {
+    "id": "sg-008",
+    "slug": "casa-reservada-arroyito",
+    "title": "Casa con vista al parque en Arroyito",
+    "operation": "venta",
+    "type": "casa",
+    "price": 410000,
+    "currency": "USD",
+    "location": {
+      "city": "Rosario",
+      "neighborhood": "Arroyito",
+      "address": "Aprox. Av. Carrasco al 300"
+    },
+    "specs": {
+      "bedrooms": 4,
+      "bathrooms": 3,
+      "totalArea": 380,
+      "coveredArea": 260,
+      "garages": 2,
+      "yearBuilt": 2018
+    },
+    "description": "Elegante propiedad frente al parque, con vistas privilegiadas y acceso directo a la costa. Living con doble altura, cocina gourmet y dependencia de servicio independiente. Una oportunidad única en una de las zonas más cotizadas de la ciudad.",
+    "features": ["Frente al parque", "Cocina gourmet", "Doble altura", "Dependencia de servicio"],
+    "images": [
+      "https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?q=80&w=1600&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1600566752355-35792bedcfea?q=80&w=1600&auto=format&fit=crop"
+    ],
+    "coordinates": { "lat": -32.91, "lng": -60.63 },
+    "featured": false,
+    "status": "reservada"
+  }
+]
