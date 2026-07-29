@@ -2,11 +2,31 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import SectionDivider from "@/components/SectionDivider";
 import { WhatsAppInline } from "@/components/WhatsAppButton";
+import { SITE_URL } from "@/lib/seo";
+
+const TITLE = "Sobre mí";
+const DESCRIPTION =
+  "Conocé la trayectoria de Sonia García, asesora inmobiliaria de CENTURY 21 Seven en Asunción, Paraguay.";
 
 export const metadata: Metadata = {
-  title: "Sobre mí",
-  description:
-    "Conocé la trayectoria de Sonia García, asesora inmobiliaria de CENTURY 21 Seven en Asunción, Paraguay.",
+  title: TITLE,
+  description: DESCRIPTION,
+  alternates: { canonical: `${SITE_URL}/sobre-mi` },
+  openGraph: {
+    title: TITLE,
+    description: DESCRIPTION,
+    url: `${SITE_URL}/sobre-mi`,
+    siteName: "Seven by Sonia García",
+    locale: "es_PY",
+    type: "profile",
+    images: [{ url: "/images/sonia-garcia.jpg", width: 1200, height: 1500 }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: TITLE,
+    description: DESCRIPTION,
+    images: ["/images/sonia-garcia.jpg"],
+  },
 };
 
 const VALUE_TAGS = [

@@ -5,11 +5,36 @@ import PropertyCard from "@/components/PropertyCard";
 import FilterSidebar from "@/components/FilterSidebar";
 import SortSelect from "@/components/SortSelect";
 import type { OperationType, PropertyType, SortOption } from "@/lib/types";
+import { SITE_URL } from "@/lib/seo";
+
+const TITLE = "Propiedades";
+const DESCRIPTION =
+  "Propiedades seleccionadas en venta y alquiler en Asunción y Central, Paraguay.";
 
 export const metadata: Metadata = {
-  title: "Propiedades",
-  description:
-    "Propiedades seleccionadas en venta y alquiler en Asunción y Central, Paraguay.",
+  title: TITLE,
+  description: DESCRIPTION,
+  alternates: { canonical: `${SITE_URL}/propiedades` },
+  openGraph: {
+    title: TITLE,
+    description: DESCRIPTION,
+    url: `${SITE_URL}/propiedades`,
+    siteName: "Seven by Sonia García",
+    locale: "es_PY",
+    type: "website",
+    images: [
+      {
+        url: "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?q=80&w=1200&auto=format&fit=crop",
+        width: 1200,
+        height: 800,
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: TITLE,
+    description: DESCRIPTION,
+  },
 };
 
 interface PageProps {

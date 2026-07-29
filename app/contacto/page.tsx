@@ -1,11 +1,31 @@
 import type { Metadata } from "next";
 import SectionDivider from "@/components/SectionDivider";
 import ContactForm from "./ContactForm";
+import { SITE_URL } from "@/lib/seo";
+
+const TITLE = "Contacto";
+const DESCRIPTION =
+  "Contactá a Sonia García, asesora de CENTURY 21 Seven, para consultas sobre propiedades en venta y alquiler en Asunción y Central.";
 
 export const metadata: Metadata = {
-  title: "Contacto",
-  description:
-    "Contactá a Sonia García, asesora de CENTURY 21 Seven, para consultas sobre propiedades en venta y alquiler en Asunción y Central.",
+  title: TITLE,
+  description: DESCRIPTION,
+  alternates: { canonical: `${SITE_URL}/contacto` },
+  openGraph: {
+    title: TITLE,
+    description: DESCRIPTION,
+    url: `${SITE_URL}/contacto`,
+    siteName: "Seven by Sonia García",
+    locale: "es_PY",
+    type: "website",
+    images: [{ url: "/images/sonia-garcia.jpg", width: 1200, height: 1500 }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: TITLE,
+    description: DESCRIPTION,
+    images: ["/images/sonia-garcia.jpg"],
+  },
 };
 
 export default function ContactPage() {

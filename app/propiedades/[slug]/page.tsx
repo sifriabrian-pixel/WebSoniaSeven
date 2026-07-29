@@ -12,7 +12,7 @@ import PropertyCard from "@/components/PropertyCard";
 import SectionDivider from "@/components/SectionDivider";
 import { WhatsAppInline } from "@/components/WhatsAppButton";
 import JsonLd from "@/components/JsonLd";
-import { propertyJsonLd } from "@/lib/seo";
+import { propertyJsonLd, SITE_URL } from "@/lib/seo";
 
 interface PageProps {
   params: { slug: string };
@@ -29,9 +29,28 @@ export async function generateMetadata({
   const property = await getPropertyBySlug(params.slug);
   if (!property) return {};
 
+  const description = `${property.title} en ${property.location.neighborhood}, ${property.location.city}. ${formatPrice(property.price, property.currency)}.`;
+  const url = `${SITE_URL}/propiedades/${property.slug}`;
+
   return {
     title: property.title,
-    description: `${property.title} en ${property.location.neighborhood}, ${property.location.city}. ${formatPrice(property.price, property.currency)}.`,
+    description,
+    alternates: { canonical: url },
+    openGraph: {
+      title: property.title,
+      description,
+      url,
+      siteName: "Seven by Sonia García",
+      locale: "es_PY",
+      type: "website",
+      images: [{ url: property.images[0], width: 1200, height: 900 }],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: property.title,
+      description,
+      images: [property.images[0]],
+    },
   };
 }
 
