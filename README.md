@@ -84,6 +84,7 @@ Para activarlo:
 - `content/copy-lujo-archivado.md` — copy de posicionamiento "de lujo" archivado (ver sección de abajo)
 - `lib/data.ts` — funciones de acceso a datos (`getAllProperties`, `getFeaturedProperties`, `getPropertyBySlug`, `getFilteredProperties`, `getZones`, etc.). Todas son `async` a propósito: el día que se migre a una base de datos (Supabase), solo hay que reescribir el cuerpo de estas funciones para que consulten la base en vez del JSON — el resto del sitio no cambia.
 - `lib/blog.ts` — lectura de artículos del blog
+- `lib/content.ts` — copy configurable: años de trayectoria y testimonios
 - `lib/seo.ts` — datos del agente (Sonia) y URL del sitio para JSON-LD/Open Graph
 - `lib/types.ts` — tipos TypeScript compartidos
 
@@ -111,7 +112,7 @@ El proyecto está deployado en Vercel: `web-sonia-seven.vercel.app`. Cualquier p
 Estos valores quedaron como placeholder a la espera de datos reales de Brian:
 
 - **Años de trayectoria:** hoy el sitio no muestra un número de años (se sacó "amplia trayectoria" y no se reemplazó por una cifra porque no la tenemos confirmada). Configurable en `lib/content.ts` → `YEARS_OF_EXPERIENCE` en cuanto Brian confirme el número.
-- **Testimonios con foto:** la estructura ya soporta `avatar` y `sourceUrl` (link a la reseña real, si existe) en `app/page.tsx` → `TESTIMONIALS`. Hoy los 3 testimonios son de ejemplo, sin foto ni link — reemplazar por reseñas reales cuando estén disponibles.
+- **Testimonios con foto:** la estructura ya soporta `avatar` (ruta de imagen) y `sourceUrl` (link a la reseña real, si existe) en `lib/content.ts` → `TESTIMONIALS`. Hoy los 3 testimonios son de ejemplo, sin foto ni link — reemplazar por reseñas reales cuando estén disponibles.
 - **Formspree ID:** falta crear el formulario en Formspree y configurar `NEXT_PUBLIC_FORMSPREE_ID` en Vercel (ver sección de arriba). Hasta entonces el bloque de novedades muestra un mensaje neutro en vez de un formulario roto.
 - **Copy final de posicionamiento:** confirmar con Brian/Sonia si "asesoramiento inmobiliario integral" es el mensaje definitivo, o si conviene depurar el catálogo a solo propiedades premium y volver a "real estate de lujo" (copy archivado en `content/copy-lujo-archivado.md`).
 - **Fotos y datos reales de propiedades:** las 8 propiedades de `data/properties.json` siguen siendo de ejemplo (fotos de stock de Unsplash, ubicaciones aproximadas). Reemplazar por el catálogo real de Sonia.
