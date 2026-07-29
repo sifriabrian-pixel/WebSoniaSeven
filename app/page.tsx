@@ -5,6 +5,7 @@ import PropertyCard from "@/components/PropertyCard";
 import SectionDivider from "@/components/SectionDivider";
 import { WhatsAppInline } from "@/components/WhatsAppButton";
 import NewsletterForm from "@/components/NewsletterForm";
+import { YEARS_OF_EXPERIENCE } from "@/lib/content";
 
 const VALUES = [
   {
@@ -156,7 +157,10 @@ export default async function HomePage() {
             <h2 className="font-serif text-3xl">Sobre Sonia</h2>
             <SectionDivider center={false} />
             <p className="mt-4 text-cream/80">
-              Contadora y Analista Financiera con amplia trayectoria
+              Contadora y Analista Financiera con{" "}
+              {YEARS_OF_EXPERIENCE
+                ? `+${YEARS_OF_EXPERIENCE} años de trayectoria`
+                : "amplia trayectoria"}{" "}
               gerenciando negocios en distintos rubros. Esa formación le da
               una ventaja única: entender el valor real de cada inversión
               inmobiliaria, no solo sus metros cuadrados. Trabaja con{" "}
@@ -165,6 +169,14 @@ export default async function HomePage() {
               propiedades en Asunción y Central.
             </p>
             <div className="mt-8 flex gap-10">
+              {YEARS_OF_EXPERIENCE && (
+                <div>
+                  <p className="font-serif text-3xl text-gold">
+                    +{YEARS_OF_EXPERIENCE}
+                  </p>
+                  <p className="text-sm text-cream/70">Años de trayectoria</p>
+                </div>
+              )}
               <div>
                 <p className="font-serif text-3xl text-gold">+50</p>
                 <p className="text-sm text-cream/70">Propiedades gestionadas</p>

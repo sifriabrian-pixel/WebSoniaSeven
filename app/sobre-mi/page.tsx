@@ -3,6 +3,7 @@ import Image from "next/image";
 import SectionDivider from "@/components/SectionDivider";
 import { WhatsAppInline } from "@/components/WhatsAppButton";
 import { SITE_URL } from "@/lib/seo";
+import { YEARS_OF_EXPERIENCE } from "@/lib/content";
 
 const TITLE = "Sobre mí";
 const DESCRIPTION =
@@ -61,7 +62,10 @@ export default function AboutPage() {
           </p>
           <SectionDivider center={false} />
           <p className="mt-4 leading-relaxed text-text/80">
-            Soy Contadora y Analista Financiera con amplia trayectoria
+            Soy Contadora y Analista Financiera con{" "}
+            {YEARS_OF_EXPERIENCE
+              ? `+${YEARS_OF_EXPERIENCE} años de trayectoria`
+              : "amplia trayectoria"}{" "}
             gerenciando negocios en distintos rubros. Esa formación me da una
             ventaja única: entiendo el valor real de cada inversión
             inmobiliaria, no solo sus metros cuadrados.
@@ -91,6 +95,14 @@ export default function AboutPage() {
         <h2 className="font-serif text-2xl text-navy">Trayectoria</h2>
         <SectionDivider center={false} />
         <div className="mt-8 grid grid-cols-1 gap-8 sm:grid-cols-3">
+          {YEARS_OF_EXPERIENCE && (
+            <div className="bg-white p-6">
+              <p className="font-serif text-3xl text-gold">
+                +{YEARS_OF_EXPERIENCE}
+              </p>
+              <p className="mt-1 text-sm text-text/70">Años de trayectoria</p>
+            </div>
+          )}
           <div className="bg-white p-6">
             <p className="font-serif text-3xl text-gold">+50</p>
             <p className="mt-1 text-sm text-text/70">
