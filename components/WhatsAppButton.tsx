@@ -1,4 +1,4 @@
-const WHATSAPP_NUMBER = "5493410000000"; // TODO: reemplazar por el número real de Sonia
+const WHATSAPP_NUMBER = "595971561916";
 
 export function buildWhatsAppLink(message: string) {
   return `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;

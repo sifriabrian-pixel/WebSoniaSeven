@@ -5,7 +5,7 @@ import ContactForm from "./ContactForm";
 export const metadata: Metadata = {
   title: "Contacto",
   description:
-    "Contactá a Sonia García para consultas sobre propiedades premium en venta y alquiler.",
+    "Contactá a Sonia García, asesora de CENTURY 21 Seven, para consultas sobre propiedades en venta y alquiler en Asunción y Central.",
 };
 
 export default function ContactPage() {
@@ -26,9 +26,13 @@ export default function ContactPage() {
           <h2 className="font-serif text-xl text-navy">Datos de contacto</h2>
           <SectionDivider center={false} />
           <ul className="space-y-3 text-sm text-text/80">
-            <li>Rosario, Santa Fe, Argentina</li>
-            <li>hola@sevensoniagarcia.com</li>
-            <li>+54 9 341 000-0000</li>
+            <li>
+              República de Siria esq. Ayala Velázquez, Las Mercedes,
+              Asunción, Paraguay
+            </li>
+            <li>sonia.garcia@c21.com.py</li>
+            <li>+595 971 561916</li>
+            <li>Lunes a Viernes · 9:00 a 18:00 hs</li>
           </ul>
 
           <h2 className="mt-10 font-serif text-xl text-navy">
@@ -41,7 +45,7 @@ export default function ContactPage() {
               width="100%"
               height="100%"
               loading="lazy"
-              src="https://www.google.com/maps?q=Rosario,Santa+Fe,Argentina&z=11&output=embed"
+              src="https://www.google.com/maps?q=Asunci%C3%B3n,Paraguay&z=11&output=embed"
             />
           </div>
         </div>

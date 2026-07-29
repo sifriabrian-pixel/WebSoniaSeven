@@ -6,8 +6,16 @@ import { WhatsAppInline } from "@/components/WhatsAppButton";
 export const metadata: Metadata = {
   title: "Sobre mí",
   description:
-    "Conocé la trayectoria de Sonia García, especialista en real estate de lujo en Rosario.",
+    "Conocé la trayectoria de Sonia García, asesora inmobiliaria de CENTURY 21 Seven en Asunción, Paraguay.",
 };
+
+const VALUE_TAGS = [
+  "Responsabilidad",
+  "Honestidad",
+  "Ética Profesional",
+  "Análisis Financiero",
+  "Inversiones",
+];
 
 export default function AboutPage() {
   return (
@@ -15,10 +23,10 @@ export default function AboutPage() {
       <section className="mx-auto grid max-w-6xl items-center gap-12 px-6 md:grid-cols-2">
         <div className="relative aspect-[4/5] w-full overflow-hidden">
           <Image
-            src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?q=80&w=1200&auto=format&fit=crop"
+            src="/images/sonia-garcia.jpg"
             alt="Sonia García"
             fill
-            className="object-cover"
+            className="object-cover object-top"
           />
         </div>
         <div>
@@ -28,21 +36,34 @@ export default function AboutPage() {
           <h1 className="mt-2 font-serif text-3xl text-navy">
             Sonia García
           </h1>
+          <p className="mt-1 text-sm text-text/60">
+            Asesora Inmobiliaria · CENTURY 21 Seven · Asunción, Paraguay
+          </p>
           <SectionDivider center={false} />
           <p className="mt-4 leading-relaxed text-text/80">
-            Fundé Seven con una convicción simple: comprar o vender una
-            propiedad de alto valor merece un servicio a la altura. Después
-            de más de diez años trabajando en el segmento premium del mercado
-            inmobiliario de Rosario y la región, construí una red de
-            contactos y un método de trabajo que hoy me permite acompañar a
-            cada cliente de forma personalizada, discreta y transparente.
+            Soy Contadora y Analista Financiera con amplia trayectoria
+            gerenciando negocios en distintos rubros. Esa formación me da una
+            ventaja única: entiendo el valor real de cada inversión
+            inmobiliaria, no solo sus metros cuadrados.
           </p>
           <p className="mt-4 leading-relaxed text-text/80">
-            Mi especialización abarca casas y departamentos de categoría,
-            terrenos en barrios cerrados y propiedades comerciales
-            estratégicas. Creo firmemente que cada operación inmobiliaria es
-            también una decisión de vida, y la trato con esa importancia.
+            Trabajo con CENTURY 21 Seven en Las Mercedes, Asunción, donde
+            brindo asesoramiento en compra, venta e inversión de propiedades
+            en Paraguay, con foco en Asunción y Central. Te acompaño con
+            responsabilidad, honestidad y ética profesional en cada
+            operación.
           </p>
+
+          <div className="mt-6 flex flex-wrap gap-2">
+            {VALUE_TAGS.map((tag) => (
+              <span
+                key={tag}
+                className="border border-gold/40 bg-gold/10 px-4 py-2 text-xs tracking-wide text-navy"
+              >
+                {tag}
+              </span>
+            ))}
+          </div>
         </div>
       </section>
 
@@ -51,21 +72,19 @@ export default function AboutPage() {
         <SectionDivider center={false} />
         <div className="mt-8 grid grid-cols-1 gap-8 sm:grid-cols-3">
           <div className="bg-white p-6">
-            <p className="font-serif text-3xl text-gold">10+</p>
+            <p className="font-serif text-3xl text-gold">+50</p>
             <p className="mt-1 text-sm text-text/70">
-              Años de experiencia en real estate de lujo
+              Propiedades gestionadas
             </p>
           </div>
           <div className="bg-white p-6">
-            <p className="font-serif text-3xl text-gold">150+</p>
-            <p className="mt-1 text-sm text-text/70">
-              Propiedades vendidas y alquiladas
-            </p>
+            <p className="font-serif text-3xl text-gold">C21</p>
+            <p className="mt-1 text-sm text-text/70">Oficial Seven</p>
           </div>
           <div className="bg-white p-6">
-            <p className="font-serif text-3xl text-gold">98%</p>
+            <p className="font-serif text-3xl text-gold">ASU</p>
             <p className="mt-1 text-sm text-text/70">
-              Clientes que recomiendan el servicio
+              Asunción y Central, Paraguay
             </p>
           </div>
         </div>

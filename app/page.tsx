@@ -32,7 +32,7 @@ const TESTIMONIALS = [
   },
   {
     quote:
-      "Su conocimiento del mercado premium de Rosario es inigualable. Recomendable sin dudarlo.",
+      "Su conocimiento del mercado inmobiliario de Asunción es inigualable. Recomendable sin dudarlo.",
     author: "M. Etchevarne",
   },
   {
@@ -88,11 +88,11 @@ export default async function HomePage() {
               defaultValue=""
             >
               <option value="">Zona</option>
-              <option value="Fisherton">Fisherton</option>
-              <option value="Puerto Norte">Puerto Norte</option>
-              <option value="Centro">Centro</option>
-              <option value="Arroyito">Arroyito</option>
-              <option value="Pichincha">Pichincha</option>
+              <option value="Mcal. López">Mcal. López</option>
+              <option value="Herrera">Herrera</option>
+              <option value="Las Mercedes">Las Mercedes</option>
+              <option value="Villa Morra">Villa Morra</option>
+              <option value="Central">Central</option>
             </select>
             <select
               name="maxPrice"
@@ -144,33 +144,36 @@ export default async function HomePage() {
         <div className="mx-auto grid max-w-6xl items-center gap-12 md:grid-cols-2">
           <div className="relative aspect-[4/5] w-full overflow-hidden">
             <Image
-              src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?q=80&w=1200&auto=format&fit=crop"
+              src="/images/sonia-garcia.jpg"
               alt="Sonia García"
               fill
-              className="object-cover"
+              className="object-cover object-top"
             />
           </div>
           <div>
             <h2 className="font-serif text-3xl">Sobre Sonia</h2>
             <SectionDivider center={false} />
             <p className="mt-4 text-cream/80">
-              Con más de una década de trayectoria en el mercado inmobiliario
-              premium, Sonia García fundó Seven para ofrecer un servicio de
-              real estate a la altura de sus clientes más exigentes: atención
-              personalizada, discreción y resultados.
+              Contadora y Analista Financiera con amplia trayectoria
+              gerenciando negocios en distintos rubros. Esa formación le da
+              una ventaja única: entender el valor real de cada inversión
+              inmobiliaria, no solo sus metros cuadrados. Trabaja con{" "}
+              <strong className="text-gold">CENTURY 21 Seven</strong> en Las
+              Mercedes, Asunción, asesorando en compra, venta e inversión de
+              propiedades en Asunción y Central.
             </p>
             <div className="mt-8 flex gap-10">
               <div>
-                <p className="font-serif text-3xl text-gold">10+</p>
-                <p className="text-sm text-cream/70">Años de experiencia</p>
+                <p className="font-serif text-3xl text-gold">+50</p>
+                <p className="text-sm text-cream/70">Propiedades gestionadas</p>
               </div>
               <div>
-                <p className="font-serif text-3xl text-gold">150+</p>
-                <p className="text-sm text-cream/70">Propiedades vendidas</p>
+                <p className="font-serif text-3xl text-gold">C21</p>
+                <p className="text-sm text-cream/70">Oficial Seven</p>
               </div>
               <div>
-                <p className="font-serif text-3xl text-gold">98%</p>
-                <p className="text-sm text-cream/70">Clientes satisfechos</p>
+                <p className="font-serif text-3xl text-gold">ASU</p>
+                <p className="text-sm text-cream/70">Paraguay</p>
               </div>
             </div>
             <Link

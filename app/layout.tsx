@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     template: "%s | Seven by Sonia García",
   },
   description:
-    "Propiedades excepcionales para clientes excepcionales. Real estate de lujo con Sonia García.",
+    "Propiedades excepcionales para clientes excepcionales. Sonia García, asesora inmobiliaria de CENTURY 21 Seven en Asunción, Paraguay.",
 };
 
 export default function RootLayout({

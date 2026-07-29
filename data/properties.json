@@ -1,253 +1,251 @@
 [
   {
     "id": "sg-001",
-    "slug": "casa-moderna-fisherton",
-    "title": "Casa moderna en Fisherton",
+    "slug": "casa-mcal-lopez-asuncion",
+    "title": "Casa de categoría en Mcal. López",
     "operation": "venta",
     "type": "casa",
-    "price": 320000,
+    "price": 340000,
     "currency": "USD",
     "location": {
-      "city": "Rosario",
-      "neighborhood": "Fisherton",
-      "address": "Aprox. Av. Ovidio Lagos al 5000"
+      "city": "Asunción",
+      "neighborhood": "Mcal. López",
+      "address": "Aprox. Av. Mcal. López y Juan de Salazar"
     },
     "specs": {
-      "bedrooms": 4,
-      "bathrooms": 3,
-      "totalArea": 450,
-      "coveredArea": 280,
+      "bedrooms": 5,
+      "bathrooms": 4,
+      "totalArea": 580,
+      "coveredArea": 420,
       "garages": 2,
-      "yearBuilt": 2019
+      "yearBuilt": 2020
     },
-    "description": "Impecable casa de diseño contemporáneo ubicada en uno de los sectores más exclusivos de Fisherton. Amplios espacios de living-comedor integrados con la cocina, grandes ventanales que conectan el interior con el parque y la pileta. Suite principal con vestidor y baño en suite. Terminaciones de primera calidad en todos los ambientes.",
-    "features": ["Pileta", "Quincho", "Seguridad 24hs", "Parque", "Cocina integrada", "Suite principal"],
+    "description": "Amplia propiedad de diseño contemporáneo en uno de los barrios más cotizados de Asunción. Living-comedor integrado, cocina equipada, suite principal con vestidor y jardín con pileta. Ideal para familias que buscan categoría y ubicación central.",
+    "features": ["Pileta", "Quincho", "Jardín", "Seguridad", "Suite principal"],
     "images": [
       "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?q=80&w=1600&auto=format&fit=crop",
       "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=1600&auto=format&fit=crop",
       "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1600&auto=format&fit=crop"
     ],
-    "coordinates": { "lat": -32.9, "lng": -60.7 },
+    "coordinates": { "lat": -25.2965, "lng": -57.5738 },
     "featured": true,
     "status": "disponible"
   },
   {
     "id": "sg-002",
-    "slug": "departamento-premium-puerto-norte",
-    "title": "Departamento premium en Puerto Norte",
+    "slug": "departamento-herrera-asuncion",
+    "title": "Departamento en Herrera",
     "operation": "venta",
     "type": "departamento",
-    "price": 210000,
+    "price": 82000,
     "currency": "USD",
     "location": {
-      "city": "Rosario",
-      "neighborhood": "Puerto Norte",
-      "address": "Aprox. Bv. Oroño al 1200"
+      "city": "Asunción",
+      "neighborhood": "Herrera",
+      "address": "Aprox. Del Maestro y Concejal Vargas"
     },
     "specs": {
-      "bedrooms": 3,
-      "bathrooms": 2,
-      "totalArea": 130,
-      "coveredArea": 115,
+      "bedrooms": 1,
+      "bathrooms": 1,
+      "totalArea": 46,
+      "coveredArea": 46,
       "garages": 1,
-      "yearBuilt": 2021
+      "yearBuilt": 2022
     },
-    "description": "Departamento de categoría con vista al río, en uno de los desarrollos más buscados de Puerto Norte. Amenities de primer nivel: piscina, sum, gimnasio y seguridad las 24hs. Living comedor con balcón terraza, cocina con isla y dos suites con vestidor.",
-    "features": ["Vista al río", "Amenities", "Balcón terraza", "Cochera cubierta", "Baulera"],
+    "description": "Moderno monoambiente a estrenar en edificio con amenities, muy cerca del microcentro. Excelente opción para inversión o primera vivienda, con cochera cubierta incluida.",
+    "features": ["A estrenar", "Amenities", "Cochera cubierta", "Seguridad 24hs"],
     "images": [
       "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?q=80&w=1600&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?q=80&w=1600&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?q=80&w=1600&auto=format&fit=crop"
+      "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?q=80&w=1600&auto=format&fit=crop"
     ],
-    "coordinates": { "lat": -32.93, "lng": -60.65 },
+    "coordinates": { "lat": -25.3096, "lng": -57.5645 },
     "featured": true,
     "status": "disponible"
   },
   {
     "id": "sg-003",
-    "slug": "terreno-exclusivo-funes",
-    "title": "Terreno exclusivo en Funes",
+    "slug": "terreno-fernando-de-la-mora",
+    "title": "Terreno en Fernando de la Mora",
     "operation": "venta",
     "type": "terreno",
-    "price": 95000,
+    "price": 260000,
     "currency": "USD",
     "location": {
-      "city": "Funes",
-      "neighborhood": "Barrio Cerrado Funes Hills",
-      "address": "Aprox. Ruta 9 km 8"
+      "city": "Fernando de la Mora",
+      "neighborhood": "Central",
+      "address": "Aprox. Cañada del Carmen c/ Pedro Guetto"
     },
     "specs": {
       "bedrooms": 0,
       "bathrooms": 0,
-      "totalArea": 800,
+      "totalArea": 1000,
       "coveredArea": 0,
       "garages": 0,
       "yearBuilt": 0
     },
-    "description": "Lote premium dentro de barrio cerrado con excelente forestación, seguridad perimetral y todos los servicios. Ideal para construir la casa de tus sueños en un entorno tranquilo y exclusivo a minutos de Rosario.",
-    "features": ["Barrio cerrado", "Servicios completos", "Seguridad perimetral", "Forestación"],
+    "description": "Excelente lote urbano sobre calle asfaltada, con todos los servicios disponibles. Ideal para desarrollo residencial o inversión en una de las zonas de mayor crecimiento del Área Metropolitana de Asunción.",
+    "features": ["Servicios completos", "Calle asfaltada", "Zona en crecimiento"],
     "images": [
       "https://images.unsplash.com/photo-1500382017468-9049fed747ef?q=80&w=1600&auto=format&fit=crop",
       "https://images.unsplash.com/photo-1500076656116-558758c991c1?q=80&w=1600&auto=format&fit=crop"
     ],
-    "coordinates": { "lat": -32.92, "lng": -60.81 },
+    "coordinates": { "lat": -25.3459, "lng": -57.5386 },
     "featured": false,
     "status": "disponible"
   },
   {
     "id": "sg-004",
-    "slug": "penthouse-vista-rio",
-    "title": "Penthouse con vista panorámica al río",
+    "slug": "duplex-san-lorenzo",
+    "title": "Dúplex a estrenar en San Lorenzo",
     "operation": "venta",
-    "type": "departamento",
-    "price": 550000,
+    "type": "casa",
+    "price": 135000,
     "currency": "USD",
     "location": {
-      "city": "Rosario",
-      "neighborhood": "Puerto Norte",
-      "address": "Aprox. Av. de la Costa al 800"
+      "city": "San Lorenzo",
+      "neighborhood": "Central",
+      "address": "Aprox. Av. Teniente Rodi y G. Zubizarreta"
     },
     "specs": {
-      "bedrooms": 4,
-      "bathrooms": 4,
-      "totalArea": 280,
-      "coveredArea": 220,
-      "garages": 3,
-      "yearBuilt": 2022
+      "bedrooms": 3,
+      "bathrooms": 3,
+      "totalArea": 185,
+      "coveredArea": 150,
+      "garages": 2,
+      "yearBuilt": 2019
     },
-    "description": "Exclusivo penthouse dúplex con terraza privada, pileta propia y vista 360° al río Paraná. Diseño de autor, materiales importados y automatización domótica en todos los ambientes. Una propiedad única para quienes buscan lo mejor.",
-    "features": ["Pileta privada", "Terraza propia", "Domótica", "Vista panorámica", "3 cocheras"],
+    "description": "Dúplex de diseño moderno en condominio cerrado, con amplios espacios integrados, patio y dos cocheras cubiertas. A pocos minutos de la Universidad Nacional de Asunción y accesos principales.",
+    "features": ["Condominio cerrado", "Patio", "2 cocheras", "Seguridad"],
     "images": [
-      "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=1600&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1613977257363-707ba9348227?q=80&w=1600&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?q=80&w=1600&auto=format&fit=crop"
+      "https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?q=80&w=1600&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1600566752355-35792bedcfea?q=80&w=1600&auto=format&fit=crop"
     ],
-    "coordinates": { "lat": -32.93, "lng": -60.64 },
+    "coordinates": { "lat": -25.34, "lng": -57.508 },
     "featured": true,
-    "status": "exclusiva"
+    "status": "disponible"
   },
   {
     "id": "sg-005",
-    "slug": "local-comercial-centro",
-    "title": "Local comercial en pleno centro",
-    "operation": "alquiler",
-    "type": "comercial",
-    "price": 1800,
+    "slug": "departamento-las-mercedes",
+    "title": "Departamento en Las Mercedes",
+    "operation": "venta",
+    "type": "departamento",
+    "price": 98000,
     "currency": "USD",
     "location": {
-      "city": "Rosario",
-      "neighborhood": "Centro",
-      "address": "Aprox. Córdoba al 900"
+      "city": "Asunción",
+      "neighborhood": "Las Mercedes",
+      "address": "Aprox. Intendentes Militares y 9 de Septiembre"
     },
     "specs": {
-      "bedrooms": 0,
+      "bedrooms": 1,
       "bathrooms": 1,
-      "totalArea": 180,
-      "coveredArea": 180,
-      "garages": 0,
-      "yearBuilt": 2005
+      "totalArea": 65,
+      "coveredArea": 65,
+      "garages": 1,
+      "yearBuilt": 2021
     },
-    "description": "Local a la calle en una de las arterias comerciales más transitadas del centro rosarino. Amplia vidriera, excelente visibilidad y gran afluencia de público. Ideal para marcas o franquicias.",
-    "features": ["Vidriera amplia", "Alta afluencia", "Depósito", "Baño"],
+    "description": "Departamento luminoso en el corazón de Las Mercedes, a pasos de la oficina de Seven. Excelente ubicación, edificio con amenities y balcón con vista a la ciudad.",
+    "features": ["Amenities", "Balcón", "Excelente ubicación"],
     "images": [
-      "https://images.unsplash.com/photo-1441986300917-64674bd600d8?q=80&w=1600&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=1600&auto=format&fit=crop"
+      "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?q=80&w=1600&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1493809842364-78817add7ffb?q=80&w=1600&auto=format&fit=crop"
     ],
-    "coordinates": { "lat": -32.94, "lng": -60.64 },
+    "coordinates": { "lat": -25.2965, "lng": -57.5877 },
     "featured": false,
     "status": "disponible"
   },
   {
     "id": "sg-006",
-    "slug": "casa-quinta-roldan",
-    "title": "Casa quinta con parque en Roldán",
+    "slug": "casa-luque",
+    "title": "Casa familiar en Luque",
     "operation": "venta",
     "type": "casa",
-    "price": 275000,
+    "price": 92000,
     "currency": "USD",
     "location": {
-      "city": "Roldán",
-      "neighborhood": "Zona Quintas",
-      "address": "Aprox. Camino a Ibarlucea"
+      "city": "Luque",
+      "neighborhood": "Central",
+      "address": "Aprox. Virgen del Rosario esq. Chovoreca"
     },
     "specs": {
-      "bedrooms": 5,
-      "bathrooms": 4,
-      "totalArea": 3500,
-      "coveredArea": 320,
-      "garages": 4,
-      "yearBuilt": 2015
+      "bedrooms": 3,
+      "bathrooms": 2,
+      "totalArea": 220,
+      "coveredArea": 150,
+      "garages": 1,
+      "yearBuilt": 2016
     },
-    "description": "Espectacular casa quinta con amplio parque forestado, pileta, quincho y cancha de tenis. Ideal para quienes buscan tranquilidad sin resignar cercanía a la ciudad. Excelente para reuniones familiares y de negocios.",
-    "features": ["Parque 3500m²", "Cancha de tenis", "Quincho", "Pileta", "Pozo de agua"],
+    "description": "Casa amplia en zona residencial tranquila de Luque, ideal para familias. Living-comedor integrado, cocina independiente, patio con parrilla y espacio para ampliar.",
+    "features": ["Patio con parrilla", "Zona residencial", "Espacio para ampliar"],
     "images": [
       "https://images.unsplash.com/photo-1600585154526-990dced4db0d?q=80&w=1600&auto=format&fit=crop",
       "https://images.unsplash.com/photo-1580587771525-78b9dba3b914?q=80&w=1600&auto=format&fit=crop"
     ],
-    "coordinates": { "lat": -32.88, "lng": -60.9 },
+    "coordinates": { "lat": -25.2699, "lng": -57.4919 },
     "featured": true,
     "status": "disponible"
   },
   {
     "id": "sg-007",
-    "slug": "departamento-alquiler-pichincha",
-    "title": "Departamento en alquiler en Pichincha",
+    "slug": "departamento-alquiler-villa-morra",
+    "title": "Departamento en alquiler en Villa Morra",
     "operation": "alquiler",
     "type": "departamento",
-    "price": 850,
+    "price": 900,
     "currency": "USD",
     "location": {
-      "city": "Rosario",
-      "neighborhood": "Pichincha",
-      "address": "Aprox. San Juan al 2200"
+      "city": "Asunción",
+      "neighborhood": "Villa Morra",
+      "address": "Aprox. Av. San Martín y Molas López"
     },
     "specs": {
       "bedrooms": 2,
       "bathrooms": 2,
-      "totalArea": 75,
-      "coveredArea": 70,
+      "totalArea": 80,
+      "coveredArea": 75,
       "garages": 1,
       "yearBuilt": 2020
     },
-    "description": "Moderno departamento a estrenar en el corazón de Pichincha, zona gastronómica y cultural en pleno crecimiento. Excelente iluminación natural, cocina equipada y balcón. Edificio con amenities.",
-    "features": ["A estrenar", "Amenities", "Balcón", "Zona gastronómica"],
+    "description": "Departamento a estrenar en una de las zonas gastronómicas y comerciales más buscadas de Asunción. Cocina equipada, balcón terraza y amenities de primer nivel.",
+    "features": ["A estrenar", "Amenities", "Zona gastronómica", "Balcón terraza"],
     "images": [
-      "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?q=80&w=1600&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1493809842364-78817add7ffb?q=80&w=1600&auto=format&fit=crop"
+      "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?q=80&w=1600&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?q=80&w=1600&auto=format&fit=crop"
     ],
-    "coordinates": { "lat": -32.94, "lng": -60.66 },
+    "coordinates": { "lat": -25.3007, "lng": -57.5789 },
     "featured": false,
     "status": "disponible"
   },
   {
     "id": "sg-008",
-    "slug": "casa-reservada-arroyito",
-    "title": "Casa con vista al parque en Arroyito",
+    "slug": "casa-quinta-mariano-roque-alonso",
+    "title": "Casa quinta en Mariano Roque Alonso",
     "operation": "venta",
     "type": "casa",
-    "price": 410000,
+    "price": 270000,
     "currency": "USD",
     "location": {
-      "city": "Rosario",
-      "neighborhood": "Arroyito",
-      "address": "Aprox. Av. Carrasco al 300"
+      "city": "Mariano Roque Alonso",
+      "neighborhood": "Central",
+      "address": "Aprox. Ruta Transchaco km 15"
     },
     "specs": {
       "bedrooms": 4,
       "bathrooms": 3,
-      "totalArea": 380,
-      "coveredArea": 260,
-      "garages": 2,
-      "yearBuilt": 2018
+      "totalArea": 1200,
+      "coveredArea": 300,
+      "garages": 3,
+      "yearBuilt": 2015
     },
-    "description": "Elegante propiedad frente al parque, con vistas privilegiadas y acceso directo a la costa. Living con doble altura, cocina gourmet y dependencia de servicio independiente. Una oportunidad única en una de las zonas más cotizadas de la ciudad.",
-    "features": ["Frente al parque", "Cocina gourmet", "Doble altura", "Dependencia de servicio"],
+    "description": "Espectacular casa quinta con amplio parque, pileta y quincho, ideal para descanso familiar sin resignar cercanía a Asunción. Excelente para reuniones y eventos.",
+    "features": ["Parque", "Pileta", "Quincho", "3 cocheras"],
     "images": [
-      "https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?q=80&w=1600&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1600566752355-35792bedcfea?q=80&w=1600&auto=format&fit=crop"
+      "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=1600&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1613977257363-707ba9348227?q=80&w=1600&auto=format&fit=crop"
     ],
-    "coordinates": { "lat": -32.91, "lng": -60.63 },
+    "coordinates": { "lat": -25.1998, "lng": -57.5307 },
     "featured": false,
-    "status": "reservada"
+    "status": "disponible"
   }
 ]

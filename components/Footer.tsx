@@ -12,7 +12,7 @@ export default function Footer() {
           </div>
           <SectionDivider center={false} />
           <p className="max-w-xs text-sm text-cream/70">
-            Real estate de lujo en Rosario y alrededores. Propiedades
+            Real estate de lujo en Asunción y Central, Paraguay. Propiedades
             excepcionales para clientes excepcionales.
           </p>
         </div>
@@ -50,9 +50,12 @@ export default function Footer() {
             CONTACTO
           </h4>
           <ul className="space-y-2 text-sm text-cream/80">
-            <li>Rosario, Santa Fe, Argentina</li>
-            <li>hola@sevensoniagarcia.com</li>
-            <li>+54 9 341 000-0000</li>
+            <li>
+              República de Siria esq. Ayala Velázquez, Las Mercedes,
+              Asunción, Paraguay
+            </li>
+            <li>sonia.garcia@c21.com.py</li>
+            <li>+595 971 561916</li>
           </ul>
         </div>
       </div>
