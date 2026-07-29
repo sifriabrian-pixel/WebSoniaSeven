@@ -1,10 +1,12 @@
 import type { MetadataRoute } from "next";
 import { getAllProperties, getZones } from "@/lib/data";
+import { getBlogPosts } from "@/lib/blog";
 import { SITE_URL } from "@/lib/seo";
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const properties = await getAllProperties();
   const zones = await getZones();
+  const posts = await getBlogPosts();
 
   const staticRoutes: MetadataRoute.Sitemap = [
     { url: SITE_URL, changeFrequency: "weekly", priority: 1 },
@@ -29,5 +31,17 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     priority: 0.7,
   }));
 
-  return [...staticRoutes, ...propertyRoutes, ...zoneRoutes];
+  const blogRoutes: MetadataRoute.Sitemap =
+    posts.length > 0
+      ? [
+          { url: `${SITE_URL}/blog`, changeFrequency: "weekly", priority: 0.6 },
+          ...posts.map((p) => ({
+            url: `${SITE_URL}/blog/${p.slug}`,
+            changeFrequency: "monthly" as const,
+            priority: 0.5,
+          })),
+        ]
+      : [];
+
+  return [...staticRoutes, ...propertyRoutes, ...zoneRoutes, ...blogRoutes];
 }
