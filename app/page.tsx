@@ -5,7 +5,7 @@ import PropertyCard from "@/components/PropertyCard";
 import SectionDivider from "@/components/SectionDivider";
 import { WhatsAppInline } from "@/components/WhatsAppButton";
 import NewsletterForm from "@/components/NewsletterForm";
-import { YEARS_OF_EXPERIENCE } from "@/lib/content";
+import { YEARS_OF_EXPERIENCE, TESTIMONIALS } from "@/lib/content";
 
 const VALUES = [
   {
@@ -23,24 +23,6 @@ const VALUES = [
   {
     title: "Resultados comprobados",
     text: "Trayectoria y operaciones exitosas en cada tipo de propiedad.",
-  },
-];
-
-const TESTIMONIALS = [
-  {
-    quote:
-      "Sonia nos acompañó en todo el proceso con una profesionalidad excepcional. Encontramos la casa perfecta en tiempo récord.",
-    author: "Familia Gómez",
-  },
-  {
-    quote:
-      "Su conocimiento del mercado inmobiliario de Asunción es inigualable. Recomendable sin dudarlo.",
-    author: "M. Etchevarne",
-  },
-  {
-    quote:
-      "Vendimos nuestra propiedad al mejor precio posible gracias a su estrategia y su red de contactos.",
-    author: "L. Bertolino",
   },
 ];
 
@@ -233,9 +215,32 @@ export default async function HomePage() {
               <div key={t.author} className="bg-white p-6 shadow-sm">
                 <p className="font-serif text-3xl text-gold">&ldquo;</p>
                 <p className="text-sm italic text-text/80">{t.quote}</p>
-                <p className="mt-4 text-xs tracking-wide text-navy">
-                  — {t.author}
-                </p>
+                <div className="mt-4 flex items-center justify-center gap-3">
+                  {t.avatar && (
+                    <div className="relative h-9 w-9 overflow-hidden rounded-full">
+                      <Image
+                        src={t.avatar}
+                        alt={t.author}
+                        fill
+                        className="object-cover"
+                      />
+                    </div>
+                  )}
+                  {t.sourceUrl ? (
+                    <a
+                      href={t.sourceUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-xs tracking-wide text-navy underline hover:text-gold"
+                    >
+                      — {t.author}
+                    </a>
+                  ) : (
+                    <p className="text-xs tracking-wide text-navy">
+                      — {t.author}
+                    </p>
+                  )}
+                </div>
               </div>
             ))}
           </div>
