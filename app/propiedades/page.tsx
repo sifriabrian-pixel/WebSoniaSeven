@@ -5,7 +5,7 @@ import PropertyCard from "@/components/PropertyCard";
 import FilterSidebar from "@/components/FilterSidebar";
 import SortSelect from "@/components/SortSelect";
 import type { OperationType, PropertyType, SortOption } from "@/lib/types";
-import { SITE_URL } from "@/lib/seo";
+import { SITE_URL, SITE_NAME } from "@/lib/seo";
 
 const TITLE = "Propiedades";
 const DESCRIPTION =
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     title: TITLE,
     description: DESCRIPTION,
     url: `${SITE_URL}/propiedades`,
-    siteName: "Seven by Sonia García",
+    siteName: SITE_NAME,
     locale: "es_PY",
     type: "website",
     images: [

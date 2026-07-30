@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { getBlogPosts, getBlogPostBySlug } from "@/lib/blog";
 import SectionDivider from "@/components/SectionDivider";
-import { SITE_URL } from "@/lib/seo";
+import { SITE_URL, SITE_NAME } from "@/lib/seo";
 
 interface PageProps {
   params: { slug: string };
@@ -27,7 +27,7 @@ export async function generateMetadata({
       title: post.title,
       description: post.excerpt,
       url: `${SITE_URL}/blog/${post.slug}`,
-      siteName: "Seven by Sonia García",
+      siteName: SITE_NAME,
       locale: "es_PY",
       type: "article",
     },

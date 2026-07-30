@@ -12,7 +12,7 @@ import PropertyCard from "@/components/PropertyCard";
 import SectionDivider from "@/components/SectionDivider";
 import { WhatsAppInline } from "@/components/WhatsAppButton";
 import JsonLd from "@/components/JsonLd";
-import { propertyJsonLd, SITE_URL } from "@/lib/seo";
+import { propertyJsonLd, SITE_URL, SITE_NAME } from "@/lib/seo";
 
 interface PageProps {
   params: { slug: string };
@@ -40,7 +40,7 @@ export async function generateMetadata({
       title: property.title,
       description,
       url,
-      siteName: "Seven by Sonia García",
+      siteName: SITE_NAME,
       locale: "es_PY",
       type: "website",
       images: [{ url: property.images[0], width: 1200, height: 900 }],

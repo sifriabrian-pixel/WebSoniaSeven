@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useEffect, useState } from "react";
+import Wordmark from "@/components/Wordmark";
 
 const links = [
   { href: "/", label: "Inicio" },
@@ -31,10 +32,7 @@ export default function Navbar() {
     >
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
         <Link href="/" className="text-cream">
-          <div className="font-serif text-xl tracking-[0.3em]">SEVEN</div>
-          <div className="text-[10px] tracking-[0.4em] text-gold">
-            SONIA GARCIA
-          </div>
+          <Wordmark size="sm" />
         </Link>
 
         <nav className="hidden gap-8 md:flex">

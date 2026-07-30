@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { getBlogPosts } from "@/lib/blog";
 import SectionDivider from "@/components/SectionDivider";
-import { SITE_URL } from "@/lib/seo";
+import { SITE_URL, SITE_NAME } from "@/lib/seo";
 
 const TITLE = "Blog";
 const DESCRIPTION =
@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     title: TITLE,
     description: DESCRIPTION,
     url: `${SITE_URL}/blog`,
-    siteName: "Seven by Sonia García",
+    siteName: SITE_NAME,
     locale: "es_PY",
     type: "website",
   },

@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import SectionDivider from "@/components/SectionDivider";
 import { WhatsAppInline } from "@/components/WhatsAppButton";
-import { SITE_URL } from "@/lib/seo";
+import { SITE_URL, SITE_NAME } from "@/lib/seo";
 import { YEARS_OF_EXPERIENCE } from "@/lib/content";
 
 const TITLE = "Sobre mí";
@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     title: TITLE,
     description: DESCRIPTION,
     url: `${SITE_URL}/sobre-mi`,
-    siteName: "Seven by Sonia García",
+    siteName: SITE_NAME,
     locale: "es_PY",
     type: "profile",
     images: [{ url: "/images/sonia-garcia.jpg", width: 1200, height: 1500 }],

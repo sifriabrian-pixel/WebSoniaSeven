@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import SectionDivider from "@/components/SectionDivider";
 import ContactForm from "./ContactForm";
-import { SITE_URL } from "@/lib/seo";
+import { SITE_URL, SITE_NAME } from "@/lib/seo";
 
 const TITLE = "Contacto";
 const DESCRIPTION =
@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     title: TITLE,
     description: DESCRIPTION,
     url: `${SITE_URL}/contacto`,
-    siteName: "Seven by Sonia García",
+    siteName: SITE_NAME,
     locale: "es_PY",
     type: "website",
     images: [{ url: "/images/sonia-garcia.jpg", width: 1200, height: 1500 }],

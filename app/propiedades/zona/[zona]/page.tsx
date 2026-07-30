@@ -8,7 +8,7 @@ import {
 } from "@/lib/data";
 import PropertyCard from "@/components/PropertyCard";
 import SectionDivider from "@/components/SectionDivider";
-import { SITE_URL } from "@/lib/seo";
+import { SITE_URL, SITE_NAME } from "@/lib/seo";
 
 interface PageProps {
   params: { zona: string };
@@ -37,7 +37,7 @@ export async function generateMetadata({
       title,
       description,
       url,
-      siteName: "Seven by Sonia García",
+      siteName: SITE_NAME,
       locale: "es_PY",
       type: "website",
     },

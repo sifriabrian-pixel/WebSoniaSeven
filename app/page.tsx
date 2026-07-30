@@ -5,7 +5,9 @@ import PropertyCard from "@/components/PropertyCard";
 import SectionDivider from "@/components/SectionDivider";
 import { WhatsAppInline } from "@/components/WhatsAppButton";
 import NewsletterForm from "@/components/NewsletterForm";
+import Wordmark from "@/components/Wordmark";
 import { YEARS_OF_EXPERIENCE, TESTIMONIALS } from "@/lib/content";
+import { SITE_NAME } from "@/lib/seo";
 
 const VALUES = [
   {
@@ -44,10 +46,7 @@ export default async function HomePage() {
         <div className="absolute inset-0 z-[1] bg-gradient-to-b from-[#1C2841]/60 via-[#1C2841]/30 to-[#1C2841]/70" />
 
         <div className="relative z-10 mx-auto flex max-w-3xl flex-col items-center px-6 text-center text-cream">
-          <div className="font-serif text-2xl tracking-[0.35em]">SEVEN</div>
-          <div className="mb-6 text-xs tracking-[0.5em] text-gold [text-shadow:0_1px_3px_rgba(0,0,0,0.4)]">
-            SONIA GARCIA
-          </div>
+          <Wordmark size="lg" className="mb-6" />
           <h1 className="font-serif text-3xl leading-tight md:text-5xl">
             Asesoramiento inmobiliario integral en Asunción y Central
           </h1>
@@ -186,7 +185,7 @@ export default async function HomePage() {
       <section className="mx-auto max-w-7xl px-6 py-24">
         <div className="text-center">
           <h2 className="font-serif text-3xl text-navy">
-            Por qué elegir Seven by Sonia García
+            Por qué elegir {SITE_NAME}
           </h2>
           <SectionDivider />
         </div>

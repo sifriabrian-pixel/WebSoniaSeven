@@ -1,16 +1,15 @@
 import Link from "next/link";
 import SectionDivider from "@/components/SectionDivider";
 import NewsletterForm from "@/components/NewsletterForm";
+import Wordmark from "@/components/Wordmark";
+import { SITE_NAME } from "@/lib/seo";
 
 export default function Footer() {
   return (
     <footer className="bg-navy-dark px-6 py-14 text-cream">
       <div className="mx-auto grid max-w-7xl gap-10 md:grid-cols-4">
         <div>
-          <div className="font-serif text-xl tracking-[0.3em]">SEVEN</div>
-          <div className="text-[10px] tracking-[0.4em] text-gold">
-            SONIA GARCIA
-          </div>
+          <Wordmark size="sm" />
           <SectionDivider center={false} />
           <p className="max-w-xs text-sm text-cream/70">
             Asesoramiento inmobiliario integral en Asunción y Central,
@@ -72,8 +71,8 @@ export default function Footer() {
       </div>
 
       <div className="mx-auto mt-12 max-w-7xl border-t border-cream/10 pt-6 text-xs text-cream/50">
-        © {new Date().getFullYear()} Seven by Sonia García. Todos los
-        derechos reservados.
+        © {new Date().getFullYear()} {SITE_NAME}. Todos los derechos
+        reservados.
       </div>
     </footer>
   );
