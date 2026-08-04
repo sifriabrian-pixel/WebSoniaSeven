@@ -106,27 +106,40 @@ export default async function PropertyDetailPage({ params }: PageProps) {
             <p
               className={`mt-4 font-serif text-3xl ${isSold ? "text-text/40 line-through" : "text-gold"}`}
             >
+              {property.priceFrom && (
+                <span className="text-base text-text/50">Desde </span>
+              )}
               {formatPrice(property.price, property.currency)}
               {property.operation === "alquiler" && (
                 <span className="text-base text-text/50"> /mes</span>
               )}
             </p>
+            {property.priceFrom && (
+              <p className="mt-1 text-sm text-text/50">
+                Precio de la unidad más económica disponible. Consultá por
+                las demás tipologías.
+              </p>
+            )}
 
             <SectionDivider center={false} />
 
-            <h2 className="mt-8 font-serif text-xl text-navy">
-              Características
-            </h2>
-            <div className="mt-4 grid grid-cols-2 gap-4 sm:grid-cols-3">
-              {specLabels.map(({ key, label }) => (
-                <div key={key} className="bg-white p-4">
-                  <p className="text-xs text-text/50">{label}</p>
-                  <p className="mt-1 font-serif text-lg text-navy">
-                    {property.specs[key] || "—"}
-                  </p>
+            {Object.values(property.specs).some((v) => v > 0) && (
+              <>
+                <h2 className="mt-8 font-serif text-xl text-navy">
+                  Características
+                </h2>
+                <div className="mt-4 grid grid-cols-2 gap-4 sm:grid-cols-3">
+                  {specLabels.map(({ key, label }) => (
+                    <div key={key} className="bg-white p-4">
+                      <p className="text-xs text-text/50">{label}</p>
+                      <p className="mt-1 font-serif text-lg text-navy">
+                        {property.specs[key] || "—"}
+                      </p>
+                    </div>
+                  ))}
                 </div>
-              ))}
-            </div>
+              </>
+            )}
 
             <h2 className="mt-10 font-serif text-xl text-navy">
               Descripción

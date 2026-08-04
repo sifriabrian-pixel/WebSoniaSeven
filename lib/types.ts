@@ -38,6 +38,8 @@ export interface Property {
   coordinates: PropertyCoordinates;
   featured: boolean;
   status: PropertyStatus;
+  /** true si `price` es un valor "desde" (proyecto con varias tipologías), no el precio de una unidad específica. */
+  priceFrom?: boolean;
 }
 
 export interface PropertyFilters {

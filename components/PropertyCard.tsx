@@ -46,19 +46,31 @@ export default function PropertyCard({ property }: { property: Property }) {
         <p
           className={`mt-3 font-serif text-xl ${isSold ? "text-text/40 line-through" : "text-gold"}`}
         >
+          {property.priceFrom && (
+            <span className="text-sm text-text/50">Desde </span>
+          )}
           {formatPrice(property.price, property.currency)}
           {property.operation === "alquiler" && (
             <span className="text-sm text-text/50"> /mes</span>
           )}
         </p>
 
-        {property.type !== "terreno" && (
-          <div className="mt-3 flex gap-4 text-xs text-text/60">
-            <span>{property.specs.bedrooms} dorm.</span>
-            <span>{property.specs.bathrooms} baños</span>
-            <span>{property.specs.totalArea} m²</span>
-          </div>
-        )}
+        {property.type !== "terreno" &&
+          (property.specs.bedrooms > 0 ||
+            property.specs.bathrooms > 0 ||
+            property.specs.totalArea > 0) && (
+            <div className="mt-3 flex gap-4 text-xs text-text/60">
+              {property.specs.bedrooms > 0 && (
+                <span>{property.specs.bedrooms} dorm.</span>
+              )}
+              {property.specs.bathrooms > 0 && (
+                <span>{property.specs.bathrooms} baños</span>
+              )}
+              {property.specs.totalArea > 0 && (
+                <span>{property.specs.totalArea} m²</span>
+              )}
+            </div>
+          )}
       </div>
     </Link>
   );

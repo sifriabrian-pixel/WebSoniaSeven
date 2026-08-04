@@ -1,251 +1,169 @@
 [
   {
-    "id": "sg-001",
-    "slug": "casa-mcal-lopez-asuncion",
-    "title": "Casa de categoría en Mcal. López",
-    "operation": "venta",
-    "type": "casa",
-    "price": 340000,
-    "currency": "USD",
-    "location": {
-      "city": "Asunción",
-      "neighborhood": "Mcal. López",
-      "address": "Aprox. Av. Mcal. López y Juan de Salazar"
-    },
-    "specs": {
-      "bedrooms": 5,
-      "bathrooms": 4,
-      "totalArea": 580,
-      "coveredArea": 420,
-      "garages": 2,
-      "yearBuilt": 2020
-    },
-    "description": "Amplia propiedad de diseño contemporáneo en uno de los barrios más cotizados de Asunción. Living-comedor integrado, cocina equipada, suite principal con vestidor y jardín con pileta. Ideal para familias que buscan categoría y ubicación central.",
-    "features": ["Pileta", "Quincho", "Jardín", "Seguridad", "Suite principal"],
-    "images": [
-      "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?q=80&w=1600&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=1600&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1600&auto=format&fit=crop"
-    ],
-    "coordinates": { "lat": -25.2965, "lng": -57.5738 },
-    "featured": true,
-    "status": "nueva"
-  },
-  {
-    "id": "sg-002",
-    "slug": "departamento-herrera-asuncion",
-    "title": "Departamento en Herrera",
+    "id": "sr-recoleta",
+    "slug": "afianza-recoleta",
+    "title": "Afianza Recoleta #8",
     "operation": "venta",
     "type": "departamento",
-    "price": 82000,
+    "price": 52000,
     "currency": "USD",
+    "priceFrom": true,
     "location": {
       "city": "Asunción",
-      "neighborhood": "Herrera",
-      "address": "Aprox. Del Maestro y Concejal Vargas"
-    },
-    "specs": {
-      "bedrooms": 1,
-      "bathrooms": 1,
-      "totalArea": 46,
-      "coveredArea": 46,
-      "garages": 1,
-      "yearBuilt": 2022
-    },
-    "description": "Moderno monoambiente a estrenar en edificio con amenities, muy cerca del microcentro. Excelente opción para inversión o primera vivienda, con cochera cubierta incluida.",
-    "features": ["A estrenar", "Amenities", "Cochera cubierta", "Seguridad 24hs"],
-    "images": [
-      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?q=80&w=1600&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?q=80&w=1600&auto=format&fit=crop"
-    ],
-    "coordinates": { "lat": -25.3096, "lng": -57.5645 },
-    "featured": true,
-    "status": "disponible"
-  },
-  {
-    "id": "sg-003",
-    "slug": "terreno-fernando-de-la-mora",
-    "title": "Terreno en Fernando de la Mora",
-    "operation": "venta",
-    "type": "terreno",
-    "price": 260000,
-    "currency": "USD",
-    "location": {
-      "city": "Fernando de la Mora",
-      "neighborhood": "Fernando de la Mora",
-      "address": "Aprox. Cañada del Carmen c/ Pedro Guetto"
+      "neighborhood": "Recoleta",
+      "address": "Dr. Emilio Hassler entre San Roque González de Santacruz y Rodolfo Zott"
     },
     "specs": {
       "bedrooms": 0,
       "bathrooms": 0,
-      "totalArea": 1000,
+      "totalArea": 0,
       "coveredArea": 0,
       "garages": 0,
       "yearBuilt": 0
     },
-    "description": "Excelente lote urbano sobre calle asfaltada, con todos los servicios disponibles. Ideal para desarrollo residencial o inversión en una de las zonas de mayor crecimiento del Área Metropolitana de Asunción.",
-    "features": ["Servicios completos", "Calle asfaltada", "Zona en crecimiento"],
-    "images": [
-      "https://images.unsplash.com/photo-1500382017468-9049fed747ef?q=80&w=1600&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1500076656116-558758c991c1?q=80&w=1600&auto=format&fit=crop"
+    "description": "Departamentos en pozo a 100 metros del Shopping Mariscal, en el corazón de Recoleta. Afianza Recoleta #8 ofrece monoambientes y unidades de 1, 2 y 3 dormitorios, pensadas tanto para vivir como para invertir, con alta demanda de alquiler temporario (proyecto Airbnb Friendly). Entrega estimada mayo 2028, con financiación propia hasta 18 meses sin interés.",
+    "features": [
+      "Piscina con solárium",
+      "Gimnasio equipado",
+      "Quincho y terraza social",
+      "Sala de reuniones",
+      "Cerraduras inteligentes",
+      "Airbnb Friendly",
+      "Financiación hasta 18 meses sin interés"
     ],
-    "coordinates": { "lat": -25.3459, "lng": -57.5386 },
-    "featured": false,
-    "status": "disponible"
-  },
-  {
-    "id": "sg-004",
-    "slug": "duplex-san-lorenzo",
-    "title": "Dúplex a estrenar en San Lorenzo",
-    "operation": "venta",
-    "type": "casa",
-    "price": 135000,
-    "currency": "USD",
-    "location": {
-      "city": "San Lorenzo",
-      "neighborhood": "San Lorenzo",
-      "address": "Aprox. Av. Teniente Rodi y G. Zubizarreta"
-    },
-    "specs": {
-      "bedrooms": 3,
-      "bathrooms": 3,
-      "totalArea": 185,
-      "coveredArea": 150,
-      "garages": 2,
-      "yearBuilt": 2019
-    },
-    "description": "Dúplex de diseño moderno en condominio cerrado, con amplios espacios integrados, patio y dos cocheras cubiertas. A pocos minutos de la Universidad Nacional de Asunción y accesos principales.",
-    "features": ["Condominio cerrado", "Patio", "2 cocheras", "Seguridad"],
     "images": [
-      "https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?q=80&w=1600&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1600566752355-35792bedcfea?q=80&w=1600&auto=format&fit=crop"
+      "/images/properties/afianza-recoleta-1.jpg",
+      "/images/properties/afianza-recoleta-2.jpg",
+      "/images/properties/afianza-recoleta-3.jpg",
+      "/images/properties/afianza-recoleta-4.jpg",
+      "/images/properties/afianza-recoleta-5.jpg",
+      "/images/properties/afianza-recoleta-6.jpg"
     ],
-    "coordinates": { "lat": -25.34, "lng": -57.508 },
+    "coordinates": { "lat": -25.2960285, "lng": -57.5826379 },
     "featured": true,
     "status": "nueva"
   },
   {
-    "id": "sg-005",
-    "slug": "departamento-las-mercedes",
-    "title": "Departamento en Las Mercedes",
+    "id": "sr-italia-ph",
+    "slug": "penthouse-edificio-italia",
+    "title": "Penthouse en Edificio Italia",
     "operation": "venta",
     "type": "departamento",
-    "price": 98000,
+    "price": 110000,
     "currency": "USD",
     "location": {
       "city": "Asunción",
-      "neighborhood": "Las Mercedes",
-      "address": "Aprox. Intendentes Militares y 9 de Septiembre"
-    },
-    "specs": {
-      "bedrooms": 1,
-      "bathrooms": 1,
-      "totalArea": 65,
-      "coveredArea": 65,
-      "garages": 1,
-      "yearBuilt": 2021
-    },
-    "description": "Departamento luminoso en el corazón de Las Mercedes, a pasos de la oficina de Seven. Excelente ubicación, edificio con amenities y balcón con vista a la ciudad.",
-    "features": ["Amenities", "Balcón", "Excelente ubicación"],
-    "images": [
-      "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?q=80&w=1600&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1493809842364-78817add7ffb?q=80&w=1600&auto=format&fit=crop"
-    ],
-    "coordinates": { "lat": -25.2965, "lng": -57.5877 },
-    "featured": false,
-    "status": "reservada"
-  },
-  {
-    "id": "sg-006",
-    "slug": "casa-luque",
-    "title": "Casa familiar en Luque",
-    "operation": "venta",
-    "type": "casa",
-    "price": 92000,
-    "currency": "USD",
-    "location": {
-      "city": "Luque",
-      "neighborhood": "Luque",
-      "address": "Aprox. Virgen del Rosario esq. Chovoreca"
+      "neighborhood": "La Encarnación",
+      "address": "Edificio Italia, Piso 12"
     },
     "specs": {
       "bedrooms": 3,
       "bathrooms": 2,
-      "totalArea": 220,
-      "coveredArea": 150,
+      "totalArea": 0,
+      "coveredArea": 0,
       "garages": 1,
-      "yearBuilt": 2016
+      "yearBuilt": 0
     },
-    "description": "Casa amplia en zona residencial tranquila de Luque, ideal para familias. Living-comedor integrado, cocina independiente, patio con parrilla y espacio para ampliar.",
-    "features": ["Patio con parrilla", "Zona residencial", "Espacio para ampliar"],
-    "images": [
-      "https://images.unsplash.com/photo-1600585154526-990dced4db0d?q=80&w=1600&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1580587771525-78b9dba3b914?q=80&w=1600&auto=format&fit=crop"
+    "description": "Amplio penthouse en el último piso (12°) del Edificio Italia, con vista panorámica a la Bahía de Asunción y la Costanera. Tres dormitorios (uno de servicio con baño privado), sala-comedor luminosa, dos balcones, cocina independiente y lavadero separado. Doble acceso —principal y de servicio— y una cochera en planta baja.",
+    "features": [
+      "Vista panorámica a la Bahía y la Costanera",
+      "2 balcones",
+      "Dormitorio de servicio con baño privado",
+      "Doble acceso (principal y servicio)",
+      "Ascensor",
+      "1 cochera"
     ],
-    "coordinates": { "lat": -25.2699, "lng": -57.4919 },
+    "images": [
+      "/images/properties/italia-penthouse-1.jpg",
+      "/images/properties/italia-penthouse-2.jpg",
+      "/images/properties/italia-penthouse-3.jpg",
+      "/images/properties/italia-penthouse-4.jpg",
+      "/images/properties/italia-penthouse-5.jpg"
+    ],
+    "coordinates": { "lat": -25.2977, "lng": -57.6355 },
     "featured": true,
     "status": "disponible"
   },
   {
-    "id": "sg-007",
-    "slug": "departamento-alquiler-villa-morra",
-    "title": "Departamento en alquiler en Villa Morra",
-    "operation": "alquiler",
-    "type": "departamento",
-    "price": 900,
+    "id": "sr-terreno-sacramento",
+    "slug": "terreno-santisimo-sacramento",
+    "title": "Terreno sobre Av. Santísimo Sacramento",
+    "operation": "venta",
+    "type": "terreno",
+    "price": 445500,
     "currency": "USD",
+    "location": {
+      "city": "Asunción",
+      "neighborhood": "Trinidad",
+      "address": "Santísimo Sacramento N° 995 esq. Roque Centurión Miranda"
+    },
+    "specs": {
+      "bedrooms": 0,
+      "bathrooms": 0,
+      "totalArea": 620,
+      "coveredArea": 0,
+      "garages": 0,
+      "yearBuilt": 0
+    },
+    "description": "Terreno irregular de 620 m² sobre Avenida Santísimo Sacramento, en el barrio Trinidad, con fácil acceso a las principales avenidas de Asunción. Ideal para desarrolladores e inversores por su ubicación estratégica en una zona en constante crecimiento.",
+    "features": [
+      "620 m² totales",
+      "Frente de 15 m",
+      "Terreno irregular",
+      "Ideal para desarrollo residencial"
+    ],
+    "images": [
+      "/images/properties/terreno-sacramento-1.jpg",
+      "/images/properties/terreno-sacramento-2.jpg",
+      "/images/properties/terreno-sacramento-3.jpg",
+      "/images/properties/terreno-sacramento-4.jpg",
+      "/images/properties/terreno-sacramento-5.jpg"
+    ],
+    "coordinates": { "lat": -25.283, "lng": -57.618 },
+    "featured": false,
+    "status": "disponible"
+  },
+  {
+    "id": "sr-altea-gaulle",
+    "slug": "altea-de-gaulle",
+    "title": "Altea de Gaulle",
+    "operation": "venta",
+    "type": "departamento",
+    "price": 56160,
+    "currency": "USD",
+    "priceFrom": true,
     "location": {
       "city": "Asunción",
       "neighborhood": "Villa Morra",
-      "address": "Aprox. Av. San Martín y Molas López"
+      "address": "Charles De Gaulle 732"
     },
     "specs": {
-      "bedrooms": 2,
-      "bathrooms": 2,
-      "totalArea": 80,
-      "coveredArea": 75,
-      "garages": 1,
-      "yearBuilt": 2020
+      "bedrooms": 0,
+      "bathrooms": 0,
+      "totalArea": 0,
+      "coveredArea": 0,
+      "garages": 0,
+      "yearBuilt": 0
     },
-    "description": "Departamento a estrenar en una de las zonas gastronómicas y comerciales más buscadas de Asunción. Cocina equipada, balcón terraza y amenities de primer nivel.",
-    "features": ["A estrenar", "Amenities", "Zona gastronómica", "Balcón terraza"],
-    "images": [
-      "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?q=80&w=1600&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?q=80&w=1600&auto=format&fit=crop"
+    "description": "Nuevo desarrollo de Altea Desarrollos sobre Charles de Gaulle, en una de las zonas de mayor crecimiento de Asunción. Unidades de monoambiente, 1 y 2 dormitorios (30 a 67 m²), con rooftop de piscina, sauna, spa, gimnasio y quincho, además de cerraduras y conectividad smart home en cada unidad. Cochera opcional desde USD 15.000.",
+    "features": [
+      "Piscina y solárium en rooftop",
+      "Sauna y spa",
+      "Gimnasio",
+      "Quincho y sala de juegos",
+      "Cerraduras y conectividad smart home",
+      "Cochera opcional"
     ],
-    "coordinates": { "lat": -25.3007, "lng": -57.5789 },
-    "featured": false,
+    "images": [
+      "/images/properties/altea-gaulle-1.webp",
+      "/images/properties/altea-gaulle-2.webp",
+      "/images/properties/altea-gaulle-3.webp",
+      "/images/properties/altea-gaulle-4.webp",
+      "/images/properties/altea-gaulle-5.webp",
+      "/images/properties/altea-gaulle-6.webp"
+    ],
+    "coordinates": { "lat": -25.2985, "lng": -57.5735 },
+    "featured": true,
     "status": "nueva"
-  },
-  {
-    "id": "sg-008",
-    "slug": "casa-quinta-mariano-roque-alonso",
-    "title": "Casa quinta en Mariano Roque Alonso",
-    "operation": "venta",
-    "type": "casa",
-    "price": 270000,
-    "currency": "USD",
-    "location": {
-      "city": "Mariano Roque Alonso",
-      "neighborhood": "Mariano Roque Alonso",
-      "address": "Aprox. Ruta Transchaco km 15"
-    },
-    "specs": {
-      "bedrooms": 4,
-      "bathrooms": 3,
-      "totalArea": 1200,
-      "coveredArea": 300,
-      "garages": 3,
-      "yearBuilt": 2015
-    },
-    "description": "Espectacular casa quinta con amplio parque, pileta y quincho, ideal para descanso familiar sin resignar cercanía a Asunción. Excelente para reuniones y eventos.",
-    "features": ["Parque", "Pileta", "Quincho", "3 cocheras"],
-    "images": [
-      "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=1600&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1613977257363-707ba9348227?q=80&w=1600&auto=format&fit=crop"
-    ],
-    "coordinates": { "lat": -25.1998, "lng": -57.5307 },
-    "featured": false,
-    "status": "vendida"
   }
 ]
