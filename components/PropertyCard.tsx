@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import type { Property } from "@/lib/types";
 import { formatPrice } from "@/lib/data";
+import DataPlaceholder from "@/components/DataPlaceholder";
 
 const statusBadges: Partial<
   Record<Property["status"], { label: string; className: string }>
@@ -11,9 +12,16 @@ const statusBadges: Partial<
   vendida: { label: "Vendida", className: "bg-gray-800 text-white" },
 };
 
-export default function PropertyCard({ property }: { property: Property }) {
+export default function PropertyCard({
+  property,
+  mode = "vivir",
+}: {
+  property: Property;
+  mode?: "vivir" | "invertir";
+}) {
   const badge = statusBadges[property.status];
   const isSold = property.status === "vendida";
+  const investment = property.investment;
 
   return (
     <Link
@@ -55,7 +63,34 @@ export default function PropertyCard({ property }: { property: Property }) {
           )}
         </p>
 
-        {property.type !== "terreno" &&
+        {mode === "invertir" && investment ? (
+          <div className="mt-3 space-y-1 text-xs text-text/70">
+            <p>
+              ↳ Rentabilidad alquiler est.:{" "}
+              {investment.rentalYieldPct !== null ? (
+                <span className="text-navy">
+                  {investment.rentalYieldPct}% anual
+                </span>
+              ) : (
+                <DataPlaceholder suffix="% anual" />
+              )}
+            </p>
+            <p>
+              ↳ Plusvalía zona (24m):{" "}
+              {investment.zoneAppreciationPct !== null ? (
+                <span className="text-navy">
+                  +{investment.zoneAppreciationPct}%
+                </span>
+              ) : (
+                <DataPlaceholder suffix="%" />
+              )}
+            </p>
+            <p>
+              ↳ Tipo: <span className="text-navy">{investment.dealType}</span>
+            </p>
+          </div>
+        ) : (
+          property.type !== "terreno" &&
           (property.specs.bedrooms > 0 ||
             property.specs.bathrooms > 0 ||
             property.specs.totalArea > 0) && (
@@ -70,7 +105,8 @@ export default function PropertyCard({ property }: { property: Property }) {
                 <span>{property.specs.totalArea} m²</span>
               )}
             </div>
-          )}
+          )
+        )}
       </div>
     </Link>
   );
