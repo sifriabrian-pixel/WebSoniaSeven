@@ -44,7 +44,7 @@ export interface Testimonial {
 export const TESTIMONIALS: Testimonial[] = [
   {
     quote:
-      "Sonia nos acompañó en todo el proceso con una profesionalidad excepcional. Encontramos la casa perfecta en tiempo récord.",
+      "Sonia nos ayudó a identificar la zona correcta antes de invertir. Hoy esa propiedad se revalorizó [DATO]% en menos de un año.",
     author: "Familia Gómez",
   },
   {
@@ -54,7 +54,7 @@ export const TESTIMONIALS: Testimonial[] = [
   },
   {
     quote:
-      "Vendimos nuestra propiedad al mejor precio posible gracias a su estrategia y su red de contactos.",
+      "Su análisis de mercado nos permitió vender al mejor precio posible en [DATO] días, cuando el promedio de la zona es de [DATO].",
     author: "L. Bertolino",
   },
 ];
