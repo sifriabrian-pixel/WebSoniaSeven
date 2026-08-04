@@ -1,6 +1,6 @@
-# Seven by Sonia García
+# Seven Inmobiliaria
 
-Sitio web de Seven by Sonia García, asesora inmobiliaria de CENTURY 21 Seven en Asunción y Central, Paraguay. Construido con Next.js 14 (App Router), TypeScript y Tailwind CSS.
+Sitio web de Seven Inmobiliaria, de Sonia García (asesora de CENTURY 21 Seven) en Asunción y Central, Paraguay. Construido con Next.js 14 (App Router), TypeScript y Tailwind CSS.
 
 ## Cómo correr el proyecto
 
@@ -24,6 +24,7 @@ Todas las propiedades viven en [`data/properties.json`](data/properties.json). C
   "type": "casa",             // "casa" | "departamento" | "terreno" | "comercial"
   "price": 250000,
   "currency": "USD",
+  "priceFrom": false,          // true si es un proyecto con varias tipologías y el precio es "desde"
   "location": {
     "city": "Luque",
     "neighborhood": "Luque",
@@ -53,6 +54,8 @@ Notas sobre `status`:
 - `"vendida"` se oculta automáticamente del listado, la home y "propiedades similares" — pero la ficha sigue siendo accesible por su URL directa, mostrando el precio tachado y un aviso de que ya se vendió.
 
 Para que una propiedad aparezca en la sección "Destacadas" de la home, poné `"featured": true` (se recomienda tener entre 3 y 4 destacadas a la vez).
+
+**Proyectos con varias tipologías** (ej. un edificio en pozo con monoambientes, 1, 2 y 3 dormitorios a distintos precios): cargalo como una sola propiedad con `"priceFrom": true` y el precio de la unidad más económica — el sitio va a mostrar "Desde USD X" automáticamente. En `specs`, dejá en `0` los valores que no apliquen a nivel proyecto (dormitorios/baños/m²): el sitio oculta esos datos en vez de mostrar un "0" falso, y el detalle de tipologías va en la `description`.
 
 `location.neighborhood` define automáticamente la zona: cada barrio/ciudad distinto genera su propia landing page en `/propiedades/zona/[zona]` y aparece como filtro y como link "Explorá por zona" en `/propiedades`. No hace falta crear nada a mano.
 
@@ -115,4 +118,5 @@ Estos valores quedaron como placeholder a la espera de datos reales de Brian:
 - **Testimonios con foto:** la estructura ya soporta `avatar` (ruta de imagen) y `sourceUrl` (link a la reseña real, si existe) en `lib/content.ts` → `TESTIMONIALS`. Hoy los 3 testimonios son de ejemplo, sin foto ni link — reemplazar por reseñas reales cuando estén disponibles.
 - **Formspree ID:** falta crear el formulario en Formspree y configurar `NEXT_PUBLIC_FORMSPREE_ID` en Vercel (ver sección de arriba). Hasta entonces el bloque de novedades muestra un mensaje neutro en vez de un formulario roto.
 - **Copy final de posicionamiento:** confirmar con Brian/Sonia si "asesoramiento inmobiliario integral" es el mensaje definitivo, o si conviene depurar el catálogo a solo propiedades premium y volver a "real estate de lujo" (copy archivado en `content/copy-lujo-archivado.md`).
-- **Fotos y datos reales de propiedades:** las 8 propiedades de `data/properties.json` siguen siendo de ejemplo (fotos de stock de Unsplash, ubicaciones aproximadas). Reemplazar por el catálogo real de Sonia.
+- **Habitalis Jardín (Villa Morra):** proyecto real de la carpeta de Brian, todavía no cargado porque ningún documento de esa carpeta tiene precio. En cuanto Brian confirme el precio (aunque sea "desde"), se carga igual que los otros 4.
+- **Specs exactos de las propiedades cargadas:** Afianza Recoleta #8 y Altea de Gaulle son proyectos en pozo con varias tipologías — el precio mostrado es el de la unidad más económica ("Desde"), sin m²/dormitorios fijos a nivel card. El penthouse de Edificio Italia no tiene m² totales confirmados en la documentación (sí dormitorios, baños y cochera). Completar cuando Brian tenga esos datos.
