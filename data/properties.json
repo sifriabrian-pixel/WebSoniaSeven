@@ -41,7 +41,12 @@
     ],
     "coordinates": { "lat": -25.2960285, "lng": -57.5826379 },
     "featured": true,
-    "status": "nueva"
+    "status": "nueva",
+    "investment": {
+      "rentalYieldPct": null,
+      "zoneAppreciationPct": null,
+      "dealType": "Desarrollo en pozo"
+    }
   },
   {
     "id": "sr-italia-ph",
@@ -82,7 +87,12 @@
     ],
     "coordinates": { "lat": -25.2977, "lng": -57.6355 },
     "featured": true,
-    "status": "disponible"
+    "status": "disponible",
+    "investment": {
+      "rentalYieldPct": null,
+      "zoneAppreciationPct": null,
+      "dealType": "Reventa"
+    }
   },
   {
     "id": "sr-terreno-sacramento",
@@ -121,7 +131,12 @@
     ],
     "coordinates": { "lat": -25.283, "lng": -57.618 },
     "featured": false,
-    "status": "disponible"
+    "status": "disponible",
+    "investment": {
+      "rentalYieldPct": null,
+      "zoneAppreciationPct": null,
+      "dealType": "Desarrollo en pozo"
+    }
   },
   {
     "id": "sr-altea-gaulle",
@@ -164,6 +179,11 @@
     ],
     "coordinates": { "lat": -25.2985, "lng": -57.5735 },
     "featured": true,
-    "status": "nueva"
+    "status": "nueva",
+    "investment": {
+      "rentalYieldPct": null,
+      "zoneAppreciationPct": null,
+      "dealType": "Desarrollo en pozo"
+    }
   }
 ]

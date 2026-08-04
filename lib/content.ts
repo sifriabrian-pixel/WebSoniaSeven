@@ -7,6 +7,24 @@
  */
 export const YEARS_OF_EXPERIENCE: number | null = null;
 
+/**
+ * Barra de confianza (franja de números debajo del hero). `propertiesManaged`
+ * es un dato real; los otros dos todavía no están documentados — se muestran
+ * como [DATO] en el sitio hasta que Brian los confirme (no publicar un
+ * número que no se pueda sostener frente a un inversor).
+ */
+export interface TrustBarStats {
+  propertiesManaged: number;
+  avgAppreciationPct: number | null;
+  avgClosingDays: number | null;
+}
+
+export const TRUST_BAR: TrustBarStats = {
+  propertiesManaged: 50,
+  avgAppreciationPct: null,
+  avgClosingDays: null,
+};
+
 export interface Testimonial {
   quote: string;
   author: string;
@@ -14,6 +32,8 @@ export interface Testimonial {
   avatar?: string;
   /** Link a la reseña original (Google, etc.), para dar más credibilidad. */
   sourceUrl?: string;
+  /** Resultado numérico verificable, ej. "+18% en 10 meses". Opcional. */
+  result?: string;
 }
 
 /**

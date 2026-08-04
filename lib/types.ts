@@ -22,6 +22,16 @@ export interface PropertyCoordinates {
   lng: number;
 }
 
+export type DealType = "Reventa" | "Renta" | "Desarrollo en pozo";
+
+export interface PropertyInvestment {
+  /** Rentabilidad de alquiler estimada, % anual. `null` = todavía no confirmado. */
+  rentalYieldPct: number | null;
+  /** Plusvalía de la zona en los últimos 24 meses, %. `null` = todavía no confirmado. */
+  zoneAppreciationPct: number | null;
+  dealType: DealType;
+}
+
 export interface Property {
   id: string;
   slug: string;
@@ -40,6 +50,7 @@ export interface Property {
   status: PropertyStatus;
   /** true si `price` es un valor "desde" (proyecto con varias tipologías), no el precio de una unidad específica. */
   priceFrom?: boolean;
+  investment?: PropertyInvestment;
 }
 
 export interface PropertyFilters {
