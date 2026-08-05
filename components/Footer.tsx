@@ -1,6 +1,6 @@
 import Link from "next/link";
 import SectionDivider from "@/components/SectionDivider";
-import NewsletterForm from "@/components/NewsletterForm";
+import ConversionForm from "@/components/ConversionForm";
 import Wordmark from "@/components/Wordmark";
 import { SITE_NAME } from "@/lib/seo";
 
@@ -61,12 +61,12 @@ export default function Footer() {
 
         <div>
           <h4 className="mb-4 text-sm tracking-[0.2em] text-gold">
-            NOVEDADES
+            OPORTUNIDADES
           </h4>
           <p className="mb-3 text-sm text-cream/70">
-            Enterate primero de nuevas propiedades.
+            Recibí oportunidades antes de que lleguen al mercado.
           </p>
-          <NewsletterForm variant="dark" compact />
+          <ConversionForm variant="dark" compact />
         </div>
       </div>
 

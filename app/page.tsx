@@ -1,32 +1,17 @@
 import Image from "next/image";
 import Link from "next/link";
 import { getFeaturedProperties, getZones } from "@/lib/data";
-import PropertyCard from "@/components/PropertyCard";
+import { InvestorModeProvider } from "@/components/InvestorModeContext";
+import HeroSection from "@/components/HeroSection";
+import TrustBar from "@/components/TrustBar";
+import ValueProposition from "@/components/ValueProposition";
+import FeaturedPropertiesSection from "@/components/FeaturedPropertiesSection";
+import ZoneIntelligence from "@/components/ZoneIntelligence";
 import SectionDivider from "@/components/SectionDivider";
 import { WhatsAppInline } from "@/components/WhatsAppButton";
-import NewsletterForm from "@/components/NewsletterForm";
-import Wordmark from "@/components/Wordmark";
-import { YEARS_OF_EXPERIENCE, TESTIMONIALS } from "@/lib/content";
-import { SITE_NAME } from "@/lib/seo";
-
-const VALUES = [
-  {
-    title: "Atención personalizada",
-    text: "Cada cliente recibe un acompañamiento a medida, de principio a fin.",
-  },
-  {
-    title: "Red de contactos",
-    text: "Acceso a propiedades exclusivas antes de que lleguen al mercado.",
-  },
-  {
-    title: "Proceso transparente",
-    text: "Información clara en cada etapa, sin sorpresas ni letra chica.",
-  },
-  {
-    title: "Resultados comprobados",
-    text: "Trayectoria y operaciones exitosas en cada tipo de propiedad.",
-  },
-];
+import ConversionForm from "@/components/ConversionForm";
+import Testimonials from "@/components/Testimonials";
+import { YEARS_OF_EXPERIENCE } from "@/lib/content";
 
 export default async function HomePage() {
   const featured = await getFeaturedProperties();
@@ -34,94 +19,14 @@ export default async function HomePage() {
 
   return (
     <main>
-      {/* Hero */}
-      <section className="relative flex h-screen min-h-[640px] items-center justify-center overflow-hidden">
-        <Image
-          src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?q=80&w=2000&auto=format&fit=crop"
-          alt="Propiedad en Asunción"
-          fill
-          priority
-          className="object-cover"
-        />
-        <div className="absolute inset-0 z-[1] bg-gradient-to-b from-[#1C2841]/60 via-[#1C2841]/30 to-[#1C2841]/70" />
+      <InvestorModeProvider>
+        <HeroSection zones={zones} />
+        <TrustBar />
+        <ValueProposition />
+        <FeaturedPropertiesSection properties={featured} />
+      </InvestorModeProvider>
 
-        <div className="relative z-10 mx-auto flex max-w-3xl flex-col items-center px-6 text-center text-cream">
-          <Wordmark size="lg" className="mb-6" />
-          <h1 className="font-serif text-3xl leading-tight md:text-5xl">
-            Asesoramiento inmobiliario integral en Asunción y Central
-          </h1>
-
-          <form
-            action="/propiedades"
-            className="mt-10 flex w-full max-w-2xl flex-col gap-2 bg-white/95 p-3 text-text shadow-lg md:flex-row"
-          >
-            <select
-              name="type"
-              className="flex-1 border border-navy/10 px-3 py-2 text-sm"
-              defaultValue=""
-            >
-              <option value="">Tipo</option>
-              <option value="casa">Casa</option>
-              <option value="departamento">Departamento</option>
-              <option value="terreno">Terreno</option>
-              <option value="comercial">Comercial</option>
-            </select>
-            <select
-              name="neighborhood"
-              className="flex-1 border border-navy/10 px-3 py-2 text-sm"
-              defaultValue=""
-            >
-              <option value="">Zona</option>
-              {zones.map((zone) => (
-                <option key={zone.slug} value={zone.name}>
-                  {zone.name}
-                </option>
-              ))}
-            </select>
-            <select
-              name="maxPrice"
-              className="flex-1 border border-navy/10 px-3 py-2 text-sm"
-              defaultValue=""
-            >
-              <option value="">Precio máx.</option>
-              <option value="150000">Hasta USD 150.000</option>
-              <option value="300000">Hasta USD 300.000</option>
-              <option value="600000">Hasta USD 600.000</option>
-            </select>
-            <button
-              type="submit"
-              className="bg-navy px-6 py-2 text-sm tracking-wide text-cream transition-colors hover:bg-gold"
-            >
-              Buscar
-            </button>
-          </form>
-        </div>
-      </section>
-
-      {/* Propiedades destacadas */}
-      <section className="mx-auto max-w-7xl px-6 py-24">
-        <div className="text-center">
-          <h2 className="font-serif text-3xl text-navy">
-            Propiedades destacadas
-          </h2>
-          <SectionDivider />
-        </div>
-
-        <div className="mt-12 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
-          {featured.map((property) => (
-            <PropertyCard key={property.id} property={property} />
-          ))}
-        </div>
-
-        <div className="mt-12 text-center">
-          <Link
-            href="/propiedades"
-            className="border border-navy px-8 py-3 text-sm tracking-wide text-navy transition-colors hover:border-gold hover:text-gold"
-          >
-            VER TODAS LAS PROPIEDADES
-          </Link>
-        </div>
-      </section>
+      <ZoneIntelligence zones={zones} />
 
       {/* Sobre Sonia */}
       <section className="bg-navy px-6 py-24 text-cream">
@@ -135,42 +40,32 @@ export default async function HomePage() {
             />
           </div>
           <div>
-            <h2 className="font-serif text-3xl">Sobre Sonia</h2>
+            <h2 className="font-serif text-3xl">
+              Contadora antes que asesora inmobiliaria
+            </h2>
             <SectionDivider center={false} />
             <p className="mt-4 text-cream/80">
               Contadora y Analista Financiera con{" "}
               {YEARS_OF_EXPERIENCE
                 ? `+${YEARS_OF_EXPERIENCE} años de trayectoria`
                 : "amplia trayectoria"}{" "}
-              gerenciando negocios en distintos rubros. Esa formación le da
-              una ventaja única: entender el valor real de cada inversión
-              inmobiliaria, no solo sus metros cuadrados. Trabaja con{" "}
-              <strong className="text-gold">CENTURY 21 Seven</strong> en Las
-              Mercedes, Asunción, asesorando en compra, venta e inversión de
-              propiedades en Asunción y Central.
+              gerenciando negocios en distintos rubros. Esa formación es la
+              diferencia real: no leo una propiedad por sus metros
+              cuadrados, la leo por su retorno.
             </p>
-            <div className="mt-8 flex gap-10">
+            <p className="mt-4 text-cream/80">
+              Trabajo con <strong className="text-gold">CENTURY 21 Seven</strong>{" "}
+              en Las Mercedes, Asunción, asesorando en compra, venta e
+              inversión en Asunción y Central — con el mismo criterio con el
+              que analizaría cualquier otra inversión.
+            </p>
+            <p className="mt-6 text-sm text-cream/70">
               {YEARS_OF_EXPERIENCE && (
-                <div>
-                  <p className="font-serif text-3xl text-gold">
-                    +{YEARS_OF_EXPERIENCE}
-                  </p>
-                  <p className="text-sm text-cream/70">Años de trayectoria</p>
-                </div>
+                <>+{YEARS_OF_EXPERIENCE} años de trayectoria · </>
               )}
-              <div>
-                <p className="font-serif text-3xl text-gold">+50</p>
-                <p className="text-sm text-cream/70">Propiedades gestionadas</p>
-              </div>
-              <div>
-                <p className="font-serif text-3xl text-gold">C21</p>
-                <p className="text-sm text-cream/70">Oficial Seven</p>
-              </div>
-              <div>
-                <p className="font-serif text-3xl text-gold">ASU</p>
-                <p className="text-sm text-cream/70">Paraguay</p>
-              </div>
-            </div>
+              +50 propiedades gestionadas · Oficial C21 Seven · Asunción,
+              Paraguay
+            </p>
             <Link
               href="/sobre-mi"
               className="mt-8 inline-block border border-gold px-6 py-3 text-sm tracking-wide text-gold transition-colors hover:bg-gold hover:text-navy"
@@ -181,91 +76,30 @@ export default async function HomePage() {
         </div>
       </section>
 
-      {/* Por qué elegirnos */}
-      <section className="mx-auto max-w-7xl px-6 py-24">
-        <div className="text-center">
-          <h2 className="font-serif text-3xl text-navy">
-            Por qué elegir {SITE_NAME}
-          </h2>
-          <SectionDivider />
-        </div>
+      <Testimonials />
 
-        <div className="mt-12 grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-4">
-          {VALUES.map((v) => (
-            <div key={v.title} className="text-center">
-              <div className="mx-auto flex h-12 w-12 items-center justify-center rounded-full border border-gold text-gold">
-                ✦
-              </div>
-              <h3 className="mt-4 font-serif text-lg text-navy">{v.title}</h3>
-              <p className="mt-2 text-sm text-text/70">{v.text}</p>
-            </div>
-          ))}
-        </div>
-      </section>
-
-      {/* Testimonios */}
-      <section className="bg-cream px-6 py-24">
-        <div className="mx-auto max-w-4xl text-center">
-          <h2 className="font-serif text-3xl text-navy">Testimonios</h2>
-          <SectionDivider />
-
-          <div className="mt-12 grid grid-cols-1 gap-8 md:grid-cols-3">
-            {TESTIMONIALS.map((t) => (
-              <div key={t.author} className="bg-white p-6 shadow-sm">
-                <p className="font-serif text-3xl text-gold">&ldquo;</p>
-                <p className="text-sm italic text-text/80">{t.quote}</p>
-                <div className="mt-4 flex items-center justify-center gap-3">
-                  {t.avatar && (
-                    <div className="relative h-9 w-9 overflow-hidden rounded-full">
-                      <Image
-                        src={t.avatar}
-                        alt={t.author}
-                        fill
-                        className="object-cover"
-                      />
-                    </div>
-                  )}
-                  {t.sourceUrl ? (
-                    <a
-                      href={t.sourceUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-xs tracking-wide text-navy underline hover:text-gold"
-                    >
-                      — {t.author}
-                    </a>
-                  ) : (
-                    <p className="text-xs tracking-wide text-navy">
-                      — {t.author}
-                    </p>
-                  )}
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Captura de leads */}
+      {/* Form de conversión mid-page */}
       <section className="bg-white px-6 py-16 text-center">
         <h2 className="font-serif text-2xl text-navy">
-          Recibí notificaciones de nuevas propiedades
+          Recibí oportunidades antes de que lleguen al mercado
         </h2>
         <p className="mx-auto mt-2 max-w-md text-sm text-text/60">
-          Dejanos tu email o WhatsApp y te avisamos apenas ingresa algo nuevo
-          que coincida con lo que buscás.
+          Análisis de zona + propiedades que coinciden con tu objetivo,
+          directo a tu WhatsApp.
         </p>
-        <div className="mx-auto mt-6 max-w-md">
-          <NewsletterForm />
+        <div className="mx-auto mt-6 max-w-md text-left">
+          <ConversionForm />
         </div>
       </section>
 
       {/* CTA final */}
       <section className="bg-navy-dark px-6 py-20 text-center text-cream">
-        <h2 className="font-serif text-3xl">Hablemos de tu próxima propiedad</h2>
+        <h2 className="font-serif text-3xl">
+          Hablemos de tu próxima inversión
+        </h2>
         <SectionDivider />
         <WhatsAppInline
-          message="Hola Sonia, me gustaría hablar sobre mi próxima propiedad."
+          message="Hola Sonia, quiero que me ayudes a analizar una oportunidad de inversión."
           className="mt-6 inline-block bg-gold px-8 py-3 text-sm tracking-wide text-navy transition-colors hover:bg-cream"
         >
           CONSULTAR POR WHATSAPP

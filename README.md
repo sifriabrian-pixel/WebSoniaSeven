@@ -69,25 +69,37 @@ Mientras no haya fotos reales, el sitio usa imágenes de stock de Unsplash carga
 
 Ver [`content/blog/README.md`](content/blog/README.md). En resumen: un archivo `.md` por artículo en `content/blog/`, con `title`/`excerpt`/`date` en el encabezado. El listado en `/blog` y la página individual se generan solos.
 
-## Configurar el formulario de novedades (Formspree)
+## Configurar el formulario de conversión (Formspree)
 
-El bloque "Recibí notificaciones de nuevas propiedades" (home y footer) envía a [Formspree](https://formspree.io). Hasta que se configure, el sitio muestra un mensaje neutro en vez de un formulario roto.
+El bloque "Recibí oportunidades antes de que lleguen al mercado" (mid-page en home y footer) envía a [Formspree](https://formspree.io). Hasta que se configure, el sitio muestra un mensaje neutro en vez de un formulario roto.
 
 Para activarlo:
 1. Crear un formulario en Formspree y copiar su ID.
 2. Configurar la variable de entorno `NEXT_PUBLIC_FORMSPREE_ID` en Vercel (Project Settings → Environment Variables) con ese ID.
 3. Redeployar.
 
+## Home orientada a inversor
+
+La home tiene un toggle **"Quiero VIVIR" / "Quiero INVERTIR"** (default: Invertir) en el hero, que cambia el copy del hero y el contenido de las cards de "Propiedades destacadas" — en modo Invertir muestran rentabilidad estimada, plusvalía de zona y tipo de operación en vez de dormitorios/baños/m². El estado del toggle vive en `components/InvestorModeContext.tsx` (React Context) porque el hero y la sección de propiedades destacadas están separados en la página pero necesitan compartir el mismo estado.
+
+Secciones nuevas relacionadas:
+- **Barra de confianza** (`components/TrustBar.tsx`) — franja de números debajo del hero. Editable en `lib/content.ts` → `TRUST_BAR`.
+- **Inteligencia de zona** (`components/ZoneIntelligence.tsx`) — plusvalía/precio por m²/demanda de alquiler por zona. Editable en `lib/zoneInsights.ts`.
+- **`Property.investment`** (`lib/types.ts`) — rentabilidad estimada, plusvalía y tipo de operación (Reventa/Renta/Desarrollo en pozo) por propiedad, usado en modo Invertir.
+
+Ningún valor de plusvalía, tiempo de cierre o rentabilidad está confirmado todavía — donde falta el dato, el sitio muestra **`[DATO]`** (componente `components/DataPlaceholder.tsx`, con `title` de tooltip "Pendiente: completar con el dato real") en vez de inventar un número. Ver la sección "Pendientes de contenido" más abajo para la lista completa de lo que falta completar.
+
 ## Estructura del proyecto
 
 - `app/` — páginas: home, `/propiedades`, `/propiedades/[slug]`, `/propiedades/zona/[zona]`, `/sobre-mi`, `/contacto`, `/blog`, `/blog/[slug]`, más `sitemap.ts` y `robots.ts`
-- `components/` — componentes reutilizables (Navbar, Footer, PropertyCard, FilterSidebar, SortSelect, Gallery, WhatsAppButton, NewsletterForm, JsonLd, SectionDivider)
+- `components/` — componentes reutilizables: Navbar, Footer, PropertyCard, FilterSidebar, SortSelect, Gallery, WhatsAppButton, ConversionForm, JsonLd, SectionDivider, Wordmark, más los de la home orientada a inversor (HeroSection, InvestorModeContext, TrustBar, ValueProposition, FeaturedPropertiesSection, ZoneIntelligence, Testimonials, DataPlaceholder)
 - `data/properties.json` — datos de propiedades (fuente única de verdad por ahora)
 - `content/blog/` — artículos del blog en Markdown
 - `content/copy-lujo-archivado.md` — copy de posicionamiento "de lujo" archivado (ver sección de abajo)
 - `lib/data.ts` — funciones de acceso a datos (`getAllProperties`, `getFeaturedProperties`, `getPropertyBySlug`, `getFilteredProperties`, `getZones`, etc.). Todas son `async` a propósito: el día que se migre a una base de datos (Supabase), solo hay que reescribir el cuerpo de estas funciones para que consulten la base en vez del JSON — el resto del sitio no cambia.
 - `lib/blog.ts` — lectura de artículos del blog
-- `lib/content.ts` — copy configurable: años de trayectoria y testimonios
+- `lib/content.ts` — copy configurable: años de trayectoria, barra de confianza y testimonios
+- `lib/zoneInsights.ts` — datos de mercado por zona (plusvalía, precio por m², demanda de alquiler)
 - `lib/seo.ts` — datos del agente (Sonia) y URL del sitio para JSON-LD/Open Graph
 - `lib/types.ts` — tipos TypeScript compartidos
 
@@ -120,3 +132,7 @@ Estos valores quedaron como placeholder a la espera de datos reales de Brian:
 - **Copy final de posicionamiento:** confirmar con Brian/Sonia si "asesoramiento inmobiliario integral" es el mensaje definitivo, o si conviene depurar el catálogo a solo propiedades premium y volver a "real estate de lujo" (copy archivado en `content/copy-lujo-archivado.md`).
 - **Habitalis Jardín (Villa Morra):** proyecto real de la carpeta de Brian, todavía no cargado porque ningún documento de esa carpeta tiene precio. En cuanto Brian confirme el precio (aunque sea "desde"), se carga igual que los otros 4.
 - **Specs exactos de las propiedades cargadas:** Afianza Recoleta #8 y Altea de Gaulle son proyectos en pozo con varias tipologías — el precio mostrado es el de la unidad más económica ("Desde"), sin m²/dormitorios fijos a nivel card. El penthouse de Edificio Italia no tiene m² totales confirmados en la documentación (sí dormitorios, baños y cochera). Completar cuando Brian tenga esos datos.
+- **Plusvalía promedio de zona y tiempo promedio de cierre** (`lib/content.ts` → `TRUST_BAR`): hoy se muestran como `[DATO]` en la barra de confianza debajo del hero.
+- **Datos por zona** (`lib/zoneInsights.ts`): plusvalía 24 meses, precio promedio por m² y demanda de alquiler de Recoleta, La Encarnación, Trinidad y Villa Morra — hoy las 4 zonas muestran `[DATO]` en la sección "Inteligencia de zona". Es la sección que el propio brief de Brian marca como el diferencial más fuerte del sitio frente a portales genéricos, así que vale la pena priorizar completarla.
+- **Rentabilidad estimada y plusvalía por propiedad** (`data/properties.json` → `investment.rentalYieldPct` / `investment.zoneAppreciationPct`): hoy en `null` para las 4 propiedades reales, se muestran como `[DATO]` en modo "Invertir". Solo `dealType` (Reventa/Renta/Desarrollo en pozo) está completo.
+- **Resultado numérico en testimonios:** 2 de los 3 testimonios de ejemplo tienen un `[DATO]` embebido en el texto (revalorización %, días de cierre) siguiendo el copy que pasó Brian — revisar con clientes reales si pueden confirmar esos números antes de publicar, o volver a un testimonio sin cifra si no se puede sostener.
