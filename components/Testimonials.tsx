@@ -1,11 +1,12 @@
 import Image from "next/image";
 import SectionDivider from "@/components/SectionDivider";
+import Reveal from "@/components/Reveal";
 import { TESTIMONIALS } from "@/lib/content";
 
 export default function Testimonials() {
   return (
     <section className="bg-cream px-6 py-24">
-      <div className="mx-auto max-w-5xl text-center">
+      <Reveal className="mx-auto max-w-5xl text-center">
         <h2 className="font-serif text-3xl text-navy">Testimonios</h2>
         <SectionDivider />
 
@@ -51,7 +52,7 @@ export default function Testimonials() {
             </div>
           ))}
         </div>
-      </div>
+      </Reveal>
     </section>
   );
 }

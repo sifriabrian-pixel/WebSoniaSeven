@@ -11,6 +11,7 @@ import SectionDivider from "@/components/SectionDivider";
 import { WhatsAppInline } from "@/components/WhatsAppButton";
 import ConversionForm from "@/components/ConversionForm";
 import Testimonials from "@/components/Testimonials";
+import Reveal from "@/components/Reveal";
 import { YEARS_OF_EXPERIENCE } from "@/lib/content";
 
 export default async function HomePage() {
@@ -30,13 +31,13 @@ export default async function HomePage() {
 
       {/* Sobre Sonia */}
       <section className="bg-navy px-6 py-24 text-cream">
-        <div className="mx-auto grid max-w-6xl items-center gap-12 md:grid-cols-2">
+        <Reveal className="mx-auto grid max-w-6xl items-center gap-12 md:grid-cols-2">
           <div className="relative aspect-[4/5] w-full overflow-hidden">
             <Image
               src="/images/sonia-garcia.jpg"
               alt="Sonia García"
               fill
-              className="object-cover object-top"
+              className="object-cover object-top transition-transform duration-700 hover:scale-105"
             />
           </div>
           <div>
@@ -74,37 +75,41 @@ export default async function HomePage() {
               CONOCER MÁS
             </Link>
           </div>
-        </div>
+        </Reveal>
       </section>
 
       <Testimonials />
 
       {/* Form de conversión mid-page */}
       <section className="bg-white px-6 py-16 text-center">
-        <h2 className="font-serif text-2xl text-navy">
-          Recibí oportunidades antes de que lleguen al mercado
-        </h2>
-        <p className="mx-auto mt-2 max-w-md text-sm text-text/60">
-          Análisis de zona + propiedades que coinciden con tu objetivo,
-          directo a tu WhatsApp.
-        </p>
-        <div className="mx-auto mt-6 max-w-md text-left">
-          <ConversionForm />
-        </div>
+        <Reveal>
+          <h2 className="font-serif text-2xl text-navy">
+            Recibí oportunidades antes de que lleguen al mercado
+          </h2>
+          <p className="mx-auto mt-2 max-w-md text-sm text-text/60">
+            Análisis de zona + propiedades que coinciden con tu objetivo,
+            directo a tu WhatsApp.
+          </p>
+          <div className="mx-auto mt-6 max-w-md text-left">
+            <ConversionForm />
+          </div>
+        </Reveal>
       </section>
 
       {/* CTA final */}
       <section className="bg-navy-dark px-6 py-20 text-center text-cream">
-        <h2 className="font-serif text-3xl">
-          Hablemos de tu próxima inversión
-        </h2>
-        <SectionDivider />
-        <WhatsAppInline
-          message="Hola Sonia, quiero que me ayudes a analizar una oportunidad de inversión."
-          className="mt-6 inline-block bg-gold px-8 py-3 text-sm tracking-wide text-navy transition-colors hover:bg-cream"
-        >
-          CONSULTAR POR WHATSAPP
-        </WhatsAppInline>
+        <Reveal>
+          <h2 className="font-serif text-3xl">
+            Hablemos de tu próxima inversión
+          </h2>
+          <SectionDivider />
+          <WhatsAppInline
+            message="Hola Sonia, quiero que me ayudes a analizar una oportunidad de inversión."
+            className="mt-6 inline-block bg-gold px-8 py-3 text-sm tracking-wide text-navy transition-colors hover:bg-cream"
+          >
+            CONSULTAR POR WHATSAPP
+          </WhatsAppInline>
+        </Reveal>
       </section>
     </main>
   );

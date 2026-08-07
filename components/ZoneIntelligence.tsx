@@ -2,6 +2,7 @@ import Link from "next/link";
 import SectionDivider from "@/components/SectionDivider";
 import DataPlaceholder from "@/components/DataPlaceholder";
 import { getZoneInsight } from "@/lib/zoneInsights";
+import Reveal from "@/components/Reveal";
 import type { Zone } from "@/lib/data";
 
 export default function ZoneIntelligence({ zones }: { zones: Zone[] }) {
@@ -21,10 +22,11 @@ export default function ZoneIntelligence({ zones }: { zones: Zone[] }) {
         </div>
 
         <div className="mt-12 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
-          {zones.map((zone) => {
+          {zones.map((zone, i) => {
             const insight = getZoneInsight(zone.slug);
             return (
-              <div key={zone.slug} className="bg-white p-6 shadow-sm">
+              <Reveal key={zone.slug} delay={i * 100}>
+              <div className="h-full bg-white p-6 shadow-sm">
                 <h3 className="font-serif text-lg text-navy">{zone.name}</h3>
                 <div className="mt-4 space-y-2 text-sm text-text/70">
                   <p>
@@ -63,6 +65,7 @@ export default function ZoneIntelligence({ zones }: { zones: Zone[] }) {
                   Ver propiedades en esta zona →
                 </Link>
               </div>
+              </Reveal>
             );
           })}
         </div>

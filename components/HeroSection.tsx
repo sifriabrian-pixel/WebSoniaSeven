@@ -16,23 +16,25 @@ export default function HeroSection({ zones }: { zones: Zone[] }) {
         alt="Propiedad en Asunción"
         fill
         priority
-        className="object-cover"
+        className="animate-kenburns object-cover"
       />
       <div className="absolute inset-0 z-[1] bg-gradient-to-b from-[#1C2841]/60 via-[#1C2841]/30 to-[#1C2841]/70" />
 
       <div className="relative z-10 mx-auto flex max-w-3xl flex-col items-center px-6 text-center text-cream">
         <Wordmark size="lg" className="mb-6" />
 
-        <h1 className="font-serif text-3xl leading-tight md:text-5xl">
-          {mode === "invertir"
-            ? "Invertí en las oportunidades de mayor valor de Asunción"
-            : "Propiedades para quienes valoran la calidad antes que el precio"}
-        </h1>
-        <p className="mt-4 max-w-xl text-sm text-cream/80 md:text-base">
-          {mode === "invertir"
-            ? "Selección curada para el segmento de ticket alto — plusvalía por zona, rentabilidad estimada y timing de entrada, con el mismo rigor con el que evaluarías cualquier inversión de peso."
-            : "Casas, departamentos y desarrollos seleccionados en las zonas más consolidadas de Asunción y Central."}
-        </p>
+        <div key={mode} className="animate-fade-in-up">
+          <h1 className="font-serif text-3xl leading-tight md:text-5xl">
+            {mode === "invertir"
+              ? "Invertí en las oportunidades de mayor valor de Asunción"
+              : "Propiedades para quienes valoran la calidad antes que el precio"}
+          </h1>
+          <p className="mt-4 max-w-xl text-sm text-cream/80 md:text-base">
+            {mode === "invertir"
+              ? "Selección curada para el segmento de ticket alto — plusvalía por zona, rentabilidad estimada y timing de entrada, con el mismo rigor con el que evaluarías cualquier inversión de peso."
+              : "Casas, departamentos y desarrollos seleccionados en las zonas más consolidadas de Asunción y Central."}
+          </p>
+        </div>
 
         <div className="mt-6 inline-flex border border-cream/30 bg-black/20 p-1 text-sm">
           <button
@@ -59,7 +61,7 @@ export default function HeroSection({ zones }: { zones: Zone[] }) {
           </button>
         </div>
 
-        <div className="mt-6 flex flex-col items-center gap-3">
+        <div key={`cta-${mode}`} className="mt-6 flex animate-fade-in-up flex-col items-center gap-3">
           <Link
             href="/propiedades"
             className="inline-block bg-gold px-8 py-3 text-sm tracking-wide text-navy transition-colors hover:bg-cream"

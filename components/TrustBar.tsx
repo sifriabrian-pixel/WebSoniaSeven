@@ -1,15 +1,21 @@
 import { TRUST_BAR } from "@/lib/content";
 import DataPlaceholder from "@/components/DataPlaceholder";
+import AnimatedCounter from "@/components/AnimatedCounter";
+import Reveal from "@/components/Reveal";
 
 const STATS = [
   {
-    value: `+${TRUST_BAR.propertiesManaged}`,
+    value: <AnimatedCounter value={TRUST_BAR.propertiesManaged} prefix="+" />,
     label: "Propiedades gestionadas",
   },
   {
     value:
       TRUST_BAR.avgAppreciationPct !== null ? (
-        `+${TRUST_BAR.avgAppreciationPct}%`
+        <AnimatedCounter
+          value={TRUST_BAR.avgAppreciationPct}
+          prefix="+"
+          suffix="%"
+        />
       ) : (
         <DataPlaceholder suffix="%" />
       ),
@@ -18,7 +24,7 @@ const STATS = [
   {
     value:
       TRUST_BAR.avgClosingDays !== null ? (
-        `${TRUST_BAR.avgClosingDays} días`
+        <AnimatedCounter value={TRUST_BAR.avgClosingDays} suffix=" días" />
       ) : (
         <DataPlaceholder suffix=" días" />
       ),
@@ -35,12 +41,12 @@ export default function TrustBar() {
     <section className="bg-navy-dark px-6 py-8 text-cream">
       <div className="mx-auto grid max-w-5xl grid-cols-2 gap-6 text-center md:grid-cols-4">
         {STATS.map((stat, i) => (
-          <div key={i}>
+          <Reveal key={i} delay={i * 80}>
             <p className="font-serif text-2xl text-gold md:text-3xl">
               {stat.value}
             </p>
             <p className="mt-1 text-xs text-cream/70">{stat.label}</p>
-          </div>
+          </Reveal>
         ))}
       </div>
     </section>

@@ -5,6 +5,7 @@ import Link from "next/link";
 import PropertyCard from "@/components/PropertyCard";
 import SectionDivider from "@/components/SectionDivider";
 import { useInvestorMode } from "@/components/InvestorModeContext";
+import Reveal from "@/components/Reveal";
 import type { Property, DealType } from "@/lib/types";
 
 const DEAL_FILTERS: { label: string; value: DealType | "todas" }[] = [
@@ -62,8 +63,10 @@ export default function FeaturedPropertiesSection({
       )}
 
       <div className="mt-12 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
-        {visible.map((property) => (
-          <PropertyCard key={property.id} property={property} mode={mode} />
+        {visible.map((property, i) => (
+          <Reveal key={property.id} delay={i * 100}>
+            <PropertyCard property={property} mode={mode} />
+          </Reveal>
         ))}
       </div>
 
