@@ -19,9 +19,9 @@ const poppins = Poppins({
   weight: ["300", "400", "500", "600"],
 });
 
-const DEFAULT_TITLE = `${SITE_NAME} | Asesoramiento Inmobiliario`;
+const DEFAULT_TITLE = `${SITE_NAME} | Real Estate de Alto Valor en Asunción`;
 const DEFAULT_DESCRIPTION =
-  "Asesoramiento inmobiliario integral en Asunción y Central, Paraguay. Sonia García, asesora de CENTURY 21 Seven, te acompaña en la compra, venta o inversión de tu propiedad.";
+  "Seven Inmobiliaria selecciona propiedades e inversiones de ticket alto en Asunción y Central, Paraguay. Sonia García, asesora de CENTURY 21 Seven, te acompaña con criterio financiero en cada operación.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),

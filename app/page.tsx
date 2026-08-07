@@ -56,8 +56,9 @@ export default async function HomePage() {
             <p className="mt-4 text-cream/80">
               Trabajo con <strong className="text-gold">CENTURY 21 Seven</strong>{" "}
               en Las Mercedes, Asunción, asesorando en compra, venta e
-              inversión en Asunción y Central — con el mismo criterio con el
-              que analizaría cualquier otra inversión.
+              inversión en Asunción y Central — con foco en el segmento de
+              ticket alto y el mismo criterio con el que analizaría
+              cualquier otra inversión.
             </p>
             <p className="mt-6 text-sm text-cream/70">
               {YEARS_OF_EXPERIENCE && (

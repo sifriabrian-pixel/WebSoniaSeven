@@ -25,13 +25,13 @@ export default function HeroSection({ zones }: { zones: Zone[] }) {
 
         <h1 className="font-serif text-3xl leading-tight md:text-5xl">
           {mode === "invertir"
-            ? "Invertí en Asunción con la data que los portales no te muestran"
-            : "Encontrá la propiedad ideal para tu próxima etapa"}
+            ? "Invertí en las oportunidades de mayor valor de Asunción"
+            : "Propiedades para quienes valoran la calidad antes que el precio"}
         </h1>
         <p className="mt-4 max-w-xl text-sm text-cream/80 md:text-base">
           {mode === "invertir"
-            ? "Plusvalía por zona, rentabilidad estimada y timing de entrada — análisis real antes de cada operación, no solo fotos de propiedades."
-            : "Casas, departamentos y terrenos en Asunción y Central, con el mismo acompañamiento cercano de siempre."}
+            ? "Selección curada para el segmento de ticket alto — plusvalía por zona, rentabilidad estimada y timing de entrada, con el mismo rigor con el que evaluarías cualquier inversión de peso."
+            : "Casas, departamentos y desarrollos seleccionados en las zonas más consolidadas de Asunción y Central."}
         </p>
 
         <div className="mt-6 inline-flex border border-cream/30 bg-black/20 p-1 text-sm">

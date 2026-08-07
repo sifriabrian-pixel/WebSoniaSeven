@@ -7,7 +7,7 @@ import { YEARS_OF_EXPERIENCE } from "@/lib/content";
 
 const TITLE = "Sobre mí";
 const DESCRIPTION =
-  "Conocé la trayectoria de Sonia García, asesora inmobiliaria de CENTURY 21 Seven en Asunción, Paraguay.";
+  "Conocé a Sonia García, asesora inmobiliaria de CENTURY 21 Seven especializada en operaciones de alto valor en Asunción, Paraguay.";
 
 export const metadata: Metadata = {
   title: TITLE,
@@ -73,9 +73,9 @@ export default function AboutPage() {
           <p className="mt-4 leading-relaxed text-text/80">
             Trabajo con CENTURY 21 Seven en Las Mercedes, Asunción, donde
             brindo asesoramiento en compra, venta e inversión de propiedades
-            en Paraguay, con foco en Asunción y Central. Te acompaño con
-            responsabilidad, honestidad y ética profesional en cada
-            operación.
+            en Paraguay, con foco en el segmento de ticket alto en Asunción
+            y Central. Te acompaño con responsabilidad, honestidad y ética
+            profesional en cada operación.
           </p>
 
           <div className="mt-6 flex flex-wrap gap-2">

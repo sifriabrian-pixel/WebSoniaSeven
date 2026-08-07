@@ -12,8 +12,8 @@ export default function Footer() {
           <Wordmark size="sm" />
           <SectionDivider center={false} />
           <p className="max-w-xs text-sm text-cream/70">
-            Asesoramiento inmobiliario integral en Asunción y Central,
-            Paraguay. Te acompañamos en cada etapa de tu operación.
+            Real estate de alto valor en Asunción y Central, Paraguay.
+            Selección curada para inversores y compradores exigentes.
           </p>
         </div>
 

@@ -9,7 +9,7 @@ import { SITE_URL, SITE_NAME } from "@/lib/seo";
 
 const TITLE = "Propiedades";
 const DESCRIPTION =
-  "Propiedades seleccionadas en venta y alquiler en Asunción y Central, Paraguay.";
+  "Selección de propiedades de alto valor en venta y alquiler en Asunción y Central, Paraguay.";
 
 export const metadata: Metadata = {
   title: TITLE,
