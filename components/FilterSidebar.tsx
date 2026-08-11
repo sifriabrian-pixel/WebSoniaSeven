@@ -59,7 +59,7 @@ export default function FilterSidebar({
   return (
     <aside className="w-full shrink-0 bg-white p-6 md:w-72">
       <h3 className="font-serif text-lg text-navy">Filtros</h3>
-      <div className="gold-line mt-2" style={{ marginLeft: 0 }} />
+      <div className="mt-2 h-px w-[60px] bg-gold" />
 
       <div className="mt-6 space-y-6">
         <div>
@@ -152,7 +152,7 @@ export default function FilterSidebar({
         <div className="flex flex-col gap-2 pt-2">
           <button
             onClick={applyFilters}
-            className="bg-navy px-4 py-2 text-sm text-cream transition-colors hover:bg-gold"
+            className="bg-navy px-4 py-2 text-sm text-cream transition-colors hover:bg-navy-dark"
           >
             Aplicar filtros
           </button>

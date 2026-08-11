@@ -5,7 +5,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import JsonLd from "@/components/JsonLd";
-import { agentJsonLd, SITE_URL, SITE_NAME } from "@/lib/seo";
+import { agentJsonLd, SITE_URL, SITE_NAME, SITE_TAGLINE } from "@/lib/seo";
 
 const playfair = Playfair_Display({
   subsets: ["latin"],
@@ -19,9 +19,9 @@ const inter = Inter({
   weight: ["300", "400", "500", "600"],
 });
 
-const DEFAULT_TITLE = `${SITE_NAME} | Real Estate de Alto Valor en Asunción`;
+const DEFAULT_TITLE = `${SITE_NAME} | ${SITE_TAGLINE} — Real Estate de Alto Valor en Asunción`;
 const DEFAULT_DESCRIPTION =
-  "Seven Inmobiliaria selecciona propiedades e inversiones de ticket alto en Asunción y Central, Paraguay. Sonia García, asesora de CENTURY 21 Seven, te acompaña con criterio financiero en cada operación.";
+  "Sonia García, de Seven Real Estate, selecciona propiedades e inversiones de ticket alto en Asunción y Central, Paraguay. Asesora de CENTURY 21 Seven, te acompaña con criterio financiero en cada operación.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),

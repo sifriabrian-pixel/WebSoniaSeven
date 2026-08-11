@@ -1,11 +1,17 @@
+import Image from "next/image";
+
 const SIZES = {
   sm: {
-    main: "text-lg tracking-[0.2em]",
-    sub: "text-[8px] tracking-[0.15em] mt-0.5",
+    mark: 22,
+    main: "text-lg tracking-[0.08em]",
+    sub: "text-[8px] tracking-[0.2em] mt-0.5",
+    gap: "gap-2",
   },
   lg: {
-    main: "text-2xl tracking-[0.25em] md:text-3xl",
-    sub: "text-[10px] tracking-[0.15em] mt-1",
+    mark: 40,
+    main: "text-2xl tracking-[0.08em] md:text-4xl",
+    sub: "text-[11px] tracking-[0.3em] mt-2",
+    gap: "gap-3",
   },
 };
 
@@ -16,14 +22,19 @@ export default function Wordmark({
   size?: keyof typeof SIZES;
   className?: string;
 }) {
-  const { main, sub } = SIZES[size];
+  const { mark, main, sub, gap } = SIZES[size];
   return (
-    <div className={className}>
-      <div className={`font-serif ${main}`}>SEVEN INMOBILIARIA</div>
-      <div
-        className={`text-gold ${sub} [text-shadow:0_1px_3px_rgba(0,0,0,0.4)]`}
-      >
-        By Sonia García
+    <div className={`flex flex-col items-center ${gap} ${className}`}>
+      <Image
+        src="/images/brand/mark-white.png"
+        alt=""
+        width={mark * 1.1}
+        height={mark}
+        className="shrink-0"
+      />
+      <div className="text-center">
+        <div className={`font-serif ${main}`}>SONIA GARCÍA</div>
+        <div className={`text-cream/80 ${sub}`}>SEVEN REAL ESTATE</div>
       </div>
     </div>
   );

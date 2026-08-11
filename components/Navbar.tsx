@@ -40,7 +40,7 @@ export default function Navbar() {
             <Link
               key={link.href}
               href={link.href}
-              className="text-sm tracking-wide text-cream transition-colors hover:text-gold"
+              className="text-sm tracking-wide text-cream transition-colors hover:text-graybrand"
             >
               {link.label}
             </Link>
@@ -69,7 +69,7 @@ export default function Navbar() {
               key={link.href}
               href={link.href}
               onClick={() => setOpen(false)}
-              className="text-sm tracking-wide text-cream transition-colors hover:text-gold"
+              className="text-sm tracking-wide text-cream transition-colors hover:text-graybrand"
             >
               {link.label}
             </Link>

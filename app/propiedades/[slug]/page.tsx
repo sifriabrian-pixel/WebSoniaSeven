@@ -197,7 +197,7 @@ export default async function PropertyDetailPage({ params }: PageProps) {
                     ? `Hola Sonia, vi que la propiedad "${property.title}" ya fue vendida. ¿Tenés algo similar disponible?`
                     : whatsappMessage
                 }
-                className="mt-6 block bg-gold px-6 py-3 text-center text-sm tracking-wide text-navy transition-colors hover:bg-cream"
+                className="mt-6 block bg-cream px-6 py-3 text-center text-sm tracking-wide text-navy transition-colors hover:bg-white"
               >
                 CONSULTAR POR WHATSAPP
               </WhatsAppInline>

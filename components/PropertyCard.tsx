@@ -7,7 +7,7 @@ import DataPlaceholder from "@/components/DataPlaceholder";
 const statusBadges: Partial<
   Record<Property["status"], { label: string; className: string }>
 > = {
-  nueva: { label: "Nueva", className: "bg-gold text-navy" },
+  nueva: { label: "Nueva", className: "bg-navy text-cream" },
   reservada: { label: "Reservada", className: "bg-gray-500 text-white" },
   vendida: { label: "Vendida", className: "bg-gray-800 text-white" },
 };

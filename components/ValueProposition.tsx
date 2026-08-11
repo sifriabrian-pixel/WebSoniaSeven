@@ -29,7 +29,7 @@ export default function ValueProposition() {
       <div className="mt-12 grid grid-cols-1 gap-6 md:grid-cols-3">
         <Reveal className="md:col-span-2">
           <div className="h-full bg-navy p-8 text-cream">
-            <h3 className="font-serif text-xl text-gold">
+            <h3 className="font-serif text-xl text-cream">
               Análisis de zona, no solo de propiedad
             </h3>
             <p className="mt-3 text-sm leading-relaxed text-cream/80">

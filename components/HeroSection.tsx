@@ -18,7 +18,7 @@ export default function HeroSection({ zones }: { zones: Zone[] }) {
         priority
         className="animate-kenburns object-cover"
       />
-      <div className="absolute inset-0 z-[1] bg-gradient-to-b from-[#1C2841]/60 via-[#1C2841]/30 to-[#1C2841]/70" />
+      <div className="absolute inset-0 z-[1] bg-gradient-to-b from-[#4E232D]/60 via-[#4E232D]/30 to-[#4E232D]/70" />
 
       <div className="relative z-10 mx-auto flex max-w-3xl flex-col items-center px-6 text-center text-cream">
         <Wordmark size="lg" className="mb-6" />
@@ -42,7 +42,7 @@ export default function HeroSection({ zones }: { zones: Zone[] }) {
             onClick={() => setMode("vivir")}
             className={`px-5 py-2 tracking-wide transition-colors ${
               mode === "vivir"
-                ? "bg-gold text-navy"
+                ? "bg-cream text-navy"
                 : "text-cream/80 hover:text-cream"
             }`}
           >
@@ -53,7 +53,7 @@ export default function HeroSection({ zones }: { zones: Zone[] }) {
             onClick={() => setMode("invertir")}
             className={`px-5 py-2 tracking-wide transition-colors ${
               mode === "invertir"
-                ? "bg-gold text-navy"
+                ? "bg-cream text-navy"
                 : "text-cream/80 hover:text-cream"
             }`}
           >
@@ -64,7 +64,7 @@ export default function HeroSection({ zones }: { zones: Zone[] }) {
         <div key={`cta-${mode}`} className="mt-6 flex animate-fade-in-up flex-col items-center gap-3">
           <Link
             href="/propiedades"
-            className="inline-block bg-gold px-8 py-3 text-sm tracking-wide text-navy transition-colors hover:bg-cream"
+            className="inline-block bg-cream px-8 py-3 text-sm tracking-wide text-navy transition-colors hover:bg-white"
           >
             {mode === "invertir"
               ? "VER OPORTUNIDADES DE INVERSIÓN"
@@ -120,7 +120,7 @@ export default function HeroSection({ zones }: { zones: Zone[] }) {
           </select>
           <button
             type="submit"
-            className="bg-navy px-6 py-2 text-sm tracking-wide text-cream transition-colors hover:bg-gold"
+            className="bg-navy px-6 py-2 text-sm tracking-wide text-cream transition-colors hover:bg-navy-dark"
           >
             Buscar
           </button>

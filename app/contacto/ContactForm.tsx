@@ -55,7 +55,7 @@ export default function ContactForm() {
       </div>
       <button
         type="submit"
-        className="w-full bg-navy px-6 py-3 text-sm tracking-wide text-cream transition-colors hover:bg-gold"
+        className="w-full bg-navy px-6 py-3 text-sm tracking-wide text-cream transition-colors hover:bg-navy-dark"
       >
         ENVIAR POR WHATSAPP
       </button>

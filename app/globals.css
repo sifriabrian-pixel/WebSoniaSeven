@@ -34,12 +34,6 @@ body {
   .brand-tracking {
     letter-spacing: 0.35em;
   }
-
-  .gold-line {
-    width: 60px;
-    height: 1px;
-    background-color: var(--color-gold);
-  }
 }
 
 /* Reveal-on-scroll: estado inicial + estado visible, sin librería */

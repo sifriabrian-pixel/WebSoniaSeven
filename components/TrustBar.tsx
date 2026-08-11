@@ -17,7 +17,7 @@ const STATS = [
           suffix="%"
         />
       ) : (
-        <DataPlaceholder suffix="%" />
+        <DataPlaceholder suffix="%" dark />
       ),
     label: "Plusvalía prom. zona (24 meses)",
   },
@@ -26,7 +26,7 @@ const STATS = [
       TRUST_BAR.avgClosingDays !== null ? (
         <AnimatedCounter value={TRUST_BAR.avgClosingDays} suffix=" días" />
       ) : (
-        <DataPlaceholder suffix=" días" />
+        <DataPlaceholder suffix=" días" dark />
       ),
     label: "Tiempo prom. de cierre",
   },
@@ -42,7 +42,7 @@ export default function TrustBar() {
       <div className="mx-auto grid max-w-5xl grid-cols-2 gap-6 text-center md:grid-cols-4">
         {STATS.map((stat, i) => (
           <Reveal key={i} delay={i * 80}>
-            <p className="font-serif text-2xl text-gold md:text-3xl">
+            <p className="font-serif text-2xl text-cream md:text-3xl">
               {stat.value}
             </p>
             <p className="mt-1 text-xs text-cream/70">{stat.label}</p>

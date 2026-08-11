@@ -124,7 +124,9 @@ export default function ConversionForm({
                 key={option}
                 className={`cursor-pointer border px-3 py-1.5 text-xs tracking-wide transition-colors ${
                   intent === option
-                    ? "border-gold bg-gold text-navy"
+                    ? isDark
+                      ? "border-cream bg-cream text-navy"
+                      : "border-navy bg-navy text-cream"
                     : isDark
                       ? "border-cream/30 text-cream/70"
                       : "border-navy/20 text-navy"
@@ -160,7 +162,7 @@ export default function ConversionForm({
 
         <button
           type="submit"
-          className="w-full bg-gold px-5 py-2.5 text-sm tracking-wide text-navy transition-colors hover:bg-cream"
+          className="w-full bg-navy px-5 py-2.5 text-sm tracking-wide text-cream transition-colors hover:bg-navy-dark"
         >
           Quiero recibir oportunidades
         </button>

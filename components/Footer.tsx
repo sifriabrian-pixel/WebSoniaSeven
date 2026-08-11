@@ -10,7 +10,7 @@ export default function Footer() {
       <div className="mx-auto grid max-w-7xl gap-10 md:grid-cols-4">
         <div>
           <Wordmark size="sm" />
-          <SectionDivider center={false} />
+          <SectionDivider center={false} dark />
           <p className="max-w-xs text-sm text-cream/70">
             Real estate de alto valor en Asunción y Central, Paraguay.
             Selección curada para inversores y compradores exigentes.
@@ -18,27 +18,27 @@ export default function Footer() {
         </div>
 
         <div>
-          <h4 className="mb-4 text-sm tracking-[0.2em] text-gold">
+          <h4 className="mb-4 text-sm tracking-[0.2em] text-graybrand">
             NAVEGACIÓN
           </h4>
           <ul className="space-y-2 text-sm text-cream/80">
             <li>
-              <Link href="/" className="hover:text-gold">
+              <Link href="/" className="hover:text-graybrand">
                 Inicio
               </Link>
             </li>
             <li>
-              <Link href="/propiedades" className="hover:text-gold">
+              <Link href="/propiedades" className="hover:text-graybrand">
                 Propiedades
               </Link>
             </li>
             <li>
-              <Link href="/sobre-mi" className="hover:text-gold">
+              <Link href="/sobre-mi" className="hover:text-graybrand">
                 Sobre mí
               </Link>
             </li>
             <li>
-              <Link href="/contacto" className="hover:text-gold">
+              <Link href="/contacto" className="hover:text-graybrand">
                 Contacto
               </Link>
             </li>
@@ -46,7 +46,7 @@ export default function Footer() {
         </div>
 
         <div>
-          <h4 className="mb-4 text-sm tracking-[0.2em] text-gold">
+          <h4 className="mb-4 text-sm tracking-[0.2em] text-graybrand">
             CONTACTO
           </h4>
           <ul className="space-y-2 text-sm text-cream/80">
@@ -60,7 +60,7 @@ export default function Footer() {
         </div>
 
         <div>
-          <h4 className="mb-4 text-sm tracking-[0.2em] text-gold">
+          <h4 className="mb-4 text-sm tracking-[0.2em] text-graybrand">
             OPORTUNIDADES
           </h4>
           <p className="mb-3 text-sm text-cream/70">

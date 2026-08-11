@@ -44,7 +44,7 @@ export default async function HomePage() {
             <h2 className="font-serif text-3xl">
               Contadora antes que asesora inmobiliaria
             </h2>
-            <SectionDivider center={false} />
+            <SectionDivider center={false} dark />
             <p className="mt-4 text-cream/80">
               Contadora y Analista Financiera con{" "}
               {YEARS_OF_EXPERIENCE
@@ -70,7 +70,7 @@ export default async function HomePage() {
             </p>
             <Link
               href="/sobre-mi"
-              className="mt-8 inline-block border border-gold px-6 py-3 text-sm tracking-wide text-gold transition-colors hover:bg-gold hover:text-navy"
+              className="mt-8 inline-block border border-cream px-6 py-3 text-sm tracking-wide text-cream transition-colors hover:bg-cream hover:text-navy"
             >
               CONOCER MÁS
             </Link>
@@ -102,10 +102,10 @@ export default async function HomePage() {
           <h2 className="font-serif text-3xl">
             Hablemos de tu próxima inversión
           </h2>
-          <SectionDivider />
+          <SectionDivider dark />
           <WhatsAppInline
             message="Hola Sonia, quiero que me ayudes a analizar una oportunidad de inversión."
-            className="mt-6 inline-block bg-gold px-8 py-3 text-sm tracking-wide text-navy transition-colors hover:bg-cream"
+            className="mt-6 inline-block bg-cream px-8 py-3 text-sm tracking-wide text-navy transition-colors hover:bg-white"
           >
             CONSULTAR POR WHATSAPP
           </WhatsAppInline>

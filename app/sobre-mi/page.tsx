@@ -129,7 +129,7 @@ export default function AboutPage() {
         <SectionDivider />
         <WhatsAppInline
           message="Hola Sonia, quiero conocer más sobre tus servicios."
-          className="mt-4 inline-block bg-navy px-8 py-3 text-sm tracking-wide text-cream transition-colors hover:bg-gold"
+          className="mt-4 inline-block bg-navy px-8 py-3 text-sm tracking-wide text-cream transition-colors hover:bg-navy-dark"
         >
           CONTACTAR POR WHATSAPP
         </WhatsAppInline>
