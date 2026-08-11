@@ -1,6 +1,6 @@
-# Seven Inmobiliaria
+# Sonia García — Seven Real Estate
 
-Sitio web de Seven Inmobiliaria, de Sonia García (asesora de CENTURY 21 Seven) en Asunción y Central, Paraguay. Construido con Next.js 14 (App Router), TypeScript y Tailwind CSS.
+Sitio web de Sonia García (asesora de CENTURY 21 Seven), marca "Seven Real Estate", en Asunción y Central, Paraguay. Construido con Next.js 14 (App Router), TypeScript y Tailwind CSS.
 
 ## Cómo correr el proyecto
 
@@ -77,6 +77,20 @@ Para activarlo:
 1. Crear un formulario en Formspree y copiar su ID.
 2. Configurar la variable de entorno `NEXT_PUBLIC_FORMSPREE_ID` en Vercel (Project Settings → Environment Variables) con ese ID.
 3. Redeployar.
+
+## Identidad de marca
+
+Colores y logo vienen del kit de marca que pasó Brian (`ARCHIVOS SONIA GARCÍA.zip`), sampleados directamente de los PNG del logo — no son una conversión aproximada de CMYK:
+
+- **Maroon (marca):** `#823b4b` — variable `--color-navy` en [`app/globals.css`](app/globals.css). Es el único color de acento de la marca (antes había navy + gold como dos tonos separados; ahora ambos apuntan al mismo maroon).
+- **Maroon oscuro:** `#4e232d` — variable `--color-navy-dark`, derivado (oscurecido) para fondos profundos como el footer. No viene del kit de marca, es un cálculo para mantener la jerarquía visual que ya tenía el sitio.
+- **Gris de marca:** `#cecece` — variable `--color-gray`, expuesta en Tailwind como `graybrand` (no `gray`, para no pisar la escala `gray-50..900` de Tailwind que ya usaban los badges de "Reservada"/"Vendida"). Se usa como color de hover/interacción sobre fondos oscuros, donde el maroon no tiene contraste suficiente contra sí mismo.
+- **Cream (marca):** `#e6d7c4` — variable `--color-cream`, fondo principal del sitio.
+- **Tipografía de títulos:** Playfair Display (Google Fonts), no la "British Green" del kit de marca — esa fuente es de **uso personal únicamente** según su propio Read Me, no se puede usar en un sitio comercial sin licencia paga. Playfair Display tiene el mismo espíritu editorial de alto contraste y ya estaba integrada.
+- **Tipografía de texto:** Inter (Google Fonts), reemplaza a Poppins.
+- **Isotipo:** el mark en forma de "7" en `public/images/brand/mark-maroon.png` (fondos claros) y `mark-white.png` (fondos oscuros), recortado del archivo `ICONO1.png` del kit. El favicon (`app/icon.png`) se generó centrando ese mismo mark.
+
+Como la marca ahora tiene un solo color de acento (no dos como antes), cualquier elemento nuevo que use `text-gold`/`border-gold`/`bg-gold` sobre un fondo `bg-navy`/`bg-navy-dark` va a quedar invisible (mismo color de texto y de fondo) — usar `cream`/`white` para texto sobre fondo oscuro, y `graybrand` para estados de hover sobre fondo oscuro.
 
 ## Home orientada a inversor
 
