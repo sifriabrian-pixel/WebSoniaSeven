@@ -2,11 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
+/*
+ * Identidad "Sonia García / Seven Real Estate" — colores sampleados
+ * directamente de los archivos de marca (LOGO.png, PERFIL REDES).
+ * Es una paleta de un solo color de marca (maroon) + neutros: no hay
+ * un segundo color de acento como antes (navy+gold eran dos tonos
+ * distintos). "navy" y "gold" se mantienen como nombres de variable
+ * por compatibilidad con las clases ya usadas en todo el sitio, pero
+ * ambos apuntan al mismo maroon de marca.
+ */
 :root {
-  --color-navy: #1c2841;
-  --color-navy-dark: #12192b;
-  --color-cream: #f5f2eb;
-  --color-gold: #b9955a;
+  --color-navy: #823b4b; /* maroon de marca */
+  --color-navy-dark: #4e232d; /* maroon oscuro, derivado, para fondos profundos */
+  --color-cream: #e6d7c4; /* cream de marca */
+  --color-gold: #823b4b; /* mismo maroon: la marca no tiene un segundo acento */
+  --color-gray: #cecece; /* gris neutro de marca */
   --color-white: #ffffff;
   --color-text: #1c1c1c;
 }

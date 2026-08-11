@@ -15,11 +15,12 @@ const config: Config = {
         },
         cream: "var(--color-cream)",
         gold: "var(--color-gold)",
+        graybrand: "var(--color-gray)",
         text: "var(--color-text)",
       },
       fontFamily: {
         serif: ["var(--font-playfair)", "serif"],
-        sans: ["var(--font-poppins)", "sans-serif"],
+        sans: ["var(--font-inter)", "sans-serif"],
       },
     },
   },

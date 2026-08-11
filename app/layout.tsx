@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Playfair_Display, Poppins } from "next/font/google";
+import { Playfair_Display, Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -13,9 +13,9 @@ const playfair = Playfair_Display({
   weight: ["500", "600", "700"],
 });
 
-const poppins = Poppins({
+const inter = Inter({
   subsets: ["latin"],
-  variable: "--font-poppins",
+  variable: "--font-inter",
   weight: ["300", "400", "500", "600"],
 });
 
@@ -55,7 +55,7 @@ export default function RootLayout({
   return (
     <html lang="es">
       <body
-        className={`${playfair.variable} ${poppins.variable} font-sans antialiased bg-cream text-text`}
+        className={`${playfair.variable} ${inter.variable} font-sans antialiased bg-cream text-text`}
       >
         <JsonLd data={agentJsonLd()} />
         <Navbar />
