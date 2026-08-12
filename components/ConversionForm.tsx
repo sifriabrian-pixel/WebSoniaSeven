@@ -3,22 +3,7 @@
 import { useState } from "react";
 import { WhatsAppInline } from "@/components/WhatsAppButton";
 
-// TODO: reemplazar GFORM_ACTION_URL y entry IDs una vez creado el formulario real
-const GFORM_ACTION_URL = process.env.NEXT_PUBLIC_GFORM_ACTION_URL;
-const GFORM_ENTRY_NOMBRE = process.env.NEXT_PUBLIC_GFORM_ENTRY_NOMBRE;
-const GFORM_ENTRY_CONTACTO = process.env.NEXT_PUBLIC_GFORM_ENTRY_CONTACTO;
-const GFORM_ENTRY_BUSQUEDA = process.env.NEXT_PUBLIC_GFORM_ENTRY_BUSQUEDA;
-const GFORM_ENTRY_PRESUPUESTO = process.env.NEXT_PUBLIC_GFORM_ENTRY_PRESUPUESTO;
-const GFORM_ENTRY_ZONA = process.env.NEXT_PUBLIC_GFORM_ENTRY_ZONA;
-
-const isGformConfigured = Boolean(
-  GFORM_ACTION_URL &&
-    GFORM_ENTRY_NOMBRE &&
-    GFORM_ENTRY_CONTACTO &&
-    GFORM_ENTRY_BUSQUEDA &&
-    GFORM_ENTRY_PRESUPUESTO &&
-    GFORM_ENTRY_ZONA
-);
+const WEB3FORMS_ACCESS_KEY = process.env.NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY;
 
 const BUDGET_OPTIONS = [
   { value: "150000", label: "Hasta USD 150.000" },
@@ -39,40 +24,46 @@ export default function ConversionForm({
   compact = false,
 }: ConversionFormProps) {
   const [sent, setSent] = useState(false);
+  const [error, setError] = useState(false);
+  const [sending, setSending] = useState(false);
   const [intent, setIntent] = useState("Invertir");
   const isDark = variant === "dark";
 
-  function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
+  async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
+    setError(false);
+    setSending(true);
     const formData = new FormData(e.currentTarget);
 
-    const body = new URLSearchParams();
-    body.append(GFORM_ENTRY_NOMBRE!, String(formData.get("name") ?? ""));
-    body.append(
-      GFORM_ENTRY_CONTACTO!,
-      `${formData.get("countryCode") ?? ""} ${formData.get("whatsapp") ?? ""}`.trim()
-    );
-    body.append(GFORM_ENTRY_BUSQUEDA!, intent);
-    body.append(
-      GFORM_ENTRY_PRESUPUESTO!,
-      String(formData.get("budget") ?? "")
-    );
-    body.append(GFORM_ENTRY_ZONA!, String(formData.get("zona") ?? ""));
-
-    // "no-cors" no permite leer la respuesta del servidor: no hay forma de
-    // confirmar server-side que Google Forms recibió el envío sin backend
-    // propio, así que el estado de éxito se muestra de forma optimista.
-    fetch(GFORM_ACTION_URL!, {
-      method: "POST",
-      mode: "no-cors",
-      headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body,
-    }).catch(() => {});
-
-    setSent(true);
+    try {
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: { Accept: "application/json" },
+        body: new URLSearchParams({
+          access_key: WEB3FORMS_ACCESS_KEY!,
+          subject: "Nuevo lead — Seven Real Estate",
+          nombre: String(formData.get("name") ?? ""),
+          whatsapp:
+            `${formData.get("countryCode") ?? ""} ${formData.get("whatsapp") ?? ""}`.trim(),
+          busqueda: intent,
+          presupuesto: String(formData.get("budget") ?? ""),
+          zona: String(formData.get("zona") ?? ""),
+        }),
+      });
+      const result = await response.json();
+      if (result.success) {
+        setSent(true);
+      } else {
+        setError(true);
+      }
+    } catch {
+      setError(true);
+    } finally {
+      setSending(false);
+    }
   }
 
-  if (!isGformConfigured) {
+  if (!WEB3FORMS_ACCESS_KEY) {
     return (
       <WhatsAppInline
         message="Hola, quiero recibir oportunidades de inversión curadas."
@@ -201,9 +192,10 @@ export default function ConversionForm({
 
         <button
           type="submit"
-          className="w-full bg-navy px-5 py-2.5 text-sm tracking-wide text-cream transition-colors hover:bg-navy-dark"
+          disabled={sending}
+          className="w-full bg-navy px-5 py-2.5 text-sm tracking-wide text-cream transition-colors hover:bg-navy-dark disabled:opacity-60"
         >
-          Quiero recibir oportunidades
+          {sending ? "Enviando..." : "Quiero recibir oportunidades"}
         </button>
       </form>
 
@@ -213,6 +205,13 @@ export default function ConversionForm({
         Te escribimos por WhatsApp a la brevedad. Sin spam, sin compartir tu
         número con terceros.
       </p>
+
+      {error && (
+        <p className="mt-2 text-xs text-red-500">
+          No pudimos enviar tu consulta. Probá de nuevo o escribinos por
+          WhatsApp.
+        </p>
+      )}
     </div>
   );
 }
