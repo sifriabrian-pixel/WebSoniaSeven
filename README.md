@@ -69,14 +69,19 @@ Mientras no haya fotos reales, el sitio usa imágenes de stock de Unsplash carga
 
 Ver [`content/blog/README.md`](content/blog/README.md). En resumen: un archivo `.md` por artículo en `content/blog/`, con `title`/`excerpt`/`date` en el encabezado. El listado en `/blog` y la página individual se generan solos.
 
-## Configurar el formulario de conversión (Formspree)
+## Configurar el formulario de conversión (Google Forms)
 
-El bloque "Recibí oportunidades antes de que lleguen al mercado" (mid-page en home y footer) envía a [Formspree](https://formspree.io). Hasta que se configure, en vez de un formulario roto el sitio muestra un botón "Quiero recibir oportunidades" que abre WhatsApp con un mensaje prellenado — nunca un texto tipo "formulario en configuración" visible a usuarios finales.
+El bloque "Recibí oportunidades antes de que lleguen al mercado" (mid-page en home y footer, `components/ConversionForm.tsx`) mantiene el diseño custom del sitio (mismos campos: nombre, WhatsApp, qué busca, presupuesto, zona), pero al enviar hace un `fetch()` en `mode: "no-cors"` directo al endpoint `formResponse` de un Google Form — las respuestas caen a un Google Sheet, sin backend propio. Hasta que se configure, en vez de un formulario roto el sitio muestra un botón "Quiero recibir oportunidades" que abre WhatsApp con un mensaje prellenado — nunca un texto tipo "formulario en configuración" visible a usuarios finales.
 
-Para activarlo:
-1. Crear un formulario en Formspree y copiar su ID.
-2. Configurar la variable de entorno `NEXT_PUBLIC_FORMSPREE_ID` en Vercel (Project Settings → Environment Variables) con ese ID.
-3. Redeployar.
+**Limitación conocida y aceptada:** `no-cors` no permite leer la respuesta del servidor, así que no hay forma de confirmar del lado del cliente que Google realmente recibió el envío sin un backend propio. El sitio muestra el estado de éxito de forma optimista apenas dispara el request. Si en algún momento se necesita confirmación real de entrega, migrar a Formspree es un cambio menor — la estructura del formulario no cambia, solo el destino del POST.
+
+Para activarlo (Brian):
+1. Crear el Google Form con las mismas preguntas (nombre, contacto, qué busca, presupuesto, zona) y vincularlo a una Google Sheet.
+2. Abrir el formulario real → los 3 puntos → "Obtener enlace con datos rellenados previamente" → completar cualquier valor de prueba en cada campo y generar el link. Los `entry.XXXXXXX` de cada pregunta van a aparecer en la URL generada.
+3. Configurar estas variables de entorno en Vercel (Project Settings → Environment Variables):
+   - `NEXT_PUBLIC_GFORM_ACTION_URL` — `https://docs.google.com/forms/d/e/{FORM_ID}/formResponse`
+   - `NEXT_PUBLIC_GFORM_ENTRY_NOMBRE`, `NEXT_PUBLIC_GFORM_ENTRY_CONTACTO`, `NEXT_PUBLIC_GFORM_ENTRY_BUSQUEDA`, `NEXT_PUBLIC_GFORM_ENTRY_PRESUPUESTO`, `NEXT_PUBLIC_GFORM_ENTRY_ZONA` — el `entry.XXXXXXX` de cada campo.
+4. Redeployar.
 
 ## Identidad de marca
 
@@ -96,7 +101,7 @@ Como la marca ahora tiene un solo color de acento (no dos como antes), cualquier
 
 El hero es directo y de un solo modo (invertir): título, una línea de subtítulo, un CTA dominante ("Ver oportunidades de inversión") y un link secundario para quien busca vivir. No tiene buscador ni toggle Vivir/Invertir — ese filtro vive en `/propiedades`.
 
-**Fondo del hero:** es una foto de stock de Unsplash (obra/construcción) marcada con `{/* TODO: reemplazar por foto real de desarrollo o skyline Asunción */}` en `components/HeroSection.tsx` — se cambió la foto anterior (una pileta lifestyle) porque contradecía el posicionamiento inversor. Pendiente que Brian confirme el asset final (foto real de un desarrollo en pozo o una toma aérea de Asunción).
+**Fondo del hero:** es el render de fachada de Afianza Recoleta #8 (`public/images/hero-afianza-recoleta.jpg`), uno de los desarrollos activos del catálogo — conecta con inventario real, es Asunción real, y el concepto de "torre en desarrollo" refuerza el mensaje de inversión. Ya no es un placeholder de stock.
 
 Más abajo, "Propiedades destacadas" (`components/FeaturedPropertiesSection.tsx`) sigue operando en modo "Invertir" por default (mostrando rentabilidad estimada, plusvalía de zona y tipo de operación en vez de dormitorios/baños/m²), con chips de filtro por tipo de operación. El modo vive en `components/InvestorModeContext.tsx` (React Context) — hoy no hay ningún control en la UI para cambiarlo a "Vivir"; queda así a propósito, coherente con el posicionamiento de inversión de la home.
 
@@ -158,9 +163,8 @@ El proyecto está deployado en Vercel: `web-sonia-seven.vercel.app`. Cualquier p
 
 Estos valores quedaron como placeholder a la espera de datos reales de Brian:
 
-- **Años de trayectoria:** hoy el sitio no muestra un número de años (se sacó "amplia trayectoria" y no se reemplazó por una cifra porque no la tenemos confirmada). Configurable en `lib/content.ts` → `YEARS_OF_EXPERIENCE` en cuanto Brian confirme el número.
 - **Testimonios reales (⚠️ bloqueante antes de publicar):** `components/Testimonials.tsx` hoy muestra 3 testimonios **ficticios** puestos a pedido de Brian solo para maquetar la sección — no son reales y no deben quedar así en producción. Sonia tiene que proveer casos reales (nombre real o iniciales autorizadas) para reemplazarlos.
-- **Formspree ID:** falta crear el formulario en Formspree y configurar `NEXT_PUBLIC_FORMSPREE_ID` en Vercel (ver sección de arriba). Hasta entonces el bloque de novedades muestra un botón que abre WhatsApp en vez de un formulario roto.
+- **Google Form + entry IDs:** falta crear el Google Form real y configurar las 6 variables de entorno `NEXT_PUBLIC_GFORM_*` en Vercel (ver sección de arriba). Hasta entonces el bloque de novedades muestra un botón que abre WhatsApp en vez de un formulario roto.
 - **Copy final de posicionamiento:** confirmar con Brian/Sonia si "asesoramiento inmobiliario integral" es el mensaje definitivo, o si conviene depurar el catálogo a solo propiedades premium y volver a "real estate de lujo" (copy archivado en `content/copy-lujo-archivado.md`).
 - **Habitalis Jardín (Villa Morra):** proyecto real de la carpeta de Brian, todavía no cargado porque ningún documento de esa carpeta tiene precio. En cuanto Brian confirme el precio (aunque sea "desde"), se carga igual que los otros 4.
 - **Specs exactos de las propiedades cargadas:** Afianza Recoleta #8 y Altea de Gaulle son proyectos en pozo con varias tipologías — el precio mostrado es el de la unidad más económica ("Desde"), sin m²/dormitorios fijos a nivel card. El penthouse de Edificio Italia no tiene m² totales confirmados en la documentación (sí dormitorios, baños y cochera). Completar cuando Brian tenga esos datos.

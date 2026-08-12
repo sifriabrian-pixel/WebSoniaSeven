@@ -3,7 +3,22 @@
 import { useState } from "react";
 import { WhatsAppInline } from "@/components/WhatsAppButton";
 
-const FORMSPREE_ID = process.env.NEXT_PUBLIC_FORMSPREE_ID;
+// TODO: reemplazar GFORM_ACTION_URL y entry IDs una vez creado el formulario real
+const GFORM_ACTION_URL = process.env.NEXT_PUBLIC_GFORM_ACTION_URL;
+const GFORM_ENTRY_NOMBRE = process.env.NEXT_PUBLIC_GFORM_ENTRY_NOMBRE;
+const GFORM_ENTRY_CONTACTO = process.env.NEXT_PUBLIC_GFORM_ENTRY_CONTACTO;
+const GFORM_ENTRY_BUSQUEDA = process.env.NEXT_PUBLIC_GFORM_ENTRY_BUSQUEDA;
+const GFORM_ENTRY_PRESUPUESTO = process.env.NEXT_PUBLIC_GFORM_ENTRY_PRESUPUESTO;
+const GFORM_ENTRY_ZONA = process.env.NEXT_PUBLIC_GFORM_ENTRY_ZONA;
+
+const isGformConfigured = Boolean(
+  GFORM_ACTION_URL &&
+    GFORM_ENTRY_NOMBRE &&
+    GFORM_ENTRY_CONTACTO &&
+    GFORM_ENTRY_BUSQUEDA &&
+    GFORM_ENTRY_PRESUPUESTO &&
+    GFORM_ENTRY_ZONA
+);
 
 const BUDGET_OPTIONS = [
   { value: "150000", label: "Hasta USD 150.000" },
@@ -24,31 +39,40 @@ export default function ConversionForm({
   compact = false,
 }: ConversionFormProps) {
   const [sent, setSent] = useState(false);
-  const [error, setError] = useState(false);
   const [intent, setIntent] = useState("Invertir");
   const isDark = variant === "dark";
 
-  async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
+  function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
-    setError(false);
-    const form = e.currentTarget;
-    try {
-      const response = await fetch(form.action, {
-        method: "POST",
-        body: new FormData(form),
-        headers: { Accept: "application/json" },
-      });
-      if (response.ok) {
-        setSent(true);
-      } else {
-        setError(true);
-      }
-    } catch {
-      setError(true);
-    }
+    const formData = new FormData(e.currentTarget);
+
+    const body = new URLSearchParams();
+    body.append(GFORM_ENTRY_NOMBRE!, String(formData.get("name") ?? ""));
+    body.append(
+      GFORM_ENTRY_CONTACTO!,
+      `${formData.get("countryCode") ?? ""} ${formData.get("whatsapp") ?? ""}`.trim()
+    );
+    body.append(GFORM_ENTRY_BUSQUEDA!, intent);
+    body.append(
+      GFORM_ENTRY_PRESUPUESTO!,
+      String(formData.get("budget") ?? "")
+    );
+    body.append(GFORM_ENTRY_ZONA!, String(formData.get("zona") ?? ""));
+
+    // "no-cors" no permite leer la respuesta del servidor: no hay forma de
+    // confirmar server-side que Google Forms recibió el envío sin backend
+    // propio, así que el estado de éxito se muestra de forma optimista.
+    fetch(GFORM_ACTION_URL!, {
+      method: "POST",
+      mode: "no-cors",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body,
+    }).catch(() => {});
+
+    setSent(true);
   }
 
-  if (!FORMSPREE_ID) {
+  if (!isGformConfigured) {
     return (
       <WhatsAppInline
         message="Hola, quiero recibir oportunidades de inversión curadas."
@@ -81,12 +105,7 @@ export default function ConversionForm({
 
   return (
     <div>
-      <form
-        action={`https://formspree.io/f/${FORMSPREE_ID}`}
-        method="POST"
-        onSubmit={handleSubmit}
-        className="space-y-3"
-      >
+      <form onSubmit={handleSubmit} className="space-y-3">
         <div
           className={compact ? "space-y-3" : "grid grid-cols-1 gap-3 sm:grid-cols-2"}
         >
@@ -153,18 +172,31 @@ export default function ConversionForm({
           </div>
         </div>
 
-        <div>
-          <label className={labelClass}>Presupuesto estimado</label>
-          <select name="budget" defaultValue="" className={inputClass}>
-            <option value="" disabled>
-              Seleccioná un rango
-            </option>
-            {BUDGET_OPTIONS.map((opt) => (
-              <option key={opt.value} value={opt.value}>
-                {opt.label}
+        <div
+          className={compact ? "space-y-3" : "grid grid-cols-1 gap-3 sm:grid-cols-2"}
+        >
+          <div>
+            <label className={labelClass}>Presupuesto estimado</label>
+            <select name="budget" defaultValue="" className={inputClass}>
+              <option value="" disabled>
+                Seleccioná un rango
               </option>
-            ))}
-          </select>
+              {BUDGET_OPTIONS.map((opt) => (
+                <option key={opt.value} value={opt.value}>
+                  {opt.label}
+                </option>
+              ))}
+            </select>
+          </div>
+          <div>
+            <label className={labelClass}>Zona de interés</label>
+            <input
+              type="text"
+              name="zona"
+              placeholder="Ej. Recoleta, Villa Morra..."
+              className={inputClass}
+            />
+          </div>
         </div>
 
         <button
@@ -181,13 +213,6 @@ export default function ConversionForm({
         Te escribimos por WhatsApp a la brevedad. Sin spam, sin compartir tu
         número con terceros.
       </p>
-
-      {error && (
-        <p className="mt-2 text-xs text-red-500">
-          No pudimos enviar tu consulta. Probá de nuevo o escribinos por
-          WhatsApp.
-        </p>
-      )}
     </div>
   );
 }

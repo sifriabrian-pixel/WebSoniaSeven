@@ -1,11 +1,9 @@
 /**
- * Años de trayectoria de Sonia en el mercado inmobiliario/financiero.
- * Todavía no confirmado — Brian va a pasar el número real. En cuanto lo
- * tengas, cambiá `null` por el número (ej. `8`) y se va a mostrar
- * automáticamente en la home y en /sobre-mi. Mientras esté en `null`,
- * el sitio usa el texto genérico "amplia trayectoria".
+ * Años de trayectoria de Sonia como Contadora y Analista Financiera.
+ * Confirmado por Brian: 12 años. Se muestra automáticamente en la home
+ * y en /sobre-mi.
  */
-export const YEARS_OF_EXPERIENCE: number | null = null;
+export const YEARS_OF_EXPERIENCE: number | null = 12;
 
 /**
  * Barra de confianza (franja de números debajo del hero). `propertiesManaged`

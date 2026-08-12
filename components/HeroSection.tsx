@@ -10,13 +10,12 @@ import Link from "next/link";
 export default function HeroSection() {
   return (
     <section className="relative flex h-screen min-h-[640px] items-center justify-center overflow-hidden">
-      {/* TODO: reemplazar por foto real de desarrollo o skyline Asunción */}
       <Image
-        src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2000&auto=format&fit=crop"
-        alt="Obra en construcción — desarrollo inmobiliario"
+        src="/images/hero-afianza-recoleta.jpg"
+        alt="Afianza Recoleta #8 — desarrollo en construcción en Asunción"
         fill
         priority
-        className="animate-kenburns object-cover"
+        className="animate-kenburns object-cover object-[center_30%]"
       />
       <div className="absolute inset-0 z-[1] bg-[radial-gradient(circle_at_20%_75%,rgba(78,35,45,0.88),rgba(78,35,45,0.55)_45%,rgba(78,35,45,0.15)_80%)]" />
 
