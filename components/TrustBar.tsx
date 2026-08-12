@@ -1,61 +1,58 @@
-import { TRUST_BAR } from "@/lib/content";
+import { TRUST_BAR, YEARS_OF_EXPERIENCE } from "@/lib/content";
 import AnimatedCounter from "@/components/AnimatedCounter";
 import Reveal from "@/components/Reveal";
 
-const hasExtendedStats =
-  TRUST_BAR.avgAppreciationPct !== null && TRUST_BAR.avgClosingDays !== null;
-
-const STATS = hasExtendedStats
-  ? [
-      {
-        value: (
-          <AnimatedCounter value={TRUST_BAR.propertiesManaged} prefix="+" />
-        ),
-        label: "Propiedades gestionadas",
-      },
-      {
-        value: (
-          <AnimatedCounter
-            value={TRUST_BAR.avgAppreciationPct as number}
-            prefix="+"
-            suffix="%"
-          />
-        ),
-        label: "Plusvalía prom. zona (24 meses)",
-      },
-      {
-        value: (
-          <AnimatedCounter
-            value={TRUST_BAR.avgClosingDays as number}
-            suffix=" días"
-          />
-        ),
-        label: "Tiempo prom. de cierre",
-      },
-      {
-        value: "CENTURY 21",
-        label: "Oficial",
-      },
-    ]
-  : [
-      {
-        value: (
-          <AnimatedCounter value={TRUST_BAR.propertiesManaged} prefix="+" />
-        ),
-        label: "Propiedades gestionadas",
-      },
-      {
-        value: "CENTURY 21",
-        label: "Oficial",
-      },
-    ];
+const STATS = [
+  {
+    value: <AnimatedCounter value={TRUST_BAR.propertiesManaged} prefix="+" />,
+    label: "Propiedades gestionadas",
+  },
+  ...(TRUST_BAR.avgAppreciationPct !== null
+    ? [
+        {
+          value: (
+            <AnimatedCounter
+              value={TRUST_BAR.avgAppreciationPct}
+              prefix="+"
+              suffix="%"
+            />
+          ),
+          label: "Plusvalía prom. zona (24 meses)",
+        },
+      ]
+    : []),
+  ...(TRUST_BAR.avgClosingDays !== null
+    ? [
+        {
+          value: (
+            <AnimatedCounter value={TRUST_BAR.avgClosingDays} suffix=" días" />
+          ),
+          label: "Tiempo prom. de cierre",
+        },
+      ]
+    : []),
+  ...(YEARS_OF_EXPERIENCE !== null
+    ? [
+        {
+          value: (
+            <AnimatedCounter
+              value={YEARS_OF_EXPERIENCE}
+              prefix="+"
+              suffix=" años"
+            />
+          ),
+          label: "Trayectoria financiera",
+        },
+      ]
+    : []),
+];
 
 export default function TrustBar() {
   return (
     <section className="bg-navy-dark px-6 py-8 text-cream">
       <div
         className={`mx-auto grid max-w-5xl gap-6 text-center ${
-          hasExtendedStats ? "grid-cols-2 md:grid-cols-4" : "grid-cols-2"
+          STATS.length > 2 ? "grid-cols-2 md:grid-cols-4" : "grid-cols-2"
         }`}
       >
         {STATS.map((stat, i) => (

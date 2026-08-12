@@ -1,6 +1,8 @@
 # Sonia García — Seven Real Estate
 
-Sitio web de Sonia García (asesora de CENTURY 21 Seven), marca "Seven Real Estate", en Asunción y Central, Paraguay. Construido con Next.js 14 (App Router), TypeScript, Tailwind CSS y Framer Motion.
+Sitio web de Sonia García, Directora de Seven Real Estate, en Asunción y Central, Paraguay. Construido con Next.js 14 (App Router), TypeScript, Tailwind CSS y Framer Motion.
+
+**Nota de marca:** el sitio no menciona a Century 21 en ningún texto visible ni en metadata/JSON-LD — es una decisión explícita de Sonia de desligarse por completo de esa marca (no solo de dejar de abreviarla). Si en algún futuro cambio aparece "C21"/"Century 21" en algún componente, dato o metadata nuevos, hay que sacarlo — no reemplazarlo por la versión completa del nombre.
 
 ## Cómo correr el proyecto
 
@@ -111,7 +113,7 @@ Secciones nuevas relacionadas:
 - **`Property.investment`** (`lib/types.ts`) — rentabilidad estimada, plusvalía y tipo de operación (Reventa/Renta/Desarrollo en pozo) por propiedad, usado en modo Invertir.
 
 **Política de datos faltantes: nunca se publica `[DATO]` ni ningún placeholder visible.** Donde falta un dato real (plusvalía, tiempo de cierre, rentabilidad estimada por propiedad, insight de zona), el sitio oculta ese elemento puntual en vez de mostrarlo vacío o con un placeholder:
-- Barra de confianza: si falta "Plusvalía prom." o "Tiempo prom. de cierre", se muestran solo 2 stats centradas (Propiedades gestionadas + Oficial CENTURY 21) en vez de 4 casilleros con huecos.
+- Barra de confianza: los stats se arman dinámicamente en `components/TrustBar.tsx` — solo entran "Plusvalía prom." y "Tiempo prom. de cierre" si `TRUST_BAR` tiene esos valores, y "Trayectoria financiera" si `YEARS_OF_EXPERIENCE` no es `null`. Hoy solo hay 2 stats (Propiedades gestionadas + Trayectoria financiera), centradas, en vez de 4 casilleros con huecos.
 - Cards de propiedad (modo Invertir): la línea de "Rentabilidad" o "Plusvalía zona" se omite si el dato es `null`, sin dejar espacio vacío.
 - Inteligencia de zona: solo se publican zonas con los 3 datos completos, y la sección entera se oculta si hay menos de 2 zonas completas (hoy: oculta, las 4 zonas están en `null`).
 
@@ -163,6 +165,7 @@ El proyecto está deployado en Vercel: `web-sonia-seven.vercel.app`. Cualquier p
 
 Estos valores quedaron como placeholder a la espera de datos reales de Brian:
 
+- **Email de contacto en dominio propio (⚠️ decisión de infraestructura, no de código):** el email de contacto (`Footer.tsx`, `lib/seo.ts`, `contacto/page.tsx`) sigue siendo `sonia.garcia@c21.com.py` — es un dominio de Century 21. Como Sonia se está desligando por completo de esa marca, en algún momento va a necesitar una casilla propia bajo un dominio de Seven Real Estate (ej. `sonia@sevenrealestate.com.py`, sujeto a qué dominio se compre/tenga). Esto no es algo que se resuelva en el código — es una decisión de Sonia/Brian sobre qué dominio usar. El email actual sigue funcionando mientras tanto, así que no bloquea nada más.
 - **Testimonios reales (⚠️ bloqueante antes de publicar):** `components/Testimonials.tsx` hoy muestra 3 testimonios **ficticios** puestos a pedido de Brian solo para maquetar la sección — no son reales y no deben quedar así en producción. Sonia tiene que proveer casos reales (nombre real o iniciales autorizadas) para reemplazarlos.
 - **Google Form + entry IDs:** falta crear el Google Form real y configurar las 6 variables de entorno `NEXT_PUBLIC_GFORM_*` en Vercel (ver sección de arriba). Hasta entonces el bloque de novedades muestra un botón que abre WhatsApp en vez de un formulario roto.
 - **Copy final de posicionamiento:** confirmar con Brian/Sonia si "asesoramiento inmobiliario integral" es el mensaje definitivo, o si conviene depurar el catálogo a solo propiedades premium y volver a "real estate de lujo" (copy archivado en `content/copy-lujo-archivado.md`).

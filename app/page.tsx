@@ -55,7 +55,7 @@ export default async function HomePage() {
               cuadrados, la leo por su retorno.
             </p>
             <p className="mt-4 text-cream/80">
-              Trabajo con <strong className="text-cream">CENTURY 21 Seven</strong>{" "}
+              Dirijo <strong className="text-cream">Seven Real Estate</strong>{" "}
               en Las Mercedes, Asunción, asesorando en compra, venta e
               inversión en Asunción y Central — con foco en el segmento de
               ticket alto y el mismo criterio con el que analizaría
@@ -65,8 +65,8 @@ export default async function HomePage() {
               {YEARS_OF_EXPERIENCE && (
                 <>+{YEARS_OF_EXPERIENCE} años de trayectoria · </>
               )}
-              +50 propiedades gestionadas · Oficial CENTURY 21 Seven · Asunción,
-              Paraguay
+              +50 propiedades gestionadas · Directora de Seven Real Estate ·
+              Asunción, Paraguay
             </p>
             <Link
               href="/sobre-mi"

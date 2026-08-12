@@ -26,7 +26,7 @@ export async function generateMetadata({
   if (!zone) return {};
 
   const title = `Propiedades en venta en ${zone.name}, ${zone.city}`;
-  const description = `Casas, departamentos y terrenos disponibles en ${zone.name}, ${zone.city}, Paraguay. Asesoramiento de Sonia García, CENTURY 21 Seven.`;
+  const description = `Casas, departamentos y terrenos disponibles en ${zone.name}, ${zone.city}, Paraguay. Asesoramiento de Sonia García, Directora de Seven Real Estate.`;
   const url = `${SITE_URL}/propiedades/zona/${zone.slug}`;
 
   return {

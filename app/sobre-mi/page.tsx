@@ -7,7 +7,7 @@ import { YEARS_OF_EXPERIENCE } from "@/lib/content";
 
 const TITLE = "Sobre mí";
 const DESCRIPTION =
-  "Conocé a Sonia García, asesora inmobiliaria de CENTURY 21 Seven especializada en operaciones de alto valor en Asunción, Paraguay.";
+  "Conocé a Sonia García, Directora de Seven Real Estate, especializada en operaciones de alto valor en Asunción, Paraguay.";
 
 export const metadata: Metadata = {
   title: TITLE,
@@ -58,7 +58,7 @@ export default function AboutPage() {
             Sonia García
           </h1>
           <p className="mt-1 text-sm text-text/60">
-            Asesora Inmobiliaria · CENTURY 21 Seven · Asunción, Paraguay
+            Directora · Seven Real Estate · Asunción, Paraguay
           </p>
           <SectionDivider center={false} />
           <p className="mt-4 leading-relaxed text-text/80">
@@ -71,7 +71,7 @@ export default function AboutPage() {
             inmobiliaria, no solo sus metros cuadrados.
           </p>
           <p className="mt-4 leading-relaxed text-text/80">
-            Trabajo con CENTURY 21 Seven en Las Mercedes, Asunción, donde
+            Dirijo Seven Real Estate en Las Mercedes, Asunción, donde
             brindo asesoramiento en compra, venta e inversión de propiedades
             en Paraguay, con foco en el segmento de ticket alto en Asunción
             y Central. Te acompaño con responsabilidad, honestidad y ética
@@ -110,8 +110,8 @@ export default function AboutPage() {
             </p>
           </div>
           <div className="bg-white p-6">
-            <p className="font-serif text-2xl text-gold">CENTURY 21</p>
-            <p className="mt-1 text-sm text-text/70">Oficial Seven</p>
+            <p className="font-serif text-2xl text-gold">Directora</p>
+            <p className="mt-1 text-sm text-text/70">Seven Real Estate</p>
           </div>
           <div className="bg-white p-6">
             <p className="font-serif text-3xl text-gold">ASU</p>

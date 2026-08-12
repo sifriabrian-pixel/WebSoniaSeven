@@ -21,7 +21,7 @@ const inter = Inter({
 
 const DEFAULT_TITLE = `${SITE_NAME} | ${SITE_TAGLINE} — Real Estate de Alto Valor en Asunción`;
 const DEFAULT_DESCRIPTION =
-  "Sonia García, de Seven Real Estate, selecciona propiedades e inversiones de ticket alto en Asunción y Central, Paraguay. Asesora de CENTURY 21 Seven, te acompaña con criterio financiero en cada operación.";
+  "Sonia García, Directora de Seven Real Estate, selecciona propiedades e inversiones de ticket alto en Asunción y Central, Paraguay, y te acompaña con criterio financiero en cada operación.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),

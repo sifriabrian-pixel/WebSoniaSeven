@@ -9,7 +9,7 @@ export const AGENT = {
   jobTitle: "Asesora Inmobiliaria",
   telephone: "+595971561916",
   email: "sonia.garcia@c21.com.py",
-  affiliation: "CENTURY 21 Seven",
+  affiliation: "Seven Real Estate",
   address: {
     streetAddress: "República de Siria esq. Ayala Velázquez",
     addressLocality: "Las Mercedes, Asunción",

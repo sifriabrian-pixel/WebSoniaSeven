@@ -11,8 +11,8 @@ const SUPPORT_CARDS = [
     text: "Desde la reserva hasta la escritura, acompaño cada paso.",
   },
   {
-    title: "Red CENTURY 21 internacional",
-    text: "Respaldo de una marca con presencia en +80 países.",
+    title: "Contacto directo con las principales constructoras del país",
+    text: "Relación directa con las desarrolladoras detrás de cada proyecto — información de primera mano sobre avance de obra y disponibilidad real.",
   },
 ];
 

@@ -5,7 +5,7 @@ import { SITE_URL, SITE_NAME } from "@/lib/seo";
 
 const TITLE = "Contacto";
 const DESCRIPTION =
-  "Contactá a Sonia García, asesora de CENTURY 21 Seven especializada en propiedades de alto valor, para consultas en Asunción y Central.";
+  "Contactá a Sonia García, Directora de Seven Real Estate, especializada en propiedades de alto valor, para consultas en Asunción y Central.";
 
 export const metadata: Metadata = {
   title: TITLE,
