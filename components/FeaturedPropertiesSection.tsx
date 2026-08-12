@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import { motion, AnimatePresence } from "framer-motion";
 import PropertyCard from "@/components/PropertyCard";
 import SectionDivider from "@/components/SectionDivider";
 import { useInvestorMode } from "@/components/InvestorModeContext";
@@ -50,7 +51,7 @@ export default function FeaturedPropertiesSection({
               key={f.value}
               type="button"
               onClick={() => setDealFilter(f.value)}
-              className={`border px-4 py-1.5 text-xs tracking-wide transition-colors ${
+              className={`border px-4 py-1.5 text-xs tracking-wide transition-colors duration-200 ${
                 dealFilter === f.value
                   ? "border-navy bg-navy text-cream"
                   : "border-navy/20 text-navy hover:border-gold hover:text-gold"
@@ -62,13 +63,24 @@ export default function FeaturedPropertiesSection({
         </div>
       )}
 
-      <div className="mt-12 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
-        {visible.map((property, i) => (
-          <Reveal key={property.id} delay={i * 100}>
-            <PropertyCard property={property} mode={mode} />
-          </Reveal>
-        ))}
-      </div>
+      <Reveal>
+        <div className="mt-12 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
+          <AnimatePresence mode="popLayout">
+            {visible.map((property) => (
+              <motion.div
+                key={property.id}
+                layout
+                initial={{ opacity: 0, y: 24 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, scale: 0.95 }}
+                transition={{ duration: 0.3, ease: "easeOut" }}
+              >
+                <PropertyCard property={property} mode={mode} />
+              </motion.div>
+            ))}
+          </AnimatePresence>
+        </div>
+      </Reveal>
 
       <div className="mt-12 text-center">
         <Link

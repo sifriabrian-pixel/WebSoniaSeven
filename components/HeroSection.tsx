@@ -1,12 +1,19 @@
 import Image from "next/image";
 import Link from "next/link";
 
+/**
+ * El toggle Vivir/Invertir se sacó del hero en una iteración anterior
+ * (posicionamiento 100% inversor). Si se reactiva, acá es donde iría el
+ * crossfade de imagen de fondo por estado (skyline/desarrollo vs. lifestyle)
+ * con AnimatePresence mode="wait" de framer-motion.
+ */
 export default function HeroSection() {
   return (
     <section className="relative flex h-screen min-h-[640px] items-center justify-center overflow-hidden">
+      {/* TODO: reemplazar por foto real de desarrollo o skyline Asunción */}
       <Image
-        src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?q=80&w=2000&auto=format&fit=crop"
-        alt="Propiedad en Asunción"
+        src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2000&auto=format&fit=crop"
+        alt="Obra en construcción — desarrollo inmobiliario"
         fill
         priority
         className="animate-kenburns object-cover"

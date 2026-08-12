@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import { useInView, useMotionValue, useTransform, animate } from "framer-motion";
 
 /**
  * Anima un número entero de 0 al valor final cuando entra en pantalla.
@@ -10,7 +11,7 @@ export default function AnimatedCounter({
   value,
   prefix = "",
   suffix = "",
-  duration = 1200,
+  duration = 1.5,
 }: {
   value: number;
   prefix?: string;
@@ -18,37 +19,27 @@ export default function AnimatedCounter({
   duration?: number;
 }) {
   const ref = useRef<HTMLSpanElement>(null);
+  const isInView = useInView(ref, { once: true, amount: 0.3 });
+  const count = useMotionValue(0);
+  const rounded = useTransform(count, (latest) => Math.round(latest));
   const [display, setDisplay] = useState(0);
 
   useEffect(() => {
-    const el = ref.current;
-    if (!el) return;
+    if (!isInView) return;
 
-    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
-      setDisplay(value);
+    if (
+      typeof window !== "undefined" &&
+      window.matchMedia("(prefers-reduced-motion: reduce)").matches
+    ) {
+      count.set(value);
       return;
     }
 
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (!entry.isIntersecting) return;
-        observer.disconnect();
+    const controls = animate(count, value, { duration, ease: "easeOut" });
+    return () => controls.stop();
+  }, [isInView, value, duration, count]);
 
-        const start = performance.now();
-        function tick(now: number) {
-          const progress = Math.min((now - start) / duration, 1);
-          const eased = 1 - Math.pow(1 - progress, 3);
-          setDisplay(Math.round(eased * value));
-          if (progress < 1) requestAnimationFrame(tick);
-        }
-        requestAnimationFrame(tick);
-      },
-      { threshold: 0.3 }
-    );
-
-    observer.observe(el);
-    return () => observer.disconnect();
-  }, [value, duration]);
+  useEffect(() => rounded.on("change", (v) => setDisplay(v)), [rounded]);
 
   return (
     <span ref={ref}>

@@ -1,7 +1,12 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
+import { motion } from "framer-motion";
 import type { Property } from "@/lib/types";
 import { formatPrice } from "@/lib/data";
+
+const MotionLink = motion(Link);
 
 const statusBadges: Partial<
   Record<Property["status"], { label: string; className: string }>
@@ -9,6 +14,16 @@ const statusBadges: Partial<
   nueva: { label: "Nueva", className: "bg-navy text-cream" },
   reservada: { label: "Reservada", className: "bg-gray-500 text-white" },
   vendida: { label: "Vendida", className: "bg-gray-800 text-white" },
+};
+
+const cardVariants = {
+  rest: { y: 0, boxShadow: "0 1px 2px rgba(28,28,28,0.05)" },
+  hover: { y: -4, boxShadow: "0 20px 25px -5px rgba(28,28,28,0.15)" },
+};
+
+const imageVariants = {
+  rest: { scale: 1 },
+  hover: { scale: 1.05 },
 };
 
 export default function PropertyCard({
@@ -23,21 +38,32 @@ export default function PropertyCard({
   const investment = property.investment;
 
   return (
-    <Link
+    <MotionLink
       href={`/propiedades/${property.slug}`}
-      className="group block overflow-hidden bg-white shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-xl"
+      initial="rest"
+      whileHover="hover"
+      animate="rest"
+      variants={cardVariants}
+      transition={{ duration: 0.3 }}
+      className="block overflow-hidden bg-white"
     >
       <div className="relative aspect-[4/3] w-full overflow-hidden">
-        <Image
-          src={property.images[0]}
-          alt={property.title}
-          fill
-          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-          className="object-cover transition-transform duration-500 group-hover:scale-105"
-        />
+        <motion.div
+          variants={imageVariants}
+          transition={{ duration: 0.3 }}
+          className="absolute inset-0"
+        >
+          <Image
+            src={property.images[0]}
+            alt={property.title}
+            fill
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+            className="object-cover"
+          />
+        </motion.div>
         {badge && (
           <span
-            className={`absolute left-3 top-3 px-3 py-1 text-xs tracking-wide ${badge.className}`}
+            className={`absolute left-3 top-3 z-10 px-3 py-1 text-xs tracking-wide ${badge.className}`}
           >
             {badge.label}
           </span>
@@ -103,6 +129,6 @@ export default function PropertyCard({
           )
         )}
       </div>
-    </Link>
+    </MotionLink>
   );
 }

@@ -1,6 +1,6 @@
 # Sonia García — Seven Real Estate
 
-Sitio web de Sonia García (asesora de CENTURY 21 Seven), marca "Seven Real Estate", en Asunción y Central, Paraguay. Construido con Next.js 14 (App Router), TypeScript y Tailwind CSS.
+Sitio web de Sonia García (asesora de CENTURY 21 Seven), marca "Seven Real Estate", en Asunción y Central, Paraguay. Construido con Next.js 14 (App Router), TypeScript, Tailwind CSS y Framer Motion.
 
 ## Cómo correr el proyecto
 
@@ -96,6 +96,8 @@ Como la marca ahora tiene un solo color de acento (no dos como antes), cualquier
 
 El hero es directo y de un solo modo (invertir): título, una línea de subtítulo, un CTA dominante ("Ver oportunidades de inversión") y un link secundario para quien busca vivir. No tiene buscador ni toggle Vivir/Invertir — ese filtro vive en `/propiedades`.
 
+**Fondo del hero:** es una foto de stock de Unsplash (obra/construcción) marcada con `{/* TODO: reemplazar por foto real de desarrollo o skyline Asunción */}` en `components/HeroSection.tsx` — se cambió la foto anterior (una pileta lifestyle) porque contradecía el posicionamiento inversor. Pendiente que Brian confirme el asset final (foto real de un desarrollo en pozo o una toma aérea de Asunción).
+
 Más abajo, "Propiedades destacadas" (`components/FeaturedPropertiesSection.tsx`) sigue operando en modo "Invertir" por default (mostrando rentabilidad estimada, plusvalía de zona y tipo de operación en vez de dormitorios/baños/m²), con chips de filtro por tipo de operación. El modo vive en `components/InvestorModeContext.tsx` (React Context) — hoy no hay ningún control en la UI para cambiarlo a "Vivir"; queda así a propósito, coherente con el posicionamiento de inversión de la home.
 
 Secciones nuevas relacionadas:
@@ -107,9 +109,17 @@ Secciones nuevas relacionadas:
 - Barra de confianza: si falta "Plusvalía prom." o "Tiempo prom. de cierre", se muestran solo 2 stats centradas (Propiedades gestionadas + Oficial C21) en vez de 4 casilleros con huecos.
 - Cards de propiedad (modo Invertir): la línea de "Rentabilidad" o "Plusvalía zona" se omite si el dato es `null`, sin dejar espacio vacío.
 - Inteligencia de zona: solo se publican zonas con los 3 datos completos, y la sección entera se oculta si hay menos de 2 zonas completas (hoy: oculta, las 4 zonas están en `null`).
-- Testimonios: la sección solo muestra el carousel si hay 2+ testimonios reales cargados en `TESTIMONIALS`; mientras esté vacío (como ahora) muestra un copy de transición con CTA a WhatsApp.
+
+**Excepción temporal — testimonios:** `components/Testimonials.tsx` hoy muestra 3 testimonios **ficticios** (marcados `PLACEHOLDER` en el código) para poder maquetar la sección, a pedido explícito de Brian. Esto es una excepción puntual a la política de arriba, no un cambio de criterio general — hay que reemplazarlos por casos reales de Sonia antes de publicar (ver "Pendientes de contenido"). El slot de testimonios reales (`lib/content.ts` → `TESTIMONIALS`) sigue vacío y no se usa mientras estén los placeholders.
 
 Ver la sección "Pendientes de contenido" más abajo para la lista completa de lo que falta completar.
+
+## Animaciones (Framer Motion)
+
+- **Reveal-on-scroll** (`components/Reveal.tsx`): fade-up genérico (`opacity 0→1`, `y 24px→0`) que dispara una sola vez al entrar en viewport (`whileInView`, `once: true`). Envuelve la mayoría de las secciones y cards del sitio — reemplazó la versión anterior basada en `IntersectionObserver` + CSS.
+- **Contador animado** (`components/AnimatedCounter.tsx`): usa `useInView` + `useMotionValue`/`animate` de Framer Motion, dispara una sola vez, ~1.5s con easing `easeOut`. Respeta `prefers-reduced-motion`.
+- **Hover en cards de propiedad** (`components/PropertyCard.tsx`): zoom sutil de imagen (`scale: 1.05`) + elevación de card (`y: -4px` + sombra), vía `variants` de Framer Motion.
+- **Filtro de "Oportunidades activas"** (`components/FeaturedPropertiesSection.tsx`): al cambiar de filtro, las cards que entran/salen animan con `AnimatePresence` + `layout`, así el grid se reacomoda sin saltos.
 
 ## Estructura del proyecto
 
@@ -149,7 +159,7 @@ El proyecto está deployado en Vercel: `web-sonia-seven.vercel.app`. Cualquier p
 Estos valores quedaron como placeholder a la espera de datos reales de Brian:
 
 - **Años de trayectoria:** hoy el sitio no muestra un número de años (se sacó "amplia trayectoria" y no se reemplazó por una cifra porque no la tenemos confirmada). Configurable en `lib/content.ts` → `YEARS_OF_EXPERIENCE` en cuanto Brian confirme el número.
-- **Testimonios reales:** `lib/content.ts` → `TESTIMONIALS` está vacío. La estructura soporta `avatar` (ruta de imagen) y `sourceUrl` (link a la reseña real). En cuanto haya mínimo 2 casos verificables (nombre real o iniciales autorizadas por el cliente), cargarlos ahí y el carousel real reemplaza automáticamente al copy de transición "Los primeros resultados están en camino".
+- **Testimonios reales (⚠️ bloqueante antes de publicar):** `components/Testimonials.tsx` hoy muestra 3 testimonios **ficticios** puestos a pedido de Brian solo para maquetar la sección — no son reales y no deben quedar así en producción. Sonia tiene que proveer casos reales (nombre real o iniciales autorizadas) para reemplazarlos.
 - **Formspree ID:** falta crear el formulario en Formspree y configurar `NEXT_PUBLIC_FORMSPREE_ID` en Vercel (ver sección de arriba). Hasta entonces el bloque de novedades muestra un botón que abre WhatsApp en vez de un formulario roto.
 - **Copy final de posicionamiento:** confirmar con Brian/Sonia si "asesoramiento inmobiliario integral" es el mensaje definitivo, o si conviene depurar el catálogo a solo propiedades premium y volver a "real estate de lujo" (copy archivado en `content/copy-lujo-archivado.md`).
 - **Habitalis Jardín (Villa Morra):** proyecto real de la carpeta de Brian, todavía no cargado porque ningún documento de esa carpeta tiene precio. En cuanto Brian confirme el precio (aunque sea "desde"), se carga igual que los otros 4.

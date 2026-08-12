@@ -1,85 +1,80 @@
-import Image from "next/image";
-import SectionDivider from "@/components/SectionDivider";
-import Reveal from "@/components/Reveal";
-import { WhatsAppInline } from "@/components/WhatsAppButton";
-import { TESTIMONIALS } from "@/lib/content";
+"use client";
 
-const MIN_REAL_TESTIMONIALS = 2;
+import { motion, type Variants } from "framer-motion";
+import SectionDivider from "@/components/SectionDivider";
+
+/**
+ * PLACEHOLDER: testimonios ficticios, reemplazar por reales antes de
+ * publicar. Sonia debe proveer los casos reales (nombre real o iniciales
+ * autorizadas) — ver README, sección "Pendientes de contenido".
+ */
+const PLACEHOLDER_TESTIMONIALS = [
+  {
+    quote:
+      "Sonia nos mostró la proyección de plusvalía de la zona antes de mostrarnos la propiedad. Terminamos comprando en Villa Morra en vez de donde íbamos a comprar por instinto — y hoy esa decisión se nota.",
+    author: "R. Duarte, inversor",
+  },
+  {
+    quote:
+      "Buscaba renta, no una casa para vivir. Fue la primera asesora que entendió esa diferencia y me trajo solo oportunidades con números que cerraban.",
+    author: "C. Benítez",
+  },
+  {
+    quote:
+      "El análisis de zona nos ahorró meses de mirar propiedades que no tenían sentido para lo que buscábamos. Se nota la mirada de contadora, no de vendedora.",
+    author: "Familia Acosta",
+  },
+];
+
+const container: Variants = {
+  hidden: {},
+  visible: { transition: { staggerChildren: 0.1, delayChildren: 0.1 } },
+};
+
+const item: Variants = {
+  hidden: { opacity: 0, y: 24 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: { duration: 0.6, ease: "easeOut" },
+  },
+};
 
 export default function Testimonials() {
-  if (TESTIMONIALS.length < MIN_REAL_TESTIMONIALS) {
-    return (
-      <section className="bg-cream px-6 py-24">
-        <Reveal className="mx-auto max-w-2xl text-center">
-          <h2 className="font-serif text-3xl text-navy">
-            Los primeros resultados están en camino
-          </h2>
-          <SectionDivider />
-          <p className="mt-4 text-text/70">
-            Estamos construyendo el historial de casos en Asunción y Central.
-            Si querés ser parte de las primeras oportunidades curadas,
-            escribinos por WhatsApp.
-          </p>
-          <WhatsAppInline
-            message="Hola Sonia, quiero ser de los primeros en enterarme de las oportunidades de inversión."
-            className="mt-6 inline-block bg-navy px-8 py-3 text-sm tracking-wide text-cream transition-colors hover:bg-navy-dark"
-          >
-            QUIERO SER DE LOS PRIMEROS EN ENTERARME
-          </WhatsAppInline>
-        </Reveal>
-      </section>
-    );
-  }
-
   return (
     <section className="bg-cream px-6 py-24">
-      <Reveal className="mx-auto max-w-5xl text-center">
+      <motion.div
+        className="mx-auto max-w-5xl text-center"
+        initial={{ opacity: 0, y: 24 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, amount: 0.2 }}
+        transition={{ duration: 0.6, ease: "easeOut" }}
+      >
         <h2 className="font-serif text-3xl text-navy">Testimonios</h2>
         <SectionDivider />
 
-        <div className="mt-12 flex snap-x snap-mandatory gap-6 overflow-x-auto pb-4 md:grid md:grid-cols-3 md:overflow-visible">
-          {TESTIMONIALS.map((t) => (
-            <div
+        <motion.div
+          className="mt-12 grid grid-cols-1 gap-6 md:grid-cols-3"
+          variants={container}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.2 }}
+        >
+          {PLACEHOLDER_TESTIMONIALS.map((t) => (
+            <motion.div
               key={t.author}
-              className="w-[85vw] shrink-0 snap-center bg-white p-6 text-left shadow-sm md:w-auto"
+              variants={item}
+              className="bg-white p-6 text-left shadow-sm"
             >
               <p className="font-serif text-3xl text-gold">&ldquo;</p>
               <p className="text-sm italic text-text/80">{t.quote}</p>
-              {t.result && (
-                <p className="mt-3 font-serif text-lg text-gold">
-                  {t.result}
-                </p>
-              )}
-              <div className="mt-4 flex items-center gap-3">
-                {t.avatar && (
-                  <div className="relative h-9 w-9 overflow-hidden rounded-full">
-                    <Image
-                      src={t.avatar}
-                      alt={t.author}
-                      fill
-                      className="object-cover"
-                    />
-                  </div>
-                )}
-                {t.sourceUrl ? (
-                  <a
-                    href={t.sourceUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-xs tracking-wide text-navy underline hover:text-gold"
-                  >
-                    — {t.author}
-                  </a>
-                ) : (
-                  <p className="text-xs tracking-wide text-navy">
-                    — {t.author}
-                  </p>
-                )}
-              </div>
-            </div>
+              <p className="mt-4 text-xs tracking-wide text-navy">
+                — {t.author}
+              </p>
+            </motion.div>
           ))}
-        </div>
-      </Reveal>
+        </motion.div>
+      </motion.div>
     </section>
   );
 }

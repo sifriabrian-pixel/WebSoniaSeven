@@ -36,28 +36,6 @@ body {
   }
 }
 
-/* Reveal-on-scroll: estado inicial + estado visible, sin librería */
-.reveal {
-  opacity: 0;
-  transform: translateY(24px);
-  transition:
-    opacity 0.7s ease-out,
-    transform 0.7s ease-out;
-}
-
-.reveal-visible {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .reveal {
-    opacity: 1;
-    transform: none;
-    transition: none;
-  }
-}
-
 /* Ken Burns sutil para la imagen de fondo del hero */
 @keyframes kenburns {
   0% {
