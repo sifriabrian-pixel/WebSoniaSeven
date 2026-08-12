@@ -33,8 +33,8 @@ const STATS = hasExtendedStats
         label: "Tiempo prom. de cierre",
       },
       {
-        value: "C21",
-        label: "Oficial Century 21",
+        value: "CENTURY 21",
+        label: "Oficial",
       },
     ]
   : [
@@ -45,8 +45,8 @@ const STATS = hasExtendedStats
         label: "Propiedades gestionadas",
       },
       {
-        value: "C21",
-        label: "Oficial Century 21",
+        value: "CENTURY 21",
+        label: "Oficial",
       },
     ];
 

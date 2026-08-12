@@ -11,7 +11,7 @@ const SUPPORT_CARDS = [
     text: "Desde la reserva hasta la escritura, acompaño cada paso.",
   },
   {
-    title: "Red C21 internacional",
+    title: "Red CENTURY 21 internacional",
     text: "Respaldo de una marca con presencia en +80 países.",
   },
 ];

@@ -65,7 +65,7 @@ export default async function HomePage() {
               {YEARS_OF_EXPERIENCE && (
                 <>+{YEARS_OF_EXPERIENCE} años de trayectoria · </>
               )}
-              +50 propiedades gestionadas · Oficial C21 Seven · Asunción,
+              +50 propiedades gestionadas · Oficial CENTURY 21 Seven · Asunción,
               Paraguay
             </p>
             <Link

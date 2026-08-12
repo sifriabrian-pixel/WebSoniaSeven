@@ -110,7 +110,7 @@ export default function AboutPage() {
             </p>
           </div>
           <div className="bg-white p-6">
-            <p className="font-serif text-3xl text-gold">C21</p>
+            <p className="font-serif text-2xl text-gold">CENTURY 21</p>
             <p className="mt-1 text-sm text-text/70">Oficial Seven</p>
           </div>
           <div className="bg-white p-6">

@@ -111,7 +111,7 @@ Secciones nuevas relacionadas:
 - **`Property.investment`** (`lib/types.ts`) — rentabilidad estimada, plusvalía y tipo de operación (Reventa/Renta/Desarrollo en pozo) por propiedad, usado en modo Invertir.
 
 **Política de datos faltantes: nunca se publica `[DATO]` ni ningún placeholder visible.** Donde falta un dato real (plusvalía, tiempo de cierre, rentabilidad estimada por propiedad, insight de zona), el sitio oculta ese elemento puntual en vez de mostrarlo vacío o con un placeholder:
-- Barra de confianza: si falta "Plusvalía prom." o "Tiempo prom. de cierre", se muestran solo 2 stats centradas (Propiedades gestionadas + Oficial C21) en vez de 4 casilleros con huecos.
+- Barra de confianza: si falta "Plusvalía prom." o "Tiempo prom. de cierre", se muestran solo 2 stats centradas (Propiedades gestionadas + Oficial CENTURY 21) en vez de 4 casilleros con huecos.
 - Cards de propiedad (modo Invertir): la línea de "Rentabilidad" o "Plusvalía zona" se omite si el dato es `null`, sin dejar espacio vacío.
 - Inteligencia de zona: solo se publican zonas con los 3 datos completos, y la sección entera se oculta si hay menos de 2 zonas completas (hoy: oculta, las 4 zonas están en `null`).
 
