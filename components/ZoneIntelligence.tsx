@@ -1,12 +1,22 @@
 import Link from "next/link";
 import SectionDivider from "@/components/SectionDivider";
-import DataPlaceholder from "@/components/DataPlaceholder";
 import { getZoneInsight } from "@/lib/zoneInsights";
 import Reveal from "@/components/Reveal";
 import type { Zone } from "@/lib/data";
 
+const MIN_COMPLETE_ZONES = 2;
+
 export default function ZoneIntelligence({ zones }: { zones: Zone[] }) {
-  if (zones.length === 0) return null;
+  const complete = zones
+    .map((zone) => ({ zone, insight: getZoneInsight(zone.slug) }))
+    .filter(
+      ({ insight }) =>
+        insight.appreciation24m !== null &&
+        insight.avgPricePerM2 !== null &&
+        insight.rentalDemand !== null
+    );
+
+  if (complete.length < MIN_COMPLETE_ZONES) return null;
 
   return (
     <section className="bg-cream px-6 py-24">
@@ -22,40 +32,26 @@ export default function ZoneIntelligence({ zones }: { zones: Zone[] }) {
         </div>
 
         <div className="mt-12 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
-          {zones.map((zone, i) => {
-            const insight = getZoneInsight(zone.slug);
-            return (
-              <Reveal key={zone.slug} delay={i * 100}>
+          {complete.map(({ zone, insight }, i) => (
+            <Reveal key={zone.slug} delay={i * 100}>
               <div className="h-full bg-white p-6 shadow-sm">
                 <h3 className="font-serif text-lg text-navy">{zone.name}</h3>
                 <div className="mt-4 space-y-2 text-sm text-text/70">
                   <p>
                     Plusvalía 24m:{" "}
-                    {insight.appreciation24m !== null ? (
-                      <span className="text-navy">
-                        +{insight.appreciation24m}%
-                      </span>
-                    ) : (
-                      <DataPlaceholder suffix="%" />
-                    )}
+                    <span className="text-navy">
+                      +{insight.appreciation24m}%
+                    </span>
                   </p>
                   <p>
                     Precio prom. m²:{" "}
-                    {insight.avgPricePerM2 !== null ? (
-                      <span className="text-navy">
-                        USD {insight.avgPricePerM2}
-                      </span>
-                    ) : (
-                      <DataPlaceholder />
-                    )}
+                    <span className="text-navy">
+                      USD {insight.avgPricePerM2}
+                    </span>
                   </p>
                   <p>
                     Demanda de alquiler:{" "}
-                    {insight.rentalDemand ? (
-                      <span className="text-navy">{insight.rentalDemand}</span>
-                    ) : (
-                      <DataPlaceholder />
-                    )}
+                    <span className="text-navy">{insight.rentalDemand}</span>
                   </p>
                 </div>
                 <Link
@@ -65,9 +61,8 @@ export default function ZoneIntelligence({ zones }: { zones: Zone[] }) {
                   Ver propiedades en esta zona →
                 </Link>
               </div>
-              </Reveal>
-            );
-          })}
+            </Reveal>
+          ))}
         </div>
       </div>
     </section>

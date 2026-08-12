@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { WhatsAppInline } from "@/components/WhatsAppButton";
 
 const FORMSPREE_ID = process.env.NEXT_PUBLIC_FORMSPREE_ID;
 
@@ -49,10 +50,16 @@ export default function ConversionForm({
 
   if (!FORMSPREE_ID) {
     return (
-      <p className={`text-sm ${isDark ? "text-cream/60" : "text-text/60"}`}>
-        Formulario en configuración. Mientras tanto, escribinos por WhatsApp
-        para que te avisemos de nuevas oportunidades.
-      </p>
+      <WhatsAppInline
+        message="Hola, quiero recibir oportunidades de inversión curadas."
+        className={`inline-block px-6 py-2.5 text-sm tracking-wide transition-colors ${
+          isDark
+            ? "bg-cream text-navy hover:bg-white"
+            : "bg-navy text-cream hover:bg-navy-dark"
+        }`}
+      >
+        Quiero recibir oportunidades
+      </WhatsAppInline>
     );
   }
 

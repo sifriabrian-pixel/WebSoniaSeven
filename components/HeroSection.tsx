@@ -1,14 +1,7 @@
-"use client";
-
 import Image from "next/image";
 import Link from "next/link";
-import Wordmark from "@/components/Wordmark";
-import { useInvestorMode } from "@/components/InvestorModeContext";
-import type { Zone } from "@/lib/data";
 
-export default function HeroSection({ zones }: { zones: Zone[] }) {
-  const { mode, setMode } = useInvestorMode();
-
+export default function HeroSection() {
   return (
     <section className="relative flex h-screen min-h-[640px] items-center justify-center overflow-hidden">
       <Image
@@ -18,113 +11,33 @@ export default function HeroSection({ zones }: { zones: Zone[] }) {
         priority
         className="animate-kenburns object-cover"
       />
-      <div className="absolute inset-0 z-[1] bg-gradient-to-b from-[#4E232D]/60 via-[#4E232D]/30 to-[#4E232D]/70" />
+      <div className="absolute inset-0 z-[1] bg-[radial-gradient(circle_at_20%_75%,rgba(78,35,45,0.88),rgba(78,35,45,0.55)_45%,rgba(78,35,45,0.15)_80%)]" />
 
       <div className="relative z-10 mx-auto flex max-w-3xl flex-col items-center px-6 text-center text-cream">
-        <Wordmark size="lg" className="mb-6" />
-
-        <div key={mode} className="animate-fade-in-up">
+        <div className="animate-fade-in-up">
           <h1 className="font-serif text-3xl leading-tight md:text-5xl">
-            {mode === "invertir"
-              ? "Invertí en las oportunidades de mayor valor de Asunción"
-              : "Propiedades para quienes valoran la calidad antes que el precio"}
+            Invertí en las oportunidades de mayor valor de Asunción
           </h1>
           <p className="mt-4 max-w-xl text-sm text-cream/80 md:text-base">
-            {mode === "invertir"
-              ? "Selección curada para el segmento de ticket alto — plusvalía por zona, rentabilidad estimada y timing de entrada, con el mismo rigor con el que evaluarías cualquier inversión de peso."
-              : "Casas, departamentos y desarrollos seleccionados en las zonas más consolidadas de Asunción y Central."}
+            Selección curada de propiedades con potencial de retorno en
+            Asunción y Central.
           </p>
         </div>
 
-        <div className="mt-6 inline-flex border border-cream/30 bg-black/20 p-1 text-sm">
-          <button
-            type="button"
-            onClick={() => setMode("vivir")}
-            className={`px-5 py-2 tracking-wide transition-colors ${
-              mode === "vivir"
-                ? "bg-cream text-navy"
-                : "text-cream/80 hover:text-cream"
-            }`}
-          >
-            Quiero VIVIR
-          </button>
-          <button
-            type="button"
-            onClick={() => setMode("invertir")}
-            className={`px-5 py-2 tracking-wide transition-colors ${
-              mode === "invertir"
-                ? "bg-cream text-navy"
-                : "text-cream/80 hover:text-cream"
-            }`}
-          >
-            Quiero INVERTIR
-          </button>
-        </div>
-
-        <div key={`cta-${mode}`} className="mt-6 flex animate-fade-in-up flex-col items-center gap-3">
+        <div className="mt-8 flex flex-col items-center gap-3 animate-fade-in-up">
           <Link
             href="/propiedades"
             className="inline-block bg-cream px-8 py-3 text-sm tracking-wide text-navy transition-colors hover:bg-white"
           >
-            {mode === "invertir"
-              ? "VER OPORTUNIDADES DE INVERSIÓN"
-              : "VER PROPIEDADES"}
+            VER OPORTUNIDADES DE INVERSIÓN
           </Link>
-          {mode === "invertir" && (
-            <button
-              type="button"
-              onClick={() => setMode("vivir")}
-              className="text-xs text-cream/70 underline underline-offset-2 hover:text-cream"
-            >
-              ¿Sos comprador para vivir? Ver propiedades →
-            </button>
-          )}
+          <Link
+            href="/propiedades"
+            className="text-xs text-cream/70 underline underline-offset-2 hover:text-cream"
+          >
+            ¿Buscás dónde vivir? Ver propiedades →
+          </Link>
         </div>
-
-        <form
-          action="/propiedades"
-          className="mt-10 flex w-full max-w-2xl flex-col gap-2 bg-white/95 p-3 text-text shadow-lg md:flex-row"
-        >
-          <select
-            name="type"
-            className="flex-1 border border-navy/10 px-3 py-2 text-sm"
-            defaultValue=""
-          >
-            <option value="">Tipo</option>
-            <option value="casa">Casa</option>
-            <option value="departamento">Departamento</option>
-            <option value="terreno">Terreno</option>
-            <option value="comercial">Comercial</option>
-          </select>
-          <select
-            name="neighborhood"
-            className="flex-1 border border-navy/10 px-3 py-2 text-sm"
-            defaultValue=""
-          >
-            <option value="">Zona</option>
-            {zones.map((zone) => (
-              <option key={zone.slug} value={zone.name}>
-                {zone.name}
-              </option>
-            ))}
-          </select>
-          <select
-            name="maxPrice"
-            className="flex-1 border border-navy/10 px-3 py-2 text-sm"
-            defaultValue=""
-          >
-            <option value="">Precio máx.</option>
-            <option value="150000">Hasta USD 150.000</option>
-            <option value="300000">Hasta USD 300.000</option>
-            <option value="600000">Hasta USD 600.000</option>
-          </select>
-          <button
-            type="submit"
-            className="bg-navy px-6 py-2 text-sm tracking-wide text-cream transition-colors hover:bg-navy-dark"
-          >
-            Buscar
-          </button>
-        </form>
       </div>
     </section>
   );

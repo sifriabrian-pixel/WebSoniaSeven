@@ -37,24 +37,10 @@ export interface Testimonial {
 }
 
 /**
- * Testimonios de ejemplo. Reemplazar por reseñas reales cuando estén
- * disponibles — agregar `avatar` (ruta de imagen) y `sourceUrl` (link a la
- * reseña, si existe) para que se muestren automáticamente en la home.
+ * Testimonios reales. Vacío hasta tener mínimo 2 casos verificables (nombre
+ * real o iniciales autorizadas por el cliente) — mientras esté vacío, la
+ * home muestra el copy de transición "Los primeros resultados están en
+ * camino" en vez del carousel. Agregar `avatar` (ruta de imagen) y
+ * `sourceUrl` (link a la reseña, si existe) cuando corresponda.
  */
-export const TESTIMONIALS: Testimonial[] = [
-  {
-    quote:
-      "Sonia nos ayudó a identificar la zona correcta antes de invertir. Hoy esa propiedad se revalorizó [DATO]% en menos de un año.",
-    author: "Familia Gómez",
-  },
-  {
-    quote:
-      "Su conocimiento del mercado inmobiliario de Asunción es inigualable. Recomendable sin dudarlo.",
-    author: "M. Etchevarne",
-  },
-  {
-    quote:
-      "Su análisis de mercado nos permitió vender al mejor precio posible en [DATO] días, cuando el promedio de la zona es de [DATO].",
-    author: "L. Bertolino",
-  },
-];
+export const TESTIMONIALS: Testimonial[] = [];

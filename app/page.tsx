@@ -21,7 +21,7 @@ export default async function HomePage() {
   return (
     <main>
       <InvestorModeProvider>
-        <HeroSection zones={zones} />
+        <HeroSection />
         <TrustBar />
         <ValueProposition />
         <FeaturedPropertiesSection properties={featured} />
@@ -55,7 +55,7 @@ export default async function HomePage() {
               cuadrados, la leo por su retorno.
             </p>
             <p className="mt-4 text-cream/80">
-              Trabajo con <strong className="text-gold">CENTURY 21 Seven</strong>{" "}
+              Trabajo con <strong className="text-cream">CENTURY 21 Seven</strong>{" "}
               en Las Mercedes, Asunción, asesorando en compra, venta e
               inversión en Asunción y Central — con foco en el segmento de
               ticket alto y el mismo criterio con el que analizaría

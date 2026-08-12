@@ -71,7 +71,7 @@ Ver [`content/blog/README.md`](content/blog/README.md). En resumen: un archivo `
 
 ## Configurar el formulario de conversión (Formspree)
 
-El bloque "Recibí oportunidades antes de que lleguen al mercado" (mid-page en home y footer) envía a [Formspree](https://formspree.io). Hasta que se configure, el sitio muestra un mensaje neutro en vez de un formulario roto.
+El bloque "Recibí oportunidades antes de que lleguen al mercado" (mid-page en home y footer) envía a [Formspree](https://formspree.io). Hasta que se configure, en vez de un formulario roto el sitio muestra un botón "Quiero recibir oportunidades" que abre WhatsApp con un mensaje prellenado — nunca un texto tipo "formulario en configuración" visible a usuarios finales.
 
 Para activarlo:
 1. Crear un formulario en Formspree y copiar su ID.
@@ -94,19 +94,27 @@ Como la marca ahora tiene un solo color de acento (no dos como antes), cualquier
 
 ## Home orientada a inversor
 
-La home tiene un toggle **"Quiero VIVIR" / "Quiero INVERTIR"** (default: Invertir) en el hero, que cambia el copy del hero y el contenido de las cards de "Propiedades destacadas" — en modo Invertir muestran rentabilidad estimada, plusvalía de zona y tipo de operación en vez de dormitorios/baños/m². El estado del toggle vive en `components/InvestorModeContext.tsx` (React Context) porque el hero y la sección de propiedades destacadas están separados en la página pero necesitan compartir el mismo estado.
+El hero es directo y de un solo modo (invertir): título, una línea de subtítulo, un CTA dominante ("Ver oportunidades de inversión") y un link secundario para quien busca vivir. No tiene buscador ni toggle Vivir/Invertir — ese filtro vive en `/propiedades`.
+
+Más abajo, "Propiedades destacadas" (`components/FeaturedPropertiesSection.tsx`) sigue operando en modo "Invertir" por default (mostrando rentabilidad estimada, plusvalía de zona y tipo de operación en vez de dormitorios/baños/m²), con chips de filtro por tipo de operación. El modo vive en `components/InvestorModeContext.tsx` (React Context) — hoy no hay ningún control en la UI para cambiarlo a "Vivir"; queda así a propósito, coherente con el posicionamiento de inversión de la home.
 
 Secciones nuevas relacionadas:
 - **Barra de confianza** (`components/TrustBar.tsx`) — franja de números debajo del hero. Editable en `lib/content.ts` → `TRUST_BAR`.
 - **Inteligencia de zona** (`components/ZoneIntelligence.tsx`) — plusvalía/precio por m²/demanda de alquiler por zona. Editable en `lib/zoneInsights.ts`.
 - **`Property.investment`** (`lib/types.ts`) — rentabilidad estimada, plusvalía y tipo de operación (Reventa/Renta/Desarrollo en pozo) por propiedad, usado en modo Invertir.
 
-Ningún valor de plusvalía, tiempo de cierre o rentabilidad está confirmado todavía — donde falta el dato, el sitio muestra **`[DATO]`** (componente `components/DataPlaceholder.tsx`, con `title` de tooltip "Pendiente: completar con el dato real") en vez de inventar un número. Ver la sección "Pendientes de contenido" más abajo para la lista completa de lo que falta completar.
+**Política de datos faltantes: nunca se publica `[DATO]` ni ningún placeholder visible.** Donde falta un dato real (plusvalía, tiempo de cierre, rentabilidad estimada por propiedad, insight de zona), el sitio oculta ese elemento puntual en vez de mostrarlo vacío o con un placeholder:
+- Barra de confianza: si falta "Plusvalía prom." o "Tiempo prom. de cierre", se muestran solo 2 stats centradas (Propiedades gestionadas + Oficial C21) en vez de 4 casilleros con huecos.
+- Cards de propiedad (modo Invertir): la línea de "Rentabilidad" o "Plusvalía zona" se omite si el dato es `null`, sin dejar espacio vacío.
+- Inteligencia de zona: solo se publican zonas con los 3 datos completos, y la sección entera se oculta si hay menos de 2 zonas completas (hoy: oculta, las 4 zonas están en `null`).
+- Testimonios: la sección solo muestra el carousel si hay 2+ testimonios reales cargados en `TESTIMONIALS`; mientras esté vacío (como ahora) muestra un copy de transición con CTA a WhatsApp.
+
+Ver la sección "Pendientes de contenido" más abajo para la lista completa de lo que falta completar.
 
 ## Estructura del proyecto
 
 - `app/` — páginas: home, `/propiedades`, `/propiedades/[slug]`, `/propiedades/zona/[zona]`, `/sobre-mi`, `/contacto`, `/blog`, `/blog/[slug]`, más `sitemap.ts` y `robots.ts`
-- `components/` — componentes reutilizables: Navbar, Footer, PropertyCard, FilterSidebar, SortSelect, Gallery, WhatsAppButton, ConversionForm, JsonLd, SectionDivider, Wordmark, más los de la home orientada a inversor (HeroSection, InvestorModeContext, TrustBar, ValueProposition, FeaturedPropertiesSection, ZoneIntelligence, Testimonials, DataPlaceholder)
+- `components/` — componentes reutilizables: Navbar, Footer, PropertyCard, FilterSidebar, SortSelect, Gallery, WhatsAppButton, ConversionForm, JsonLd, SectionDivider, Wordmark, más los de la home orientada a inversor (HeroSection, InvestorModeContext, TrustBar, ValueProposition, FeaturedPropertiesSection, ZoneIntelligence, Testimonials)
 - `data/properties.json` — datos de propiedades (fuente única de verdad por ahora)
 - `content/blog/` — artículos del blog en Markdown
 - `content/copy-lujo-archivado.md` — copy de posicionamiento "de lujo" archivado (ver sección de abajo)
@@ -141,12 +149,11 @@ El proyecto está deployado en Vercel: `web-sonia-seven.vercel.app`. Cualquier p
 Estos valores quedaron como placeholder a la espera de datos reales de Brian:
 
 - **Años de trayectoria:** hoy el sitio no muestra un número de años (se sacó "amplia trayectoria" y no se reemplazó por una cifra porque no la tenemos confirmada). Configurable en `lib/content.ts` → `YEARS_OF_EXPERIENCE` en cuanto Brian confirme el número.
-- **Testimonios con foto:** la estructura ya soporta `avatar` (ruta de imagen) y `sourceUrl` (link a la reseña real, si existe) en `lib/content.ts` → `TESTIMONIALS`. Hoy los 3 testimonios son de ejemplo, sin foto ni link — reemplazar por reseñas reales cuando estén disponibles.
-- **Formspree ID:** falta crear el formulario en Formspree y configurar `NEXT_PUBLIC_FORMSPREE_ID` en Vercel (ver sección de arriba). Hasta entonces el bloque de novedades muestra un mensaje neutro en vez de un formulario roto.
+- **Testimonios reales:** `lib/content.ts` → `TESTIMONIALS` está vacío. La estructura soporta `avatar` (ruta de imagen) y `sourceUrl` (link a la reseña real). En cuanto haya mínimo 2 casos verificables (nombre real o iniciales autorizadas por el cliente), cargarlos ahí y el carousel real reemplaza automáticamente al copy de transición "Los primeros resultados están en camino".
+- **Formspree ID:** falta crear el formulario en Formspree y configurar `NEXT_PUBLIC_FORMSPREE_ID` en Vercel (ver sección de arriba). Hasta entonces el bloque de novedades muestra un botón que abre WhatsApp en vez de un formulario roto.
 - **Copy final de posicionamiento:** confirmar con Brian/Sonia si "asesoramiento inmobiliario integral" es el mensaje definitivo, o si conviene depurar el catálogo a solo propiedades premium y volver a "real estate de lujo" (copy archivado en `content/copy-lujo-archivado.md`).
 - **Habitalis Jardín (Villa Morra):** proyecto real de la carpeta de Brian, todavía no cargado porque ningún documento de esa carpeta tiene precio. En cuanto Brian confirme el precio (aunque sea "desde"), se carga igual que los otros 4.
 - **Specs exactos de las propiedades cargadas:** Afianza Recoleta #8 y Altea de Gaulle son proyectos en pozo con varias tipologías — el precio mostrado es el de la unidad más económica ("Desde"), sin m²/dormitorios fijos a nivel card. El penthouse de Edificio Italia no tiene m² totales confirmados en la documentación (sí dormitorios, baños y cochera). Completar cuando Brian tenga esos datos.
-- **Plusvalía promedio de zona y tiempo promedio de cierre** (`lib/content.ts` → `TRUST_BAR`): hoy se muestran como `[DATO]` en la barra de confianza debajo del hero.
-- **Datos por zona** (`lib/zoneInsights.ts`): plusvalía 24 meses, precio promedio por m² y demanda de alquiler de Recoleta, La Encarnación, Trinidad y Villa Morra — hoy las 4 zonas muestran `[DATO]` en la sección "Inteligencia de zona". Es la sección que el propio brief de Brian marca como el diferencial más fuerte del sitio frente a portales genéricos, así que vale la pena priorizar completarla.
-- **Rentabilidad estimada y plusvalía por propiedad** (`data/properties.json` → `investment.rentalYieldPct` / `investment.zoneAppreciationPct`): hoy en `null` para las 4 propiedades reales, se muestran como `[DATO]` en modo "Invertir". Solo `dealType` (Reventa/Renta/Desarrollo en pozo) está completo.
-- **Resultado numérico en testimonios:** 2 de los 3 testimonios de ejemplo tienen un `[DATO]` embebido en el texto (revalorización %, días de cierre) siguiendo el copy que pasó Brian — revisar con clientes reales si pueden confirmar esos números antes de publicar, o volver a un testimonio sin cifra si no se puede sostener.
+- **Plusvalía promedio de zona y tiempo promedio de cierre** (`lib/content.ts` → `TRUST_BAR`): en `null`, por eso la barra de confianza muestra solo 2 stats en vez de 4. Completar ambos para que reaparezcan las 4.
+- **Datos por zona** (`lib/zoneInsights.ts`): plusvalía 24 meses, precio promedio por m² y demanda de alquiler de Recoleta, La Encarnación, Trinidad y Villa Morra — las 4 zonas están en `null`, por eso la sección "Inteligencia de zona" está oculta (se necesita mínimo 2 zonas con los 3 datos completos para que se muestre). Es la sección que el propio brief de Brian marca como el diferencial más fuerte del sitio frente a portales genéricos, así que vale la pena priorizar completarla.
+- **Rentabilidad estimada y plusvalía por propiedad** (`data/properties.json` → `investment.rentalYieldPct` / `investment.zoneAppreciationPct`): en `null` para las 4 propiedades reales, por eso esas líneas no aparecen en las cards en modo "Invertir". Solo `dealType` (Reventa/Renta/Desarrollo en pozo) está completo.

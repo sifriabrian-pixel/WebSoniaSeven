@@ -2,7 +2,6 @@ import Image from "next/image";
 import Link from "next/link";
 import type { Property } from "@/lib/types";
 import { formatPrice } from "@/lib/data";
-import DataPlaceholder from "@/components/DataPlaceholder";
 
 const statusBadges: Partial<
   Record<Property["status"], { label: string; className: string }>
@@ -65,26 +64,22 @@ export default function PropertyCard({
 
         {mode === "invertir" && investment ? (
           <div className="mt-3 space-y-1 text-xs text-text/70">
-            <p>
-              ↳ Rentabilidad alquiler est.:{" "}
-              {investment.rentalYieldPct !== null ? (
+            {investment.rentalYieldPct !== null && (
+              <p>
+                ↳ Rentabilidad alquiler est.:{" "}
                 <span className="text-navy">
                   {investment.rentalYieldPct}% anual
                 </span>
-              ) : (
-                <DataPlaceholder suffix="% anual" />
-              )}
-            </p>
-            <p>
-              ↳ Plusvalía zona (24m):{" "}
-              {investment.zoneAppreciationPct !== null ? (
+              </p>
+            )}
+            {investment.zoneAppreciationPct !== null && (
+              <p>
+                ↳ Plusvalía zona (24m):{" "}
                 <span className="text-navy">
                   +{investment.zoneAppreciationPct}%
                 </span>
-              ) : (
-                <DataPlaceholder suffix="%" />
-              )}
-            </p>
+              </p>
+            )}
             <p>
               ↳ Tipo: <span className="text-navy">{investment.dealType}</span>
             </p>
