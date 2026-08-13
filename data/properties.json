@@ -211,7 +211,7 @@
     ],
     "images": ["/images/properties/zuba-44.jpg"],
     "coordinates": { "lat": -25.2637, "lng": -57.4854 },
-    "featured": false,
+    "featured": true,
     "status": "nueva",
     "investment": { "rentalYieldPct": null, "zoneAppreciationPct": null, "dealType": "Desarrollo en pozo" }
   },

@@ -17,14 +17,17 @@ export default function HeroSection() {
         priority
         className="animate-kenburns object-cover object-[center_30%]"
       />
-      <div className="absolute inset-0 z-[1] bg-[radial-gradient(circle_at_20%_75%,rgba(78,35,45,0.88),rgba(78,35,45,0.55)_45%,rgba(78,35,45,0.15)_80%)]" />
+      {/* Capa 1: overlay parejo en toda la sección, baja el brillo general de la foto */}
+      <div className="absolute inset-0 z-[1] bg-[rgba(78,35,45,0.3)]" />
+      {/* Capa 2: refuerzo detrás del texto (centro-izquierda), se desvanece hasta el nivel de la capa base, nunca hasta la foto cruda */}
+      <div className="absolute inset-0 z-[2] bg-[radial-gradient(ellipse_900px_700px_at_30%_50%,rgba(30,8,14,0.75)_0%,rgba(30,8,14,0.45)_40%,rgba(30,8,14,0)_75%)] md:bg-[radial-gradient(ellipse_900px_700px_at_30%_50%,rgba(30,8,14,0.75)_0%,rgba(30,8,14,0.45)_40%,rgba(30,8,14,0)_75%)] max-md:bg-[linear-gradient(to_right,rgba(30,8,14,0.75)_0%,rgba(30,8,14,0.45)_45%,rgba(30,8,14,0)_85%)]" />
 
       <div className="relative z-10 mx-auto flex max-w-3xl flex-col items-center px-6 text-center text-cream">
         <div className="animate-fade-in-up">
           <h1 className="font-serif text-3xl leading-tight md:text-5xl">
             Invertí en las oportunidades de mayor valor de Asunción
           </h1>
-          <p className="mt-4 max-w-xl text-sm text-cream/80 md:text-base">
+          <p className="mx-auto mt-4 max-w-xl text-center text-sm text-cream/80 md:text-base">
             Selección curada de propiedades con potencial de retorno en
             Asunción y Central.
           </p>
