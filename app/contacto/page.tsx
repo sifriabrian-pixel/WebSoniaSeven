@@ -50,7 +50,7 @@ export default function ContactPage() {
               República de Siria esq. Ayala Velázquez, Las Mercedes,
               Asunción, Paraguay
             </li>
-            <li>sonia.garcia@c21.com.py</li>
+            <li>sonitarg@hotmail.com</li>
             <li>+595 971 561916</li>
             <li>Lunes a Viernes · 9:00 a 18:00 hs</li>
           </ul>

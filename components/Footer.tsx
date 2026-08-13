@@ -11,8 +11,9 @@ export default function Footer() {
           <Wordmark size="sm" />
           <SectionDivider center={false} dark />
           <p className="max-w-xs text-sm text-cream/70">
-            Real estate de alto valor en Asunción y Central, Paraguay.
-            Selección curada para inversores y compradores exigentes.
+            Encontrá propiedades de alto valor en todo Paraguay, con
+            especial foco en Asunción, Ciudad del Este y otras ciudades
+            estratégicas.
           </p>
         </div>
 
@@ -53,7 +54,7 @@ export default function Footer() {
               República de Siria esq. Ayala Velázquez, Las Mercedes,
               Asunción, Paraguay
             </li>
-            <li>sonia.garcia@c21.com.py</li>
+            <li>sonitarg@hotmail.com</li>
             <li>+595 971 561916</li>
           </ul>
         </div>

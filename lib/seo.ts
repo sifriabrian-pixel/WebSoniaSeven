@@ -8,7 +8,7 @@ export const AGENT = {
   name: "Sonia García",
   jobTitle: "Asesora Inmobiliaria",
   telephone: "+595971561916",
-  email: "sonia.garcia@c21.com.py",
+  email: "sonitarg@hotmail.com",
   affiliation: "Seven Real Estate",
   address: {
     streetAddress: "República de Siria esq. Ayala Velázquez",
