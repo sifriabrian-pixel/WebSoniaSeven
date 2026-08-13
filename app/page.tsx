@@ -8,7 +8,6 @@ import ValueProposition from "@/components/ValueProposition";
 import FeaturedPropertiesSection from "@/components/FeaturedPropertiesSection";
 import ZoneIntelligence from "@/components/ZoneIntelligence";
 import SectionDivider from "@/components/SectionDivider";
-import { WhatsAppInline } from "@/components/WhatsAppButton";
 import ConversionForm from "@/components/ConversionForm";
 import Testimonials from "@/components/Testimonials";
 import Reveal from "@/components/Reveal";
@@ -93,22 +92,6 @@ export default async function HomePage() {
           <div className="mx-auto mt-6 max-w-md text-left">
             <ConversionForm />
           </div>
-        </Reveal>
-      </section>
-
-      {/* CTA final */}
-      <section className="bg-navy-dark px-6 py-20 text-center text-cream">
-        <Reveal>
-          <h2 className="font-serif text-3xl">
-            Hablemos de tu próxima inversión
-          </h2>
-          <SectionDivider dark />
-          <WhatsAppInline
-            message="Hola Sonia, quiero que me ayudes a analizar una oportunidad de inversión."
-            className="mt-6 inline-block bg-cream px-8 py-3 text-sm tracking-wide text-navy transition-colors hover:bg-white"
-          >
-            CONSULTAR POR WHATSAPP
-          </WhatsAppInline>
         </Reveal>
       </section>
     </main>
