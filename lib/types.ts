@@ -38,7 +38,8 @@ export interface Property {
   title: string;
   operation: OperationType;
   type: PropertyType;
-  price: number;
+  /** `null` = precio todavía no confirmado por el desarrollador; el sitio muestra "Consultar precio" en vez de un número. */
+  price: number | null;
   currency: string;
   location: PropertyLocation;
   specs: PropertySpecs;

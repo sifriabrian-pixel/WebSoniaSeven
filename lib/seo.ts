@@ -48,7 +48,7 @@ interface PropertyForJsonLd {
   title: string;
   description: string;
   slug: string;
-  price: number;
+  price: number | null;
   currency: string;
   operation: "venta" | "alquiler";
   images: string[];
@@ -70,16 +70,18 @@ export function propertyJsonLd(property: PropertyForJsonLd) {
       addressLocality: `${property.location.neighborhood}, ${property.location.city}`,
       addressCountry: "PY",
     },
-    offers: {
-      "@type": "Offer",
-      price: property.price,
-      priceCurrency: property.currency,
-      availability: "https://schema.org/InStock",
-      businessFunction:
-        property.operation === "venta"
-          ? "http://purl.org/goodrelations/v1#Sell"
-          : "http://purl.org/goodrelations/v1#LeaseOut",
-    },
+    ...(property.price !== null && {
+      offers: {
+        "@type": "Offer",
+        price: property.price,
+        priceCurrency: property.currency,
+        availability: "https://schema.org/InStock",
+        businessFunction:
+          property.operation === "venta"
+            ? "http://purl.org/goodrelations/v1#Sell"
+            : "http://purl.org/goodrelations/v1#LeaseOut",
+      },
+    }),
     agent: {
       "@type": "RealEstateAgent",
       name: AGENT.name,

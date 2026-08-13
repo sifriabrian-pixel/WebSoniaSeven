@@ -79,11 +79,11 @@ export default function PropertyCard({
         <p
           className={`mt-3 font-serif text-xl ${isSold ? "text-text/40 line-through" : "text-gold"}`}
         >
-          {property.priceFrom && (
+          {property.priceFrom && property.price !== null && (
             <span className="text-sm text-text/50">Desde </span>
           )}
           {formatPrice(property.price, property.currency)}
-          {property.operation === "alquiler" && (
+          {property.price !== null && property.operation === "alquiler" && (
             <span className="text-sm text-text/50"> /mes</span>
           )}
         </p>

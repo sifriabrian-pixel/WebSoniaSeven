@@ -106,18 +106,24 @@ export default async function PropertyDetailPage({ params }: PageProps) {
             <p
               className={`mt-4 font-serif text-3xl ${isSold ? "text-text/40 line-through" : "text-gold"}`}
             >
-              {property.priceFrom && (
+              {property.priceFrom && property.price !== null && (
                 <span className="text-base text-text/50">Desde </span>
               )}
               {formatPrice(property.price, property.currency)}
-              {property.operation === "alquiler" && (
+              {property.price !== null && property.operation === "alquiler" && (
                 <span className="text-base text-text/50"> /mes</span>
               )}
             </p>
-            {property.priceFrom && (
+            {property.priceFrom && property.price !== null && (
               <p className="mt-1 text-sm text-text/50">
                 Precio de la unidad más económica disponible. Consultá por
                 las demás tipologías.
+              </p>
+            )}
+            {property.price === null && (
+              <p className="mt-1 text-sm text-text/50">
+                Todavía no está confirmado el precio de lista. Escribinos por
+                WhatsApp y te avisamos apenas esté disponible.
               </p>
             )}
 

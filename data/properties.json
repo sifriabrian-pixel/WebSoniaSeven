@@ -185,5 +185,323 @@
       "zoneAppreciationPct": null,
       "dealType": "Desarrollo en pozo"
     }
+  },
+  {
+    "id": "sr-zuba-44",
+    "slug": "zuba-44",
+    "title": "Zuba 44",
+    "operation": "venta",
+    "type": "departamento",
+    "price": 43500,
+    "currency": "USD",
+    "priceFrom": true,
+    "location": {
+      "city": "Luque",
+      "neighborhood": "Luque",
+      "address": "Santa Margarita esq. Las Mercedes"
+    },
+    "specs": { "bedrooms": 0, "bathrooms": 0, "totalArea": 0, "coveredArea": 0, "garages": 0, "yearBuilt": 0 },
+    "description": "179 departamentos en 9 niveles + azotea sobre las calles Santa Margarita y Las Mercedes, Luque. Desarrollo de Zuba —primera desarrolladora paraguaya con grado de inversión A-PY de Fitch Ratings— en alianza con Vivabien. Tipologías desde monoambiente de 28 m² hasta 2 dormitorios de 55 m², con domótica integrada en cada unidad.",
+    "features": [
+      "Domótica en cada unidad",
+      "179 departamentos, 9 niveles + azotea",
+      "Financiación sin interés durante obra",
+      "Cochera, cochera de moto y baulera opcionales",
+      "Desarrolladora con grado de inversión A-PY (Fitch)"
+    ],
+    "images": ["/images/properties/zuba-44.jpg"],
+    "coordinates": { "lat": -25.2637, "lng": -57.4854 },
+    "featured": false,
+    "status": "nueva",
+    "investment": { "rentalYieldPct": null, "zoneAppreciationPct": null, "dealType": "Desarrollo en pozo" }
+  },
+  {
+    "id": "sr-zuba-45",
+    "slug": "zuba-45",
+    "title": "Zuba 45",
+    "operation": "venta",
+    "type": "departamento",
+    "price": 43500,
+    "currency": "USD",
+    "priceFrom": true,
+    "location": {
+      "city": "Luque",
+      "neighborhood": "Luque",
+      "address": "Santa Margarita esq. Las Mercedes"
+    },
+    "specs": { "bedrooms": 0, "bathrooms": 0, "totalArea": 0, "coveredArea": 0, "garages": 0, "yearBuilt": 0 },
+    "description": "Torre gemela de Zuba 44: 179 departamentos en 9 niveles + azotea sobre las calles Santa Margarita y Las Mercedes, Luque. Mismas tipologías, desde monoambiente de 28 m² hasta 2 dormitorios de 55 m², con domótica integrada en cada unidad.",
+    "features": [
+      "Domótica en cada unidad",
+      "179 departamentos, 9 niveles + azotea",
+      "Financiación sin interés durante obra",
+      "Cochera, cochera de moto y baulera opcionales",
+      "Desarrolladora con grado de inversión A-PY (Fitch)"
+    ],
+    "images": ["/images/properties/zuba-45.jpg"],
+    "coordinates": { "lat": -25.2639, "lng": -57.4851 },
+    "featured": false,
+    "status": "nueva",
+    "investment": { "rentalYieldPct": null, "zoneAppreciationPct": null, "dealType": "Desarrollo en pozo" }
+  },
+  {
+    "id": "sr-zuba-31",
+    "slug": "zuba-31",
+    "title": "Zuba 31",
+    "operation": "venta",
+    "type": "departamento",
+    "price": 34800,
+    "currency": "USD",
+    "priceFrom": true,
+    "location": {
+      "city": "Asunción",
+      "neighborhood": "Trinidad",
+      "address": "Zona San José Obrero, Trinidad"
+    },
+    "specs": { "bedrooms": 0, "bathrooms": 0, "totalArea": 0, "coveredArea": 0, "garages": 0, "yearBuilt": 0 },
+    "description": "86 departamentos en 17 pisos, parte del complejo Zubanización CDE en el barrio Trinidad, zona San José Obrero. Tipologías desde monoambiente de 29 m² hasta 2 dormitorios de 61 m², con domótica, financiación sin interés durante obra y descuento por pago contado.",
+    "features": [
+      "Domótica en cada unidad",
+      "86 departamentos en 17 pisos",
+      "Financiación sin interés durante obra",
+      "Descuento por pago contado",
+      "Desarrolladora con grado de inversión A-PY (Fitch)"
+    ],
+    "images": ["/images/properties/zuba-31-32.jpg"],
+    "coordinates": { "lat": -25.274, "lng": -57.562 },
+    "featured": false,
+    "status": "nueva",
+    "investment": { "rentalYieldPct": null, "zoneAppreciationPct": null, "dealType": "Desarrollo en pozo" }
+  },
+  {
+    "id": "sr-zuba-32",
+    "slug": "zuba-32",
+    "title": "Zuba 32",
+    "operation": "venta",
+    "type": "departamento",
+    "price": 34800,
+    "currency": "USD",
+    "priceFrom": true,
+    "location": {
+      "city": "Asunción",
+      "neighborhood": "Trinidad",
+      "address": "Zona San José Obrero, Trinidad"
+    },
+    "specs": { "bedrooms": 0, "bathrooms": 0, "totalArea": 0, "coveredArea": 0, "garages": 0, "yearBuilt": 0 },
+    "description": "75 departamentos en 14 pisos, torre gemela de Zuba 31 dentro del complejo Zubanización CDE, barrio Trinidad, zona San José Obrero. Mismas tipologías, desde monoambiente de 29 m² hasta 2 dormitorios de 61 m².",
+    "features": [
+      "Domótica en cada unidad",
+      "75 departamentos en 14 pisos",
+      "Financiación sin interés durante obra",
+      "Descuento por pago contado",
+      "Desarrolladora con grado de inversión A-PY (Fitch)"
+    ],
+    "images": ["/images/properties/zuba-31-32.jpg"],
+    "coordinates": { "lat": -25.2742, "lng": -57.5622 },
+    "featured": false,
+    "status": "nueva",
+    "investment": { "rentalYieldPct": null, "zoneAppreciationPct": null, "dealType": "Desarrollo en pozo" }
+  },
+  {
+    "id": "sr-zuba-33",
+    "slug": "zuba-33",
+    "title": "Zuba 33",
+    "operation": "venta",
+    "type": "departamento",
+    "price": 37700,
+    "currency": "USD",
+    "priceFrom": true,
+    "location": {
+      "city": "Asunción",
+      "neighborhood": "Trinidad",
+      "address": "Zona San José Obrero, Trinidad"
+    },
+    "specs": { "bedrooms": 0, "bathrooms": 0, "totalArea": 0, "coveredArea": 0, "garages": 0, "yearBuilt": 0 },
+    "description": "Torre 3 del complejo Zubanización CDE: 100 departamentos en 14 pisos, barrio Trinidad, zona San José Obrero. Tipologías desde monoambiente de 29 m² hasta 2 dormitorios con terraza de 82 m², con domótica y financiación sin interés durante obra.",
+    "features": [
+      "Domótica en cada unidad",
+      "100 departamentos en 14 pisos",
+      "Financiación sin interés durante obra",
+      "Descuento por pago contado",
+      "Desarrolladora con grado de inversión A-PY (Fitch)"
+    ],
+    "images": ["/images/properties/zuba-33.jpg"],
+    "coordinates": { "lat": -25.2738, "lng": -57.5618 },
+    "featured": false,
+    "status": "nueva",
+    "investment": { "rentalYieldPct": null, "zoneAppreciationPct": null, "dealType": "Desarrollo en pozo" }
+  },
+  {
+    "id": "sr-habitalis-jardin",
+    "slug": "habitalis-jardin",
+    "title": "Habitalis Jardín",
+    "operation": "venta",
+    "type": "departamento",
+    "price": 96000,
+    "currency": "USD",
+    "priceFrom": true,
+    "location": {
+      "city": "Asunción",
+      "neighborhood": "Villa Morra",
+      "address": "Campos Cervera esq. Cruz del Chaco"
+    },
+    "specs": { "bedrooms": 0, "bathrooms": 0, "totalArea": 0, "coveredArea": 0, "garages": 0, "yearBuilt": 0 },
+    "description": "Edificio de 9 niveles y 72 departamentos a 3 cuadras del Shopping Mariscal, sobre Campos Cervera y Cruz del Chaco, Villa Morra. Unidades de 1, 2 y 3 dormitorios (46 a 162 m²), con jardín interior diseñado por la Arq. Sofía Benza, ascensores panorámicos, sala gourmet climatizada, cava de vinos, piscina, gimnasio y salón de pilates. Construye y gerencia González Acosta & Asociados.",
+    "features": [
+      "Jardín interior (Arq. Sofía Benza)",
+      "Ascensores panorámicos con vista al jardín",
+      "Piscina, gimnasio y salón de pilates",
+      "Sala gourmet climatizada y cava de vinos",
+      "3 niveles de estacionamiento",
+      "A 3 cuadras del Shopping Mariscal"
+    ],
+    "images": ["/images/properties/habitalis-1.jpg", "/images/properties/habitalis-2.jpg"],
+    "coordinates": { "lat": -25.2985, "lng": -57.572 },
+    "featured": false,
+    "status": "disponible",
+    "investment": { "rentalYieldPct": null, "zoneAppreciationPct": null, "dealType": "Desarrollo en pozo" }
+  },
+  {
+    "id": "sr-avanza-aura",
+    "slug": "avanza-aura",
+    "title": "Avanza Aura",
+    "operation": "venta",
+    "type": "departamento",
+    "price": null,
+    "currency": "USD",
+    "priceFrom": true,
+    "location": {
+      "city": "Asunción",
+      "neighborhood": "Villa Morra",
+      "address": "Av. Aviadores del Chaco, cerca de Shopping del Sol"
+    },
+    "specs": { "bedrooms": 0, "bathrooms": 0, "totalArea": 0, "coveredArea": 0, "garages": 0, "yearBuilt": 0 },
+    "description": "Edificio de diseño Japandi (fusión escandinava-japonesa) sobre Av. Aviadores del Chaco, a metros de Shopping del Sol y Shopping Villa Morra. Planta baja con lobby y locales, 10 niveles de residencias y rooftop \"Sora\" con wellness center, spa, piscina, gimnasio y zonas de agua, fuego y tierra. Tipologías desde monoambiente (31 m²) hasta 2 dormitorios (71 m²).",
+    "features": [
+      "Rooftop Sora con wellness center y spa",
+      "Piscina y gimnasio en azotea",
+      "Zona premium, a metros de los shoppings",
+      "Diseño Japandi (escandinavo-japonés)",
+      "Coworking y lounge en planta baja"
+    ],
+    "images": ["/images/properties/avanza-aura-1.jpg", "/images/properties/avanza-aura-2.jpg"],
+    "coordinates": { "lat": -25.301, "lng": -57.57 },
+    "featured": false,
+    "status": "nueva",
+    "investment": { "rentalYieldPct": null, "zoneAppreciationPct": null, "dealType": "Desarrollo en pozo" }
+  },
+  {
+    "id": "sr-avanza-nest",
+    "slug": "avanza-nest",
+    "title": "Avanza Nest",
+    "operation": "venta",
+    "type": "departamento",
+    "price": null,
+    "currency": "USD",
+    "priceFrom": true,
+    "location": {
+      "city": "Asunción",
+      "neighborhood": "Villa Morra",
+      "address": "Zona Villa Morra (a confirmar dirección exacta)"
+    },
+    "specs": { "bedrooms": 0, "bathrooms": 0, "totalArea": 0, "coveredArea": 0, "garages": 0, "yearBuilt": 0 },
+    "description": "\"Nest Living\": 15 pisos y 122 unidades pensadas para solteros o parejas, con espacios amplios y luminosos que integran interior y exterior. 11 amenidades entre las que están piscina, gimnasio, chill and grill, coworking y SUM.",
+    "features": [
+      "122 unidades en 15 pisos",
+      "Piscina, gimnasio y chill and grill",
+      "Coworking y SUM",
+      "11 amenidades"
+    ],
+    "images": ["/images/properties/avanza-nest-1.jpg", "/images/properties/avanza-nest-2.jpg"],
+    "coordinates": { "lat": -25.3015, "lng": -57.5695 },
+    "featured": false,
+    "status": "nueva",
+    "investment": { "rentalYieldPct": null, "zoneAppreciationPct": null, "dealType": "Desarrollo en pozo" }
+  },
+  {
+    "id": "sr-dhome-cdd",
+    "slug": "dhome-cdd",
+    "title": "Dhome CDD",
+    "operation": "venta",
+    "type": "departamento",
+    "price": null,
+    "currency": "USD",
+    "priceFrom": true,
+    "location": {
+      "city": "Asunción",
+      "neighborhood": "Recoleta",
+      "address": "Calle Cruz del Defensor"
+    },
+    "specs": { "bedrooms": 0, "bathrooms": 0, "totalArea": 0, "coveredArea": 0, "garages": 0, "yearBuilt": 0 },
+    "description": "Edificio boutique sobre la calle Cruz del Defensor, Barrio Recoleta, con unidades de monoambiente (32 m²) y 1 dormitorio (39 m²). Azotea con piscina, solárium, quincho climatizado y lavadero. Desarrolla y construye Building Innovations.",
+    "features": [
+      "Piscina y solárium en azotea",
+      "Quincho climatizado",
+      "26 + 13 cocheras subterráneas",
+      "Barrio Recoleta"
+    ],
+    "images": ["/images/properties/dhome-1.jpg"],
+    "coordinates": { "lat": -25.2965, "lng": -57.581 },
+    "featured": false,
+    "status": "nueva",
+    "investment": { "rentalYieldPct": null, "zoneAppreciationPct": null, "dealType": "Desarrollo en pozo" }
+  },
+  {
+    "id": "sr-filum-recoleta",
+    "slug": "filum-recoleta",
+    "title": "Filum Recoleta",
+    "operation": "venta",
+    "type": "departamento",
+    "price": null,
+    "currency": "USD",
+    "priceFrom": true,
+    "location": {
+      "city": "Asunción",
+      "neighborhood": "Recoleta",
+      "address": "Calle Quesada"
+    },
+    "specs": { "bedrooms": 0, "bathrooms": 0, "totalArea": 0, "coveredArea": 0, "garages": 0, "yearBuilt": 0 },
+    "description": "119 departamentos y 93 cocheras sobre la calle Quesada, Barrio Recoleta, a pasos de Shopping Villa Morra y Shopping Mariscal. Tipologías desde studio (27 m²) hasta 2 dormitorios (77 m²), con coworking, gimnasio, quincho climatizado, piscina, solárium y sauna en la azotea. Desarrolla y construye Building Innovations.",
+    "features": [
+      "119 departamentos, 93 cocheras",
+      "Coworking y sala de TV",
+      "Piscina, solárium y sauna en azotea",
+      "Quincho climatizado y gimnasio",
+      "Barrio Recoleta, a pasos de los shoppings"
+    ],
+    "images": ["/images/properties/filum-1.jpg", "/images/properties/filum-2.jpg"],
+    "coordinates": { "lat": -25.2975, "lng": -57.575 },
+    "featured": false,
+    "status": "nueva",
+    "investment": { "rentalYieldPct": null, "zoneAppreciationPct": null, "dealType": "Desarrollo en pozo" }
+  },
+  {
+    "id": "sr-marena",
+    "slug": "marena",
+    "title": "Marena",
+    "operation": "venta",
+    "type": "departamento",
+    "price": null,
+    "currency": "USD",
+    "priceFrom": true,
+    "location": {
+      "city": "Luque",
+      "neighborhood": "Luque",
+      "address": "Calle 12 de Junio, zona CIT"
+    },
+    "specs": { "bedrooms": 0, "bathrooms": 0, "totalArea": 0, "coveredArea": 0, "garages": 0, "yearBuilt": 0 },
+    "description": "Desarrollo residencial de 8 edificios en más de 32.000 m² de terreno, en Luque sobre la calle 12 de Junio, zona CIT, a 10 minutos del Eje Corporativo de Asunción. Cuenta con una laguna cristalina con tecnología Crystal Lagoons —uno de los amenities más valorados del mundo para proyectos residenciales— además de spa, gimnasio, canchas deportivas y espacios para caminar. Desarrolla EYDISA, construye CCI y diseña el estudio argentino BMA Arquitectos.",
+    "features": [
+      "Laguna cristalina Crystal Lagoons",
+      "8 edificios en +32.000 m² de terreno",
+      "Spa, gimnasio y canchas deportivas",
+      "Seguridad perimetral 24 hs",
+      "A 10 min. del Eje Corporativo"
+    ],
+    "images": ["/images/properties/marena-1.jpg", "/images/properties/marena-2.jpg"],
+    "coordinates": { "lat": -25.275, "lng": -57.495 },
+    "featured": false,
+    "status": "nueva",
+    "investment": { "rentalYieldPct": null, "zoneAppreciationPct": null, "dealType": "Desarrollo en pozo" }
   }
 ]

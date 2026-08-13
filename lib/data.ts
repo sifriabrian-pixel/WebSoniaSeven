@@ -62,19 +62,23 @@ export async function getFilteredProperties(
     );
   }
   if (filters.minPrice !== undefined) {
-    result = result.filter((p) => p.price >= filters.minPrice!);
+    result = result.filter(
+      (p) => p.price === null || p.price >= filters.minPrice!
+    );
   }
   if (filters.maxPrice !== undefined) {
-    result = result.filter((p) => p.price <= filters.maxPrice!);
+    result = result.filter(
+      (p) => p.price === null || p.price <= filters.maxPrice!
+    );
   }
   if (filters.minBedrooms !== undefined) {
     result = result.filter((p) => p.specs.bedrooms >= filters.minBedrooms!);
   }
 
   if (sort === "price-asc") {
-    result.sort((a, b) => a.price - b.price);
+    result.sort((a, b) => (a.price ?? Infinity) - (b.price ?? Infinity));
   } else if (sort === "price-desc") {
-    result.sort((a, b) => b.price - a.price);
+    result.sort((a, b) => (b.price ?? -Infinity) - (a.price ?? -Infinity));
   }
   // "recent" mantiene el orden del JSON (el más nuevo primero por convención)
 
@@ -123,6 +127,10 @@ export async function getPropertiesByZoneSlug(
   return active.filter((p) => slugify(p.location.neighborhood) === slug);
 }
 
-export function formatPrice(price: number, currency: string): string {
+export function formatPrice(
+  price: number | null,
+  currency: string
+): string {
+  if (price === null) return "Consultar precio";
   return `${currency} ${price.toLocaleString("es-AR")}`;
 }
