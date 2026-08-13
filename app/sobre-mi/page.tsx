@@ -92,7 +92,7 @@ export default function AboutPage() {
       </section>
 
       <section className="mx-auto mt-20 max-w-6xl px-6">
-        <h2 className="font-serif text-2xl text-navy">Trayectoria</h2>
+        <h2 className="font-heading text-2xl text-navy">Trayectoria</h2>
         <SectionDivider center={false} />
         <div className="mt-8 grid grid-cols-1 gap-8 sm:grid-cols-3">
           {YEARS_OF_EXPERIENCE && (
@@ -123,7 +123,7 @@ export default function AboutPage() {
       </section>
 
       <section className="mx-auto mt-20 max-w-6xl px-6 text-center">
-        <h2 className="font-serif text-2xl text-navy">
+        <h2 className="font-heading text-2xl text-navy">
           Trabajemos juntos en tu próxima operación
         </h2>
         <SectionDivider />

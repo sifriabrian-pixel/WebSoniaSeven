@@ -50,7 +50,7 @@ export default function Testimonials() {
         viewport={{ once: true, amount: 0.2 }}
         transition={{ duration: 0.6, ease: "easeOut" }}
       >
-        <h2 className="font-serif text-3xl text-navy">Testimonios</h2>
+        <h2 className="font-heading text-3xl text-navy">Testimonios</h2>
         <SectionDivider />
 
         <motion.div

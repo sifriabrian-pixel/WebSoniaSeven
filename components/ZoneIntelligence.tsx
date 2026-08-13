@@ -22,7 +22,7 @@ export default function ZoneIntelligence({ zones }: { zones: Zone[] }) {
     <section className="bg-cream px-6 py-24">
       <div className="mx-auto max-w-7xl">
         <div className="text-center">
-          <h2 className="font-serif text-3xl text-navy">
+          <h2 className="font-heading text-3xl text-navy">
             Dónde está moviéndose el mercado en Asunción y Central
           </h2>
           <SectionDivider />

@@ -43,7 +43,7 @@ export default function ContactPage() {
         <ContactForm />
 
         <div>
-          <h2 className="font-serif text-xl text-navy">Datos de contacto</h2>
+          <h2 className="font-heading text-xl text-navy">Datos de contacto</h2>
           <SectionDivider center={false} />
           <ul className="space-y-3 text-sm text-text/80">
             <li>

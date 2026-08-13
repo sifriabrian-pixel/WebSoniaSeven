@@ -32,7 +32,7 @@ export default function FeaturedPropertiesSection({
   return (
     <section className="mx-auto max-w-7xl px-6 py-24">
       <div className="text-center">
-        <h2 className="font-serif text-3xl text-navy">
+        <h2 className="font-heading text-3xl text-navy">
           {mode === "invertir" ? "Oportunidades activas" : "Propiedades destacadas"}
         </h2>
         <SectionDivider />

@@ -208,7 +208,7 @@ export default async function PropertyDetailPage({ params }: PageProps) {
 
       {similar.length > 0 && (
         <div className="mx-auto mt-20 max-w-7xl px-6">
-          <h2 className="font-serif text-2xl text-navy">
+          <h2 className="font-heading text-2xl text-navy">
             Propiedades similares
           </h2>
           <SectionDivider center={false} />

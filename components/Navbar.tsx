@@ -26,7 +26,7 @@ export default function Navbar() {
     <header
       className={`fixed top-0 z-50 w-full transition-colors duration-300 ${
         scrolled || open
-          ? "bg-navy shadow-md"
+          ? "bg-navy-dark shadow-md"
           : "bg-gradient-to-b from-black/50 to-transparent"
       }`}
     >
@@ -63,7 +63,7 @@ export default function Navbar() {
       </div>
 
       {open && (
-        <nav className="flex flex-col gap-4 bg-navy px-6 pb-6 md:hidden">
+        <nav className="flex flex-col gap-4 bg-navy-dark px-6 pb-6 md:hidden">
           {links.map((link) => (
             <Link
               key={link.href}

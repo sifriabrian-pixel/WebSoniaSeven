@@ -20,7 +20,7 @@ export default function ValueProposition() {
   return (
     <section className="mx-auto max-w-7xl px-6 py-24">
       <Reveal className="text-center">
-        <h2 className="font-serif text-3xl text-navy">
+        <h2 className="font-heading text-3xl text-navy">
           No vendo propiedades. Te ayudo a leer el mercado antes de comprar.
         </h2>
         <SectionDivider />

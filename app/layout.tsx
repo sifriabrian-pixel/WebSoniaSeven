@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Playfair_Display, Inter } from "next/font/google";
+import localFont from "next/font/local";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -17,6 +18,12 @@ const inter = Inter({
   subsets: ["latin"],
   variable: "--font-inter",
   weight: ["300", "400", "500", "600"],
+});
+
+const interHeading = localFont({
+  src: "./fonts/Inter-VariableFont.ttf",
+  variable: "--font-inter-heading",
+  weight: "100 900",
 });
 
 const DEFAULT_TITLE = `${SITE_NAME} | ${SITE_TAGLINE} — Real Estate de Alto Valor en Asunción`;
@@ -55,7 +62,7 @@ export default function RootLayout({
   return (
     <html lang="es">
       <body
-        className={`${playfair.variable} ${inter.variable} font-sans antialiased bg-cream text-text`}
+        className={`${playfair.variable} ${inter.variable} ${interHeading.variable} font-sans antialiased bg-cream text-text`}
       >
         <JsonLd data={agentJsonLd()} />
         <Navbar />

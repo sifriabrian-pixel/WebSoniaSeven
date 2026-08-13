@@ -40,7 +40,7 @@ export default async function HomePage() {
             />
           </div>
           <div>
-            <h2 className="font-serif text-3xl">
+            <h2 className="font-heading text-3xl">
               Contadora antes que asesora inmobiliaria
             </h2>
             <SectionDivider center={false} dark />
@@ -82,7 +82,7 @@ export default async function HomePage() {
       {/* Form de conversión mid-page */}
       <section className="bg-white px-6 py-16 text-center">
         <Reveal>
-          <h2 className="font-serif text-2xl text-navy">
+          <h2 className="font-heading text-2xl text-navy">
             Recibí oportunidades antes de que lleguen al mercado
           </h2>
           <p className="mx-auto mt-2 max-w-md text-sm text-text/60">
