@@ -1,4 +1,4 @@
-import { TRUST_BAR, YEARS_OF_EXPERIENCE } from "@/lib/content";
+import { TRUST_BAR } from "@/lib/content";
 import AnimatedCounter from "@/components/AnimatedCounter";
 import Reveal from "@/components/Reveal";
 
@@ -6,6 +6,22 @@ const STATS = [
   {
     value: <AnimatedCounter value={TRUST_BAR.propertiesManaged} prefix="+" />,
     label: "Propiedades gestionadas",
+  },
+  {
+    value: (
+      <AnimatedCounter value={TRUST_BAR.dollarsSoldMillions} prefix="+" suffix="M" />
+    ),
+    label: "Millones USD vendidos",
+  },
+  {
+    value: (
+      <AnimatedCounter
+        value={TRUST_BAR.realEstateYears}
+        prefix="+"
+        suffix=" años"
+      />
+    ),
+    label: "Experiencia en real estate",
   },
   ...(TRUST_BAR.avgAppreciationPct !== null
     ? [
@@ -31,20 +47,6 @@ const STATS = [
         },
       ]
     : []),
-  ...(YEARS_OF_EXPERIENCE !== null
-    ? [
-        {
-          value: (
-            <AnimatedCounter
-              value={YEARS_OF_EXPERIENCE}
-              prefix="+"
-              suffix=" años"
-            />
-          ),
-          label: "Trayectoria financiera",
-        },
-      ]
-    : []),
 ];
 
 export default function TrustBar() {
@@ -52,7 +54,7 @@ export default function TrustBar() {
     <section className="bg-navy-dark px-6 py-8 text-cream">
       <div
         className={`mx-auto grid max-w-5xl gap-6 text-center ${
-          STATS.length > 2 ? "grid-cols-2 md:grid-cols-4" : "grid-cols-2"
+          STATS.length > 3 ? "grid-cols-2 md:grid-cols-4" : "grid-cols-3"
         }`}
       >
         {STATS.map((stat, i) => (

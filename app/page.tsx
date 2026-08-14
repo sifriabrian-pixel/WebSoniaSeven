@@ -64,7 +64,7 @@ export default async function HomePage() {
               {YEARS_OF_EXPERIENCE && (
                 <>+{YEARS_OF_EXPERIENCE} años de trayectoria · </>
               )}
-              +50 propiedades gestionadas · Directora de Seven Real Estate ·
+              +500 propiedades gestionadas · Directora de Seven Real Estate ·
               Asunción, Paraguay
             </p>
             <Link

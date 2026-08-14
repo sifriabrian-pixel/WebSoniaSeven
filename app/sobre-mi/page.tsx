@@ -104,7 +104,7 @@ export default function AboutPage() {
             </div>
           )}
           <div className="bg-white p-6">
-            <p className="font-serif text-3xl text-gold">+50</p>
+            <p className="font-serif text-3xl text-gold">+500</p>
             <p className="mt-1 text-sm text-text/70">
               Propiedades gestionadas
             </p>
