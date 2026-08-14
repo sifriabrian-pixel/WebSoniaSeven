@@ -29,7 +29,8 @@ export default function HeroSection() {
           </h1>
           <p className="mx-auto mt-4 max-w-xl text-center text-sm text-cream/80 md:text-base">
             Selección curada de propiedades con potencial de retorno en
-            Asunción y Central.
+            todo Paraguay, con foco en Asunción, Ciudad del Este y otras
+            ciudades estratégicas.
           </p>
         </div>
 
