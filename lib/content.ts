@@ -1,9 +1,10 @@
 /**
  * Años de trayectoria de Sonia como Contadora y Analista Financiera.
- * Confirmado por Brian: 12 años. Se muestra automáticamente en la home
- * y en /sobre-mi.
+ * Confirmado por Brian: 20 años. Se muestra automáticamente en la home
+ * y en /sobre-mi. Distinto de `TRUST_BAR.realEstateYears` (9), que son
+ * sus años específicamente en el mercado inmobiliario.
  */
-export const YEARS_OF_EXPERIENCE: number | null = 12;
+export const YEARS_OF_EXPERIENCE: number | null = 20;
 
 /**
  * Barra de confianza (franja de números debajo del hero). `propertiesManaged`,

@@ -11,7 +11,7 @@ import SectionDivider from "@/components/SectionDivider";
 import ConversionForm from "@/components/ConversionForm";
 import Testimonials from "@/components/Testimonials";
 import Reveal from "@/components/Reveal";
-import { YEARS_OF_EXPERIENCE } from "@/lib/content";
+import { YEARS_OF_EXPERIENCE, TRUST_BAR } from "@/lib/content";
 
 export default async function HomePage() {
   const featured = await getFeaturedProperties();
@@ -56,16 +56,23 @@ export default async function HomePage() {
             <p className="mt-4 text-cream/80">
               Dirijo <strong className="text-cream">Seven Real Estate</strong>{" "}
               en Las Mercedes, Asunción, asesorando en compra, venta e
-              inversión en Asunción y Central — con foco en el segmento de
-              ticket alto y el mismo criterio con el que analizaría
-              cualquier otra inversión.
+              inversión de propiedades de alto valor en Asunción, Gran
+              Asunción y Ciudad del Este.
+            </p>
+            <p className="mt-4 text-cream/80">
+              Mi especialidad es el inversionista extranjero: acompañamiento
+              integral, desde la primera evaluación de mercado hasta la
+              radicación definitiva en Paraguay.
+            </p>
+            <p className="mt-4 text-cream/80">
+              Cada operación la manejo con la misma responsabilidad y rigor
+              con que analizaría cualquier inversión propia.
             </p>
             <p className="mt-6 text-sm text-cream/70">
-              {YEARS_OF_EXPERIENCE && (
-                <>+{YEARS_OF_EXPERIENCE} años de trayectoria · </>
-              )}
-              +500 propiedades gestionadas · Directora de Seven Real Estate ·
-              Asunción, Paraguay
+              +{TRUST_BAR.realEstateYears} años de trayectoria en mercado
+              inmobiliario · +{TRUST_BAR.propertiesManaged} propiedades
+              gestionadas · Directora de Seven Real Estate · Asunción,
+              Paraguay
             </p>
             <Link
               href="/sobre-mi"

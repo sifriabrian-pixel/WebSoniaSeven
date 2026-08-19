@@ -3,7 +3,7 @@ import Image from "next/image";
 import SectionDivider from "@/components/SectionDivider";
 import { WhatsAppInline } from "@/components/WhatsAppButton";
 import { SITE_URL, SITE_NAME } from "@/lib/seo";
-import { YEARS_OF_EXPERIENCE } from "@/lib/content";
+import { YEARS_OF_EXPERIENCE, TRUST_BAR } from "@/lib/content";
 
 const TITLE = "Sobre mí";
 const DESCRIPTION =
@@ -73,9 +73,9 @@ export default function AboutPage() {
           <p className="mt-4 leading-relaxed text-text/80">
             Dirijo Seven Real Estate en Las Mercedes, Asunción, donde
             brindo asesoramiento en compra, venta e inversión de propiedades
-            en Paraguay, con foco en el segmento de ticket alto en Asunción
-            y Central. Te acompaño con responsabilidad, honestidad y ética
-            profesional en cada operación.
+            en Paraguay, con foco en el segmento de ticket alto en Asunción,
+            Gran Asunción y Ciudad del Este. Te acompaño con responsabilidad,
+            honestidad y ética profesional en cada operación.
           </p>
 
           <div className="mt-6 flex flex-wrap gap-2">
@@ -95,16 +95,18 @@ export default function AboutPage() {
         <h2 className="font-heading text-2xl text-navy">Trayectoria</h2>
         <SectionDivider center={false} />
         <div className="mt-8 grid grid-cols-1 gap-8 sm:grid-cols-3">
-          {YEARS_OF_EXPERIENCE && (
-            <div className="bg-white p-6">
-              <p className="font-serif text-3xl text-gold">
-                +{YEARS_OF_EXPERIENCE}
-              </p>
-              <p className="mt-1 text-sm text-text/70">Años de trayectoria</p>
-            </div>
-          )}
           <div className="bg-white p-6">
-            <p className="font-serif text-3xl text-gold">+500</p>
+            <p className="font-serif text-3xl text-gold">
+              +{TRUST_BAR.realEstateYears}
+            </p>
+            <p className="mt-1 text-sm text-text/70">
+              Experiencia en real estate
+            </p>
+          </div>
+          <div className="bg-white p-6">
+            <p className="font-serif text-3xl text-gold">
+              +{TRUST_BAR.propertiesManaged}
+            </p>
             <p className="mt-1 text-sm text-text/70">
               Propiedades gestionadas
             </p>
@@ -116,7 +118,7 @@ export default function AboutPage() {
           <div className="bg-white p-6">
             <p className="font-serif text-3xl text-gold">ASU</p>
             <p className="mt-1 text-sm text-text/70">
-              Asunción y Central, Paraguay
+              Asunción, Gran Asunción y Ciudad del Este
             </p>
           </div>
         </div>
