@@ -11,8 +11,8 @@ export const AGENT = {
   email: "sonitarg@hotmail.com",
   affiliation: "Seven Real Estate",
   address: {
-    streetAddress: "República de Siria esq. Ayala Velázquez",
-    addressLocality: "Las Mercedes, Asunción",
+    streetAddress: "Fuerte Corpus Cristi 1505 casi Cerro Porteño",
+    addressLocality: "Asunción",
     addressRegion: "Central",
     addressCountry: "PY",
   },

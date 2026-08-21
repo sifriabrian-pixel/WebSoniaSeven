@@ -51,8 +51,8 @@ export default function Footer() {
           </h4>
           <ul className="space-y-2 text-sm text-cream/80">
             <li>
-              República de Siria esq. Ayala Velázquez, Las Mercedes,
-              Asunción, Paraguay
+              Fuerte Corpus Cristi 1505 casi Cerro Porteño, Asunción,
+              Paraguay
             </li>
             <li>sonitarg@hotmail.com</li>
             <li>+595 971 561916</li>
