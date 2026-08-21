@@ -147,7 +147,7 @@ El número de WhatsApp está centralizado en [`components/WhatsAppButton.tsx`](c
 - **Datos estructurados (JSON-LD):** `RealEstateAgent` en el layout global y `RealEstateListing` en cada ficha de propiedad (ver [`lib/seo.ts`](lib/seo.ts)).
 - **Open Graph / WhatsApp preview:** cada página tiene `og:title`, `og:description`, `og:image` y `og:url` propios vía `generateMetadata`.
 - **Sitemap y robots:** `app/sitemap.ts` y `app/robots.ts` se generan solos a partir de `properties.json` (incluye zonas y blog cuando corresponde).
-- **`NEXT_PUBLIC_SITE_URL`:** si el dominio final no es `web-sonia-seven.vercel.app`, configurar esta variable de entorno en Vercel con la URL real para que el sitemap, el JSON-LD y el Open Graph usen las URLs correctas.
+- **`NEXT_PUBLIC_SITE_URL`:** el dominio por defecto en el código es `https://seveninmobiliaria.com`. Si en algún momento cambia (otro dominio, o se quiere apuntar temporalmente a la URL de Vercel), configurar esta variable de entorno en Vercel para que el sitemap, el JSON-LD y el Open Graph usen la URL correcta sin tocar código.
 
 ## Posicionamiento: "de lujo" vs. catálogo real
 
@@ -155,7 +155,7 @@ El copy actual dice "asesoramiento inmobiliario integral" en vez de "real estate
 
 ## Deploy
 
-El proyecto está deployado en Vercel: `web-sonia-seven.vercel.app`. Cualquier push a `main` en GitHub dispara un redeploy automático.
+El proyecto está deployado en Vercel: `web-sonia-seven.vercel.app`, con el dominio propio `seveninmobiliaria.com` conectado (`www.seveninmobiliaria.com` es la versión de producción; el dominio raíz redirige ahí). Cualquier push a `main` en GitHub dispara un redeploy automático.
 
 ## Pendientes de contenido
 

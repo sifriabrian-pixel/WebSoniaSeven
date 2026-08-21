@@ -1,5 +1,5 @@
 export const SITE_URL =
-  process.env.NEXT_PUBLIC_SITE_URL ?? "https://web-sonia-seven.vercel.app";
+  process.env.NEXT_PUBLIC_SITE_URL ?? "https://seveninmobiliaria.com";
 
 export const SITE_NAME = "Sonia García";
 export const SITE_TAGLINE = "Seven Real Estate";
