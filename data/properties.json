@@ -503,5 +503,352 @@
     "featured": false,
     "status": "nueva",
     "investment": { "rentalYieldPct": null, "zoneAppreciationPct": null, "dealType": "Desarrollo en pozo" }
+  },
+  {
+    "id": "sr-altea-hub",
+    "slug": "altea-hub",
+    "title": "Altea Hub",
+    "operation": "venta",
+    "type": "departamento",
+    "price": 43228,
+    "currency": "USD",
+    "priceFrom": true,
+    "location": {
+      "city": "Mariano Roque Alonso",
+      "neighborhood": "San Jorge",
+      "address": "Sucre esq. Cnel. Félix Bogado"
+    },
+    "specs": { "bedrooms": 0, "bathrooms": 0, "totalArea": 0, "coveredArea": 0, "garages": 0, "yearBuilt": 0 },
+    "description": "Edificio en pozo pensado para estudiantes e inversores, a pasos de la Universidad UMAX y del Shopping La Rural, en Mariano Roque Alonso. Tipologías monoambiente de 30 m² y de 2 dormitorios de 58,50 m², con rooftop de piscina, solarium y quincho climatizado, salas de coworking y detalles smart home (cerraduras y llaves inteligentes). Entrega estimada: mayo 2027.",
+    "features": [
+      "A pasos de Universidad UMAX y Shopping La Rural",
+      "Rooftop con piscina, solarium y quincho",
+      "Salas de coworking y sala de reuniones",
+      "Smart home: cerraduras e interruptores inteligentes",
+      "Entrega estimada: mayo 2027"
+    ],
+    "images": ["/images/properties/altea-hub-1.jpg", "/images/properties/altea-hub-2.jpg", "/images/properties/altea-hub-3.jpg"],
+    "coordinates": { "lat": -25.2198, "lng": -57.5309 },
+    "featured": false,
+    "status": "nueva",
+    "investment": { "rentalYieldPct": null, "zoneAppreciationPct": null, "dealType": "Desarrollo en pozo" }
+  },
+  {
+    "id": "sr-avanza-well",
+    "slug": "avanza-well",
+    "title": "Avanza Well",
+    "operation": "venta",
+    "type": "departamento",
+    "price": null,
+    "currency": "USD",
+    "priceFrom": true,
+    "location": {
+      "city": "Asunción",
+      "neighborhood": "Villa Morra",
+      "address": "Del Maestro 1371"
+    },
+    "specs": { "bedrooms": 0, "bathrooms": 0, "totalArea": 0, "coveredArea": 0, "garages": 0, "yearBuilt": 0 },
+    "description": "Torre residencial de Avanza en Villa Morra, a metros del Shopping Villa Morra y el Shopping Mariscal. Tipologías desde studio de 34 m² hasta 2 dormitorios en suite de 80 m², con balcones curvos aterrazados, gran piscina de ingreso descendente \"Beach Mode\", solarium, coworking, gimnasio y espacio zen.",
+    "features": [
+      "A metros de Shopping Villa Morra y Shopping Mariscal",
+      "Piscina \"Beach Mode\" con solarium poolside",
+      "Business center, coworking y SUM equipado",
+      "Gimnasio, espacio zen y community grill",
+      "Balcones curvos aterrazados"
+    ],
+    "images": ["/images/properties/avanza-well-1.jpg", "/images/properties/avanza-well-2.jpg", "/images/properties/avanza-well-3.jpg", "/images/properties/avanza-well-4.jpg"],
+    "coordinates": { "lat": -25.2965, "lng": -57.5745 },
+    "featured": false,
+    "status": "nueva",
+    "investment": { "rentalYieldPct": null, "zoneAppreciationPct": null, "dealType": "Desarrollo en pozo" }
+  },
+  {
+    "id": "sr-prime-campus-2",
+    "slug": "prime-campus-suites-2",
+    "title": "Prime Campus Suites II",
+    "operation": "venta",
+    "type": "departamento",
+    "price": 39900,
+    "currency": "USD",
+    "priceFrom": true,
+    "location": {
+      "city": "Asunción",
+      "neighborhood": "Loma Pyta",
+      "address": "Trébol esq. Inga"
+    },
+    "specs": { "bedrooms": 0, "bathrooms": 0, "totalArea": 0, "coveredArea": 0, "garages": 0, "yearBuilt": 0 },
+    "description": "Edificio de suites en pozo a pasos de la Universidad UMAX, en Loma Pyta, Asunción (límite con Mariano Roque Alonso), pensado para estudiantes e inversores en renta. Tipologías monoambiente de 29 y 32 m² y 2 dormitorios de 58 m², con sala de estudio y lavandería por piso, piscina con solarium, quincho y estacionamiento cerrado. Continuación de Prime Campus Suites I, vendido en un 95% en 10 meses.",
+    "features": [
+      "A pasos de la Universidad UMAX",
+      "Piscina con solarium y quincho en azotea",
+      "Sala de estudio y lavandería por piso",
+      "Estacionamiento cerrado con CCTV",
+      "Tasa de retorno anual bruta estimada: 11%"
+    ],
+    "images": ["/images/properties/prime-campus-2-1.jpg", "/images/properties/prime-campus-2-2.jpg", "/images/properties/prime-campus-2-3.jpg"],
+    "coordinates": { "lat": -25.2578, "lng": -57.5613 },
+    "featured": false,
+    "status": "nueva",
+    "investment": { "rentalYieldPct": 11, "zoneAppreciationPct": null, "dealType": "Desarrollo en pozo" }
+  },
+  {
+    "id": "sr-casa-m",
+    "slug": "casa-m",
+    "title": "Casa M",
+    "operation": "venta",
+    "type": "departamento",
+    "price": null,
+    "currency": "USD",
+    "priceFrom": true,
+    "location": {
+      "city": "Asunción",
+      "neighborhood": "Asunción",
+      "address": "Narciso R. Colmán esq. Herib Campos Cervera"
+    },
+    "specs": { "bedrooms": 3, "bathrooms": 0, "totalArea": 335.04, "coveredArea": 178.9, "garages": 2, "yearBuilt": 0 },
+    "description": "Edificio de baja densidad en Asunción, sobre Narciso R. Colmán esquina Herib Campos Cervera, bajo el concepto \"El lujo de ser pocos\". Departamentos de 3 dormitorios con área interna de 178,9 m², terraza de 72 m² y área propia + 2 cocheras + baulera de 281,75 m², con placares a medida en cada ambiente. Amenities con piscina infinita en azotea con vista a la ciudad.",
+    "features": [
+      "Baja densidad: pocas unidades por piso",
+      "Piscina infinita en azotea",
+      "3 dormitorios, terraza propia de 72 m²",
+      "2 cocheras y baulera incluidas",
+      "Placares a medida en todos los ambientes"
+    ],
+    "images": ["/images/properties/casa-m-1.jpg", "/images/properties/casa-m-2.jpg"],
+    "coordinates": { "lat": -25.2965, "lng": -57.5735 },
+    "featured": false,
+    "status": "nueva",
+    "investment": { "rentalYieldPct": null, "zoneAppreciationPct": null, "dealType": "Desarrollo en pozo" }
+  },
+  {
+    "id": "sr-casa-mburucuya",
+    "slug": "casa-mburucuya",
+    "title": "Casa Mburucuya",
+    "operation": "venta",
+    "type": "casa",
+    "price": 695000,
+    "currency": "USD",
+    "priceFrom": false,
+    "location": {
+      "city": "Asunción",
+      "neighborhood": "Mburucuya",
+      "address": "Barrio Mburucuya"
+    },
+    "specs": { "bedrooms": 4, "bathrooms": 5, "totalArea": 383, "coveredArea": 430, "garages": 4, "yearBuilt": 2026 },
+    "description": "Amplia casa moderna a estrenar en el Barrio Mburucuya, Asunción, sobre lote de 383 m² (10x38,3) con 430 m² construidos. Planta baja con escritorio o dormitorio en suite, cocina, comedor, sala, galería con parrilla y mesada, amplio patio con piscina, y habitación de servicio independiente. Planta alta con estar íntimo, 3 dormitorios en suite y 1 master suite.",
+    "features": [
+      "Piscina y galería con parrilla en el patio",
+      "4 dormitorios, todos en suite",
+      "Estacionamiento para 4 vehículos",
+      "Cerco eléctrico y sistema de riego automático",
+      "Preparación para generador y tanque de agua con bomba"
+    ],
+    "images": ["/images/properties/casa-mburucuya-1.jpg", "/images/properties/casa-mburucuya-2.jpg", "/images/properties/casa-mburucuya-3.jpg", "/images/properties/casa-mburucuya-4.jpg"],
+    "coordinates": { "lat": -25.3187, "lng": -57.5738 },
+    "featured": false,
+    "status": "nueva",
+    "investment": { "rentalYieldPct": null, "zoneAppreciationPct": null, "dealType": "Reventa" }
+  },
+  {
+    "id": "sr-edificio-karai",
+    "slug": "edificio-karai",
+    "title": "Edificio Karai",
+    "operation": "venta",
+    "type": "departamento",
+    "price": 58900,
+    "currency": "USD",
+    "priceFrom": false,
+    "location": {
+      "city": "Lambaré",
+      "neighborhood": "Lambaré",
+      "address": "Karai Residencias"
+    },
+    "specs": { "bedrooms": 2, "bathrooms": 2, "totalArea": 65, "coveredArea": 65, "garages": 1, "yearBuilt": 0 },
+    "description": "Departamento amoblado de 65 m² en Karai Residencias, Lambaré, a pasos del Colegio Sagrada Familia. 2 habitaciones (una en suite), balcón con parrilla, cochera techada. El edificio cuenta con piscina, gimnasio y quinchos, y es pet friendly.",
+    "features": [
+      "Departamento amoblado, listo para mudarse",
+      "Balcón con parrilla propia",
+      "Piscina, gimnasio y quinchos en el edificio",
+      "Pet friendly",
+      "A pasos del Colegio Sagrada Familia"
+    ],
+    "images": ["/images/properties/karai-1.jpg", "/images/properties/karai-2.jpg", "/images/properties/karai-3.jpg", "/images/properties/karai-4.jpg"],
+    "coordinates": { "lat": -25.345, "lng": -57.607 },
+    "featured": false,
+    "status": "nueva",
+    "investment": { "rentalYieldPct": null, "zoneAppreciationPct": null, "dealType": "Reventa" }
+  },
+  {
+    "id": "sr-matter",
+    "slug": "matter",
+    "title": "Matter",
+    "operation": "venta",
+    "type": "comercial",
+    "price": null,
+    "currency": "USD",
+    "priceFrom": true,
+    "location": {
+      "city": "Asunción",
+      "neighborhood": "Eje corporativo",
+      "address": "San Juan XXIII esq. Dr. Cirilo Cáceres Zorrilla"
+    },
+    "specs": { "bedrooms": 0, "bathrooms": 0, "totalArea": 524, "coveredArea": 400, "garages": 0, "yearBuilt": 0 },
+    "description": "Torre de oficinas categoría AAA frente al Shopping del Sol, en el eje corporativo de Asunción. Semipisos desde 212 m² hasta 262 m², y pisos enteros desde 424 m² hasta 524 m², con balcones aterrazados en cada unidad, ventilación cruzada natural y certificación LEED. Amenities: lobby de doble altura, auditorium para 75 personas, rooftop restaurant y 232 cocheras + 36 moteras. Premiado como mejor proyecto de oficinas boutique en Paraguay y América (International Property Awards 2024-2025).",
+    "features": [
+      "Certificación LEED de sustentabilidad",
+      "Balcón aterrazado en cada oficina",
+      "Rooftop restaurant y auditorium para 75 personas",
+      "232 cocheras + 36 moteras",
+      "Premiado: mejor proyecto de oficinas en Paraguay y América"
+    ],
+    "images": ["/images/properties/matter-1.jpg", "/images/properties/matter-2.jpg"],
+    "coordinates": { "lat": -25.2934, "lng": -57.5765 },
+    "featured": false,
+    "status": "nueva",
+    "investment": { "rentalYieldPct": null, "zoneAppreciationPct": null, "dealType": "Desarrollo en pozo" }
+  },
+  {
+    "id": "sr-edificio-sole",
+    "slug": "edificio-sole",
+    "title": "Edificio Solé",
+    "operation": "venta",
+    "type": "departamento",
+    "price": 59350,
+    "currency": "USD",
+    "priceFrom": true,
+    "location": {
+      "city": "Luque",
+      "neighborhood": "Luque",
+      "address": "Entre el CIT y Ñu Guazú"
+    },
+    "specs": { "bedrooms": 0, "bathrooms": 0, "totalArea": 0, "coveredArea": 0, "garages": 0, "yearBuilt": 0 },
+    "description": "Edificio en pozo en Luque, entre el CIT y Ñu Guazú, con entrega estimada diciembre 2026. Tipologías de 1 dormitorio desde 40,4 m² y de 2 dormitorios desde 58 m², todas con cochera incluida. Amenities: piscina con vista privilegiada, quincho abierto y climatizado, sala de reuniones.",
+    "features": [
+      "Cochera incluida en todas las unidades",
+      "Piscina con vista privilegiada",
+      "Quincho abierto y quincho climatizado",
+      "Entre el CIT y Ñu Guazú",
+      "Entrega estimada: diciembre 2026"
+    ],
+    "images": ["/images/properties/sole-1.jpg", "/images/properties/sole-2.jpg"],
+    "coordinates": { "lat": -25.2889, "lng": -57.5277 },
+    "featured": false,
+    "status": "nueva",
+    "investment": { "rentalYieldPct": null, "zoneAppreciationPct": null, "dealType": "Desarrollo en pozo" }
+  },
+  {
+    "id": "sr-terreno-capiata",
+    "slug": "terreno-capiata",
+    "title": "Terreno en Capiatá",
+    "operation": "venta",
+    "type": "terreno",
+    "price": 17800,
+    "currency": "USD",
+    "priceFrom": false,
+    "location": {
+      "city": "Capiatá",
+      "neighborhood": "Santa Librada",
+      "address": "Barrio Santa Librada"
+    },
+    "specs": { "bedrooms": 0, "bathrooms": 0, "totalArea": 735, "coveredArea": 0, "garages": 0, "yearBuilt": 0 },
+    "description": "Terreno de 735 m² en el Barrio Santa Librada, Capiatá, resultado de la unificación de 2 lotes (24 m de frente x 30 m de fondo). Totalmente alambrado, con documentación lista para transferir, a solo 1 cuadra del asfalto sobre calle sin salida de bajo tránsito. Ideal para inversión o vivienda propia en zona de constante crecimiento.",
+    "features": [
+      "735 m², 2 lotes unificados",
+      "Totalmente alambrado",
+      "Documentación lista para transferir",
+      "A 1 cuadra del asfalto",
+      "Calle sin salida, poco tránsito"
+    ],
+    "images": ["/images/properties/terreno-capiata-1.jpg", "/images/properties/terreno-capiata-2.jpg"],
+    "coordinates": { "lat": -25.3556, "lng": -57.4453 },
+    "featured": false,
+    "status": "nueva",
+    "investment": { "rentalYieldPct": null, "zoneAppreciationPct": null, "dealType": "Reventa" }
+  },
+  {
+    "id": "sr-terreno-fernando-de-la-mora",
+    "slug": "terreno-fernando-de-la-mora",
+    "title": "Terreno en Fernando de la Mora",
+    "operation": "venta",
+    "type": "terreno",
+    "price": 94500,
+    "currency": "USD",
+    "priceFrom": false,
+    "location": {
+      "city": "Fernando de la Mora",
+      "neighborhood": "Zona Norte",
+      "address": "Calle Lapacho casi Del Carmen"
+    },
+    "specs": { "bedrooms": 0, "bathrooms": 0, "totalArea": 360, "coveredArea": 0, "garages": 0, "yearBuilt": 0 },
+    "description": "Terreno de 360 m² (12x30) en Fernando de la Mora, Zona Norte, a 100 m de la Av. Mariscal López, sobre calle Lapacho casi Del Carmen. Cuenta con una construcción antigua a demoler. Oportunidad de inversión en una ubicación consolidada, ideal para vivienda o desarrollo.",
+    "features": [
+      "360 m² (12m x 30m)",
+      "A 100 m de la Av. Mariscal López",
+      "Construcción antigua a demoler en el terreno",
+      "Zona consolidada de Fernando de la Mora"
+    ],
+    "images": ["/images/properties/terreno-fdm-1.jpg", "/images/properties/terreno-fdm-2.jpg"],
+    "coordinates": { "lat": -25.3102681, "lng": -57.5327318 },
+    "featured": false,
+    "status": "nueva",
+    "investment": { "rentalYieldPct": null, "zoneAppreciationPct": null, "dealType": "Reventa" }
+  },
+  {
+    "id": "sr-veralta-mariscal",
+    "slug": "veralta-mariscal",
+    "title": "Veralta Mariscal",
+    "operation": "venta",
+    "type": "departamento",
+    "price": 93100,
+    "currency": "USD",
+    "priceFrom": true,
+    "location": {
+      "city": "Asunción",
+      "neighborhood": "Recoleta",
+      "address": "Legión Civil Extranjera esq. Manuel del Castillo"
+    },
+    "specs": { "bedrooms": 0, "bathrooms": 0, "totalArea": 0, "coveredArea": 0, "garages": 0, "yearBuilt": 0 },
+    "description": "Co-desarrollo de 2 torres en el Barrio Recoleta, sobre una calle interna arbolada a pocas cuadras del eje Mariscal. Tipologías monoambiente desde 28,5 m² hasta 3 dormitorios en suite de 109,5 m². Amenities: piscina de 25 m, piscina para niños, gimnasio, quincho, social lounge, playroom y sala de reuniones.",
+    "features": [
+      "Piscina de 25 m y piscina para niños",
+      "2 torres, seguridad 24/7",
+      "Gimnasio, quincho y social lounge",
+      "Cocheras opcionales con cargador eléctrico",
+      "A pocas cuadras del eje Mariscal"
+    ],
+    "images": ["/images/properties/veralta-mariscal-1.jpg", "/images/properties/veralta-mariscal-2.jpg"],
+    "coordinates": { "lat": -25.2965, "lng": -57.5745 },
+    "featured": false,
+    "status": "nueva",
+    "investment": { "rentalYieldPct": null, "zoneAppreciationPct": null, "dealType": "Desarrollo en pozo" }
+  },
+  {
+    "id": "sr-viwwo",
+    "slug": "viwwo",
+    "title": "Viwwo Business Life Tower",
+    "operation": "venta",
+    "type": "departamento",
+    "price": null,
+    "currency": "USD",
+    "priceFrom": true,
+    "location": {
+      "city": "Asunción",
+      "neighborhood": "Eje corporativo",
+      "address": "Roque Centurión Miranda y Avda. San Martín"
+    },
+    "specs": { "bedrooms": 0, "bathrooms": 0, "totalArea": 0, "coveredArea": 0, "garages": 0, "yearBuilt": 0 },
+    "description": "Torre de uso mixto \"Business Life Tower\" en el eje corporativo de Asunción, a pasos del Shopping del Sol, el World Trade Center y el Hotel Sheraton. Ganadora de los Premios LADI 2026. Smart Suites (monoambiente desde 26 m² hasta 1 dormitorio de 39 m²) en los pisos 7 a 24, y Signature Collection (1 y 2 dormitorios desde 45 hasta 79 m²) en los pisos 25 a 29. Amenities: coworking, restaurante, gimnasio en altura, spa completo (sauna, jacuzzi, sala de masajes) y rooftop con piscina semiolímpica.",
+    "features": [
+      "Ganadora de los Premios LADI 2026",
+      "Rooftop con piscina semiolímpica y solárium",
+      "Gimnasio, spa, sauna y jacuzzi",
+      "Coworking, streaming studio y restaurante en planta baja",
+      "A pasos del Shopping del Sol y el World Trade Center"
+    ],
+    "images": ["/images/properties/viwwo-1.jpg", "/images/properties/viwwo-2.jpg"],
+    "coordinates": { "lat": -25.2934, "lng": -57.5765 },
+    "featured": false,
+    "status": "nueva",
+    "investment": { "rentalYieldPct": null, "zoneAppreciationPct": null, "dealType": "Desarrollo en pozo" }
   }
 ]
