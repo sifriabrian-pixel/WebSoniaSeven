@@ -850,5 +850,91 @@
     "featured": false,
     "status": "nueva",
     "investment": { "rentalYieldPct": null, "zoneAppreciationPct": null, "dealType": "Desarrollo en pozo" }
+  },
+  {
+    "id": "sr-area-concordia",
+    "slug": "area-concordia",
+    "title": "Área Concordia",
+    "operation": "venta",
+    "type": "departamento",
+    "price": null,
+    "currency": "USD",
+    "priceFrom": true,
+    "location": {
+      "city": "Asunción",
+      "neighborhood": "San Pablo",
+      "address": "Calle Concordia esq. Pitiantuta"
+    },
+    "specs": { "bedrooms": 0, "bathrooms": 0, "totalArea": 0, "coveredArea": 0, "garages": 0, "yearBuilt": 0 },
+    "description": "Edificio terminado y entregado en Calle Concordia esquina Pitiantuta, Asunción. Unidades de 1 dormitorio desde 46 m² hasta 2 dormitorios de 94,2 m² con terraza abierta. Ambientes integrados, cocina equipada y balcón con parrilla en las unidades superiores.",
+    "features": [
+      "Edificio ya terminado y entregado",
+      "Unidades con balcón/terraza",
+      "Cocina integrada equipada",
+      "Tipologías de 1 y 2 dormitorios"
+    ],
+    "images": ["/images/properties/area-concordia-1.jpg", "/images/properties/area-concordia-2.jpg", "/images/properties/area-concordia-3.jpg"],
+    "coordinates": { "lat": -25.2801675, "lng": -57.6060523 },
+    "featured": false,
+    "status": "nueva",
+    "investment": { "rentalYieldPct": null, "zoneAppreciationPct": null, "dealType": "Reventa" }
+  },
+  {
+    "id": "sr-area-salazar",
+    "slug": "area-salazar",
+    "title": "Área Salazar",
+    "operation": "venta",
+    "type": "departamento",
+    "price": 89000,
+    "currency": "USD",
+    "priceFrom": true,
+    "location": {
+      "city": "Asunción",
+      "neighborhood": "Recoleta",
+      "address": "Juan de Salazar"
+    },
+    "specs": { "bedrooms": 0, "bathrooms": 0, "totalArea": 0, "coveredArea": 0, "garages": 1, "yearBuilt": 0 },
+    "description": "Torre en pozo sobre la calle Juan de Salazar, Asunción. Tipologías de 1 dormitorio desde 44,8 m² y 2 dormitorios desde 75 m², con terraza y cochera. Amenities: piscina con solarium en azotea con vista panorámica a la ciudad, sala de cowork y reuniones, gimnasio, 2 parrilleros cerrados, sauna húmedo y seco, e hidromasaje.",
+    "features": [
+      "Piscina con solarium en la azotea",
+      "Sauna húmedo y seco, e hidromasaje",
+      "Sala de cowork y sala de reuniones",
+      "2 parrilleros cerrados y gimnasio",
+      "Todas las unidades con terraza y cochera"
+    ],
+    "images": ["/images/properties/area-salazar-1.jpg", "/images/properties/area-salazar-2.jpg"],
+    "coordinates": { "lat": -25.2869056, "lng": -57.604755 },
+    "featured": false,
+    "status": "nueva",
+    "investment": { "rentalYieldPct": null, "zoneAppreciationPct": null, "dealType": "Desarrollo en pozo" }
+  },
+  {
+    "id": "sr-vicinia",
+    "slug": "vicinia",
+    "title": "Barrio Cerrado Vicinia",
+    "operation": "venta",
+    "type": "casa",
+    "price": 40900,
+    "currency": "USD",
+    "priceFrom": true,
+    "location": {
+      "city": "Luque",
+      "neighborhood": "Cañada Garay",
+      "address": "Barrio Cerrado Vicinia"
+    },
+    "specs": { "bedrooms": 2, "bathrooms": 2, "totalArea": 120, "coveredArea": 54, "garages": 2, "yearBuilt": 2026 },
+    "description": "Casas en pozo dentro de barrio cerrado con acceso controlado, en Cañada Garay, Luque, a 10 minutos del centro de Luque y 20 del Aeropuerto Silvio Pettirossi. Tipología de 2 dormitorios (principal en suite) en 54 m² construidos sobre lote de 120 m², con estacionamiento para 2 vehículos, patio y quincho con parrilla. Financiación propia hasta 20 años. Entrega prevista: noviembre 2026.",
+    "features": [
+      "Barrio cerrado con seguridad perimetral",
+      "Patio y quincho con parrilla",
+      "Estacionamiento para 2 vehículos",
+      "Financiación propia hasta 20 años",
+      "Entrega prevista: noviembre 2026"
+    ],
+    "images": ["/images/properties/vicinia-1.jpg", "/images/properties/vicinia-2.jpg", "/images/properties/vicinia-3.jpg"],
+    "coordinates": { "lat": -25.2536076, "lng": -57.4635001 },
+    "featured": false,
+    "status": "nueva",
+    "investment": { "rentalYieldPct": null, "zoneAppreciationPct": null, "dealType": "Desarrollo en pozo" }
   }
 ]
