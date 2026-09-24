@@ -59,13 +59,13 @@
     "location": {
       "city": "Asunción",
       "neighborhood": "La Encarnación",
-      "address": "Edificio Italia, Piso 12"
+      "address": "Calle 14 de Mayo entre Igatimí e Ibáñez del Campo, Edificio Italia, Piso 12"
     },
     "specs": {
       "bedrooms": 3,
       "bathrooms": 2,
-      "totalArea": 0,
-      "coveredArea": 0,
+      "totalArea": 129.2,
+      "coveredArea": 129.2,
       "garages": 1,
       "yearBuilt": 0
     },
