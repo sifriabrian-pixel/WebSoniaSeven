@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
 import { WhatsAppInline } from "@/components/WhatsAppButton";
 
 const WEB3FORMS_ACCESS_KEY = process.env.NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY;
@@ -203,7 +204,11 @@ export default function ConversionForm({
         className={`mt-3 text-xs ${isDark ? "text-cream/50" : "text-text/50"}`}
       >
         Te escribimos por WhatsApp a la brevedad. Sin spam, sin compartir tu
-        número con terceros.
+        número con terceros. Al enviar aceptás nuestra{" "}
+        <Link href="/politica-de-privacidad" className="underline">
+          Política de Privacidad
+        </Link>
+        .
       </p>
 
       {error && (

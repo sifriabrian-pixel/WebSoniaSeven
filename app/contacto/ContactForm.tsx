@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
 import { buildWhatsAppLink } from "@/components/WhatsAppButton";
 
 export default function ContactForm() {
@@ -59,6 +60,13 @@ export default function ContactForm() {
       >
         ENVIAR POR WHATSAPP
       </button>
+      <p className="text-xs text-text/50">
+        Al enviar aceptás nuestra{" "}
+        <Link href="/politica-de-privacidad" className="underline">
+          Política de Privacidad
+        </Link>
+        .
+      </p>
     </form>
   );
 }

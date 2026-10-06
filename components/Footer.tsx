@@ -62,7 +62,10 @@ export default function Footer() {
 
       <div className="mx-auto mt-12 max-w-7xl border-t border-cream/10 pt-6 text-xs text-cream/50">
         © {new Date().getFullYear()} {SITE_NAME}. Todos los derechos
-        reservados.
+        reservados.{" "}
+        <Link href="/politica-de-privacidad" className="underline hover:text-graybrand">
+          Política de Privacidad
+        </Link>
       </div>
     </footer>
   );
