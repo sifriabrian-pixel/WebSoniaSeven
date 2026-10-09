@@ -965,5 +965,92 @@
     "featured": false,
     "status": "nueva",
     "investment": { "rentalYieldPct": null, "zoneAppreciationPct": null, "dealType": "Desarrollo en pozo" }
+  },
+  {
+    "id": "sr-izara",
+    "slug": "izara",
+    "title": "Izara Barrio Privado",
+    "operation": "venta",
+    "type": "terreno",
+    "price": 219794,
+    "currency": "USD",
+    "priceFrom": true,
+    "location": {
+      "city": "Luque",
+      "neighborhood": "Isla Zárate",
+      "address": "Avda. Silvio Pettirossi, Calle 2"
+    },
+    "specs": { "bedrooms": 0, "bathrooms": 0, "totalArea": 0, "coveredArea": 0, "garages": 0, "yearBuilt": 0 },
+    "description": "Barrio privado de 17 hectáreas en Isla Zárate, Luque, con 112 terrenos amplios (lotes de más de 700 m²) y un club house como centro de la vida social. Amenities: piscina semiolímpica climatizada, canchas de tenis y pádel, gimnasio, senderos de 2,5 km, parque de juegos y seguridad 24 hs con control de acceso. Infraestructura con calles adoquinadas, red eléctrica y de fibra óptica subterráneas. Precios de lista entre USD 270 y USD 330 por m², con financiación de hasta 60 cuotas.",
+    "features": [
+      "112 terrenos amplios en 17 hectáreas",
+      "Club house, piscina semiolímpica, tenis y pádel",
+      "Control de acceso y seguridad 24 hs",
+      "Senderos de 2,5 km y parque de juegos",
+      "Financiación de hasta 60 cuotas"
+    ],
+    "images": ["/images/properties/izara-1.jpg", "/images/properties/izara-2.jpg", "/images/properties/izara-3.jpg", "/images/properties/izara-4.jpg"],
+    "coordinates": { "lat": -25.234958, "lng": -57.5108525 },
+    "featured": false,
+    "status": "nueva",
+    "investment": { "rentalYieldPct": null, "zoneAppreciationPct": null, "dealType": "Reventa" }
+  },
+  {
+    "id": "sr-mood",
+    "slug": "mood",
+    "title": "Mood Office",
+    "operation": "venta",
+    "type": "comercial",
+    "price": 172000,
+    "currency": "USD",
+    "priceFrom": true,
+    "location": {
+      "city": "Asunción",
+      "neighborhood": "Eje corporativo",
+      "address": "Avda. San Martín y César López Moreira"
+    },
+    "specs": { "bedrooms": 0, "bathrooms": 0, "totalArea": 0, "coveredArea": 0, "garages": 0, "yearBuilt": 0 },
+    "description": "Torre corporativa de 26 niveles en el eje corporativo de Asunción, entre la Avda. San Martín y César López Moreira, desarrollada por Consorcio JGL Casatua. 128 oficinas con balcón (desde 81 m² propios, con opción de unificar), más de 200 cocheras y amenities que incluyen gimnasio wellness, hub area, coworking, salas de reuniones, auditorio para 75 personas y sky bar con restaurante panorámico. Generador propio con cobertura total y certificación LEED. Inicio de obra abril 2027, entrega agosto 2030. Pago: 20% a la firma del boleto y 80% en 40 cuotas durante la obra.",
+    "features": [
+      "128 oficinas con balcón en 16 niveles",
+      "Sky bar y restaurante con vista panorámica",
+      "Gimnasio wellness, coworking y auditorio",
+      "Generador propio con 100% de cobertura",
+      "Entrega prevista: agosto 2030"
+    ],
+    "images": ["/images/properties/mood-1.jpg", "/images/properties/mood-2.jpg", "/images/properties/mood-3.jpg", "/images/properties/mood-4.jpg"],
+    "coordinates": { "lat": -25.2866321, "lng": -57.571854 },
+    "featured": false,
+    "status": "nueva",
+    "investment": { "rentalYieldPct": null, "zoneAppreciationPct": null, "dealType": "Desarrollo en pozo" }
+  },
+  {
+    "id": "sr-blu",
+    "slug": "blu",
+    "title": "Blu",
+    "operation": "venta",
+    "type": "departamento",
+    "price": 274460,
+    "currency": "USD",
+    "priceFrom": true,
+    "location": {
+      "city": "Asunción",
+      "neighborhood": "Las Lomas",
+      "address": "Emiliano Gómez Ríos casi Narciso R. Colmán"
+    },
+    "specs": { "bedrooms": 0, "bathrooms": 0, "totalArea": 0, "coveredArea": 0, "garages": 0, "yearBuilt": 0 },
+    "description": "Edificio de baja densidad en Las Lomas, Asunción, de Consorcio JGL Casatua: solo 21 departamentos de 2 y 3 dormitorios en 7 niveles, 3 por planta con palier semiprivado. Todas las unidades con balcón parrillero y baño social. Unidades de 2 dormitorios de 103,8 m² propios y de 3 dormitorios de 138,4 m². Rooftop en el 8vo piso con piscina, gimnasio, spa y sauna, y un modelo de gestión de renta (tradicional y temporal) a cargo de Casatua Hospitality. Inicio de obra noviembre 2026, entrega noviembre 2029.",
+    "features": [
+      "Solo 21 departamentos en 7 niveles",
+      "Balcón parrillero y baño social en todas las unidades",
+      "Rooftop con piscina, gimnasio, spa y sauna",
+      "Gestión de renta incluida con Casatua Hospitality",
+      "Entrega prevista: noviembre 2029"
+    ],
+    "images": ["/images/properties/blu-1.jpg", "/images/properties/blu-2.jpg", "/images/properties/blu-3.jpg", "/images/properties/blu-4.jpg"],
+    "coordinates": { "lat": -25.2801317, "lng": -57.5657387 },
+    "featured": false,
+    "status": "nueva",
+    "investment": { "rentalYieldPct": null, "zoneAppreciationPct": null, "dealType": "Desarrollo en pozo" }
   }
 ]
