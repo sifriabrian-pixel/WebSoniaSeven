@@ -4,7 +4,7 @@ import { SITE_URL, SITE_NAME } from "@/lib/seo";
 
 const TITLE = "Política de Privacidad";
 const DESCRIPTION =
-  "Cómo Sonia García y Seven Real Estate recopilan, usan y protegen tus datos personales cuando usás este sitio.";
+  "Cómo Seven Real Estate recopila, usa y protege tus datos personales cuando usás este sitio.";
 
 export const metadata: Metadata = {
   title: TITLE,
@@ -24,7 +24,7 @@ const SECTIONS: { title: string; body: string[] }[] = [
   {
     title: "1. Quiénes somos",
     body: [
-      "Este sitio es operado por Sonia García, Directora de Seven Real Estate, con domicilio en Fuerte Corpus Cristi 1505 casi Cerro Porteño, Asunción, Paraguay. Para cualquier consulta sobre tus datos podés escribirnos a sonitarg@hotmail.com.",
+      "Este sitio es operado por Seven Real Estate, dirigida por Sonia García, con domicilio en Fuerte Corpus Cristi 1505 casi Cerro Porteño, Asunción, Paraguay. Para cualquier consulta sobre tus datos podés escribirnos a sonitarg@hotmail.com.",
     ],
   },
   {

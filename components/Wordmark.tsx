@@ -33,8 +33,8 @@ export default function Wordmark({
         className="shrink-0"
       />
       <div className="text-center">
-        <div className={`font-serif ${main}`}>SONIA GARCÍA</div>
-        <div className={`text-cream/80 ${sub}`}>SEVEN REAL ESTATE</div>
+        <div className={`font-serif ${main}`}>SEVEN</div>
+        <div className={`text-cream/80 ${sub}`}>Real Estate</div>
       </div>
     </div>
   );

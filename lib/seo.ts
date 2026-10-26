@@ -1,8 +1,8 @@
 export const SITE_URL =
   process.env.NEXT_PUBLIC_SITE_URL ?? "https://seveninmobiliaria.com";
 
-export const SITE_NAME = "Sonia García";
-export const SITE_TAGLINE = "Seven Real Estate";
+export const SITE_NAME = "Seven Real Estate";
+export const SITE_TAGLINE = "Real Estate de Alto Valor en Asunción";
 
 export const AGENT = {
   name: "Sonia García",
@@ -24,8 +24,7 @@ export function agentJsonLd() {
   return {
     "@context": "https://schema.org",
     "@type": "RealEstateAgent",
-    name: AGENT.name,
-    jobTitle: AGENT.jobTitle,
+    name: SITE_NAME,
     image: AGENT.image,
     url: SITE_URL,
     telephone: AGENT.telephone,
@@ -37,9 +36,11 @@ export function agentJsonLd() {
       addressRegion: AGENT.address.addressRegion,
       addressCountry: AGENT.address.addressCountry,
     },
-    worksFor: {
-      "@type": "Organization",
-      name: AGENT.affiliation,
+    employee: {
+      "@type": "Person",
+      name: AGENT.name,
+      jobTitle: AGENT.jobTitle,
+      image: AGENT.image,
     },
   };
 }

@@ -1,6 +1,6 @@
-# Sonia García — Seven Real Estate
+# Seven Real Estate
 
-Sitio web de Sonia García, Directora de Seven Real Estate, en Asunción y Central, Paraguay. Construido con Next.js 14 (App Router), TypeScript, Tailwind CSS y Framer Motion.
+Sitio web de Seven Real Estate, dirigida por Sonia García, en Asunción y Central, Paraguay. Construido con Next.js 14 (App Router), TypeScript, Tailwind CSS y Framer Motion.
 
 **Nota de marca:** el sitio no menciona a Century 21 en ningún texto visible ni en metadata/JSON-LD — es una decisión explícita de Sonia de desligarse por completo de esa marca (no solo de dejar de abreviarla). Si en algún futuro cambio aparece "C21"/"Century 21" en algún componente, dato o metadata nuevos, hay que sacarlo — no reemplazarlo por la versión completa del nombre.
 
