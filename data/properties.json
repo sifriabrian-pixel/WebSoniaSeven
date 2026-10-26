@@ -943,7 +943,7 @@
     "title": "Petra Imperiale",
     "operation": "venta",
     "type": "departamento",
-    "price": null,
+    "price": 149150,
     "currency": "USD",
     "priceFrom": true,
     "location": {
@@ -952,7 +952,7 @@
       "address": "Avda. Aviadores del Chaco esq. Avda. Santa Teresa"
     },
     "specs": { "bedrooms": 0, "bathrooms": 0, "totalArea": 0, "coveredArea": 0, "garages": 0, "yearBuilt": 0 },
-    "description": "Complejo de uso mixto de Petra en la esquina de Aviadores del Chaco y Santa Teresa, en pleno eje corporativo de Asunción: torre residencial de 73 niveles y 250 m de altura (una de las cuatro más altas de Sudamérica), torre corporativa de 24 niveles, hotel NH Collection y piazza comercial. Residencias de loft, 1, 2 y 3 dormitorios con amenities de resort: piscina, gimnasio, game lounge, playground y sky lounge. Unidades de 2 dormitorios (61 m²) con precios desde USD 149.150 en el listado vigente.",
+    "description": "Complejo de uso mixto de Petra en la esquina de Aviadores del Chaco y Santa Teresa, en pleno eje corporativo de Asunción: torre residencial de 73 niveles y 250 m de altura (una de las cuatro más altas de Sudamérica), torre corporativa de 24 niveles, hotel NH Collection y piazza comercial. Residencias de loft, 1, 2 y 3 dormitorios con amenities de resort: piscina, gimnasio, game lounge, playground y sky lounge. En el listado vigente, los lofts y departamentos de 1 dormitorio están vendidos; quedan unidades de 2 dormitorios (desde 61 m², desde USD 149.150) y de 3 dormitorios (245 m², USD 899.800).",
     "features": [
       "Torre residencial de 73 niveles y 250 m de altura",
       "Hotel NH Collection y torre corporativa en el mismo complejo",
