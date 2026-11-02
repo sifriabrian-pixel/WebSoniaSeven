@@ -22,9 +22,10 @@ export default function AnimatedCounter({
   const isInView = useInView(ref, { once: true, amount: 0.3 });
   const count = useMotionValue(0);
   const rounded = useTransform(count, (latest) => Math.round(latest));
+  const format = (n: number) => n.toLocaleString("es-PY");
   // Arranca en el valor final para que el HTML que ven Google y las vistas
   // previas de WhatsApp muestre el número real y no "+0".
-  const [display, setDisplay] = useState(value);
+  const [display, setDisplay] = useState(() => format(value));
 
   useEffect(() => {
     if (!isInView) return;
@@ -41,7 +42,7 @@ export default function AnimatedCounter({
     return () => controls.stop();
   }, [isInView, value, duration, count]);
 
-  useEffect(() => rounded.on("change", (v) => setDisplay(v)), [rounded]);
+  useEffect(() => rounded.on("change", (v) => setDisplay(format(v))), [rounded]);
 
   return (
     <span ref={ref}>

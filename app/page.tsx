@@ -28,51 +28,55 @@ export default async function HomePage() {
 
       <ZoneIntelligence zones={zones} />
 
-      {/* Sobre Sonia */}
+      {/* Sobre Seven Real Estate */}
       <section className="bg-navy px-6 py-24 text-cream">
         <Reveal className="mx-auto grid max-w-6xl items-center gap-12 md:grid-cols-2">
           <div className="relative aspect-[4/5] w-full overflow-hidden">
             <Image
               src="/images/sonia-garcia.jpg"
-              alt="Sonia García"
+              alt="Sonia García, Directora de Seven Real Estate"
               fill
               className="object-cover object-top transition-transform duration-700 hover:scale-105"
             />
           </div>
           <div>
             <h2 className="font-heading text-3xl">
-              Contadora antes que asesora inmobiliaria
+              Una mirada financiera antes que inmobiliaria
             </h2>
             <SectionDivider center={false} dark />
             <p className="mt-4 text-cream/80">
-              Contadora y Analista Financiera con{" "}
+              <strong className="text-cream">Seven Real Estate</strong> está
+              dirigida por Sonia García, Contadora y Analista Financiera con{" "}
               {YEARS_OF_EXPERIENCE
                 ? `+${YEARS_OF_EXPERIENCE} años de trayectoria`
                 : "amplia trayectoria"}{" "}
-              gerenciando negocios en distintos rubros. Esa formación es la
-              diferencia real: no leo una propiedad por sus metros
-              cuadrados, la leo por su retorno.
+              gerenciando negocios en distintos rubros. Esa formación marca
+              cómo trabajamos: no leemos una propiedad por sus metros
+              cuadrados, la leemos por su retorno.
             </p>
             <p className="mt-4 text-cream/80">
-              Dirijo <strong className="text-cream">Seven Real Estate</strong>{" "}
-              en Las Mercedes, Asunción, asesorando en compra, venta e
-              inversión de propiedades de alto valor en Asunción, Gran
-              Asunción y Ciudad del Este.
+              Somos una oficina con más de {TRUST_BAR.realEstateYears} años
+              en el rubro inmobiliario, fuimos parte de franquicias
+              internacionales y estuvimos siempre entre los primeros
+              lugares del ranking. Asesoramos en compra, venta e inversión
+              de propiedades de alto valor en Asunción, Gran Asunción y
+              Ciudad del Este.
             </p>
             <p className="mt-4 text-cream/80">
-              Mi especialidad es el inversionista extranjero: acompañamiento
-              integral, desde la primera evaluación de mercado hasta la
-              radicación definitiva en Paraguay.
+              Nuestra especialidad es el inversionista extranjero:
+              acompañamiento integral, desde la primera evaluación de
+              mercado hasta la radicación definitiva en Paraguay.
             </p>
             <p className="mt-4 text-cream/80">
-              Cada operación la manejo con la misma responsabilidad y rigor
-              con que analizaría cualquier inversión propia.
+              Cada operación la manejamos con la misma responsabilidad y
+              rigor con que analizaríamos cualquier inversión propia.
             </p>
             <p className="mt-6 text-sm text-cream/70">
-              +{TRUST_BAR.realEstateYears} años de trayectoria en mercado
-              inmobiliario · +{TRUST_BAR.propertiesManaged} propiedades
-              gestionadas · Directora de Seven Real Estate · Asunción,
-              Paraguay
+              +{TRUST_BAR.realEstateYears} años en el rubro inmobiliario ·
+              +{TRUST_BAR.propertiesManaged.toLocaleString("es-PY")}{" "}
+              propiedades gestionadas · +USD{" "}
+              {TRUST_BAR.dollarsSoldMillions} millones vendidos · Sonia
+              García, Directora de Seven Real Estate · Asunción, Paraguay
             </p>
             <Link
               href="/sobre-mi"

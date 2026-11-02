@@ -8,7 +8,7 @@ const SUPPORT_CARDS = [
   },
   {
     title: "Cierre asistido completo",
-    text: "Desde la reserva hasta la escritura, acompaño cada paso.",
+    text: "Desde la reserva hasta la escritura, acompañamos cada paso.",
   },
   {
     title: "Contacto directo con las principales constructoras del país",
@@ -21,7 +21,8 @@ export default function ValueProposition() {
     <section className="mx-auto max-w-7xl px-6 py-24">
       <Reveal className="text-center">
         <h2 className="font-heading text-3xl text-navy">
-          No vendo propiedades. Te ayudo a leer el mercado antes de comprar.
+          No vendemos propiedades. Te ayudamos a leer el mercado antes de
+          comprar.
         </h2>
         <SectionDivider />
       </Reveal>
@@ -33,10 +34,10 @@ export default function ValueProposition() {
               Análisis de zona, no solo de propiedad
             </h3>
             <p className="mt-3 text-sm leading-relaxed text-cream/80">
-              Antes de mostrarte una propiedad, te muestro cómo se movió esa
-              zona en los últimos 24 meses: plusvalía, demanda de alquiler,
-              proyectos nuevos que van a impactar el precio. Comprás con
-              información, no con feeling.
+              Antes de mostrarte una propiedad, te mostramos cómo se movió
+              esa zona en los últimos 24 meses: plusvalía, demanda de
+              alquiler, proyectos nuevos que van a impactar el precio.
+              Comprás con información, no con feeling.
             </p>
           </div>
         </Reveal>

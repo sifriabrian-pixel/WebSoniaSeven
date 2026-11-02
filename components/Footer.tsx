@@ -11,9 +11,9 @@ export default function Footer() {
           <Wordmark size="sm" />
           <SectionDivider center={false} dark />
           <p className="max-w-xs text-sm text-cream/70">
-            Encontrá propiedades de alto valor en todo Paraguay, con
-            especial foco en Asunción, Ciudad del Este y otras ciudades
-            estratégicas.
+            Más de 9 años en el rubro inmobiliario, ayudando a encontrar
+            propiedades de alto valor en todo Paraguay, con foco en
+            Asunción, Ciudad del Este y otras ciudades estratégicas.
           </p>
         </div>
 
@@ -34,7 +34,7 @@ export default function Footer() {
             </li>
             <li>
               <Link href="/sobre-mi" className="hover:text-graybrand">
-                Sobre mí
+                Sobre Nosotros
               </Link>
             </li>
             <li>

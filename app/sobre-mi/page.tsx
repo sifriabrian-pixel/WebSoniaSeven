@@ -5,9 +5,9 @@ import { WhatsAppInline } from "@/components/WhatsAppButton";
 import { SITE_URL, SITE_NAME } from "@/lib/seo";
 import { YEARS_OF_EXPERIENCE, TRUST_BAR } from "@/lib/content";
 
-const TITLE = "Sobre mí";
+const TITLE = "Sobre Nosotros";
 const DESCRIPTION =
-  "Conocé a Sonia García, Directora de Seven Real Estate, especializada en operaciones de alto valor en Asunción, Paraguay.";
+  "Conocé a Seven Real Estate, oficina dirigida por Sonia García, con más de 9 años en el rubro y más de 3.100 propiedades gestionadas en Asunción, Paraguay.";
 
 export const metadata: Metadata = {
   title: TITLE,
@@ -45,37 +45,46 @@ export default function AboutPage() {
         <div className="relative aspect-[4/5] w-full overflow-hidden">
           <Image
             src="/images/sonia-garcia.jpg"
-            alt="Sonia García"
+            alt="Sonia García, Directora de Seven Real Estate"
             fill
             className="object-cover object-top"
           />
         </div>
         <div>
           <span className="text-xs tracking-[0.4em] text-gold">
-            SOBRE MÍ
+            SOBRE NOSOTROS
           </span>
           <h1 className="mt-2 font-serif text-3xl text-navy">
-            Sonia García
+            Seven Real Estate
           </h1>
           <p className="mt-1 text-sm text-text/60">
-            Directora · Seven Real Estate · Asunción, Paraguay
+            Dirigida por Sonia García · Asunción, Paraguay
           </p>
           <SectionDivider center={false} />
           <p className="mt-4 leading-relaxed text-text/80">
-            Soy Contadora y Analista Financiera con{" "}
+            Tenemos más de {TRUST_BAR.realEstateYears} años en el rubro
+            inmobiliario. Fuimos parte de franquicias internacionales y
+            estuvimos siempre entre los primeros lugares del ranking. En
+            ese tiempo gestionamos más de{" "}
+            {TRUST_BAR.propertiesManaged.toLocaleString("es-PY")}{" "}
+            propiedades y vendimos más de USD{" "}
+            {TRUST_BAR.dollarsSoldMillions} millones.
+          </p>
+          <p className="mt-4 leading-relaxed text-text/80">
+            Nos dirige Sonia García, Contadora y Analista Financiera con{" "}
             {YEARS_OF_EXPERIENCE
               ? `+${YEARS_OF_EXPERIENCE} años de trayectoria`
               : "amplia trayectoria"}{" "}
-            gerenciando negocios en distintos rubros. Esa formación me da una
-            ventaja única: entiendo el valor real de cada inversión
-            inmobiliaria, no solo sus metros cuadrados.
+            gerenciando negocios en distintos rubros. Esa formación le da al
+            equipo una ventaja única: entendemos el valor real de cada
+            inversión inmobiliaria, no solo sus metros cuadrados.
           </p>
           <p className="mt-4 leading-relaxed text-text/80">
-            Dirijo Seven Real Estate en Las Mercedes, Asunción, donde
-            brindo asesoramiento en compra, venta e inversión de propiedades
-            en Paraguay, con foco en el segmento de ticket alto en Asunción,
-            Gran Asunción y Ciudad del Este. Te acompaño con responsabilidad,
-            honestidad y ética profesional en cada operación.
+            Asesoramos en compra, venta e inversión de propiedades en
+            Paraguay, con foco en el segmento de ticket alto en Asunción,
+            Gran Asunción y Ciudad del Este. Te acompañamos con
+            responsabilidad, honestidad y ética profesional en cada
+            operación.
           </p>
 
           <div className="mt-6 flex flex-wrap gap-2">
@@ -100,20 +109,28 @@ export default function AboutPage() {
               +{TRUST_BAR.realEstateYears}
             </p>
             <p className="mt-1 text-sm text-text/70">
-              Experiencia en real estate
+              Años en el rubro inmobiliario
             </p>
           </div>
           <div className="bg-white p-6">
             <p className="font-serif text-3xl text-gold">
-              +{TRUST_BAR.propertiesManaged}
+              +{TRUST_BAR.propertiesManaged.toLocaleString("es-PY")}
             </p>
             <p className="mt-1 text-sm text-text/70">
               Propiedades gestionadas
             </p>
           </div>
           <div className="bg-white p-6">
-            <p className="font-serif text-2xl text-gold">Directora</p>
-            <p className="mt-1 text-sm text-text/70">Seven Real Estate</p>
+            <p className="font-serif text-3xl text-gold">
+              +USD {TRUST_BAR.dollarsSoldMillions}M
+            </p>
+            <p className="mt-1 text-sm text-text/70">Vendidos</p>
+          </div>
+          <div className="bg-white p-6">
+            <p className="font-serif text-2xl text-gold">Sonia García</p>
+            <p className="mt-1 text-sm text-text/70">
+              Directora de Seven Real Estate
+            </p>
           </div>
           <div className="bg-white p-6">
             <p className="font-serif text-3xl text-gold">ASU</p>

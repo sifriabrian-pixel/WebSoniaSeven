@@ -29,7 +29,7 @@ const interHeading = localFont({
 
 const DEFAULT_TITLE = `${SITE_NAME} — ${SITE_TAGLINE}`;
 const DEFAULT_DESCRIPTION =
-  "Seven Real Estate, dirigida por Sonia García, selecciona propiedades e inversiones de ticket alto en Asunción y Central, Paraguay, y te acompaña con criterio financiero en cada operación.";
+  "Seven Real Estate, dirigida por Sonia García, selecciona propiedades e inversiones de ticket alto en Asunción y Central, Paraguay, y te acompaña con criterio financiero en cada operación. Más de 9 años en el rubro y más de 3.100 propiedades gestionadas.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),

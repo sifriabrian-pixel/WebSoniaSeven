@@ -1,31 +1,32 @@
 /**
  * Años de trayectoria de Sonia como Contadora y Analista Financiera.
  * Confirmado por Brian: 20 años. Se muestra automáticamente en la home
- * y en /sobre-mi. Distinto de `TRUST_BAR.realEstateYears` (9), que son
- * sus años específicamente en el mercado inmobiliario.
+ * y en /sobre-mi, como dato personal de su formación (distinto de
+ * `TRUST_BAR.realEstateYears`, que es la trayectoria de la oficina).
  */
 export const YEARS_OF_EXPERIENCE: number | null = 20;
 
 /**
- * Barra de confianza (franja de números debajo del hero). `propertiesManaged`,
- * `dollarsSoldMillions` y `realEstateYears` son datos reales confirmados por
- * Sonia. `avgAppreciationPct`/`avgClosingDays` todavía no están documentados
- * — se ocultan en el sitio hasta que se confirmen (no publicar un número que
- * no se pueda sostener frente a un inversor).
+ * Barra de confianza (franja de números debajo del hero). Habla de la
+ * oficina en su conjunto (Seven Real Estate, con Sonia como Directora y
+ * un equipo de asesores), no solo de Sonia. Datos confirmados por Brian
+ * el 2026-11-02. `avgAppreciationPct`/`avgClosingDays` todavía no están
+ * documentados — se ocultan en el sitio hasta que se confirmen (no
+ * publicar un número que no se pueda sostener frente a un inversor).
  */
 export interface TrustBarStats {
   propertiesManaged: number;
-  /** Millones de USD vendidos en la trayectoria de Sonia. */
+  /** Millones de USD vendidos por la oficina en su trayectoria. */
   dollarsSoldMillions: number;
-  /** Años de experiencia de Sonia en el mercado inmobiliario (distinto de `YEARS_OF_EXPERIENCE`, que son sus años como Contadora/Analista Financiera). */
+  /** Años de trayectoria de la oficina en el mercado inmobiliario (incluye su etapa como franquicia internacional). */
   realEstateYears: number;
   avgAppreciationPct: number | null;
   avgClosingDays: number | null;
 }
 
 export const TRUST_BAR: TrustBarStats = {
-  propertiesManaged: 500,
-  dollarsSoldMillions: 40,
+  propertiesManaged: 3100,
+  dollarsSoldMillions: 280,
   realEstateYears: 9,
   avgAppreciationPct: null,
   avgClosingDays: null,
