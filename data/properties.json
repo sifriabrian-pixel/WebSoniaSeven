@@ -1052,5 +1052,433 @@
     "featured": false,
     "status": "nueva",
     "investment": { "rentalYieldPct": null, "zoneAppreciationPct": null, "dealType": "Desarrollo en pozo" }
+  },
+  {
+    "id": "sr-casa-aregua",
+    "slug": "casa-aregua",
+    "title": "Casa en Areguá",
+    "operation": "venta",
+    "type": "casa",
+    "price": 32900,
+    "currency": "USD",
+    "priceFrom": false,
+    "location": {
+      "city": "Areguá",
+      "neighborhood": "Areguá",
+      "address": "Calle empedrada, zona alta"
+    },
+    "specs": { "bedrooms": 2, "bathrooms": 2, "totalArea": 375, "coveredArea": 125, "garages": 0, "yearBuilt": 0 },
+    "description": "Casa en calle empedrada sin salida, en zona alta de Areguá, a 1 cuadra de la ruta y a pasos de supermercados, estaciones de servicio y colegios. Ideal para vivienda, casa de fin de semana o inversión en alquiler temporario. Terreno de 375 m² con 125 m² construidos: 2 dormitorios (uno en suite), baño social, sala-comedor con aire acondicionado, cocina semi amoblada, amplia galería de acceso y patio amplio con tanque de agua propio.",
+    "features": [
+      "Calle empedrada sin salida, zona tranquila",
+      "Galería de acceso y amplio patio",
+      "Tanque de agua propio",
+      "Cámaras de seguridad instaladas",
+      "Apta para crédito bancario"
+    ],
+    "images": ["/images/properties/casa-aregua-1.jpg", "/images/properties/casa-aregua-2.jpg", "/images/properties/casa-aregua-3.jpg", "/images/properties/casa-aregua-4.jpg"],
+    "coordinates": { "lat": -25.3139, "lng": -57.3892 },
+    "featured": false,
+    "status": "nueva",
+    "investment": { "rentalYieldPct": null, "zoneAppreciationPct": null, "dealType": "Reventa" }
+  },
+  {
+    "id": "sr-casa-barrio-jara",
+    "slug": "casa-barrio-jara",
+    "title": "Casa en Barrio Jara",
+    "operation": "venta",
+    "type": "casa",
+    "price": 219200,
+    "currency": "USD",
+    "priceFrom": false,
+    "location": {
+      "city": "Asunción",
+      "neighborhood": "Barrio Jara",
+      "address": "Pitiantuta 924 casi Libertad"
+    },
+    "specs": { "bedrooms": 8, "bathrooms": 6, "totalArea": 320, "coveredArea": 0, "garages": 2, "yearBuilt": 0 },
+    "description": "Casa amplia en zona residencial del Barrio Jara, Asunción, sobre lote regular de 8x40 m (320 m²). Ideal para familia numerosa o para oficina. Planta baja con cochera para 2 vehículos, sala, estar, cocina, comedor, un dormitorio/escritorio con baño, patio y área de servicio completa (dormitorio, baño y lavadero) con quincho en la planta alta. Planta alta con 3 dormitorios y baño compartido en la parte delantera (con galería y balcón amplio), y 2 dormitorios secundarios más un dormitorio en suite en la parte trasera. Propiedad con potencial, a remodelar.",
+    "features": [
+      "8 dormitorios en total, ideal para familia numerosa u oficina",
+      "Cochera para 2 vehículos",
+      "Galería y balcón amplio en planta alta",
+      "Quincho sobre el área de servicio",
+      "A remodelar, con gran potencial"
+    ],
+    "images": ["/images/properties/casa-jara-1.jpg", "/images/properties/casa-jara-2.jpg", "/images/properties/casa-jara-3.jpg", "/images/properties/casa-jara-4.jpg"],
+    "coordinates": { "lat": -25.282631, "lng": -57.604901 },
+    "featured": false,
+    "status": "nueva",
+    "investment": { "rentalYieldPct": null, "zoneAppreciationPct": null, "dealType": "Reventa" }
+  },
+  {
+    "id": "sr-casa-mora-kue",
+    "slug": "casa-mora-kue-luque",
+    "title": "Casa en Mora Kué, Luque",
+    "operation": "venta",
+    "type": "casa",
+    "price": 82200,
+    "currency": "USD",
+    "priceFrom": false,
+    "location": {
+      "city": "Luque",
+      "neighborhood": "Mora Kué",
+      "address": "Calle Leandro Sánchez (lote en esquina)"
+    },
+    "specs": { "bedrooms": 0, "bathrooms": 0, "totalArea": 375, "coveredArea": 200, "garages": 0, "yearBuilt": 0 },
+    "description": "Casa moderna y funcional en Mora Kué, Luque, sobre la calle Leandro Sánchez, en zona de crecimiento y buena conectividad. Propiedad en esquina, con terreno de 375 m² y aproximadamente 200 m² de construcción, ambientes cómodos y amplios, galería con parrillero y espacio de estacionamiento. Zona residencial y tranquila, con fácil acceso a los principales puntos de Luque.",
+    "features": [
+      "Lote en esquina",
+      "Galería con parrillero",
+      "Zona residencial y tranquila",
+      "Buena conectividad con Luque y alrededores",
+      "Potencial de valorización"
+    ],
+    "images": ["/images/properties/casa-luque-1.jpg", "/images/properties/casa-luque-2.jpg", "/images/properties/casa-luque-3.jpg", "/images/properties/casa-luque-4.jpg"],
+    "coordinates": { "lat": -25.2439589, "lng": -57.4713039 },
+    "featured": false,
+    "status": "nueva",
+    "investment": { "rentalYieldPct": null, "zoneAppreciationPct": null, "dealType": "Reventa" }
+  },
+  {
+    "id": "sr-casa-mra-central",
+    "slug": "casa-mra-barrio-central",
+    "title": "Casa en Mariano Roque Alonso",
+    "operation": "venta",
+    "type": "casa",
+    "price": null,
+    "currency": "USD",
+    "priceFrom": false,
+    "location": {
+      "city": "Mariano Roque Alonso",
+      "neighborhood": "Barrio Central",
+      "address": "Barrio Central"
+    },
+    "specs": { "bedrooms": 0, "bathrooms": 0, "totalArea": 0, "coveredArea": 0, "garages": 0, "yearBuilt": 0 },
+    "description": "Casa en el Barrio Central de Mariano Roque Alonso, en zona altamente conectada, a solo 5 minutos de la Municipalidad y del Hospital Distrital, rodeada de todos los servicios esenciales. Cuenta con un amplio patio arbolado, con gran potencial para futuras ampliaciones o espacios sociales.",
+    "features": [
+      "A 5 minutos de la Municipalidad y el Hospital Distrital",
+      "Amplio patio arbolado",
+      "Potencial para ampliaciones",
+      "Zona con todos los servicios esenciales"
+    ],
+    "images": ["/images/properties/casa-mra-1.jpg", "/images/properties/casa-mra-2.jpg", "/images/properties/casa-mra-3.jpg", "/images/properties/casa-mra-4.jpg"],
+    "coordinates": { "lat": -25.2104755, "lng": -57.5336574 },
+    "featured": false,
+    "status": "nueva",
+    "investment": { "rentalYieldPct": null, "zoneAppreciationPct": null, "dealType": "Reventa" }
+  },
+  {
+    "id": "sr-casa-vista-alegre",
+    "slug": "casa-vista-alegre",
+    "title": "Casa en Vista Alegre",
+    "operation": "venta",
+    "type": "casa",
+    "price": 137000,
+    "currency": "USD",
+    "priceFrom": false,
+    "location": {
+      "city": "Asunción",
+      "neighborhood": "Vista Alegre",
+      "address": "A 4 cuadras de Av. Fernando de la Mora"
+    },
+    "specs": { "bedrooms": 6, "bathrooms": 4, "totalArea": 480, "coveredArea": 241, "garages": 0, "yearBuilt": 0 },
+    "description": "Amplia propiedad en el Barrio Vista Alegre, Asunción, en zona residencial tranquila y segura, a 4 cuadras de la Av. Fernando de la Mora, 5 cuadras de Médicos del Chaco y a metros del Colegio Magis. Terreno de 480 m² con 241 m² de construcción: 6 habitaciones, 4 baños, cocina-comedor integrados, sala amplia, galería con balaustrada y patio.",
+    "features": [
+      "6 habitaciones y 4 baños",
+      "Galería con balaustrada",
+      "Zona residencial tranquila y segura",
+      "A metros del Colegio Magis",
+      "Rápido acceso a las principales avenidas"
+    ],
+    "images": ["/images/properties/casa-vista-alegre-1.jpg", "/images/properties/casa-vista-alegre-2.jpg", "/images/properties/casa-vista-alegre-3.jpg", "/images/properties/casa-vista-alegre-4.jpg"],
+    "coordinates": { "lat": -25.3190629, "lng": -57.6061775 },
+    "featured": false,
+    "status": "nueva",
+    "investment": { "rentalYieldPct": null, "zoneAppreciationPct": null, "dealType": "Reventa" }
+  },
+  {
+    "id": "sr-casa-ytororo",
+    "slug": "casa-ytororo-country-club",
+    "title": "Casa en Ytororó Country Club",
+    "operation": "venta",
+    "type": "casa",
+    "price": 76700,
+    "currency": "USD",
+    "priceFrom": false,
+    "location": {
+      "city": "Ypané",
+      "neighborhood": "Ytororó Country Club",
+      "address": "Ytororó Country Club"
+    },
+    "specs": { "bedrooms": 3, "bathrooms": 2, "totalArea": 0, "coveredArea": 0, "garages": 2, "yearBuilt": 0 },
+    "description": "Casa dentro del barrio cerrado Ytororó Country Club, en zona tranquila, segura y de fácil acceso, cerca de colegios, supermercados, farmacias y comercios. 3 dormitorios, 2 baños, cocina amoblada, sala y comedor integrados, área de servicio independiente, quincho para reuniones y eventos, garaje para 2 vehículos y patio trasero. Apta para crédito bancario.",
+    "features": [
+      "Dentro de barrio cerrado con seguridad",
+      "Quincho para reuniones y eventos",
+      "Garaje para 2 vehículos",
+      "Área de servicio independiente",
+      "Apta para crédito bancario"
+    ],
+    "images": ["/images/properties/casa-ytororo-1.jpg", "/images/properties/casa-ytororo-2.jpg", "/images/properties/casa-ytororo-3.jpg", "/images/properties/casa-ytororo-4.jpg"],
+    "coordinates": { "lat": -25.4562051, "lng": -57.5369996 },
+    "featured": false,
+    "status": "nueva",
+    "investment": { "rentalYieldPct": null, "zoneAppreciationPct": null, "dealType": "Reventa" }
+  },
+  {
+    "id": "sr-depto-herrera",
+    "slug": "departamento-herrera-altos",
+    "title": "Departamento en Edificio Altos de Herrera",
+    "operation": "alquiler",
+    "type": "departamento",
+    "price": 486,
+    "currency": "USD",
+    "priceFrom": false,
+    "location": {
+      "city": "Asunción",
+      "neighborhood": "Herrera",
+      "address": "Del Maestro y Concejal Vargas, Edificio Altos de Herrera, Piso 2, Unidad 202"
+    },
+    "specs": { "bedrooms": 1, "bathrooms": 1, "totalArea": 45, "coveredArea": 45, "garages": 1, "yearBuilt": 0 },
+    "description": "Departamento de 1 habitación en alquiler en el Edificio Altos de Herrera (Del Maestro y Concejal Vargas), una de las mejores zonas del Barrio Herrera. Piso 2, unidad 202, con cochera 9. 45 m², baño familiar social, living-comedor-cocina integrados. Amenities: piscina, solárium y terraza con parrilla.",
+    "features": [
+      "1 cochera incluida",
+      "Piscina, solárium y terraza con parrilla",
+      "Living-comedor-cocina integrados",
+      "Zona de alta demanda en Barrio Herrera"
+    ],
+    "images": ["/images/properties/depto-herrera-1.jpg", "/images/properties/depto-herrera-2.jpg", "/images/properties/depto-herrera-3.jpg"],
+    "coordinates": { "lat": -25.3003666, "lng": -57.5602869 },
+    "featured": false,
+    "status": "nueva",
+    "investment": { "rentalYieldPct": null, "zoneAppreciationPct": null, "dealType": "Renta" }
+  },
+  {
+    "id": "sr-depto-sanlorenzo",
+    "slug": "departamento-tava-defensores-san-lorenzo",
+    "title": "Departamento en Edificio Tava Defensores",
+    "operation": "alquiler",
+    "type": "departamento",
+    "price": 520,
+    "currency": "USD",
+    "priceFrom": false,
+    "location": {
+      "city": "San Lorenzo",
+      "neighborhood": "San Lorenzo",
+      "address": "Av. Defensores del Chaco y Mario Meyer, Edificio Tava Defensores, Piso 1, Depto 111"
+    },
+    "specs": { "bedrooms": 2, "bathrooms": 1, "totalArea": 60, "coveredArea": 60, "garages": 1, "yearBuilt": 0 },
+    "description": "Departamento full amoblado y equipado en alquiler, en el Edificio Tava Defensores, San Lorenzo. Piso 1, departamento 111, de 60 m². 2 dormitorios luminosos, 1 baño completo, cocina-sala-comedor integrados y balcón amplio. Incluye mobiliario de diseño, electrodomésticos y menaje completos, aires acondicionados, lavarropas con espacio de lavandería propio y cochera techada N° 39. Precio con IVA y expensas incluidas.",
+    "features": [
+      "Totalmente amoblado y equipado",
+      "Cochera techada incluida",
+      "Aires acondicionados en todos los ambientes",
+      "Lavarropas y espacio de lavandería propio",
+      "IVA y expensas incluidas en el precio"
+    ],
+    "images": ["/images/properties/depto-sanlorenzo-1.jpg", "/images/properties/depto-sanlorenzo-2.jpg", "/images/properties/depto-sanlorenzo-3.jpg"],
+    "coordinates": { "lat": -25.3390847, "lng": -57.5017803 },
+    "featured": false,
+    "status": "nueva",
+    "investment": { "rentalYieldPct": null, "zoneAppreciationPct": null, "dealType": "Renta" }
+  },
+  {
+    "id": "sr-depto-recoleta",
+    "slug": "departamento-quinta-ruotti-recoleta",
+    "title": "Departamento en Condominio Quinta Ruotti",
+    "operation": "venta",
+    "type": "departamento",
+    "price": 63000,
+    "currency": "USD",
+    "priceFrom": false,
+    "location": {
+      "city": "Asunción",
+      "neighborhood": "Recoleta",
+      "address": "Condominio Quinta Ruotti, Bloque A, 3er piso por escalera"
+    },
+    "specs": { "bedrooms": 2, "bathrooms": 2, "totalArea": 92.68, "coveredArea": 92.68, "garages": 1, "yearBuilt": 0 },
+    "description": "Departamento en venta en el Condominio Quinta Ruotti, Recoleta, Bloque A, 3er piso por escalera. 92,68 m² propios más 27,41 m² de cochera amplia. 2 habitaciones, 2 baños, sala-comedor integrados, cocina amoblada (muebles altos y bajos) y área de lavandería. Condominio en zona residencial y segura, con guardia de 18:00 a 06:00 hs. Expensas aproximadas de Gs. 450.000, que incluyen agua, limpieza, mantenimiento y seguridad. Apto para crédito bancario.",
+    "features": [
+      "Cochera amplia de 27,41 m²",
+      "Condominio con guardia nocturna",
+      "Cocina amoblada completa",
+      "Área de lavandería propia",
+      "Apto para crédito bancario"
+    ],
+    "images": ["/images/properties/depto-recoleta-1.jpg", "/images/properties/depto-recoleta-2.jpg", "/images/properties/depto-recoleta-3.jpg", "/images/properties/depto-recoleta-4.jpg"],
+    "coordinates": { "lat": -25.301697, "lng": -57.5941034 },
+    "featured": false,
+    "status": "nueva",
+    "investment": { "rentalYieldPct": null, "zoneAppreciationPct": null, "dealType": "Reventa" }
+  },
+  {
+    "id": "sr-depto-salvador-del-mundo",
+    "slug": "departamento-salvador-del-mundo",
+    "title": "Departamento en Edificio Salvador del Mundo",
+    "operation": "alquiler",
+    "type": "departamento",
+    "price": 493,
+    "currency": "USD",
+    "priceFrom": false,
+    "location": {
+      "city": "Asunción",
+      "neighborhood": "Salvador del Mundo",
+      "address": "Edificio Salvador del Mundo, Piso 1"
+    },
+    "specs": { "bedrooms": 1, "bathrooms": 1, "totalArea": 65, "coveredArea": 65, "garages": 0, "yearBuilt": 0 },
+    "description": "Departamento amoblado de 65 m² en alquiler, en el Edificio Salvador del Mundo, 1er piso, edificio con ascensor. Una habitación amplia con placar grande, baño completo con ducha hidromasaje, balcón amplio, cortinas antisolares y muebles de cocina superiores e inferiores con mesada de granito. Aire acondicionado de 24.000 BTU en la sala y en la habitación. El edificio cuenta con portero de 8:00 a 17:00 h y amenities en el 4to piso: piscina, doble quincho y baños sexados. Precio incluye IVA y expensas de agua. Disponible para ingreso inmediato.",
+    "features": [
+      "Totalmente amoblado, ingreso inmediato",
+      "Ducha con sistema hidromasaje",
+      "Piscina y doble quincho en el edificio",
+      "Aire acondicionado 24.000 BTU en sala y habitación",
+      "IVA y expensas de agua incluidas"
+    ],
+    "images": ["/images/properties/depto-salvador-1.jpg", "/images/properties/depto-salvador-2.jpg", "/images/properties/depto-salvador-3.jpg"],
+    "coordinates": { "lat": -25.2734342, "lng": -57.5489011 },
+    "featured": false,
+    "status": "nueva",
+    "investment": { "rentalYieldPct": null, "zoneAppreciationPct": null, "dealType": "Renta" }
+  },
+  {
+    "id": "sr-duplex-fernando-de-la-mora",
+    "slug": "duplex-fernando-de-la-mora-zona-norte",
+    "title": "Dúplex en Fernando de la Mora, Zona Norte",
+    "operation": "alquiler",
+    "type": "casa",
+    "price": 863,
+    "currency": "USD",
+    "priceFrom": false,
+    "location": {
+      "city": "Fernando de la Mora",
+      "neighborhood": "Zona Norte",
+      "address": "A minutos de Avda. Eusebio Ayala y Mcal. López"
+    },
+    "specs": { "bedrooms": 4, "bathrooms": 3, "totalArea": 168, "coveredArea": 168, "garages": 2, "yearBuilt": 0 },
+    "description": "Dúplex en alquiler en Fernando de la Mora, Zona Norte, a minutos de Avda. Eusebio Ayala y Mcal. López, cercano al Colegio CAS. 168 m² construidos. Planta alta con 3 dormitorios (principal en suite, todos con A/A y ventilador) y baño familiar con balcón. Planta baja con una 4ta habitación (ideal escritorio o visita), baño social y baño completo adicional, amplia sala, comedor y cocina de lujo amoblada por ACHON. Cochera para 2 vehículos, quincho con parrilla y ventiladores, área de lavadero y pozo artesiano. Se entrega totalmente pintado y listo para habitar.",
+    "features": [
+      "Cocina de lujo amoblada por ACHON",
+      "Pozo artesiano propio",
+      "Quincho con parrilla y ventiladores",
+      "Cochera para 2 vehículos",
+      "Cercano al Colegio CAS"
+    ],
+    "images": ["/images/properties/duplex-fdm-1.jpg", "/images/properties/duplex-fdm-2.jpg", "/images/properties/duplex-fdm-3.jpg", "/images/properties/duplex-fdm-4.jpg"],
+    "coordinates": { "lat": -25.3224622, "lng": -57.536292 },
+    "featured": false,
+    "status": "nueva",
+    "investment": { "rentalYieldPct": null, "zoneAppreciationPct": null, "dealType": "Renta" }
+  },
+  {
+    "id": "sr-terreno-villa-hayes",
+    "slug": "terreno-villa-hayes-remansito",
+    "title": "Terreno en Villa Hayes, Remansito",
+    "operation": "venta",
+    "type": "terreno",
+    "price": 137000,
+    "currency": "USD",
+    "priceFrom": false,
+    "location": {
+      "city": "Villa Hayes",
+      "neighborhood": "Remansito",
+      "address": "A 1,5 cuadras de la Ruta PY09 Transchaco"
+    },
+    "specs": { "bedrooms": 0, "bathrooms": 0, "totalArea": 1686, "coveredArea": 0, "garages": 0, "yearBuilt": 0 },
+    "description": "Terreno de 1.686 m² (30x61 m) en el Barrio Remansito, Villa Hayes, a 1,5 cuadras de la Ruta PY09 Transchaco y a 500 m de la rotonda del Puente Remanso. A 8 minutos del CIT Sede Remansito. Excelente ubicación y fácil acceso, ideal para centro logístico, depósito comercial o proyecto empresarial.",
+    "features": [
+      "1.686 m² (30x61 m)",
+      "A 1,5 cuadras de la Ruta PY09 Transchaco",
+      "A 500 m de la rotonda del Puente Remanso",
+      "Ideal para centro logístico o depósito comercial"
+    ],
+    "images": ["/images/properties/terreno-villahayes-1.jpg", "/images/properties/terreno-villahayes-2.jpg", "/images/properties/terreno-villahayes-3.jpg"],
+    "coordinates": { "lat": -25.1561768, "lng": -57.5561071 },
+    "featured": false,
+    "status": "nueva",
+    "investment": { "rentalYieldPct": null, "zoneAppreciationPct": null, "dealType": "Reventa" }
+  },
+  {
+    "id": "sr-terreno-itagua",
+    "slug": "terreno-itagua-987m2",
+    "title": "Terreno en esquina en Itauguá",
+    "operation": "venta",
+    "type": "terreno",
+    "price": 24700,
+    "currency": "USD",
+    "priceFrom": false,
+    "location": {
+      "city": "Itauguá",
+      "neighborhood": "Itauguá",
+      "address": "Esquina, detrás del Hospital Nacional de Itauguá, frente a la sede social FAPASA"
+    },
+    "specs": { "bedrooms": 0, "bathrooms": 0, "totalArea": 987, "coveredArea": 0, "garages": 0, "yearBuilt": 0 },
+    "description": "Amplio terreno de 987 m² en esquina estratégica en Itauguá, justo detrás del Hospital Nacional de Itauguá y frente a la sede social FAPASA. Entorno rodeado de naturaleza y plazas, seguro y en constante crecimiento. Acceso por camino de tierra en buen estado, a pocas cuadras de la ruta principal que conecta directamente con el hospital. Documentos al día, listo para transferir.",
+    "features": [
+      "987 m² en esquina",
+      "Detrás del Hospital Nacional de Itauguá",
+      "Documentación al día, listo para transferir",
+      "Zona en constante crecimiento"
+    ],
+    "images": ["/images/properties/terreno-itagua-1.jpg", "/images/properties/terreno-itagua-2.jpg", "/images/properties/terreno-itagua-3.jpg"],
+    "coordinates": { "lat": -25.4476727, "lng": -57.3621418 },
+    "featured": false,
+    "status": "nueva",
+    "investment": { "rentalYieldPct": null, "zoneAppreciationPct": null, "dealType": "Reventa" }
+  },
+  {
+    "id": "sr-terreno-luque-mora-cue",
+    "slug": "terreno-luque-mora-cue",
+    "title": "Terreno en Mora Cué, Luque",
+    "operation": "venta",
+    "type": "terreno",
+    "price": 17800,
+    "currency": "USD",
+    "priceFrom": false,
+    "location": {
+      "city": "Luque",
+      "neighborhood": "Mora Cué",
+      "address": "Mora Cué"
+    },
+    "specs": { "bedrooms": 0, "bathrooms": 0, "totalArea": 480, "coveredArea": 0, "garages": 0, "yearBuilt": 0 },
+    "description": "Terreno amplio de 480 m² (12x40 m) en Mora Cué, Luque. Título listo para transferir en escribanía e impuestos municipales al día.",
+    "features": [
+      "480 m² (12x40 m)",
+      "Título listo para transferir en escribanía",
+      "Impuestos municipales al día"
+    ],
+    "images": ["/images/properties/terreno-luque-mc-1.jpg", "/images/properties/terreno-luque-mc-2.jpg", "/images/properties/terreno-luque-mc-3.jpg"],
+    "coordinates": { "lat": -25.2234363, "lng": -57.4709472 },
+    "featured": false,
+    "status": "nueva",
+    "investment": { "rentalYieldPct": null, "zoneAppreciationPct": null, "dealType": "Reventa" }
+  },
+  {
+    "id": "sr-terreno-san-antonio",
+    "slug": "terreno-san-antonio-480m2",
+    "title": "Terreno en San Antonio",
+    "operation": "venta",
+    "type": "terreno",
+    "price": 21200,
+    "currency": "USD",
+    "priceFrom": false,
+    "location": {
+      "city": "San Antonio",
+      "neighborhood": "San Antonio",
+      "address": "A 600 m de la Avda. San Antonio y 200 m de la Avda. Padre Américo Ferreira"
+    },
+    "specs": { "bedrooms": 0, "bathrooms": 0, "totalArea": 480, "coveredArea": 0, "garages": 0, "yearBuilt": 0 },
+    "description": "Terreno de 480 m² (12x40 m) en San Antonio, a 600 metros de la Avda. San Antonio y 200 metros de la Avda. Padre Américo Ferreira, a 100 metros de calle empedrada. Zona poblada con servicios en puerta y documentación al día.",
+    "features": [
+      "480 m² (12x40 m)",
+      "Zona poblada con servicios en puerta",
+      "A 100 m de calle empedrada",
+      "Documentación al día"
+    ],
+    "images": ["/images/properties/terreno-sanantonio-1.jpg", "/images/properties/terreno-sanantonio-2.jpg", "/images/properties/terreno-sanantonio-3.jpg"],
+    "coordinates": { "lat": -25.425757, "lng": -57.5432862 },
+    "featured": false,
+    "status": "nueva",
+    "investment": { "rentalYieldPct": null, "zoneAppreciationPct": null, "dealType": "Reventa" }
   }
 ]
