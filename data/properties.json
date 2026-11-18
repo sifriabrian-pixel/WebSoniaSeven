@@ -1480,5 +1480,142 @@
     "featured": false,
     "status": "nueva",
     "investment": { "rentalYieldPct": null, "zoneAppreciationPct": null, "dealType": "Reventa" }
+  },
+  {
+    "id": "sr-aires-de-gaulle",
+    "slug": "aires-de-gaulle",
+    "title": "AIRES De Gaulle",
+    "operation": "venta",
+    "type": "departamento",
+    "price": 93775,
+    "currency": "USD",
+    "priceFrom": true,
+    "location": {
+      "city": "Asunción",
+      "neighborhood": "Recoleta",
+      "address": "Charles de Gaulle entre Mac Mahon, a dos cuadras de La Cuadrita"
+    },
+    "specs": { "bedrooms": 1, "bathrooms": 1, "totalArea": 50, "coveredArea": 50, "garages": 0, "yearBuilt": 0 },
+    "description": "Desarrollo en pozo en el corazón de Recoleta, a dos cuadras de La Cuadrita. AIRES De Gaulle ofrece monoambientes y unidades de 1, 2 y 3 dormitorios, totalmente domotizadas (cerraduras y parlantes inteligentes), con amenities de lujo: piscina y rooftop con vista a la ciudad, gimnasio equipado, mini sala de cine y coworking. Cocheras y bauleras opcionales. Financiación en 20 cuotas sujeta a crédito, precios con IVA incluido, vigencia de lista hasta octubre 2026.",
+    "features": [
+      "Domótica: cerraduras y parlantes inteligentes (Alexa Show)",
+      "Piscina y rooftop con vista panorámica",
+      "Gimnasio equipado",
+      "Mini sala de cine privada",
+      "Espacio de coworking",
+      "2 ascensores",
+      "Cocheras desde USD 15.000 y bauleras desde USD 1.500 (opcionales)",
+      "Financiación en 20 cuotas sujeta a crédito"
+    ],
+    "images": [
+      "/images/properties/aires-de-gaulle-1.jpg",
+      "/images/properties/aires-de-gaulle-2.jpg",
+      "/images/properties/aires-de-gaulle-3.jpg"
+    ],
+    "coordinates": { "lat": -25.301143, "lng": -57.584332 },
+    "featured": false,
+    "status": "nueva",
+    "investment": { "rentalYieldPct": null, "zoneAppreciationPct": null, "dealType": "Desarrollo en pozo" }
+  },
+  {
+    "id": "sr-aires-los-lapachos",
+    "slug": "aires-los-lapachos",
+    "title": "AIRES Los Lapachos",
+    "operation": "venta",
+    "type": "departamento",
+    "price": 50517,
+    "currency": "USD",
+    "priceFrom": true,
+    "location": {
+      "city": "Ciudad del Este",
+      "neighborhood": "Los Lapachos",
+      "address": "Barrio Los Lapachos, cerca de Shopping Jardín y Puente de la Amistad"
+    },
+    "specs": { "bedrooms": 0, "bathrooms": 1, "totalArea": 28, "coveredArea": 28, "garages": 0, "yearBuilt": 0 },
+    "description": "Desarrollo en pozo en el barrio Los Lapachos de Ciudad del Este, con ubicación privilegiada cerca de Shopping Jardín, Shopping China, McDonald's, Sanatorio del Parque y el Puente Internacional de la Amistad. AIRES Los Lapachos ofrece monoambientes y unidades de 1 y 2 dormitorios, con amenities de categoría: piscina en rooftop, gimnasio, media center, sala de juegos y espacios sociales. Proyecto pensado para inversión con alta demanda de renta en la zona fronteriza.",
+    "features": [
+      "Piscina en rooftop",
+      "Gimnasio equipado",
+      "Media center",
+      "Sala de juegos",
+      "Cerca del Puente Internacional de la Amistad",
+      "Zona de alta demanda de renta (frontera con Brasil)"
+    ],
+    "images": [
+      "/images/properties/aires-lapachos-1.jpg",
+      "/images/properties/aires-lapachos-2.jpg",
+      "/images/properties/aires-lapachos-3.jpg"
+    ],
+    "coordinates": { "lat": -25.5120582, "lng": -54.6400319 },
+    "featured": false,
+    "status": "nueva",
+    "investment": { "rentalYieldPct": null, "zoneAppreciationPct": null, "dealType": "Desarrollo en pozo" }
+  },
+  {
+    "id": "sr-aires-pacheco",
+    "slug": "aires-pacheco",
+    "title": "AIRES Pacheco",
+    "operation": "venta",
+    "type": "departamento",
+    "price": 59418,
+    "currency": "USD",
+    "priceFrom": true,
+    "location": {
+      "city": "Asunción",
+      "neighborhood": "Villa Morra",
+      "address": "Toribio Pacheco esquina Charles de Gaulle, a 4 cuadras de Shopping Mariscal y La Cuadrita"
+    },
+    "specs": { "bedrooms": 0, "bathrooms": 1, "totalArea": 31, "coveredArea": 31, "garages": 0, "yearBuilt": 0 },
+    "description": "Desarrollo en pozo en Villa Morra, sobre la calle Toribio Pacheco esquina Charles de Gaulle, a solo 4 cuadras de Shopping Mariscal y de La Cuadrita. AIRES Pacheco combina business center, lifestyle e inversión: planta baja con co-working y media center, y rooftop con piscina, quincho, sala de juegos y lounge exterior. Monoambientes y unidades de 1 y 2 dormitorios con rentabilidad temporal bruta superior al 10% anual estimada por el desarrollador.",
+    "features": [
+      "Business center y co-working en planta baja",
+      "Media center",
+      "Piscina y lounge exterior en rooftop",
+      "Quincho y sala de juegos",
+      "Gimnasio equipado",
+      "A 4 cuadras de Shopping Mariscal"
+    ],
+    "images": [
+      "/images/properties/aires-pacheco-1.jpg",
+      "/images/properties/aires-pacheco-2.jpg",
+      "/images/properties/aires-pacheco-3.jpg"
+    ],
+    "coordinates": { "lat": -25.2989281, "lng": -57.5827872 },
+    "featured": false,
+    "status": "nueva",
+    "investment": { "rentalYieldPct": null, "zoneAppreciationPct": null, "dealType": "Desarrollo en pozo" }
+  },
+  {
+    "id": "sr-aires-del-sol",
+    "slug": "aires-del-sol",
+    "title": "AIRES del Sol",
+    "operation": "venta",
+    "type": "departamento",
+    "price": 55440,
+    "currency": "USD",
+    "priceFrom": true,
+    "location": {
+      "city": "Asunción",
+      "neighborhood": "Las Lomas",
+      "address": "Frente Plaza, a pasos de Shopping del Sol y World Trade Center"
+    },
+    "specs": { "bedrooms": 0, "bathrooms": 1, "totalArea": 28, "coveredArea": 28, "garages": 0, "yearBuilt": 0 },
+    "description": "Desarrollo en pozo en Las Lomas, a metros de Shopping del Sol, World Trade Center y Banco Central del Paraguay. AIRES del Sol ofrece monoambientes y unidades de 1 y 2 dormitorios, con amenities premium repartidos en dos niveles: quinchos, sala de juegos, sauna/spa, gimnasio, podcast center y media center. Precio Early Investor con financiación propia en 47 cuotas.",
+    "features": [
+      "Dos niveles de amenities (quinchos, sala de juegos, sauna/spa, gym)",
+      "Podcast center y media center",
+      "A pasos de Shopping del Sol y World Trade Center",
+      "Financiación Early Investor en 47 cuotas",
+      "Zona corporativa y comercial de alta plusvalía"
+    ],
+    "images": [
+      "/images/properties/aires-del-sol-1.jpg",
+      "/images/properties/aires-del-sol-2.jpg",
+      "/images/properties/aires-del-sol-3.jpg"
+    ],
+    "coordinates": { "lat": -25.2815, "lng": -57.568 },
+    "featured": false,
+    "status": "nueva",
+    "investment": { "rentalYieldPct": null, "zoneAppreciationPct": null, "dealType": "Desarrollo en pozo" }
   }
 ]
