@@ -1719,5 +1719,297 @@
     "featured": false,
     "status": "nueva",
     "investment": { "rentalYieldPct": null, "zoneAppreciationPct": null, "dealType": "Reventa" }
+  },
+  {
+    "id": "sr-civis-plaza",
+    "slug": "civis-plaza",
+    "title": "Plaza by Civis",
+    "operation": "venta",
+    "type": "departamento",
+    "price": 82887,
+    "currency": "USD",
+    "priceFrom": true,
+    "location": {
+      "city": "Asunción",
+      "neighborhood": "Las Lomas",
+      "address": "Las Lomas, cerca de Shopping del Sol y World Trade Center"
+    },
+    "specs": { "bedrooms": 0, "bathrooms": 1, "totalArea": 31.6, "coveredArea": 31.6, "garages": 0, "yearBuilt": 0 },
+    "description": "Desarrollo en pozo de uso mixto en Las Lomas, que integra torres residenciales y corporativas en un mismo complejo. Plaza by Civis ofrece monoambientes y unidades de 1 y 2 dormitorios, con amenities de categoría y un concepto de ciudad compacta: vivienda, trabajo y comercio a pocos pasos. Entrega estimada para diciembre de 2030.",
+    "features": [
+      "Complejo de uso mixto (residencial y corporativo)",
+      "Amenities con terrazas y áreas sociales",
+      "Cercano a Shopping del Sol y World Trade Center",
+      "Entrega estimada diciembre 2030",
+      "Desarrollado por Civis Soluciones Inmobiliarias"
+    ],
+    "images": [
+      "/images/properties/civis-plaza-1.jpg",
+      "/images/properties/civis-plaza-2.jpg",
+      "/images/properties/civis-plaza-3.jpg"
+    ],
+    "coordinates": { "lat": -25.2815, "lng": -57.568 },
+    "featured": false,
+    "status": "nueva",
+    "investment": { "rentalYieldPct": null, "zoneAppreciationPct": null, "dealType": "Desarrollo en pozo" }
+  },
+  {
+    "id": "sr-araza-1",
+    "slug": "araza-i",
+    "title": "Arazá I",
+    "operation": "venta",
+    "type": "departamento",
+    "price": 32500,
+    "currency": "USD",
+    "priceFrom": true,
+    "location": {
+      "city": "Luque",
+      "neighborhood": "Campo Vía",
+      "address": "Avda. Gral. Eugenio A. Garay y Campo Vía"
+    },
+    "specs": { "bedrooms": 0, "bathrooms": 1, "totalArea": 23.7, "coveredArea": 23.7, "garages": 0, "yearBuilt": 0 },
+    "description": "Desarrollo en pozo en el corazón de Campo Vía, Luque, con fácil acceso al eje corporativo de Asunción, San Lorenzo y Capiatá. Arazá I ofrece monoambientes y unidades de 1 y 2 dormitorios pensadas para generar renta, en una zona de alta demanda de alquiler y buena proyección de valorización. Entrega estimada enero 2028.",
+    "features": [
+      "Zona de alta demanda de alquiler",
+      "A minutos del eje corporativo de Asunción",
+      "Entrega estimada enero 2028",
+      "Pensado para inversión y renta"
+    ],
+    "images": [
+      "/images/properties/araza-1-1.jpg",
+      "/images/properties/araza-1-2.jpg",
+      "/images/properties/araza-1-3.jpg"
+    ],
+    "coordinates": { "lat": -25.2739603, "lng": -57.4961387 },
+    "featured": false,
+    "status": "nueva",
+    "investment": { "rentalYieldPct": null, "zoneAppreciationPct": null, "dealType": "Desarrollo en pozo" }
+  },
+  {
+    "id": "sr-araza-2",
+    "slug": "araza-ii",
+    "title": "Arazá II",
+    "operation": "venta",
+    "type": "departamento",
+    "price": 31200,
+    "currency": "USD",
+    "priceFrom": true,
+    "location": {
+      "city": "Luque",
+      "neighborhood": "Campo Vía",
+      "address": "Avda. Gral. Eugenio A. Garay y Campo Vía, dentro del Barrio Cerrado Yvyra"
+    },
+    "specs": { "bedrooms": 0, "bathrooms": 1, "totalArea": 23, "coveredArea": 23, "garages": 0, "yearBuilt": 0 },
+    "description": "Segunda etapa del desarrollo Arazá, ubicada dentro del Barrio Cerrado Yvyra en Campo Vía, Luque. Cercana a Eugenio Garay y Brítez Borges, con rápida conexión al eje corporativo de Asunción y a San Lorenzo y Capiatá. Monoambientes y unidades de 1 y 2 dormitorios, con alta demanda de alquiler por parte de estudiantes, profesionales y trabajadores de la zona. Entrega estimada agosto 2028.",
+    "features": [
+      "Dentro del Barrio Cerrado Yvyra",
+      "Alta demanda de alquiler (universidades y empresas cercanas)",
+      "Entrega estimada agosto 2028",
+      "Pensado para inversión y renta"
+    ],
+    "images": [
+      "/images/properties/araza-2-1.jpg",
+      "/images/properties/araza-2-2.jpg",
+      "/images/properties/araza-2-3.jpg"
+    ],
+    "coordinates": { "lat": -25.2739603, "lng": -57.4961387 },
+    "featured": false,
+    "status": "nueva",
+    "investment": { "rentalYieldPct": null, "zoneAppreciationPct": null, "dealType": "Desarrollo en pozo" }
+  },
+  {
+    "id": "sr-aether-civis",
+    "slug": "aether-by-civis",
+    "title": "Æther by Civis",
+    "operation": "venta",
+    "type": "departamento",
+    "price": 92890,
+    "currency": "USD",
+    "priceFrom": true,
+    "location": {
+      "city": "Asunción",
+      "neighborhood": "Las Lomas",
+      "address": "San Juan XXIII y Campos Cervera"
+    },
+    "specs": { "bedrooms": 0, "bathrooms": 1, "totalArea": 34.35, "coveredArea": 34.35, "garages": 0, "yearBuilt": 0 },
+    "description": "Torre de 50 niveles en Las Lomas, uno de los desarrollos más altos del grupo Civis, con 239 unidades entre monoambientes y departamentos de 1, 2 y 3 dormitorios con dúplex en los últimos pisos. Lobby con doble altura, parque elevado natural, mini sala de cine y rooftop con vistas panorámicas de la ciudad. Un proyecto pensado para elevar el estándar de vida en altura en Asunción.",
+    "features": [
+      "Torre de 50 niveles, 239 unidades",
+      "Lobby de doble altura con jardín vertical",
+      "Rooftop con vistas panorámicas",
+      "Dúplex en los últimos pisos",
+      "Parque elevado natural"
+    ],
+    "images": [
+      "/images/properties/aether-civis-1.jpg",
+      "/images/properties/aether-civis-2.jpg",
+      "/images/properties/aether-civis-3.jpg"
+    ],
+    "coordinates": { "lat": -25.2819623, "lng": -57.5639219 },
+    "featured": false,
+    "status": "nueva",
+    "investment": { "rentalYieldPct": null, "zoneAppreciationPct": null, "dealType": "Desarrollo en pozo" }
+  },
+  {
+    "id": "sr-civis-x",
+    "slug": "civis-x",
+    "title": "Civis X",
+    "operation": "venta",
+    "type": "departamento",
+    "price": 73890,
+    "currency": "USD",
+    "priceFrom": true,
+    "location": {
+      "city": "Asunción",
+      "neighborhood": "Las Lomas",
+      "address": "Las Lomas, zona de alta plusvalía"
+    },
+    "specs": { "bedrooms": 0, "bathrooms": 1, "totalArea": 30.75, "coveredArea": 30.75, "garages": 0, "yearBuilt": 0 },
+    "description": "Torre de categoría en Las Lomas, con fachada viva de vegetación nativa y 195 unidades entre monoambientes y departamentos de 1 y 2 dormitorios. Civis X combina sostenibilidad (gestión eficiente de agua y energía, movilidad alternativa) con terminaciones de alto nivel y un parque elevado entre pisos. Entrada vehicular bajo arcos de hormigón y vegetación, con lobby de diseño contemporáneo.",
+    "features": [
+      "Fachada viva con vegetación nativa",
+      "Gestión eficiente de agua y energía",
+      "Parque elevado entre pisos",
+      "195 unidades, PB + 36 niveles",
+      "Lobby y acceso vehicular de diseño"
+    ],
+    "images": [
+      "/images/properties/civis-x-1.jpg",
+      "/images/properties/civis-x-2.jpg",
+      "/images/properties/civis-x-3.jpg"
+    ],
+    "coordinates": { "lat": -25.2973, "lng": -57.5728 },
+    "featured": false,
+    "status": "nueva",
+    "investment": { "rentalYieldPct": null, "zoneAppreciationPct": null, "dealType": "Desarrollo en pozo" }
+  },
+  {
+    "id": "sr-civis-xi",
+    "slug": "civis-xi",
+    "title": "Civis XI",
+    "operation": "venta",
+    "type": "departamento",
+    "price": 73890,
+    "currency": "USD",
+    "priceFrom": true,
+    "location": {
+      "city": "Asunción",
+      "neighborhood": "Las Lomas",
+      "address": "Luis E. Migone y A. Pío Barrios"
+    },
+    "specs": { "bedrooms": 0, "bathrooms": 1, "totalArea": 30.75, "coveredArea": 30.75, "garages": 0, "yearBuilt": 0 },
+    "description": "Torre hermana de Civis X en Las Lomas, con 196 unidades entre monoambientes, departamentos de 1 y 2 dormitorios y dúplex de 3 dormitorios en los últimos niveles. Cuenta con un parque elevado natural de más de 500 m² que purifica el aire y genera un microclima propio, lobby de mármol con recepción y amenities rooftop. Entrega estimada noviembre 2029.",
+    "features": [
+      "196 unidades: monoambientes a dúplex de 3 dormitorios",
+      "Parque elevado natural de +500 m²",
+      "Lobby de mármol con recepción",
+      "Amenities en rooftop (nivel 34)",
+      "Entrega estimada noviembre 2029"
+    ],
+    "images": [
+      "/images/properties/civis-xi-1.jpg",
+      "/images/properties/civis-xi-2.jpg",
+      "/images/properties/civis-xi-3.jpg"
+    ],
+    "coordinates": { "lat": -25.2973, "lng": -57.5728 },
+    "featured": false,
+    "status": "nueva",
+    "investment": { "rentalYieldPct": null, "zoneAppreciationPct": null, "dealType": "Desarrollo en pozo" }
+  },
+  {
+    "id": "sr-civis-mariscal",
+    "slug": "civis-mariscal",
+    "title": "Civis Mariscal",
+    "operation": "venta",
+    "type": "departamento",
+    "price": 176890,
+    "currency": "USD",
+    "priceFrom": true,
+    "location": {
+      "city": "Asunción",
+      "neighborhood": "Villa Morra",
+      "address": "Cerca de Shopping Mariscal, zona Las Mercedes"
+    },
+    "specs": { "bedrooms": 1, "bathrooms": 1, "totalArea": 61.15, "coveredArea": 61.15, "garages": 0, "yearBuilt": 0 },
+    "description": "Edificio de Civis Soluciones Inmobiliarias en Villa Morra, a pasos de Shopping Mariscal, con locales gastronómicos en planta baja y departamentos de 1 y 2 dormitorios. Entrega estimada mayo 2026, en etapa final de obra. Diseño contemporáneo con balcones curvos, cochera para bicicletas y terminaciones de categoría.",
+    "features": [
+      "Locales gastronómicos en planta baja",
+      "A pasos de Shopping Mariscal",
+      "Entrega estimada mayo 2026 (obra avanzada)",
+      "Balcones curvos y terminaciones de categoría"
+    ],
+    "images": [
+      "/images/properties/civis-mariscal-1.jpg",
+      "/images/properties/civis-mariscal-2.jpg",
+      "/images/properties/civis-mariscal-3.jpg"
+    ],
+    "coordinates": { "lat": -25.2950826, "lng": -57.5822807 },
+    "featured": false,
+    "status": "nueva",
+    "investment": { "rentalYieldPct": null, "zoneAppreciationPct": null, "dealType": "Reventa" }
+  },
+  {
+    "id": "sr-yvyra",
+    "slug": "yvyra-casas-del-fondo",
+    "title": "Yvyra, Casas del Fondo",
+    "operation": "venta",
+    "type": "casa",
+    "price": 69900,
+    "currency": "USD",
+    "priceFrom": true,
+    "location": {
+      "city": "Luque",
+      "neighborhood": "Campo Vía",
+      "address": "Barrio Cerrado Yvyra, Campo Vía"
+    },
+    "specs": { "bedrooms": 2, "bathrooms": 1, "totalArea": 56.1, "coveredArea": 56.1, "garages": 0, "yearBuilt": 0 },
+    "description": "Última unidad disponible dentro del Barrio Cerrado Yvyra, en Campo Vía, Luque. Casas tipo chalet de 1 planta, con sala, cocina-comedor integrados, 2 dormitorios y baño social, terminadas y amuebladas en las unidades modelo. La comunidad cerrada incluye piscina, quincho con parrilla, seguridad y áreas verdes. Ideal para vivienda o inversión en alquiler.",
+    "features": [
+      "Última unidad disponible del barrio cerrado",
+      "Piscina y quincho con parrilla comunitarios",
+      "Barrio cerrado con seguridad",
+      "Terminaciones completas (unidad modelo amueblada)"
+    ],
+    "images": [
+      "/images/properties/yvyra-1.jpg",
+      "/images/properties/yvyra-2.jpg"
+    ],
+    "coordinates": { "lat": -25.2739603, "lng": -57.4961387 },
+    "featured": false,
+    "status": "nueva",
+    "investment": { "rentalYieldPct": null, "zoneAppreciationPct": null, "dealType": "Desarrollo en pozo" }
+  },
+  {
+    "id": "sr-jardinia",
+    "slug": "jardinia",
+    "title": "Jardinia",
+    "operation": "venta",
+    "type": "departamento",
+    "price": 48890,
+    "currency": "USD",
+    "priceFrom": true,
+    "location": {
+      "city": "Luque",
+      "neighborhood": "Curva Romero",
+      "address": "Zona Conmebol / Curva Romero, a 5 minutos del centro de Luque"
+    },
+    "specs": { "bedrooms": 0, "bathrooms": 1, "totalArea": 25.5, "coveredArea": 25.5, "garages": 0, "yearBuilt": 0 },
+    "description": "Edificio ya entregado en la zona Conmebol / Curva Romero de Luque, a 8 minutos del eje corporativo de Asunción y 7 del Aeropuerto Internacional Silvio Pettirossi. Jardinia ofrece monoambientes y departamentos de 1 y 2 dormitorios con equilibrio entre precio y calidad, amenities completos (piscina panorámica con solárium, quincho panorámico climatizado, sala de juegos con mesa de pool y bar) y entrega inmediata.",
+    "features": [
+      "Edificio entregado, entrega inmediata",
+      "Piscina panorámica con solárium",
+      "Quincho panorámico climatizado con parrilla automatizada",
+      "Sala de juegos con mesa de pool y bar",
+      "A 7 minutos del Aeropuerto Silvio Pettirossi"
+    ],
+    "images": [
+      "/images/properties/jardinia-1.jpg",
+      "/images/properties/jardinia-2.jpg",
+      "/images/properties/jardinia-3.jpg"
+    ],
+    "coordinates": { "lat": -25.2800509, "lng": -57.5283196 },
+    "featured": false,
+    "status": "nueva",
+    "investment": { "rentalYieldPct": null, "zoneAppreciationPct": null, "dealType": "Reventa" }
   }
 ]
