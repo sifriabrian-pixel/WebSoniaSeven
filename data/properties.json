@@ -1617,5 +1617,107 @@
     "featured": false,
     "status": "nueva",
     "investment": { "rentalYieldPct": null, "zoneAppreciationPct": null, "dealType": "Desarrollo en pozo" }
+  },
+  {
+    "id": "sr-altea-arandu",
+    "slug": "altea-arandu",
+    "title": "Altea Arandú",
+    "operation": "venta",
+    "type": "casa",
+    "price": 51200,
+    "currency": "USD",
+    "priceFrom": true,
+    "location": {
+      "city": "Luque",
+      "neighborhood": "Cañada Garay",
+      "address": "Barrio cerrado Arandú, Cañada Garay"
+    },
+    "specs": { "bedrooms": 2, "bathrooms": 1, "totalArea": 0, "coveredArea": 0, "garages": 1, "yearBuilt": 0 },
+    "description": "Casas en pozo dentro del barrio cerrado Arandú, en la zona residencial de mayor crecimiento de Cañada Garay, Luque, a 10 minutos del centro de Luque y del Aeropuerto Silvio Pettirossi. Unidades de 2 habitaciones, sala y comedor integrados, cocina equipada, lavandería independiente, patio privado con parrilla y cochera. La comunidad cerrada cuenta con seguridad 24 horas, piscina, áreas verdes con parque infantil, gimnasio al aire libre, ciclovía y parque para mascotas. Apto para financiamiento bancario (Che Roga Porã / AFD / First Home Funds).",
+    "features": [
+      "Barrio cerrado con seguridad 24 horas",
+      "Piscina comunitaria",
+      "Gimnasio al aire libre y ciclovía",
+      "Parque infantil y parque para mascotas",
+      "Patio privado con parrilla",
+      "Apto para Che Roga Porã / AFD / First Home Funds",
+      "A 10 minutos del Aeropuerto Silvio Pettirossi"
+    ],
+    "images": [
+      "/images/properties/altea-arandu-1.jpg",
+      "/images/properties/altea-arandu-2.jpg",
+      "/images/properties/altea-arandu-3.jpg"
+    ],
+    "coordinates": { "lat": -25.2404279, "lng": -57.4647739 },
+    "featured": false,
+    "status": "nueva",
+    "investment": { "rentalYieldPct": null, "zoneAppreciationPct": null, "dealType": "Desarrollo en pozo" }
+  },
+  {
+    "id": "sr-aurora-by-terra",
+    "slug": "aurora-by-terra",
+    "title": "Aurora by Terra",
+    "operation": "venta",
+    "type": "departamento",
+    "price": 63000,
+    "currency": "USD",
+    "priceFrom": true,
+    "location": {
+      "city": "Asunción",
+      "neighborhood": "La Cuadrita",
+      "address": "San Roque González y Mac Mahon"
+    },
+    "specs": { "bedrooms": 0, "bathrooms": 1, "totalArea": 38.7, "coveredArea": 32.9, "garages": 0, "yearBuilt": 0 },
+    "description": "Desarrollo en pozo en La Cuadrita, sobre San Roque González y Mac Mahon, una de las zonas gastronómicas y residenciales más consolidadas de Asunción. Aurora by Terra ofrece monoambientes y unidades de 1 y 2 dormitorios, con entrega estimada para diciembre 2028. Plan de pago con 20% a la entrega y saldo financiado en cuotas durante la obra.",
+    "features": [
+      "Torre de categoría en La Cuadrita",
+      "Entrega estimada diciembre 2028",
+      "20% de entrega + saldo en cuotas durante la obra",
+      "Balcones con vista a la ciudad",
+      "Unidades de monoambiente, 1 y 2 dormitorios"
+    ],
+    "images": [
+      "/images/properties/aurora-by-terra-1.jpg",
+      "/images/properties/aurora-by-terra-2.jpg",
+      "/images/properties/aurora-by-terra-3.jpg"
+    ],
+    "coordinates": { "lat": -25.3005, "lng": -57.5835 },
+    "featured": false,
+    "status": "nueva",
+    "investment": { "rentalYieldPct": null, "zoneAppreciationPct": null, "dealType": "Desarrollo en pozo" }
+  },
+  {
+    "id": "sr-miralago-aregua",
+    "slug": "casa-miralago-aregua",
+    "title": "Casa en Barrio Cerrado Miralago",
+    "operation": "venta",
+    "type": "casa",
+    "price": 106800,
+    "currency": "USD",
+    "priceFrom": false,
+    "location": {
+      "city": "Areguá",
+      "neighborhood": "Patiño",
+      "address": "Barrio Cerrado Miralago"
+    },
+    "specs": { "bedrooms": 2, "bathrooms": 2, "totalArea": 810, "coveredArea": 250, "garages": 4, "yearBuilt": 0 },
+    "description": "Casa en venta dentro del Barrio Cerrado Miralago, en Areguá (Patiño). Tu refugio de paz rodeado de naturaleza, con seguridad y todo el confort para disfrutar en familia. Terreno de 18x45 (810 m²) con 250 m² construidos: 2 dormitorios (uno en suite), baño familiar y baño social, depósito, cochera para 4 autos, piscina con barra techada, quincho con barra y parrilla, pérgola, jardín amplio y patio interno. Expensas: Gs. 300.000.",
+    "features": [
+      "Barrio cerrado con seguridad",
+      "Piscina con barra techada",
+      "Quincho con barra y parrilla",
+      "Cochera para 4 autos",
+      "Pérgola y jardín amplio",
+      "Expensas: Gs. 300.000"
+    ],
+    "images": [
+      "/images/properties/miralago-aregua-1.jpg",
+      "/images/properties/miralago-aregua-2.jpg",
+      "/images/properties/miralago-aregua-3.jpg"
+    ],
+    "coordinates": { "lat": -25.3696892, "lng": -57.3174011 },
+    "featured": false,
+    "status": "nueva",
+    "investment": { "rentalYieldPct": null, "zoneAppreciationPct": null, "dealType": "Reventa" }
   }
 ]
