@@ -2011,5 +2011,71 @@
     "featured": false,
     "status": "nueva",
     "investment": { "rentalYieldPct": null, "zoneAppreciationPct": null, "dealType": "Reventa" }
+  },
+  {
+    "id": "sr-dhome-campos-cervera",
+    "slug": "dhome-campos-cervera",
+    "title": "DHome Campos Cervera",
+    "operation": "venta",
+    "type": "departamento",
+    "price": 93750,
+    "currency": "USD",
+    "priceFrom": true,
+    "location": {
+      "city": "Asunción",
+      "neighborhood": "Las Lomas",
+      "address": "Calle Campos Cervera"
+    },
+    "specs": { "bedrooms": 1, "bathrooms": 1, "totalArea": 42, "coveredArea": 42, "garages": 1, "yearBuilt": 0 },
+    "description": "Desarrollo en pozo sobre la calle Campos Cervera, de 10 niveles con 84 unidades de departamento y 51 plazas de estacionamiento. DHome Campos Cervera ofrece departamentos de 1 dormitorio junior (30 m²), 1 dormitorio (36 m²) y 1 dormitorio plus con cochera (42 m²), con amenities completos: gimnasio, salón de eventos, quincho con parrilla, piscina, laundry y área de niños. Entrega con 30% al firmar, 60% en 33 cuotas y 10% contraentrega.",
+    "features": [
+      "Cochera incluida en la unidad disponible",
+      "Gimnasio y salón de eventos",
+      "Piscina y quincho con parrilla",
+      "Área de niños y laundry",
+      "Plan de pago 30% + 60% en 33 cuotas + 10% contraentrega"
+    ],
+    "images": [
+      "/images/properties/dhome-campos-cervera-1.jpg",
+      "/images/properties/dhome-campos-cervera-2.jpg",
+      "/images/properties/dhome-campos-cervera-3.jpg"
+    ],
+    "coordinates": { "lat": -25.282, "lng": -57.5635 },
+    "featured": false,
+    "status": "nueva",
+    "investment": { "rentalYieldPct": null, "zoneAppreciationPct": null, "dealType": "Desarrollo en pozo" }
+  },
+  {
+    "id": "sr-santa-maria",
+    "slug": "edificio-santa-maria",
+    "title": "Edificio Santa María",
+    "operation": "venta",
+    "type": "departamento",
+    "price": 43500,
+    "currency": "USD",
+    "priceFrom": true,
+    "location": {
+      "city": "Asunción",
+      "neighborhood": "Mariscal López",
+      "address": "Cnel. Francisco Martínez, a 3 cuadras de Av. Mariscal López"
+    },
+    "specs": { "bedrooms": 0, "bathrooms": 1, "totalArea": 30.47, "coveredArea": 30.47, "garages": 0, "yearBuilt": 0 },
+    "description": "Desarrollo de MBT Desarrollos sobre la calle Cnel. Francisco Martínez, a solo 3 cuadras de Av. Mariscal López. El Edificio Santa María ofrece monoambientes, departamentos de 1 y 2 dormitorios y dúplex, con piscina con solárium, quinchos y cocheras disponibles. Bajas expensas y servicio de administración para inversores que buscan generar rentabilidad mediante alquileres.",
+    "features": [
+      "Piscina con solárium en rooftop",
+      "Quinchos para compartir",
+      "Cocheras disponibles",
+      "Bajas expensas y bajo costo de mantenimiento",
+      "Servicio de administración para inversores"
+    ],
+    "images": [
+      "/images/properties/santa-maria-1.jpg",
+      "/images/properties/santa-maria-2.jpg",
+      "/images/properties/santa-maria-3.jpg"
+    ],
+    "coordinates": { "lat": -25.3080113, "lng": -57.551837 },
+    "featured": false,
+    "status": "nueva",
+    "investment": { "rentalYieldPct": null, "zoneAppreciationPct": null, "dealType": "Desarrollo en pozo" }
   }
 ]
