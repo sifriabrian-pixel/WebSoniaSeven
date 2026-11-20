@@ -2653,5 +2653,106 @@
     "featured": false,
     "status": "nueva",
     "investment": { "rentalYieldPct": null, "zoneAppreciationPct": null, "dealType": "Desarrollo en pozo" }
+  },
+  {
+    "id": "sr-morada-capiata",
+    "slug": "morada-capiata",
+    "title": "Morada Capiatá",
+    "operation": "venta",
+    "type": "casa",
+    "price": null,
+    "currency": "USD",
+    "priceFrom": false,
+    "location": {
+      "city": "Capiatá",
+      "neighborhood": "Aldana Cañada",
+      "address": "Aldana Cañada, cercano a colegios, iglesias, comercios y servicios"
+    },
+    "specs": { "bedrooms": 2, "bathrooms": 1, "totalArea": 180, "coveredArea": 56, "garages": 0, "yearBuilt": 0 },
+    "description": "Dúplex terminados dentro del conjunto Morada Capiatá, en Aldana Cañada, cerca de colegios, iglesias, comercios y servicios. Son 6 unidades en terrenos desde 180 m², con dúplex de 56 m² (2 dormitorios) y de 71 m² (3 dormitorios opcional), sala-comedor-cocina integrados, quincho y patio delantero y trasero. Consultar disponibilidad y precio.",
+    "features": [
+      "6 unidades en terrenos desde 180 m²",
+      "Sala, comedor y cocina integrados",
+      "Quincho propio",
+      "Patio delantero y trasero",
+      "Cerca de colegios, iglesias y comercios"
+    ],
+    "images": [
+      "/images/properties/morada-capiata-1.jpg",
+      "/images/properties/morada-capiata-2.jpg",
+      "/images/properties/morada-capiata-3.jpg"
+    ],
+    "coordinates": { "lat": -25.3898983, "lng": -57.4121243 },
+    "featured": false,
+    "status": "nueva",
+    "investment": { "rentalYieldPct": null, "zoneAppreciationPct": null, "dealType": "Desarrollo en pozo" }
+  },
+  {
+    "id": "sr-mova-del-sol",
+    "slug": "mova-del-sol",
+    "title": "Mova del Sol",
+    "operation": "venta",
+    "type": "departamento",
+    "price": 64056,
+    "currency": "USD",
+    "priceFrom": true,
+    "location": {
+      "city": "Asunción",
+      "neighborhood": "Las Lomas",
+      "address": "Detrás de Shopping del Sol"
+    },
+    "specs": { "bedrooms": 0, "bathrooms": 1, "totalArea": 0, "coveredArea": 0, "garages": 0, "yearBuilt": 0 },
+    "description": "Torre de 27 niveles en Las Lomas, detrás de Shopping del Sol, con 4 locales comerciales en planta baja, 3 niveles de parking, amenities en el nivel 4, departamentos del nivel 5 al 26 y un rooftop de amenities en el nivel 27. Mova del Sol ofrece terminaciones de lujo, ventanales de piso a techo, front desk y servicio de mucama y seguridad 24 horas. Proyectado con rentabilidad del 11% anual en alquileres temporales y plusvalía estimada de +25% en 36 meses.",
+    "features": [
+      "Front desk y servicio de mucama 24 horas",
+      "Piscina infinita y sky bar panorámico en rooftop",
+      "Sky gym, wellness & spa y business center",
+      "Salón gourmet y game room",
+      "EV charging para vehículos eléctricos",
+      "Rentabilidad proyectada 11% anual en alquiler temporal"
+    ],
+    "images": [
+      "/images/properties/mova-del-sol-1.jpg",
+      "/images/properties/mova-del-sol-2.jpg",
+      "/images/properties/mova-del-sol-3.jpg"
+    ],
+    "coordinates": { "lat": -25.2815, "lng": -57.568 },
+    "featured": false,
+    "status": "nueva",
+    "investment": { "rentalYieldPct": 11, "zoneAppreciationPct": 25, "dealType": "Desarrollo en pozo" }
+  },
+  {
+    "id": "sr-mova-recoleta",
+    "slug": "mova-recoleta",
+    "title": "Mova Recoleta",
+    "operation": "venta",
+    "type": "departamento",
+    "price": 76900,
+    "currency": "USD",
+    "priceFrom": true,
+    "location": {
+      "city": "Asunción",
+      "neighborhood": "Recoleta",
+      "address": "Recoleta, zona residencial y comercial de mayor crecimiento de Asunción"
+    },
+    "specs": { "bedrooms": 1, "bathrooms": 1, "totalArea": 40.7, "coveredArea": 40.7, "garages": 0, "yearBuilt": 0 },
+    "description": "Edificio de 9 niveles con 63 departamentos (estudios, 1 y 2 dormitorios) en el corazón de Recoleta, con 1 subterráneo de cocheras. Mova Recoleta ofrece iluminación y climatización remota, acceso con Alexa Home y estación de carga para vehículos eléctricos. Cochera opcional desde USD 17.000. Entrega estimada junio 2027.",
+    "features": [
+      "Iluminación y climatización remota, Alexa Home",
+      "EV Charging Station",
+      "Gimnasio con vista panorámica",
+      "Sala de juegos (pool, dardos, mesas)",
+      "Cochera opcional desde USD 17.000",
+      "Entrega estimada junio 2027"
+    ],
+    "images": [
+      "/images/properties/nova-recoleta-1.jpg",
+      "/images/properties/nova-recoleta-2.jpg",
+      "/images/properties/nova-recoleta-3.jpg"
+    ],
+    "coordinates": { "lat": -25.2960285, "lng": -57.5826379 },
+    "featured": false,
+    "status": "nueva",
+    "investment": { "rentalYieldPct": null, "zoneAppreciationPct": null, "dealType": "Desarrollo en pozo" }
   }
 ]
