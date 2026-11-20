@@ -2077,5 +2077,203 @@
     "featured": false,
     "status": "nueva",
     "investment": { "rentalYieldPct": null, "zoneAppreciationPct": null, "dealType": "Desarrollo en pozo" }
+  },
+  {
+    "id": "sr-m5-rio-verde",
+    "slug": "m5-rio-verde",
+    "title": "M5 Río Verde",
+    "operation": "venta",
+    "type": "departamento",
+    "price": 235416,
+    "currency": "USD",
+    "priceFrom": true,
+    "location": {
+      "city": "Nueva Asunción",
+      "neighborhood": "El Delta",
+      "address": "Ruta XII, Km. 3,5, El Delta"
+    },
+    "specs": { "bedrooms": 2, "bathrooms": 4, "totalArea": 138.48, "coveredArea": 108.78, "garages": 2, "yearBuilt": 0 },
+    "description": "Residencias de categoría frente al campo de golf de El Delta, el megaemprendimiento de más de 1.600 hectáreas diseñado por el estudio BMA (responsable de Nordelta en Argentina), a 5 minutos de Asunción y 4 del Puente Héroes del Chaco. M5 Río Verde ofrece dúplex y departamentos de 2 y 3 dormitorios con vista al golf y a las lagunas internas del complejo, cochera doble y dependencia de servicio.",
+    "features": [
+      "Vista al campo de golf y lagunas de El Delta",
+      "Master plan diseñado por el estudio BMA (Nordelta)",
+      "A 4 minutos del Puente Héroes del Chaco",
+      "Cochera doble y dependencia de servicio",
+      "Acceso a amenities del complejo El Delta"
+    ],
+    "images": [
+      "/images/properties/m5-rio-verde-1.jpg",
+      "/images/properties/m5-rio-verde-2.jpg",
+      "/images/properties/m5-rio-verde-3.jpg"
+    ],
+    "coordinates": { "lat": -25.1965, "lng": -57.5695 },
+    "featured": false,
+    "status": "nueva",
+    "investment": { "rentalYieldPct": null, "zoneAppreciationPct": null, "dealType": "Desarrollo en pozo" }
+  },
+  {
+    "id": "sr-riverside-delta",
+    "slug": "riverside-el-delta",
+    "title": "Riverside El Delta",
+    "operation": "venta",
+    "type": "departamento",
+    "price": 658200,
+    "currency": "USD",
+    "priceFrom": true,
+    "location": {
+      "city": "Nueva Asunción",
+      "neighborhood": "El Delta",
+      "address": "Ruta XII, Km. 3,5, El Delta, frente al Río Paraguay"
+    },
+    "specs": { "bedrooms": 3, "bathrooms": 2, "totalArea": 301, "coveredArea": 239, "garages": 3, "yearBuilt": 0 },
+    "description": "Edificio de alta gama frente al Río Paraguay dentro del complejo El Delta, con terrazas elevadas de 360° y vistas inigualables al río. Riverside ofrece unidades de 3 y 4 dormitorios y penthouses con quincho y piscina privada, con terminaciones de primera categoría: aberturas de piso a cielorraso, aire acondicionado central VRV, mesadas de cuarzo y ascensores con palier privado. Amenities con piscina y solárium, kids room, teens room, coworking y dos quinchos climatizados.",
+    "features": [
+      "Terrazas elevadas de 360° frente al Río Paraguay",
+      "Penthouses con quincho y piscina privada",
+      "Aire acondicionado central VRV frío/calor",
+      "Piscina, solárium, kids room y teens room",
+      "A 20 minutos del centro de Asunción"
+    ],
+    "images": [
+      "/images/properties/riverside-delta-1.jpg",
+      "/images/properties/riverside-delta-2.jpg",
+      "/images/properties/riverside-delta-3.jpg"
+    ],
+    "coordinates": { "lat": -25.1879925, "lng": -57.5900377 },
+    "featured": false,
+    "status": "nueva",
+    "investment": { "rentalYieldPct": null, "zoneAppreciationPct": null, "dealType": "Desarrollo en pozo" }
+  },
+  {
+    "id": "sr-barrio-nautico",
+    "slug": "barrio-nautico-el-delta",
+    "title": "Barrio Náutico, El Delta",
+    "operation": "venta",
+    "type": "terreno",
+    "price": null,
+    "currency": "USD",
+    "priceFrom": false,
+    "location": {
+      "city": "Nueva Asunción",
+      "neighborhood": "El Delta",
+      "address": "Ruta XII, Km. 3,5, El Delta — el barrio más cercano al Puente Héroes del Chaco"
+    },
+    "specs": { "bedrooms": 0, "bathrooms": 0, "totalArea": 0, "coveredArea": 0, "garages": 0, "yearBuilt": 0 },
+    "description": "Lotes unifamiliares dentro de Barrio Náutico, el sector de El Delta más cercano al nuevo Puente Héroes del Chaco, con conexión directa al Río Paraguay y guardería de lanchas propia. Lotes desde 250 m² hasta más de 800 m², en un barrio pensado para vivir en armonía con el agua, con marina, club house y amplias áreas verdes y lagunas internas. Consultar disponibilidad y precio por lote.",
+    "features": [
+      "Guardería de lanchas y marina propia",
+      "El barrio más cercano al Puente Héroes del Chaco",
+      "Club house con restó, piscina y áreas sociales",
+      "Lotes desde 250 m²",
+      "Dentro del master plan El Delta (+1.600 hectáreas)"
+    ],
+    "images": [
+      "/images/properties/barrio-nautico-1.jpg",
+      "/images/properties/barrio-nautico-2.jpg",
+      "/images/properties/barrio-nautico-3.jpg"
+    ],
+    "coordinates": { "lat": -25.1879925, "lng": -57.5900377 },
+    "featured": false,
+    "status": "nueva",
+    "investment": { "rentalYieldPct": null, "zoneAppreciationPct": null, "dealType": "Desarrollo en pozo" }
+  },
+  {
+    "id": "sr-barrio-norte-delta",
+    "slug": "barrio-norte-el-delta",
+    "title": "Barrio Norte, El Delta",
+    "operation": "venta",
+    "type": "terreno",
+    "price": null,
+    "currency": "USD",
+    "priceFrom": false,
+    "location": {
+      "city": "Nueva Asunción",
+      "neighborhood": "El Delta",
+      "address": "Ruta XII, Km. 3,5, El Delta"
+    },
+    "specs": { "bedrooms": 0, "bathrooms": 0, "totalArea": 0, "coveredArea": 0, "garages": 0, "yearBuilt": 0 },
+    "description": "300 lotes unifamiliares en Barrio Norte, uno de los sectores de El Delta, sobre más de 100 hectáreas con 28 hectáreas de laguna y 9 de áreas verdes. Pórticos de acceso con seguridad 24 horas, plantas de tratamiento propias, cableado subterráneo y sistema de riego sustentable. Un sector corporativo, restaurantes gourmet y áreas recreativas definen el estándar de vida del barrio. Consultar disponibilidad y precio por lote.",
+    "features": [
+      "300 lotes unifamiliares",
+      "28 hectáreas de laguna y 9 de áreas verdes",
+      "Seguridad 24 horas con pórticos de acceso",
+      "Sector corporativo y restaurantes gourmet",
+      "Infraestructura subterránea de energía y datos"
+    ],
+    "images": [
+      "/images/properties/barrio-norte-1.jpg",
+      "/images/properties/barrio-norte-2.jpg",
+      "/images/properties/barrio-norte-3.jpg"
+    ],
+    "coordinates": { "lat": -25.1975572, "lng": -57.5666223 },
+    "featured": false,
+    "status": "nueva",
+    "investment": { "rentalYieldPct": null, "zoneAppreciationPct": null, "dealType": "Desarrollo en pozo" }
+  },
+  {
+    "id": "sr-la-isla-delta",
+    "slug": "la-isla-el-delta",
+    "title": "La Isla, El Delta",
+    "operation": "venta",
+    "type": "terreno",
+    "price": null,
+    "currency": "USD",
+    "priceFrom": false,
+    "location": {
+      "city": "Nueva Asunción",
+      "neighborhood": "El Delta",
+      "address": "Isla privada conectada por puente exclusivo, El Delta"
+    },
+    "specs": { "bedrooms": 0, "bathrooms": 0, "totalArea": 1500, "coveredArea": 0, "garages": 0, "yearBuilt": 0 },
+    "description": "Un estilo de vida insular único en Paraguay: una isla privada dentro de El Delta, conectada por puente exclusivo y rodeada por el Río Paraguay. Lotes desde 1.500 m², con la construcción incluida de una residencia personalizada de más de 500 m² adaptada al gusto del propietario, en un entorno totalmente urbanizado, con paisajismo de primer nivel y acceso privado con vigilancia 24/7. Quedan muy pocas unidades disponibles. Consultar disponibilidad y precio.",
+    "features": [
+      "Isla privada conectada por puente exclusivo",
+      "Lotes desde 1.500 m² con residencia de +500 m² incluida",
+      "Acceso privado con vigilancia 24/7",
+      "Paisajismo de primer nivel",
+      "Muy pocas unidades disponibles"
+    ],
+    "images": [
+      "/images/properties/la-isla-delta-1.jpg",
+      "/images/properties/la-isla-delta-2.jpg",
+      "/images/properties/la-isla-delta-3.jpg"
+    ],
+    "coordinates": { "lat": -25.199, "lng": -57.562 },
+    "featured": false,
+    "status": "nueva",
+    "investment": { "rentalYieldPct": null, "zoneAppreciationPct": null, "dealType": "Desarrollo en pozo" }
+  },
+  {
+    "id": "sr-terrazas-malibu",
+    "slug": "terrazas-malibu-el-delta",
+    "title": "Terrazas Malibú, El Delta",
+    "operation": "venta",
+    "type": "casa",
+    "price": null,
+    "currency": "USD",
+    "priceFrom": false,
+    "location": {
+      "city": "Nueva Asunción",
+      "neighborhood": "El Delta",
+      "address": "Barrio Norte, El Delta, frente a laguna"
+    },
+    "specs": { "bedrooms": 3, "bathrooms": 4, "totalArea": 0, "coveredArea": 0, "garages": 4, "yearBuilt": 0 },
+    "description": "Residencias únicas frente a una serena laguna dentro de Barrio Norte, El Delta. Terrazas Malibú ofrece casas de 3 dormitorios en suite (incluyendo master suite) con vista a la laguna, sala comedor con quincho integrado climatizado, cocina completa, piscina infinita y cochera para 4 vehículos. Entrega en 12 meses. Consultar disponibilidad y precio por tipología.",
+    "features": [
+      "3 dormitorios en suite, todos con vista a la laguna",
+      "Piscina infinita",
+      "Quincho integrado climatizado",
+      "Cochera para 4 vehículos",
+      "Entrega en 12 meses"
+    ],
+    "images": [
+      "/images/properties/terrazas-malibu-1.jpg",
+      "/images/properties/terrazas-malibu-2.jpg",
+      "/images/properties/terrazas-malibu-3.jpg"
+    ],
+    "coordinates": { "lat": -25.197, "lng": -57.566 },
+    "featured": false,
+    "status": "nueva",
+    "investment": { "rentalYieldPct": null, "zoneAppreciationPct": null, "dealType": "Desarrollo en pozo" }
   }
 ]
