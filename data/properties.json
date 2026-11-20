@@ -2275,5 +2275,383 @@
     "featured": false,
     "status": "nueva",
     "investment": { "rentalYieldPct": null, "zoneAppreciationPct": null, "dealType": "Desarrollo en pozo" }
+  },
+  {
+    "id": "sr-filum-herrera",
+    "slug": "filum-herrera",
+    "title": "Filum Herrera",
+    "operation": "venta",
+    "type": "departamento",
+    "price": 70300,
+    "currency": "USD",
+    "priceFrom": true,
+    "location": {
+      "city": "Asunción",
+      "neighborhood": "Centro",
+      "address": "Olegario Andrade casi Manuel Talavera, a pasos de la Municipalidad de Asunción"
+    },
+    "specs": { "bedrooms": 1, "bathrooms": 1, "totalArea": 38, "coveredArea": 38, "garages": 0, "yearBuilt": 0 },
+    "description": "Desarrollo en pozo sobre la calle Olegario Andrade casi Manuel Talavera, a pasos de la Municipalidad de Asunción, con entrega estimada para diciembre 2026. Filum Herrera ofrece departamentos de 1 y 2 dormitorios, con amenities completos: terraza, quincho climatizado, piscina, deck, laundry, espacio de coworking/sala de TV y seguridad 24 horas.",
+    "features": [
+      "Terraza con piscina y deck",
+      "Quincho climatizado",
+      "Co-working / sala de TV",
+      "Seguridad 24 horas",
+      "Entrega estimada diciembre 2026"
+    ],
+    "images": [
+      "/images/properties/filum-herrera-1.jpg",
+      "/images/properties/filum-herrera-2.jpg",
+      "/images/properties/filum-herrera-3.jpg"
+    ],
+    "coordinates": { "lat": -25.3031412, "lng": -57.5568966 },
+    "featured": false,
+    "status": "nueva",
+    "investment": { "rentalYieldPct": null, "zoneAppreciationPct": null, "dealType": "Desarrollo en pozo" }
+  },
+  {
+    "id": "sr-filum-recoleta",
+    "slug": "filum-recoleta",
+    "title": "Filum Recoleta",
+    "operation": "venta",
+    "type": "departamento",
+    "price": null,
+    "currency": "USD",
+    "priceFrom": false,
+    "location": {
+      "city": "Asunción",
+      "neighborhood": "Recoleta",
+      "address": "Calle Quesada esquina General Torreani Viera, a pasos de Shopping Mariscal y Villa Morra"
+    },
+    "specs": { "bedrooms": 0, "bathrooms": 1, "totalArea": 27, "coveredArea": 27, "garages": 0, "yearBuilt": 0 },
+    "description": "Edificio residencial con locales comerciales en planta baja, en Recoleta, a pasos de Shopping Mariscal y Villa Morra. Filum Recoleta ofrece studios (27 m²), monoambientes (30-33 m²), unidades de 1 dormitorio (40-48 m²) y de 2 dormitorios (77 m²), todas con balcón. Amenities: piscina con solárium en azotea, quincho climatizado, gimnasio equipado, sala de coworking, sala de TV, sala de juegos y sauna. Entrega estimada hacia finales de 2026. Consultar disponibilidad y precio por tipología.",
+    "features": [
+      "Piscina con solárium en azotea",
+      "Quincho climatizado y sauna",
+      "Gimnasio equipado y sala de coworking",
+      "Locales comerciales en planta baja",
+      "A pasos de Shopping Mariscal y Villa Morra"
+    ],
+    "images": [
+      "/images/properties/filum-recoleta-1.jpg",
+      "/images/properties/filum-recoleta-2.jpg",
+      "/images/properties/filum-recoleta-3.jpg"
+    ],
+    "coordinates": { "lat": -25.2933945, "lng": -57.583966 },
+    "featured": false,
+    "status": "nueva",
+    "investment": { "rentalYieldPct": null, "zoneAppreciationPct": null, "dealType": "Desarrollo en pozo" }
+  },
+  {
+    "id": "sr-hype-trinidad",
+    "slug": "hype-trinidad",
+    "title": "Hype Trinidad",
+    "operation": "venta",
+    "type": "departamento",
+    "price": 72540,
+    "currency": "USD",
+    "priceFrom": true,
+    "location": {
+      "city": "Asunción",
+      "neighborhood": "Santísima Trinidad",
+      "address": "Barrio Santísima Trinidad"
+    },
+    "specs": { "bedrooms": 1, "bathrooms": 1, "totalArea": 0, "coveredArea": 0, "garages": 0, "yearBuilt": 0 },
+    "description": "Desarrollo residencial moderno en Santísima Trinidad, una de las zonas con mayor proyección de Asunción. Hype Trinidad ofrece departamentos de 1 dormitorio Junior/Plus, 2 y 3 dormitorios, con una propuesta de vida integral: rooftop con vista panorámica, piscina infinita con jacuzzi, gimnasio, coworking, quinchos y áreas sociales con sala de pool. Entrega prevista octubre 2028.",
+    "features": [
+      "Rooftop con piscina infinita y jacuzzi",
+      "Quincho con parrilla y sala de pool",
+      "Gimnasio y coworking",
+      "Lobby de diseño con doble altura",
+      "Entrega prevista octubre 2028"
+    ],
+    "images": [
+      "/images/properties/hype-trinidad-1.jpg",
+      "/images/properties/hype-trinidad-2.jpg",
+      "/images/properties/hype-trinidad-3.jpg"
+    ],
+    "coordinates": { "lat": -25.2588502, "lng": -57.5799744 },
+    "featured": false,
+    "status": "nueva",
+    "investment": { "rentalYieldPct": null, "zoneAppreciationPct": null, "dealType": "Desarrollo en pozo" }
+  },
+  {
+    "id": "sr-insignia-06",
+    "slug": "insignia-06",
+    "title": "Insignia 06",
+    "operation": "venta",
+    "type": "departamento",
+    "price": 39824,
+    "currency": "USD",
+    "priceFrom": true,
+    "location": {
+      "city": "Luque",
+      "neighborhood": "Zona Conmebol",
+      "address": "Cerca de Avda. Aviadores del Chaco y Avda. Madame Lynch"
+    },
+    "specs": { "bedrooms": 1, "bathrooms": 1, "totalArea": 0, "coveredArea": 0, "garages": 0, "yearBuilt": 0 },
+    "description": "Desarrollo de 5 torres en zona Conmebol, Luque, a solo pasos de shoppings y supermercados, conectado a los accesos a la ciudad, al aeropuerto y al CIT. Insignia 06 ofrece departamentos de 1, 2 y 3 dormitorios, cada uno con cocheras incluidas, muebles de cocina, mesada de granito, placares en los dormitorios y aires acondicionados en cada ambiente.",
+    "features": [
+      "Cocheras incluidas",
+      "A 10 minutos de Parque Ñu Guazú y Conmebol",
+      "A 15 minutos de Shopping del Sol y Aeropuerto Silvio Pettirossi",
+      "Muebles de cocina y mesada de granito",
+      "Aire acondicionado en cada ambiente"
+    ],
+    "images": [
+      "/images/properties/insignia-06-1.jpg",
+      "/images/properties/insignia-06-2.jpg",
+      "/images/properties/insignia-06-3.jpg"
+    ],
+    "coordinates": { "lat": -25.2873598, "lng": -57.5444666 },
+    "featured": false,
+    "status": "nueva",
+    "investment": { "rentalYieldPct": null, "zoneAppreciationPct": null, "dealType": "Desarrollo en pozo" }
+  },
+  {
+    "id": "sr-insignia-07",
+    "slug": "insignia-07",
+    "title": "Insignia 07",
+    "operation": "venta",
+    "type": "departamento",
+    "price": 81002,
+    "currency": "USD",
+    "priceFrom": true,
+    "location": {
+      "city": "San Lorenzo",
+      "neighborhood": "Shopping Pinedo",
+      "address": "Cerca de Pinedo Shopping"
+    },
+    "specs": { "bedrooms": 0, "bathrooms": 1, "totalArea": 0, "coveredArea": 0, "garages": 0, "yearBuilt": 0 },
+    "description": "Desarrollo en San Lorenzo, cerca de Pinedo Shopping. Insignia 07 ofrece departamentos monoambiente, de 1 dormitorio y de 2 dormitorios, con unidades en planta baja con patio propio. Etapa 2 con entrega estimada junio 2028.",
+    "features": [
+      "Monoambientes, 1 y 2 dormitorios",
+      "Unidades en planta baja con patio",
+      "Cerca de Pinedo Shopping",
+      "Etapa 2: entrega estimada junio 2028"
+    ],
+    "images": [
+      "/images/properties/insignia-07-1.jpg",
+      "/images/properties/insignia-07-2.jpg"
+    ],
+    "coordinates": { "lat": -25.3235019, "lng": -57.5197252 },
+    "featured": false,
+    "status": "nueva",
+    "investment": { "rentalYieldPct": null, "zoneAppreciationPct": null, "dealType": "Desarrollo en pozo" }
+  },
+  {
+    "id": "sr-insignia-08",
+    "slug": "insignia-08",
+    "title": "Insignia 08",
+    "operation": "venta",
+    "type": "departamento",
+    "price": 72356,
+    "currency": "USD",
+    "priceFrom": true,
+    "location": {
+      "city": "Luque",
+      "neighborhood": "Jardín de Oro",
+      "address": "Luque, a pasos del Aeropuerto, Rakiura y Plaza Madero"
+    },
+    "specs": { "bedrooms": 2, "bathrooms": 1, "totalArea": 44.1, "coveredArea": 44.1, "garages": 0, "yearBuilt": 0 },
+    "description": "Ubicado en Luque, a pasos del Aeropuerto Internacional Silvio Pettirossi, del centro recreativo Rakiura y del centro comercial Plaza Madero, a 15 minutos del eje corporativo de Asunción. Insignia 08 ofrece departamentos de 2 dormitorios desde 44,1 m² (ideal para home office), 50,1 m² y 54,2 m² con 2 baños, con opciones en planta baja con patio. Pet friendly. Etapa 2 con entrega estimada julio 2029.",
+    "features": [
+      "A pasos del Aeropuerto Silvio Pettirossi",
+      "Cerca de Plaza Madero y centro recreativo Rakiura",
+      "Pet friendly, con opciones con patio",
+      "Etapa 2: entrega estimada julio 2029"
+    ],
+    "images": [
+      "/images/properties/insignia-08-1.jpg",
+      "/images/properties/insignia-08-2.jpg"
+    ],
+    "coordinates": { "lat": -25.2538983, "lng": -57.5040349 },
+    "featured": false,
+    "status": "nueva",
+    "investment": { "rentalYieldPct": null, "zoneAppreciationPct": null, "dealType": "Desarrollo en pozo" }
+  },
+  {
+    "id": "sr-insignia-09",
+    "slug": "insignia-09",
+    "title": "Insignia 09",
+    "operation": "venta",
+    "type": "departamento",
+    "price": 70533,
+    "currency": "USD",
+    "priceFrom": true,
+    "location": {
+      "city": "Luque",
+      "neighborhood": "Jardín de Oro",
+      "address": "Luque, zona Jardín de Oro"
+    },
+    "specs": { "bedrooms": 1, "bathrooms": 1, "totalArea": 0, "coveredArea": 0, "garages": 1, "yearBuilt": 0 },
+    "description": "Torre de 8 pisos en Luque con 68 departamentos en total, cada uno con cochera incluida. Insignia 09 ofrece la privacidad de tener todo en una sola torre: departamento, gimnasio, espacio de coworking, pileta y terraza con quincho. Opciones de 1 y 2 dormitorios, con unidades con patio privado en planta baja. Pet friendly. Entrega estimada junio 2028.",
+    "features": [
+      "68 departamentos, cada uno con cochera incluida",
+      "Gimnasio, coworking, pileta y terraza con quincho",
+      "Opciones con patio privado en planta baja",
+      "Pet friendly",
+      "Entrega estimada junio 2028"
+    ],
+    "images": [
+      "/images/properties/insignia-09-1.jpg",
+      "/images/properties/insignia-09-2.jpg"
+    ],
+    "coordinates": { "lat": -25.2538983, "lng": -57.5040349 },
+    "featured": false,
+    "status": "nueva",
+    "investment": { "rentalYieldPct": null, "zoneAppreciationPct": null, "dealType": "Desarrollo en pozo" }
+  },
+  {
+    "id": "sr-insignia-10",
+    "slug": "insignia-10",
+    "title": "Insignia 10",
+    "operation": "venta",
+    "type": "departamento",
+    "price": 229428,
+    "currency": "USD",
+    "priceFrom": true,
+    "location": {
+      "city": "Fernando de la Mora",
+      "neighborhood": "Las Residentas",
+      "address": "Barrio Las Residentas"
+    },
+    "specs": { "bedrooms": 3, "bathrooms": 1, "totalArea": 0, "coveredArea": 0, "garages": 0, "yearBuilt": 0 },
+    "description": "Insignia 10 está a 10 minutos de los puntos clave de la ciudad, en el barrio Las Residentas, con vistas al skyline de Asunción desde sus balcones. Ofrece departamentos de 3 dormitorios con terminaciones de categoría. Etapa 2 con entrega estimada diciembre 2029.",
+    "features": [
+      "Vista al skyline de Asunción",
+      "A 10 minutos de los puntos clave de la ciudad",
+      "Etapa 2: entrega estimada diciembre 2029"
+    ],
+    "images": [
+      "/images/properties/insignia-10-1.jpg",
+      "/images/properties/insignia-10-2.jpg"
+    ],
+    "coordinates": { "lat": -25.3154728, "lng": -57.547432 },
+    "featured": false,
+    "status": "nueva",
+    "investment": { "rentalYieldPct": null, "zoneAppreciationPct": null, "dealType": "Desarrollo en pozo" }
+  },
+  {
+    "id": "sr-insignia-11",
+    "slug": "insignia-11",
+    "title": "Insignia 11",
+    "operation": "venta",
+    "type": "departamento",
+    "price": 71295,
+    "currency": "USD",
+    "priceFrom": true,
+    "location": {
+      "city": "Ciudad del Este",
+      "neighborhood": "Km 10",
+      "address": "A 150 metros de la Ruta 02, cerca de la Universidad Nacional del Este"
+    },
+    "specs": { "bedrooms": 1, "bathrooms": 1, "totalArea": 31.68, "coveredArea": 31.68, "garages": 1, "yearBuilt": 0 },
+    "description": "Después de 10 años y más de 15 proyectos en Asunción y Gran Asunción, Insignia llega a Ciudad del Este. Ubicado en el Km 10, a solo 10 minutos del centro y a 150 metros de la Ruta 02, el proyecto se desarrolla en una torre de 8 pisos con departamentos de 1 dormitorio (desde 31,68 m²) y 2 dormitorios (desde 44,60 m²), con opción de patio privado y cochera incluida en todas las unidades. En el último piso, terraza con quincho, SUM y pileta. Entrega estimada marzo 2028.",
+    "features": [
+      "Cochera incluida en todas las unidades",
+      "Terraza con quincho, SUM y pileta",
+      "A 150 m de la Ruta 02",
+      "Cerca de Universidad Nacional del Este",
+      "Entrega estimada marzo 2028"
+    ],
+    "images": [
+      "/images/properties/insignia-11-1.jpg"
+    ],
+    "coordinates": { "lat": -25.4836912, "lng": -54.6698718 },
+    "featured": false,
+    "status": "nueva",
+    "investment": { "rentalYieldPct": null, "zoneAppreciationPct": null, "dealType": "Desarrollo en pozo" }
+  },
+  {
+    "id": "sr-insignia-14",
+    "slug": "insignia-14",
+    "title": "Insignia 14",
+    "operation": "venta",
+    "type": "departamento",
+    "price": 53140,
+    "currency": "USD",
+    "priceFrom": true,
+    "location": {
+      "city": "Luque",
+      "neighborhood": "Jardín de Oro",
+      "address": "Luque, zona Jardín de Oro"
+    },
+    "specs": { "bedrooms": 1, "bathrooms": 1, "totalArea": 32.1, "coveredArea": 32.1, "garages": 0, "yearBuilt": 0 },
+    "description": "Insignia 14 ofrece departamentos de 1 dormitorio (32,1 m², 36,8 m² y 39,3 m²) y de 2 dormitorios (43,7 m², 49,8 m² en esquina y 54,2 m² con vestidor o 2 baños), en Luque, zona Jardín de Oro. Acceso vehicular con portón automatizado y terminaciones contemporáneas. Entrega estimada abril 2029.",
+    "features": [
+      "Tipologías de 1 y 2 dormitorios",
+      "Acceso vehicular con portón automatizado",
+      "Entrega estimada abril 2029"
+    ],
+    "images": [
+      "/images/properties/insignia-14-1.jpg",
+      "/images/properties/insignia-14-2.jpg"
+    ],
+    "coordinates": { "lat": -25.2538983, "lng": -57.5040349 },
+    "featured": false,
+    "status": "nueva",
+    "investment": { "rentalYieldPct": null, "zoneAppreciationPct": null, "dealType": "Desarrollo en pozo" }
+  },
+  {
+    "id": "sr-insignia-city-02",
+    "slug": "insignia-city-02",
+    "title": "Insignia City 02",
+    "operation": "venta",
+    "type": "departamento",
+    "price": 134989,
+    "currency": "USD",
+    "priceFrom": true,
+    "location": {
+      "city": "Asunción",
+      "neighborhood": "Villa Morra",
+      "address": "Alas Paraguayas casi Boggiani"
+    },
+    "specs": { "bedrooms": 2, "bathrooms": 1, "totalArea": 0, "coveredArea": 0, "garages": 0, "yearBuilt": 0 },
+    "description": "Serie de edificios de departamentos funcionales, cómodos y modernos en Asunción, sobre Alas Paraguayas casi Boggiani, consolidados con la incorporación de 4 torres rodeadas de vegetación. Insignia City 02 ofrece unidades de 2 y 3 dormitorios, ideal tanto para vivir como para invertir. Etapa 2 con entrega estimada diciembre 2027.",
+    "features": [
+      "Complejo de 4 torres entre árboles",
+      "Sobre Alas Paraguayas casi Boggiani",
+      "Etapa 2: entrega estimada diciembre 2027"
+    ],
+    "images": [
+      "/images/properties/insignia-city-02-1.jpg",
+      "/images/properties/insignia-city-02-2.jpg"
+    ],
+    "coordinates": { "lat": -25.3087426, "lng": -57.5652039 },
+    "featured": false,
+    "status": "nueva",
+    "investment": { "rentalYieldPct": null, "zoneAppreciationPct": null, "dealType": "Desarrollo en pozo" }
+  },
+  {
+    "id": "sr-insignia-club-2etapa",
+    "slug": "insignia-club-2da-etapa",
+    "title": "Insignia Club 2da Etapa",
+    "operation": "venta",
+    "type": "departamento",
+    "price": 152497,
+    "currency": "USD",
+    "priceFrom": true,
+    "location": {
+      "city": "San Bernardino",
+      "neighborhood": "Centro",
+      "address": "San Bernardino"
+    },
+    "specs": { "bedrooms": 2, "bathrooms": 1, "totalArea": 0, "coveredArea": 0, "garages": 0, "yearBuilt": 0 },
+    "description": "Segunda etapa de Insignia Club en San Bernardino, pensado para vivir el verano todo el año. Rodeado de naturaleza, con una gran piscina estilo resort, deck de madera y reposeras. Insignia Club ofrece departamentos de 2 y 3 dormitorios con vida de club todo el año. Etapa 2 con entrega estimada marzo 2028.",
+    "features": [
+      "Piscina estilo resort rodeada de naturaleza",
+      "Deck de madera con reposeras",
+      "Vida de club en San Bernardino",
+      "Etapa 2: entrega estimada marzo 2028"
+    ],
+    "images": [
+      "/images/properties/insignia-club-2etapa-1.jpg",
+      "/images/properties/insignia-club-2etapa-2.jpg"
+    ],
+    "coordinates": { "lat": -25.3461531, "lng": -57.2705691 },
+    "featured": false,
+    "status": "nueva",
+    "investment": { "rentalYieldPct": null, "zoneAppreciationPct": null, "dealType": "Desarrollo en pozo" }
   }
 ]
