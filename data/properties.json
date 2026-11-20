@@ -2754,5 +2754,234 @@
     "featured": false,
     "status": "nueva",
     "investment": { "rentalYieldPct": null, "zoneAppreciationPct": null, "dealType": "Desarrollo en pozo" }
+  },
+  {
+    "id": "sr-porta-01",
+    "slug": "porta-01",
+    "title": "Porta 01",
+    "operation": "venta",
+    "type": "departamento",
+    "price": 82320,
+    "currency": "USD",
+    "priceFrom": true,
+    "location": {
+      "city": "Fernando de la Mora",
+      "neighborhood": "Zona Norte",
+      "address": "A una cuadra de Av. Mariscal López"
+    },
+    "specs": { "bedrooms": 1, "bathrooms": 1, "totalArea": 56, "coveredArea": 56, "garages": 0, "yearBuilt": 2025 },
+    "description": "Edificio de 20 unidades en Fernando de la Mora Zona Norte, a una cuadra de Av. Mariscal López, entregado en abril 2025. Porta 01 ofrece departamentos monoambiente y de 1 dormitorio semiamoblados, con muebles de cocina, filtros de agua, aire acondicionado en todos los ambientes, termocalefón y balcón con parrilla. Las expensas más bajas del mercado. Servicio de administración de alquileres convencionales y Airbnb.",
+    "features": [
+      "Expensas de las más bajas del mercado",
+      "Balcón con parrilla en todas las tipologías",
+      "Filtros de agua y termocalefón en todas las unidades",
+      "Administración de alquileres convencionales y Airbnb",
+      "Edificio entregado (abril 2025)"
+    ],
+    "images": [
+      "/images/properties/porta-01-1.jpg",
+      "/images/properties/porta-01-2.jpg",
+      "/images/properties/porta-01-3.jpg"
+    ],
+    "coordinates": { "lat": -25.3154728, "lng": -57.547432 },
+    "featured": false,
+    "status": "nueva",
+    "investment": { "rentalYieldPct": null, "zoneAppreciationPct": null, "dealType": "Reventa" }
+  },
+  {
+    "id": "sr-porta-02",
+    "slug": "porta-02",
+    "title": "Porta 02 Las Residentas",
+    "operation": "venta",
+    "type": "departamento",
+    "price": 97171,
+    "currency": "USD",
+    "priceFrom": true,
+    "location": {
+      "city": "Fernando de la Mora",
+      "neighborhood": "Zona Norte",
+      "address": "Calles Las Residentas y Villarrica"
+    },
+    "specs": { "bedrooms": 2, "bathrooms": 1, "totalArea": 72.3, "coveredArea": 72.3, "garages": 0, "yearBuilt": 0 },
+    "description": "Emprendimiento de departamentos en Fernando de la Mora Zona Norte, sobre las calles Las Residentas y Villarrica. Las unidades de 2 dormitorios (uno en suite) se distribuyen en 72 m² de construcción, con cocina semiamoblada, aire acondicionado, pisos de porcelanato, mesadas de granito y aberturas de madera de alta durabilidad. Incluye amplio balcón con parrilla. El edificio dispone de ascensor, generador eléctrico y quincho.",
+    "features": [
+      "2 dormitorios, uno en suite",
+      "Ascensor y generador eléctrico",
+      "Quincho común",
+      "Balcón con parrilla",
+      "Pisos de porcelanato y mesadas de granito"
+    ],
+    "images": [
+      "/images/properties/porta-02-1.jpg",
+      "/images/properties/porta-02-2.jpg"
+    ],
+    "coordinates": { "lat": -25.3154728, "lng": -57.547432 },
+    "featured": false,
+    "status": "nueva",
+    "investment": { "rentalYieldPct": null, "zoneAppreciationPct": null, "dealType": "Reventa" }
+  },
+  {
+    "id": "sr-porta-03",
+    "slug": "porta-03",
+    "title": "Porta 03",
+    "operation": "venta",
+    "type": "departamento",
+    "price": 31500,
+    "currency": "USD",
+    "priceFrom": true,
+    "location": {
+      "city": "Luque",
+      "neighborhood": "Zona CIT",
+      "address": "Las Mercedes casi Santa Margarita"
+    },
+    "specs": { "bedrooms": 0, "bathrooms": 1, "totalArea": 0, "coveredArea": 0, "garages": 0, "yearBuilt": 0 },
+    "description": "Desarrollo en pozo en Luque, zona del CIT (Club Internacional de Tenis), sobre Las Mercedes casi Santa Margarita. Porta 03 ofrece tipologías monoambiente y de 1 dormitorio, con amenities completos: laundry, piscina, quincho climatizado, coworking y gimnasio. Financiación propia hasta 10 años. Inicio de obra abril 2025, entrega estimada segundo semestre 2026.",
+    "features": [
+      "Piscina y quincho climatizado",
+      "Coworking y gimnasio",
+      "Financiación propia hasta 10 años",
+      "Zona CIT, Luque",
+      "Entrega estimada 2do semestre 2026"
+    ],
+    "images": [
+      "/images/properties/porta-03-1.jpg",
+      "/images/properties/porta-03-2.jpg",
+      "/images/properties/porta-03-3.jpg"
+    ],
+    "coordinates": { "lat": -25.2873598, "lng": -57.5444666 },
+    "featured": false,
+    "status": "nueva",
+    "investment": { "rentalYieldPct": null, "zoneAppreciationPct": null, "dealType": "Desarrollo en pozo" }
+  },
+  {
+    "id": "sr-porta-04",
+    "slug": "porta-04-monte-alto",
+    "title": "Porta 04 Monte Alto",
+    "operation": "venta",
+    "type": "departamento",
+    "price": 42275,
+    "currency": "USD",
+    "priceFrom": true,
+    "location": {
+      "city": "Luque",
+      "neighborhood": "Monte Alto",
+      "address": "A 1 minuto del Centro de Convenciones Conmebol"
+    },
+    "specs": { "bedrooms": 0, "bathrooms": 1, "totalArea": 30, "coveredArea": 30, "garages": 0, "yearBuilt": 0 },
+    "description": "Desarrollo residencial de RIZ Desarrollos en Luque, con 266 departamentos en 7 pisos, a 1 minuto del Centro de Convenciones Conmebol y 4 minutos del Aeropuerto Silvio Pettirossi. Porta 04 Monte Alto se entrega completamente equipado: placard, mesada de granito, muebles de cocina, anafe con purificador y aire acondicionado en todos los ambientes. Amenities: piscina con solárium, gimnasio, coworking, quinchos cerrados y abiertos, laundry, área de yoga y zona pet friendly.",
+    "features": [
+      "Piscina con solárium y área de yoga",
+      "Gimnasio y coworking",
+      "Zona pet friendly",
+      "A 1 minuto del Centro de Convenciones Conmebol",
+      "A 4 minutos del Aeropuerto Silvio Pettirossi"
+    ],
+    "images": [
+      "/images/properties/porta-04-1.jpg",
+      "/images/properties/porta-04-2.jpg",
+      "/images/properties/porta-04-3.jpg"
+    ],
+    "coordinates": { "lat": -25.2977694, "lng": -57.5119632 },
+    "featured": false,
+    "status": "nueva",
+    "investment": { "rentalYieldPct": null, "zoneAppreciationPct": null, "dealType": "Desarrollo en pozo" }
+  },
+  {
+    "id": "sr-porta-05",
+    "slug": "porta-05-laguna-grande",
+    "title": "Porta 05 Laguna Grande",
+    "operation": "venta",
+    "type": "departamento",
+    "price": 33000,
+    "currency": "USD",
+    "priceFrom": true,
+    "location": {
+      "city": "Luque",
+      "neighborhood": "Laguna Grande",
+      "address": "Laguna Grande, cerca de Pinedo Shopping y Universidad Nacional"
+    },
+    "specs": { "bedrooms": 0, "bathrooms": 1, "totalArea": 30, "coveredArea": 30, "garages": 0, "yearBuilt": 0 },
+    "description": "Preventa Early Investor de RIZ Desarrollos en Laguna Grande, Luque, zona de alta demanda de alquiler con conectividad estratégica a Asunción, Luque y San Lorenzo, a minutos de Pinedo Shopping, Universidad Nacional y el eje corporativo. Porta 05 ofrece monoambientes de 30 m², 1 dormitorio Pro de 37 m² y 2 dormitorios de 58 m², con piscina en azotea, gimnasio equipado, coworking, quincho climatizado y locales comerciales en planta baja.",
+    "features": [
+      "Precio preferencial Early Investor",
+      "Piscina en azotea y quincho climatizado",
+      "Gimnasio equipado y coworking",
+      "Financiación propia hasta 10 años",
+      "Locales comerciales en planta baja"
+    ],
+    "images": [
+      "/images/properties/porta-05-1.jpg",
+      "/images/properties/porta-05-2.jpg",
+      "/images/properties/porta-05-3.jpg"
+    ],
+    "coordinates": { "lat": -25.2977694, "lng": -57.5119632 },
+    "featured": false,
+    "status": "nueva",
+    "investment": { "rentalYieldPct": null, "zoneAppreciationPct": null, "dealType": "Desarrollo en pozo" }
+  },
+  {
+    "id": "sr-porta-06",
+    "slug": "porta-06",
+    "title": "Porta 06",
+    "operation": "venta",
+    "type": "departamento",
+    "price": 36000,
+    "currency": "USD",
+    "priceFrom": true,
+    "location": {
+      "city": "Luque",
+      "neighborhood": "Laguna Grande",
+      "address": "Avda. Laguna Grande entre Pa'i Marcos e Irrazábal"
+    },
+    "specs": { "bedrooms": 0, "bathrooms": 1, "totalArea": 30, "coveredArea": 30, "garages": 0, "yearBuilt": 0 },
+    "description": "Continuación del exitoso Porta 05, por RIZ Desarrollos, sobre Avda. Laguna Grande entre Pa'i Marcos e Irrazábal, a minutos de Pinedo Shopping, UNA, Hospital de Clínicas, Club Internacional de Tenis y el eje corporativo de Asunción. Porta 06 ofrece monoambientes de 30 m² desde USD 36.000, 1 dormitorio Classic de 37 m², 1 dormitorio Pro de 41,5 m² y 2 dormitorios de 58 m², todos con climatización, termocalefón, placard, cocina semiamoblada y balcón. RIZ ofrece administración completa del alquiler (marketing, inquilinos, reservas, pagos y mantenimiento).",
+    "features": [
+      "Administración completa de alquiler por RIZ",
+      "Piscina en azotea y quincho climatizado",
+      "Gimnasio y coworking",
+      "6 niveles, 15 unidades por planta, 33 cocheras",
+      "Cocheras desde USD 11.000"
+    ],
+    "images": [
+      "/images/properties/porta-06-1.jpg",
+      "/images/properties/porta-06-2.jpg"
+    ],
+    "coordinates": { "lat": -25.2977694, "lng": -57.5119632 },
+    "featured": false,
+    "status": "nueva",
+    "investment": { "rentalYieldPct": null, "zoneAppreciationPct": null, "dealType": "Desarrollo en pozo" }
+  },
+  {
+    "id": "sr-porta-sul-cde",
+    "slug": "sul-ciudad-del-este",
+    "title": "Sul by RIZ",
+    "operation": "venta",
+    "type": "departamento",
+    "price": 42160,
+    "currency": "USD",
+    "priceFrom": true,
+    "location": {
+      "city": "Ciudad del Este",
+      "neighborhood": "Boquerón",
+      "address": "Barrio Boquerón"
+    },
+    "specs": { "bedrooms": 0, "bathrooms": 1, "totalArea": 25, "coveredArea": 25, "garages": 0, "yearBuilt": 0 },
+    "description": "Sul by RIZ, en una de las zonas con mayor crecimiento de Ciudad del Este (Barrio Boquerón). Departamentos monoambientes, de 1 y 2 dormitorios con Smart Home, balcón y entrega semiamoblada, de 25 m² a 56,5 m², pensados para vivir o invertir. Cocheras desde USD 15.000. Financiación propia en etapa Pre-Pozo.",
+    "features": [
+      "Smart Home en todas las unidades",
+      "Entrega semiamoblada",
+      "Financiación propia en etapa Pre-Pozo",
+      "Gimnasio con vista panorámica",
+      "Rooftop con lounge exterior"
+    ],
+    "images": [
+      "/images/properties/porta-sul-cde-1.jpg",
+      "/images/properties/porta-sul-cde-2.jpg",
+      "/images/properties/porta-sul-cde-3.jpg"
+    ],
+    "coordinates": { "lat": -25.5218648, "lng": -54.6199032 },
+    "featured": false,
+    "status": "nueva",
+    "investment": { "rentalYieldPct": null, "zoneAppreciationPct": null, "dealType": "Desarrollo en pozo" }
   }
 ]
