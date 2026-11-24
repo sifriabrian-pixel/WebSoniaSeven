@@ -140,7 +140,7 @@ Ver la sección "Pendientes de contenido" más abajo para la lista completa de l
 
 ## Configurar WhatsApp
 
-El número de WhatsApp está centralizado en [`components/WhatsAppButton.tsx`](components/WhatsAppButton.tsx) en la constante `WHATSAPP_NUMBER` (formato internacional sin `+` ni espacios). Ya está cargado el número real de Sonia (`595971561916`).
+El número de WhatsApp está centralizado en [`components/WhatsAppButton.tsx`](components/WhatsAppButton.tsx) en la constante `WHATSAPP_NUMBER` (formato internacional sin `+` ni espacios). Ya está cargado el número real de Seven Real Estate (`595987290003`).
 
 ## SEO
 
@@ -161,7 +161,7 @@ El proyecto está deployado en Vercel: `web-sonia-seven.vercel.app`, con el domi
 
 Estos valores quedaron como placeholder a la espera de datos reales de Brian:
 
-- **Email de contacto en dominio propio (⚠️ decisión de infraestructura, no de código):** el email de contacto (`Footer.tsx`, `lib/seo.ts`, `contacto/page.tsx`) es `sonitarg@hotmail.com` — ya no depende de Century 21, pero tampoco es un dominio propio de Seven Real Estate. Cuando Sonia/Brian tengan un dominio propio (ej. `sonia@sevenrealestate.com.py`), actualizar acá. No bloquea nada mientras tanto.
+- **Email de contacto en dominio propio (⚠️ decisión de infraestructura, no de código):** el email de contacto (`Footer.tsx`, `lib/seo.ts`, `contacto/page.tsx`) es `sevenrealestate.py@gmail.com` — ya no depende de Century 21, pero tampoco es un dominio propio de Seven Real Estate. Cuando Sonia/Brian tengan un dominio propio (ej. `sonia@sevenrealestate.com.py`), actualizar acá. No bloquea nada mientras tanto.
 - **Testimonios reales (⚠️ bloqueante antes de publicar):** `components/Testimonials.tsx` hoy muestra 3 testimonios **ficticios** puestos a pedido de Brian solo para maquetar la sección — no son reales y no deben quedar así en producción. Sonia tiene que proveer casos reales (nombre real o iniciales autorizadas) para reemplazarlos.
 - **Web3Forms access key:** falta crear la cuenta en Web3Forms y configurar `NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY` en Vercel (ver sección de arriba) — confirmar que la cuenta esté registrada con el email de Sonia (o que su email esté agregado como destinatario adicional) para que los leads le lleguen directo a ella. Hasta entonces el bloque de novedades muestra un botón que abre WhatsApp en vez de un formulario roto.
 - **Copy final de posicionamiento:** confirmar con Brian/Sonia si "asesoramiento inmobiliario integral" es el mensaje definitivo, o si conviene depurar el catálogo a solo propiedades premium y volver a "real estate de lujo" (copy archivado en `content/copy-lujo-archivado.md`).

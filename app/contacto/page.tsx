@@ -47,11 +47,11 @@ export default function ContactPage() {
           <SectionDivider center={false} />
           <ul className="space-y-3 text-sm text-text/80">
             <li>
-              Fuerte Corpus Cristi 1505 casi Cerro Porteño, Asunción,
-              Paraguay
+              República de Siria 407 esq. Ayala Velazquez, Barrio Jara,
+              Asunción, Paraguay
             </li>
-            <li>sonitarg@hotmail.com</li>
-            <li>+595 971 561916</li>
+            <li>sevenrealestate.py@gmail.com</li>
+            <li>+595 987 290003</li>
             <li>Lunes a Viernes · 9:00 a 18:00 hs</li>
           </ul>
 

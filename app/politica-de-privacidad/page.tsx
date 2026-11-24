@@ -24,7 +24,7 @@ const SECTIONS: { title: string; body: string[] }[] = [
   {
     title: "1. Quiénes somos",
     body: [
-      "Este sitio es operado por Seven Real Estate, dirigida por Sonia García, con domicilio en Fuerte Corpus Cristi 1505 casi Cerro Porteño, Asunción, Paraguay. Para cualquier consulta sobre tus datos podés escribirnos a sonitarg@hotmail.com.",
+      "Este sitio es operado por Seven Real Estate, dirigida por Sonia García, con domicilio en República de Siria 407 esq. Ayala Velazquez, Barrio Jara, Asunción, Paraguay. Para cualquier consulta sobre tus datos podés escribirnos a sevenrealestate.py@gmail.com.",
     ],
   },
   {
@@ -57,7 +57,7 @@ const SECTIONS: { title: string; body: string[] }[] = [
   {
     title: "6. Tus derechos",
     body: [
-      "Podés pedirnos en cualquier momento acceder a tus datos, corregirlos, o que los eliminemos y dejemos de contactarte. Escribinos a sonitarg@hotmail.com y lo resolvemos a la brevedad.",
+      "Podés pedirnos en cualquier momento acceder a tus datos, corregirlos, o que los eliminemos y dejemos de contactarte. Escribinos a sevenrealestate.py@gmail.com y lo resolvemos a la brevedad.",
     ],
   },
   {

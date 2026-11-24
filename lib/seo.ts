@@ -7,11 +7,11 @@ export const SITE_TAGLINE = "Real Estate de Alto Valor en Asunción";
 export const AGENT = {
   name: "Sonia García",
   jobTitle: "Asesora Inmobiliaria",
-  telephone: "+595971561916",
-  email: "sonitarg@hotmail.com",
+  telephone: "+595987290003",
+  email: "sevenrealestate.py@gmail.com",
   affiliation: "Seven Real Estate",
   address: {
-    streetAddress: "Fuerte Corpus Cristi 1505 casi Cerro Porteño",
+    streetAddress: "República de Siria 407 esq. Ayala Velazquez, Barrio Jara",
     addressLocality: "Asunción",
     addressRegion: "Central",
     addressCountry: "PY",
