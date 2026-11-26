@@ -1108,7 +1108,7 @@
     "images": ["/images/properties/casa-jara-1.jpg", "/images/properties/casa-jara-2.jpg", "/images/properties/casa-jara-3.jpg", "/images/properties/casa-jara-4.jpg"],
     "coordinates": { "lat": -25.282631, "lng": -57.604901 },
     "featured": false,
-    "status": "nueva",
+    "status": "vendida",
     "investment": { "rentalYieldPct": null, "zoneAppreciationPct": null, "dealType": "Reventa" }
   },
   {
@@ -1338,7 +1338,7 @@
     "images": ["/images/properties/depto-salvador-1.jpg", "/images/properties/depto-salvador-2.jpg", "/images/properties/depto-salvador-3.jpg"],
     "coordinates": { "lat": -25.2734342, "lng": -57.5489011 },
     "featured": false,
-    "status": "nueva",
+    "status": "vendida",
     "investment": { "rentalYieldPct": null, "zoneAppreciationPct": null, "dealType": "Renta" }
   },
   {
@@ -1367,7 +1367,7 @@
     "images": ["/images/properties/duplex-fdm-1.jpg", "/images/properties/duplex-fdm-2.jpg", "/images/properties/duplex-fdm-3.jpg", "/images/properties/duplex-fdm-4.jpg"],
     "coordinates": { "lat": -25.3224622, "lng": -57.536292 },
     "featured": false,
-    "status": "nueva",
+    "status": "vendida",
     "investment": { "rentalYieldPct": null, "zoneAppreciationPct": null, "dealType": "Renta" }
   },
   {
